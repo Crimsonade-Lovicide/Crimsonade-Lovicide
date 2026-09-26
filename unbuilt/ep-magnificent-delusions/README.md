@@ -20,6 +20,8 @@ None of these overlap anything UNBUILT has covered or is producing. The list was
 - `RESEARCH.md`: fact-check with confidence levels, myths avoided, and sources.
 - `host/`: casting round, locked hero portrait, and character sheet.
 - `proof/`: rendered proof shot CO1, with raw and finished versions.
+- `edit/assemble.py`: the edit decision list and ffmpeg assembly (1280×720, 24 fps). `ONLY=3,8 python3 assemble.py <assets> <out.mp4>` re-renders selected beats.
+- `edit/align.py`: re-times the clean Arthur take to the lips Seedance rendered (see step 3 below).
 
 ## The host: Hugo Ashby (locked)
 
@@ -32,35 +34,30 @@ None of these overlap anything UNBUILT has covered or is producing. The list was
 ## How a host shot is made (proven on CO1)
 
 1. **Voice.** Generate the line as TTS with Arthur, then tighten the pauses in ffmpeg. The raw TTS pauses run about 1.5s, which is too theatrical.
-2. **Video.** Render with Seedance 2.0 at 480p, passing both host reference images as `image_references` and the tightened line as `audio_references`. The element placeholder alone fails validation when audio is attached.
-3. **Clean-up.** Seedance lip-syncs to the reference timing but partly re-voices it; the envelope correlation was 0.45. In post, lay the clean Arthur take back over the clip. The timing matches to within about 20 ms.
+2. **Video.** Render with Seedance 2.0 at 720p (the proof was 480p), passing both host reference images as `image_references` and the tightened line as `audio_references`. The element placeholder alone fails validation when audio is attached.
+3. **Clean-up.** Seedance lip-syncs to the reference but partly re-voices it and stretches some pauses. On CO1 it turned "Mind the gap" into "Mind the grab". Laying the clean take straight over drifts out of sync, so `edit/align.py` transcribes both tracks with Whisper, matches the words, and moves each clean word to the onset of the rendered lip movement. Every sync shot in the cut uses these aligned takes (`audio/t_s_<SHOT>.wav`).
 4. **Result on CO1.** Face, hair and wardrobe held for the whole shot, with a natural performance: eyebrow on "deserved it", smile on "didn't".
 5. **One defect.** The background has two July Columns. Every location prompt in `shotlist.json` now says "only one column" and names single landmarks.
 
 B-roll is made with Nano Banana Pro for the start frame, then Kling 3.0 **pro** image-to-video with sound off, 5s. Archive, drawing and map beats are designed stills with an ffmpeg push, which also suits the genre.
 
-## Budget
+## Spend (actual)
 
-These are Higgsfield preflight quotes taken on 26 Sep 2026.
+Higgsfield transaction log, 26 Sep 2026.
 
 | Line | Credits |
 |---|---|
-| Host sync shots (83s on camera, Seedance 480p at 3/s) | 234 |
-| B-roll motion (20 × 5s, Kling pro at 1.75/s) | 193 |
-| Stills and start frames (46 at 2) | 92 |
-| Voice (TTS takes and retakes) | 45 |
-| Retake buffer (15% of video) | 64 |
-| **Total** | **≈ 630** |
+| Host sync shots (15 Seedance 2.0 renders at 720p, 4.5/s, incl. one L1 retake) | ≈ 392 |
+| B-roll motion (20 × 5s Kling 3.0 pro) | 175 |
+| Stills, start frames and redos (Nano Banana Pro, GPT Image 2.5) | ≈ 110 |
+| Voice (≈ 60 Arthur TTS lines) | ≈ 45 |
+| Pre-production (casting, sheet, 480p proof) | 25.5 |
+| **Total** | **≈ 735** |
 
-- **Already spent: 25.5 credits.** That was the casting round (4 frames), the character sheet, one TTS line, and the 5s proof shot.
-- **Up-rez note.** Rendering the host at 720p instead of 480p adds about 120 credits. The alternative is to upscale the 480p master later.
+## Status
 
-## Status and blocker
-
-- **Done:** research and fact-check, the five picks, the script, the full shot list with prompts, host casting and element, voice choice, and one finished proof shot.
-- **Blocked:** the Higgsfield balance is **5.27 credits**. Your account held **30.77** when this session started, not ~500.
-- **Also relevant:** a parallel session spent about 120 credits on the Leonardo episode minutes before this one began.
-- **To finish:** a top-up of about **650 credits** gets the full episode rendered and assembled.
+- **Done:** research, script, host, all 15 sync shots, 20 b-roll clips, 46 stills plus redos, lip-aligned voice, graphics, and the full 720p assembly.
+- **Not done: music and SFX.** See below. The mix is voice only, with no ambience, music or effects, so a score and SFX bed can be laid straight under it.
 
 ## Post: what Higgsfield can't do
 
