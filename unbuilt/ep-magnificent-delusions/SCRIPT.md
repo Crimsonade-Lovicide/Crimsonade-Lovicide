@@ -174,7 +174,7 @@
 > Five buildings. None of them exist. And yet you can stand in the crypt in Liverpool, walk over Beach's tunnel on Broadway, and sit where the elephant stood. The unbuilt world isn't gone. It's just… awaiting planning permission.
 
 **[O2] SYNC**
-> I'm Hugo Ashby. Mind the gap.
+> I'm Hugo Ashby. Dream big. Budget bigger.
 
 **END CARD:** UNBUILT
 
