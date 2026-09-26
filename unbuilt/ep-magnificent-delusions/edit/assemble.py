@@ -119,8 +119,10 @@ def visual_filter(kind, key, dur, idx):
     if kind == "still":
         src = os.path.join(A, "img", f"{key}.png")
         frames = int(round(dur * FPS)) + 1
-        # slow push-in, alternating direction for variety
-        z = "min(zoom+0.0006,1.10)" if idx % 2 == 0 else "if(eq(on,0),1.10,max(zoom-0.0006,1.0))"
+        # slow push-in (alternating with a pull-out) spread over the whole shot, so the picture keeps
+        # moving until the cut; a fixed per-frame step used to hit its limit after ~7s and freeze
+        span = 0.10 + 0.01 * max(0.0, dur - 8.0)
+        z = (f"1+{span:.3f}*on/{frames}" if idx % 2 == 0 else f"1+{span:.3f}-{span:.3f}*on/{frames}")
         chain = (f"[{idx}:v]scale=2560:-2,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
                  f"d={frames}:s={W}x{H}:fps={FPS},trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
         return ["-loop", "1", "-t", f"{dur + 1:.3f}", "-i", src], chain
