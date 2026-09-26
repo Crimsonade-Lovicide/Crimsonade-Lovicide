@@ -264,7 +264,7 @@ beat([("br", "L5"), ("wktail", "L6", 1.25)], 34, pad=0.85)
 beat([("sync", "L6")], 35)
 beat([("br", "L7")], 36, pad=SECTION_PAD)
 # No. 2
-beat([("still", "D1v"), ("wktail", "D1", 1.25)], 37, overlay=(C2, 0.3, 3.6), pad=0.85)
+beat([("still", "D1v"), ("wktail", "D1", 1.25)], 37, overlay=(C2, 0.3, 3.1), pad=0.85)
 beat([("sync", "D1")], 38)
 beat([("br", "D2")], 39)
 beat([("still", "D3")], 40)
