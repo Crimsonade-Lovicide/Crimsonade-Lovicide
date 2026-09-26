@@ -105,13 +105,6 @@ def visual_filter(kind, key, dur, idx):
         chain = (f"[{idx}:v]scale=2560:-2,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
                  f"d={frames}:s={W}x{H}:fps={FPS},trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
         return ["-loop", "1", "-t", f"{dur + 1:.3f}", "-i", src], chain
-    if kind == "walkin":
-        # Hugo walks into the establishing shot and lands on the first frame of his sync shot,
-        # so use the clip's tail: it must end exactly at the cut
-        src = os.path.join(A, "vid", f"wk_{key}.mp4")
-        chain = (f"[{idx}:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},"
-                 f"tpad=stop_mode=clone:stop_duration=30,trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
-        return ["-sseof", f"-{dur:.3f}", "-i", src], chain
     src = os.path.join(A, "vid", f"{'sync' if kind == 'sync' else 'br'}_{key}.mp4")
     ss = 0.0
     side = os.path.join(A, "audio", f"t_s_{key}.json")
@@ -226,16 +219,16 @@ beat([("br", "B8")], 26)
 beat([("still", "B9v")], 27)
 beat([("sync", "B9")], 28, pad=SECTION_PAD)
 # No. 3
-beat([("walkin", "L1")], 29, overlay=(C3, 0.3, 3.6))
+beat([("still", "L1v")], 29, overlay=(C3, 0.3, 3.6))
 beat([("sync", "L1")], 30)
 beat([("still", "L2", 1.3), ("still", "CO4", 1.0)], 31)
 beat([("br", "L3")], 32)
 beat([("still", "L4")], 33)
-beat([("walkin", "L6")], 34)
+beat([("br", "L5")], 34)
 beat([("sync", "L6")], 35)
 beat([("br", "L7")], 36, pad=SECTION_PAD)
 # No. 2
-beat([("walkin", "D1")], 37, overlay=(C2, 0.3, 3.6))
+beat([("still", "D1v")], 37, overlay=(C2, 0.3, 3.6))
 beat([("sync", "D1")], 38)
 beat([("br", "D2")], 39)
 beat([("still", "D3")], 40)
@@ -244,7 +237,7 @@ beat([("sync", "D5")], 42)
 beat([("still", "D6")], 43)
 beat([("br", "D7")], 44, pad=SECTION_PAD)
 # No. 1
-beat([("walkin", "A1")], 45, overlay=(C1, 0.3, 4.2), pad=0.15)
+beat([("still", "A1v")], 45, overlay=(C1, 0.3, 4.2), pad=0.15)
 beat([("sync", "A1")], 46)
 beat([("still", "A2")], 47)
 beat([("br", "A3")], 48)
@@ -253,7 +246,7 @@ beat([("still", "A4")], 50)
 beat([("still", "A5")], 51)
 beat([("br", "A6")], 52)
 beat([("still", "A7")], 53)
-beat([("walkin", "A8")], 54)
+beat([("still", "A8v")], 54)
 beat([("sync", "A8")], 55, pad=SECTION_PAD)
 # Outro
 beat([("br", "L5", 1.0), ("still", "B9v", 1.0), ("still", "E7v", 1.0)], 56)
