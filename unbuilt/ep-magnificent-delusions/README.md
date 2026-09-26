@@ -21,6 +21,7 @@ None of these overlap anything UNBUILT has covered or is producing. The list was
 - `host/`: casting round, locked hero portrait, and character sheet.
 - `proof/`: rendered proof shot CO1, with raw and finished versions.
 - `edit/assemble.py`: the edit decision list and ffmpeg assembly (1280×720, 24 fps). `ONLY=3,8 python3 assemble.py <assets> <out.mp4>` re-renders selected beats.
+- `edit/score.py`: lays the theme under the voice cut. It cuts the track on its 16-beat phrase grid, ducks it under the voice with a sidechain compressor, and normalises to -14 LUFS.
 - `edit/align.py`: re-times the clean Arthur take to the lips Seedance rendered (see step 3 below).
 
 ## The host: Hugo Ashby (locked)
@@ -56,9 +57,14 @@ Higgsfield transaction log, 26 Sep 2026.
 
 ## Status
 
-- **Done:** research, script, host, all 15 sync shots, 20 b-roll clips, 46 stills plus redos, lip-aligned voice, graphics, and the full 720p assembly.
-- **Not done: music and SFX.** See below. The mix is voice only, with no ambience, music or effects, so a score and SFX bed can be laid straight under it.
+- **Done:** research, script, host, all 15 sync shots, 20 b-roll clips, 46 stills plus redos, lip-aligned voice, graphics, score, and the final 720p master (7:32, -14 LUFS, peaks -1.1 dBFS).
+- **Not done: SFX and ambience.** The mix is voice plus score.
+- **Rebuild:** run `python3 edit/assemble.py <assets> voice_cut.mp4`, then `python3 edit/score.py <assets> "The Architect's Parade.mp3" voice_cut.mp4 final.mp4`.
 
 ## Post: what Higgsfield can't do
 
-- **Music.** Higgsfield has no standalone music or SFX model. The score and effects need a licensed library, or another tool, before the final mix. The edit is being cut to picture and VO so music can be dropped in.
+- **Music.** Higgsfield has no music model. The score is "The Architect's Parade", a 61s track you generated elsewhere. `score.py` builds the whole episode's score from it:
+  - The build crests on the title card, and the drop lands on the No. 5 cut.
+  - Each countdown card restarts the cue on a new phrase. The quiet breakdown (32.37–48.37s, exactly 32 beats) loops under narration.
+  - The finale ends on the end card, and the Loos stinger plays dry.
+- **SFX.** Higgsfield has no SFX model either. Ambience and effects would need a library.

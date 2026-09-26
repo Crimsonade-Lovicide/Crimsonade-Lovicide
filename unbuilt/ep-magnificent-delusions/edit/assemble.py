@@ -8,7 +8,9 @@ asset_dir must contain:
   img/<ID>.png         stills
 Each beat renders to an intermediate clip (picture + voice), then all beats are concatenated.
 """
+import json
 import os
+import re
 import subprocess
 import sys
 import wave
@@ -265,8 +267,33 @@ if __name__ == "__main__":
         outs.append(o)
         total += d
         print(f"beat {i:02d} {d:5.2f}s", flush=True)
+    # Audio is rebuilt sample-accurately: stream-copying per-beat AAC keeps each segment's encoder
+    # priming, and the voice drifts ~1.6s late over 62 beats.
+    starts, pcm, frames = [0.0], [], []
+    for o in outs:
+        err = subprocess.run([FF, "-nostdin", "-i", o, "-map", "0:v", "-f", "null", "-"],
+                             capture_output=True, text=True).stderr
+        n = int(re.findall(r"frame=\s*(\d+)", err)[-1])
+        samples = round(n / FPS * 48000)
+        raw = subprocess.run([FF, "-nostdin", "-loglevel", "error", "-i", o, "-map", "0:a", "-ac", "2", "-ar", "48000",
+                              "-f", "s16le", "-"], capture_output=True, check=True).stdout
+        pcm.append(raw[:samples * 4].ljust(samples * 4, b"\0"))
+        frames.append(n)
+        starts.append(starts[-1] + n / FPS)
+    # pin each entry to its frame duration, or the demuxer offsets by the (longer) audio and the picture drifts
     lst = os.path.join(TMP, "list.txt")
     with open(lst, "w") as f:
-        f.writelines(f"file '{o}'\n" for o in outs)
-    run(["-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", OUT])
+        f.writelines(f"file '{os.path.abspath(o)}'\nduration {n / FPS:.6f}\n" for o, n in zip(outs, frames))
+    vid = os.path.join(TMP, "video_only.mp4")
+    run(["-f", "concat", "-safe", "0", "-i", lst, "-an", "-c", "copy", vid])
+    voice = os.path.join(TMP, "voice.wav")
+    w = wave.open(voice, "wb")
+    w.setnchannels(2); w.setsampwidth(2); w.setframerate(48000)
+    w.writeframes(b"".join(pcm))
+    w.close()
+    run(["-i", vid, "-i", voice, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+         "-movflags", "+faststart", OUT])
+    with open(os.path.join(TMP, "timeline.json"), "w") as f:
+        json.dump({"starts": starts}, f)  # beat start times in the cut, read by score.py
+    total = starts[-1]
     print("TOTAL", round(total, 1), "s ->", OUT)
