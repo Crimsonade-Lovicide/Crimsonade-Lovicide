@@ -40,6 +40,25 @@ def wav_len(p):
     return w.getnframes() / w.getframerate()
 
 
+_clip_len = {}
+
+
+def clip_len(p):
+    """Length of a video stream in seconds (frames / fps), cached."""
+    if p not in _clip_len:
+        err = subprocess.run([FF, "-nostdin", "-i", p, "-map", "0:v", "-f", "null", "-"],
+                             capture_output=True, text=True).stderr
+        n = int(re.findall(r"frame=\s*(\d+)", err)[-1])
+        fps = float(re.search(r"(\d+(?:\.\d+)?) fps", err).group(1))
+        _clip_len[p] = n / fps
+    return _clip_len[p]
+
+
+def sync_start(key):
+    side = os.path.join(A, "audio", f"t_s_{key}.json")
+    return json.load(open(side))["start"] if os.path.exists(side) else 0.0
+
+
 def run(cmd):
     subprocess.run([FF, "-nostdin", "-loglevel", "error", "-y"] + cmd, check=True)
 
@@ -105,12 +124,22 @@ def visual_filter(kind, key, dur, idx):
         chain = (f"[{idx}:v]scale=2560:-2,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
                  f"d={frames}:s={W}x{H}:fps={FPS},trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
         return ["-loop", "1", "-t", f"{dur + 1:.3f}", "-i", src], chain
+    if kind == "wktail":
+        # the last moments of a walk-in: Hugo arriving on his mark, ending on his sync shot's first frame
+        src = os.path.join(A, "vid", f"wk_{key}.mp4")
+        chain = (f"[{idx}:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},"
+                 f"tpad=stop_mode=clone:stop_duration=5,trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
+        return ["-sseof", f"-{dur:.3f}", "-i", src], chain
     src = os.path.join(A, "vid", f"{'sync' if kind == 'sync' else 'br'}_{key}.mp4")
-    ss = 0.0
-    side = os.path.join(A, "audio", f"t_s_{key}.json")
-    if kind == "sync" and os.path.exists(side):
-        ss = json.load(open(side))["start"]  # sync_audio.py cut invented words from the head
-    chain = (f"[{idx}:v]trim=start={ss:.3f},setpts=PTS-STARTPTS,scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},"
+    ss = sync_start(key) if kind == "sync" else 0.0  # sync_audio.py may cut invented words from the head
+    retime = ""
+    if kind == "br" and dur > clip_len(src) + 0.04:
+        # the narration outlasts the 5s clip: slow it down to fill the slot (motion-interpolated)
+        # rather than freezing on its last frame
+        retime = (f"setpts=(PTS-STARTPTS)*{dur / clip_len(src):.4f},"
+                  f"minterpolate=fps={FPS}:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,")
+    chain = (f"[{idx}:v]trim=start={ss:.3f},setpts=PTS-STARTPTS,scale={W}:{H}:force_original_aspect_ratio=increase,"
+             f"crop={W}:{H},{retime}fps={FPS},"
              f"tpad=stop_mode=clone:stop_duration=30,trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
     return ["-i", src], chain
 
@@ -133,12 +162,17 @@ def render_beat(i, b):
         if v0[0] == "sync" and os.path.exists(aligned):
             apath = aligned  # the clip's own lip-synced voice, word-patched (sync_audio.py)
         dur = wav_len(apath) + b["pad"]
+        if v0[0] == "sync":
+            # end the beat with the clip, not on a frozen frame after he stops talking
+            room = clip_len(os.path.join(A, "vid", f"sync_{v0[1]}.mp4")) - sync_start(v0[1])
+            dur = min(dur, max(room, wav_len(apath) + 0.1))
     else:
         apath, dur = None, b["hold"]
     vis = b["visuals"]
-    weights = [v[2] if len(v) > 2 else 1.0 for v in vis]
+    fixed = sum(v[2] for v in vis if v[0] == "wktail")  # walk-in tails have a length in seconds
+    weights = [0.0 if v[0] == "wktail" else (v[2] if len(v) > 2 else 1.0) for v in vis]
     tot = sum(weights)
-    parts = [dur * w / tot for w in weights]
+    parts = [v[2] if v[0] == "wktail" else (dur - fixed) * w / tot for v, w in zip(vis, weights)]
     inputs, chains = [], []
     for j, (v, pdur) in enumerate(zip(vis, parts)):
         ia, ch = visual_filter(v[0], v[1], pdur, j)
@@ -219,16 +253,16 @@ beat([("br", "B8")], 26)
 beat([("still", "B9v")], 27)
 beat([("sync", "B9")], 28, pad=SECTION_PAD)
 # No. 3
-beat([("still", "L1v")], 29, overlay=(C3, 0.3, 3.6))
+beat([("still", "L1v"), ("wktail", "L1", 1.25)], 29, overlay=(C3, 0.3, 3.6), pad=0.85)
 beat([("sync", "L1")], 30)
 beat([("still", "L2", 1.3), ("still", "CO4", 1.0)], 31)
 beat([("br", "L3")], 32)
 beat([("still", "L4")], 33)
-beat([("br", "L5")], 34)
+beat([("br", "L5"), ("wktail", "L6", 1.25)], 34, pad=0.85)
 beat([("sync", "L6")], 35)
 beat([("br", "L7")], 36, pad=SECTION_PAD)
 # No. 2
-beat([("still", "D1v")], 37, overlay=(C2, 0.3, 3.6))
+beat([("still", "D1v"), ("wktail", "D1", 1.25)], 37, overlay=(C2, 0.3, 3.6), pad=0.85)
 beat([("sync", "D1")], 38)
 beat([("br", "D2")], 39)
 beat([("still", "D3")], 40)
@@ -237,7 +271,7 @@ beat([("sync", "D5")], 42)
 beat([("still", "D6")], 43)
 beat([("br", "D7")], 44, pad=SECTION_PAD)
 # No. 1
-beat([("still", "A1v")], 45, overlay=(C1, 0.3, 4.2), pad=0.15)
+beat([("still", "A1v"), ("wktail", "A1", 1.0)], 45, overlay=(C1, 0.3, 4.2), pad=0.15)
 beat([("sync", "A1")], 46)
 beat([("still", "A2")], 47)
 beat([("br", "A3")], 48)
@@ -246,7 +280,7 @@ beat([("still", "A4")], 50)
 beat([("still", "A5")], 51)
 beat([("br", "A6")], 52)
 beat([("still", "A7")], 53)
-beat([("still", "A8v")], 54)
+beat([("still", "A8v"), ("wktail", "A8", 1.25)], 54, pad=0.85)
 beat([("sync", "A8")], 55, pad=SECTION_PAD)
 # Outro
 beat([("br", "L5", 1.0), ("still", "B9v", 1.0), ("still", "E7v", 1.0)], 56)
