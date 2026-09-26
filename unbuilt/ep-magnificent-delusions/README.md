@@ -22,7 +22,9 @@ None of these overlap anything UNBUILT has covered or is producing. The list was
 - `proof/`: rendered proof shot CO1, with raw and finished versions.
 - `edit/assemble.py`: the edit decision list and ffmpeg assembly (1280×720, 24 fps). `ONLY=3,8 python3 assemble.py <assets> <out.mp4>` re-renders selected beats.
 - `edit/score.py`: lays the theme under the voice cut. It cuts the track on its 16-beat phrase grid, ducks it under the voice with a sidechain compressor, and normalises to -14 LUFS.
-- `edit/align.py`: re-times the clean Arthur take to the lips Seedance rendered (see step 3 below).
+- `edit/tighten.py`: trims each TTS line's edge silence (gently, so soft first and last sounds survive) and caps long pauses.
+- `edit/sync_audio.py`: builds each on-camera line from the clip's own lip-synced audio, patching wrong words (see step 3 below).
+- `edit/qc_voice.py`: the voice and lip-sync scan. It transcribes every line at every stage, diffs it against the script, and measures word timing against the rendered lips.
 
 ## The host: Hugo Ashby (locked)
 
@@ -36,7 +38,10 @@ None of these overlap anything UNBUILT has covered or is producing. The list was
 
 1. **Voice.** Generate the line as TTS with Arthur, then tighten the pauses in ffmpeg. The raw TTS pauses run about 1.5s, which is too theatrical.
 2. **Video.** Render with Seedance 2.0 at 720p (the proof was 480p), passing both host reference images as `image_references` and the tightened line as `audio_references`. The element placeholder alone fails validation when audio is attached.
-3. **Clean-up.** Seedance lip-syncs to the reference but partly re-voices it and stretches some pauses. On CO1 it turned "Mind the gap" into "Mind the grab". Laying the clean take straight over drifts out of sync, so `edit/align.py` transcribes both tracks with Whisper, matches the words, and moves each clean word to the onset of the rendered lip movement. Every sync shot in the cut uses these aligned takes (`audio/t_s_<SHOT>.wav`).
+3. **Clean-up.** Seedance lip-syncs to the reference and records the line in (nearly) the same voice, but sometimes gets a word wrong: "Mind the gap" came out as "Mind the grab", "Fuller" as "Flunward". Laying the clean TTS over the clip, even re-timed word by word, garbles syllables and drifts off the lips (the first cut did this; up to 0.9s off). So `edit/sync_audio.py` keeps the clip's own audio, which is lip-synced by construction.
+   - A wrong word is replaced with the same word from the clean take. The splice is stretched to the rendered mouth movement and pitch- and level-matched, then re-transcribed to prove it reads correctly. If no splice verifies, the original stays.
+   - Words Seedance invents before the line (A1: "who stole the court…") are cut from the head of the shot, picture and sound together.
+   - Avoid "…" at the start or end of a TTS line. The voice model renders it as garbled syllables.
 4. **Result on CO1.** Face, hair and wardrobe held for the whole shot, with a natural performance: eyebrow on "deserved it", smile on "didn't".
 5. **One defect.** The background has two July Columns. Every location prompt in `shotlist.json` now says "only one column" and names single landmarks.
 

@@ -106,7 +106,11 @@ def visual_filter(kind, key, dur, idx):
                  f"d={frames}:s={W}x{H}:fps={FPS},trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
         return ["-loop", "1", "-t", f"{dur + 1:.3f}", "-i", src], chain
     src = os.path.join(A, "vid", f"{'sync' if kind == 'sync' else 'br'}_{key}.mp4")
-    chain = (f"[{idx}:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},"
+    ss = 0.0
+    side = os.path.join(A, "audio", f"t_s_{key}.json")
+    if kind == "sync" and os.path.exists(side):
+        ss = json.load(open(side))["start"]  # sync_audio.py cut invented words from the head
+    chain = (f"[{idx}:v]trim=start={ss:.3f},setpts=PTS-STARTPTS,scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},"
              f"tpad=stop_mode=clone:stop_duration=30,trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
     return ["-i", src], chain
 
@@ -127,7 +131,7 @@ def render_beat(i, b):
         v0 = b["visuals"][0]
         aligned = os.path.join(A, "audio", f"t_s_{v0[1]}.wav")
         if v0[0] == "sync" and os.path.exists(aligned):
-            apath = aligned  # clean take re-timed to the rendered lips (align.py)
+            apath = aligned  # the clip's own lip-synced voice, word-patched (sync_audio.py)
         dur = wav_len(apath) + b["pad"]
     else:
         apath, dur = None, b["hold"]
