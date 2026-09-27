@@ -22,4 +22,4 @@ UNBUILT runs two formats with two hosts. A host never crosses into the other for
 | # | Title | Status |
 |---|---|---|
 | 1 | Magnificent Delusions | Published 26 Sep 2026 (https://youtu.be/3uF2iZn0svY) |
-| 2 | Monuments to the Dead (working title): a Halloween countdown of unbuilt tombs, with Willson's Pyramid as No. 1 | Research and script in progress; release target 31 Oct 2026 |
+| 2 | London Nearly Built a Pyramid for 5 Million Dead (and Other Monuments to the Dead): a Halloween countdown of unbuilt tombs | Script approved 27 Sep; shot list in progress; release target 31 Oct 2026 |

@@ -4,10 +4,7 @@
 **Runtime:** about 7:45. **Format:** 16:9, 720p (1080p upload master). **Host:** Hugo Ashby, on camera and in VO, voice Arthur.
 **Release target:** Sat 31 Oct 2026 (Halloween).
 
-**YouTube title options:**
-1. *London Nearly Built a Pyramid for 5 Million Dead (and Other Monuments to the Dead)* (recommended)
-2. *The Biggest Tomb Ever Designed Was for Nobody*
-3. *Five Tombs That Were Never Filled*
+**YouTube title (chosen):** *London Nearly Built a Pyramid for 5 Million Dead (and Other Monuments to the Dead)*
 
 **The spine.** Each tomb is bigger than the last: a room, 145 ft, 137 m, 150 m, then a pyramid more than twice the height of St Paul's. Underneath, a second count runs, of how many dead each one would actually have held: 2, then 1, then 1, then **0**, then **5 million**.
 
@@ -60,15 +57,21 @@
 **[W6] VO** · 1865: the pine catafalque draped in black, carried down a stone stair into the empty chamber
 > The tomb did get one occupant. In 1865, the pine platform that had held Abraham Lincoln's coffin was put in it for safekeeping. It stayed until 2008.
 
-**[W7] SYNC** · the Crypt, Hugo looking down at the compass stone
-> So for nearly a century and a half, the most important tomb in America was used to store one table. A very distinguished table. But a table.
+**[W7v] VO** · the empty chamber, the black-draped platform alone under one lamp
+> So for nearly a century and a half, the most important tomb in America was used to store one table.
+
+**[W7] SYNC** · the Crypt, Hugo looking down at the compass stone, then up
+> A very distinguished table. But a table.
 
 ---
 
 ## No. 4 · A MAUSOLEUM FOR CHARLES I · Windsor, 1678 (1:55–3:10)
 
+**[C1v] VO** · Whitehall, January 1649: the scaffold outside the Banqueting House in winter light, the crowd seen from behind
+> Charles the First was beheaded in 1649.
+
 **[C1] SYNC** · the quire of St George's Chapel, Windsor, Hugo beside a black marble floor slab
-> Charles the First was beheaded in 1649. Twenty-nine years later, Parliament decided he deserved a better tomb. Parliament, it's only fair to say, had been partly responsible.
+> Twenty-nine years later, Parliament decided he deserved a better tomb. Parliament, it's only fair to say, had been partly responsible.
 
 **[C2] VO** · the House of Commons in 1678, candlelit; a clerk writing in the Journal
 > On the anniversary of the execution, the Commons voted, without a single dissent, about seventy thousand pounds for the King's reburial, "and for erecting him a Monument."
@@ -85,8 +88,11 @@
 **[C6] VO** · the Albert Memorial Chapel at St George's: gold mosaic ceiling, the empty east end
 > It was the unluckiest tomb plot in England. Henry the Seventh built it for himself, then chose Westminster Abbey. Cardinal Wolsey's sarcophagus, made for it, now holds Admiral Nelson. And Victoria turned it into the Albert Memorial Chapel. Albert is buried at Frogmore.
 
+**[C7v] VO** · close insert: the black marble slab in the quire floor, candlelight
+> Charles is still squeezed into Henry the Eighth's vault, under a slab thought to be slightly in the wrong place.
+
 **[C7] SYNC** · back at the slab in the quire
-> Charles is still squeezed into Henry the Eighth's vault, under a slab thought to be slightly in the wrong place. The Stuarts never did catch a break.
+> The Stuarts never did catch a break.
 
 ---
 
@@ -94,8 +100,11 @@
 
 *Played straight. Hugo's dryness goes to the scale only.*
 
+**[P1v] VO** · Buenos Aires, 1952: the domed Palace of the Argentine National Congress, archive photograph
+> In 1952, Argentina passed a law to build a monument in Buenos Aires, for Eva Perón.
+
 **[P1] SYNC** · a plaza in Recoleta, Buenos Aires, at dusk, the National Library behind him
-> In 1952, Argentina passed a law to build a monument here, for Eva Perón. She is said to have asked for one thing: "Let it be the largest in the world." (M)
+> She is said to have asked for one thing: "Let it be the largest in the world." (M)
 
 **[P2] VO** · the Monumento al Descamisado rising over the city: the colossal shirtless worker on a stepped temple
 > The Monument to the Descamisado, the shirtless worker: a hundred and thirty-seven metres tall, almost one and a half Statues of Liberty, with fourteen lifts. And beneath it, a crypt, where she would lie in a silver sarcophagus. (M)
@@ -109,8 +118,11 @@
 **[P5] VO** · the Recoleta Cemetery at night, the Duarte family vault, flowers left at its door
 > Her body was taken, buried in Milan under a false name, and returned almost twenty years later. Since 1976 she has lain in her family's vault in the Recoleta Cemetery, a short walk from where the monument would have stood.
 
+**[P6v] VO** · the monument towering over the city at dusk, one last time
+> She was meant to lie beneath one of the largest monuments on earth.
+
 **[P6] SYNC** · Hugo at the cemetery gates, quiet
-> She was meant to lie beneath one of the largest monuments on earth. Instead, her family's vault became one of the most visited graves in Buenos Aires. Perhaps that is the monument.
+> Instead, her family's vault became one of the most visited graves in Buenos Aires. Perhaps that is the monument.
 
 ---
 
@@ -160,7 +172,10 @@
 > London chose gardens instead. Kensal Green opened in 1833, the first of the Magnificent Seven.
 
 **[Y9] SYNC** · Primrose Hill at night, the city lights below
-> It's easy to laugh, and people did. But Willson was right about the problem. He was just wrong about the solution, by about ninety-four storeys. His pyramid, he said, would teach "the living to die, and the dying to live for ever."
+> It's easy to laugh, and people did. But Willson was right about the problem. He was just wrong about the solution, by about ninety-four storeys.
+
+**[Y9v] VO** · the pyramid at night in fog, lit windows on its terraces
+> His pyramid, he said, would teach "the living to die, and the dying to live for ever."
 
 ---
 
@@ -209,4 +224,4 @@
   - the Westminster Abbey nave
   - Primrose Hill at dusk and at night
 
-  That is six sync locations and 15 sync shots, about the same as last time.
+  That is six sync locations and 16 sync shots, about 110 seconds on camera. The opening sentences run as voice-over, and the punchlines stay on camera.

@@ -1,0 +1,1521 @@
+{
+  "episode": "UNBUILT Special No. 2 - Monuments to the Dead",
+  "youtube_title": "London Nearly Built a Pyramid for 5 Million Dead (and Other Monuments to the Dead)",
+  "host_refs": [
+    "7af5b679-6105-40a6-bfbd-c1576bf5f064",
+    "58601a7b-306f-4517-8840-c3589998e0d2"
+  ],
+  "voice": {
+    "model": "seed_audio",
+    "voice_type": "preset",
+    "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+    "name": "Arthur"
+  },
+  "prices": {
+    "sync_per_s": 4.5,
+    "broll_per_s": 1.75,
+    "still": 2.0,
+    "tts_line": 0.75
+  },
+  "budget": {
+    "sync_video": 517.5,
+    "broll_video": 131.2,
+    "stills_and_frames": 96.0,
+    "tts": 37.5,
+    "retakes_15pct_of_video": 97.3,
+    "total": 879.5,
+    "sync_seconds": 115,
+    "vo_seconds": 331.5,
+    "counts": {
+      "SYNC": 15,
+      "BROLL_VIDEO": 15,
+      "STILL": 33,
+      "REUSE": 4,
+      "CARD": 7
+    },
+    "stretch_warnings": []
+  },
+  "shots": [
+    {
+      "id": "CO1",
+      "segment": "Cold open",
+      "kind": "SYNC",
+      "line": "Everyone ends up somewhere. These five were meant to end up somewhere spectacular.",
+      "duration_s": 6,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Everyone ends up somewhere. These five were meant to end up somewhere spectacular."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. He stands among the graves holding an old brass lantern, which lights his face.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "CO2",
+      "segment": "Cold open",
+      "kind": "STILL",
+      "vo_id": "CO2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark. A small bare stone burial chamber deep under a building, an empty rectangular stone niche, a single candle on the floor, cobwebs, nobody there. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 3.4
+    },
+    {
+      "id": "CO3",
+      "segment": "Cold open",
+      "kind": "STILL",
+      "vo_id": "CO3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original architect's presentation drawing of the period, ink and watercolour wash on aged cream paper, fine linework, subtle foxing. No readable lettering. Christopher Wren's 1678 design for a royal mausoleum: a domed rotunda ringed with Corinthian columns, a lantern on the dome crowned by a gilded statue of Fame, elevation view. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.2
+    },
+    {
+      "id": "CO4",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "CO4",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Cinematic aerial at dusk. The Monumento al Descamisado as designed in the 1950s: a colossal marble statue of a shirtless male worker, arms at his sides, standing on a tall stepped circular temple base, about 137 metres in all, towering over the Buenos Aires skyline and the Río de la Plata. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial push toward the colossal statue from across the river at dusk, city lights coming on below. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.7
+    },
+    {
+      "id": "CO5",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "CO5",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark. Étienne-Louis Boullée's Cenotaph for Newton: a perfectly smooth colossal stone sphere about 150 metres across, half-set into a massive circular stepped drum, rings of tall dark cypress trees on its terraces, tiny human figures at the base for scale. At night, under a starry sky. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial drift around the colossal sphere at night, the cypress trees swaying slightly. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.0
+    },
+    {
+      "id": "CO6",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "CO6",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark. A lone gas lamp in the foreground. A colossal stepped pyramid of dark brick faced with pale granite, about 270 metres square at the base and taller than any building in London, rising in 94 narrow terraces to a slender obelisk at the summit, standing on Primrose Hill above Regent's Park. At night in fog, 1830s London lights below. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial rise over the fog toward the pyramid, a few lit windows on its terraces. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.3
+    },
+    {
+      "id": "CO7",
+      "segment": "Cold open",
+      "kind": "SYNC",
+      "line": "I'm Hugo Ashby. Mind your step.",
+      "duration_s": 4,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "I'm Hugo Ashby. Mind your step."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. Medium shot; he raises the lantern slightly on the last word, then turns and starts to walk away between the graves.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "CO8",
+      "segment": "Cold open",
+      "kind": "CARD",
+      "text": "UNBUILT / Monuments to the Dead",
+      "duration_s": 4.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "W1",
+      "segment": "No.5 Washington",
+      "kind": "SYNC",
+      "line": "This is the crypt of the United States Capitol. Two floors below my feet is a tomb built for George Washington. He isn't in it. He never has been.",
+      "duration_s": 12,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "This is the crypt of the United States Capitol. Two floors below my feet is a tomb built for George Washington. He isn't in it. He never has been."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 12,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The Crypt of the United States Capitol: a round hall of forty sturdy sandstone Doric columns under low groin vaults, a small white marble compass star set in the centre of the floor, warm museum light. He stands beside the compass star.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "W1c",
+      "segment": "No.5 Washington",
+      "kind": "CARD",
+      "text": "No. 5 · Washington's Empty Tomb · Washington, D.C. · 1799 (overlay on W1, 0.3–4.0 s)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "W2a",
+      "segment": "No.5 Washington",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "W2",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. December 1799, a Virginia study at night: a woman's hand in a black mourning sleeve presses a seal into black wax on a folded letter, a quill and candle beside it. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The hand presses the seal into the black wax and lifts it away; the candle flame flickers. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 6.2
+    },
+    {
+      "id": "W2b",
+      "segment": "No.5 Washington",
+      "kind": "STILL",
+      "vo_id": "W2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Mount Vernon, the white wooden mansion with its long columned porch, in winter snow at dusk, a single lit window, bare trees. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.2
+    },
+    {
+      "id": "W3a",
+      "segment": "No.5 Washington",
+      "kind": "STILL",
+      "vo_id": "W3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original architect's presentation drawing of the period, ink and watercolour wash on aged cream paper, fine linework, subtle foxing. No readable lettering. A section drawing through the United States Capitol, c. 1820s: the domed Rotunda at the top, the columned Crypt below it, and a small tomb chamber at the very bottom, all stacked on one axis, with a round opening in the Rotunda floor lining them up. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow tilt down across the whole beat (no generation cost)",
+      "planned_s": 5.8
+    },
+    {
+      "id": "W3b",
+      "segment": "No.5 Washington",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "W3",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. The United States Capitol Rotunda in the 1820s, looking down through a round open hole, ten feet across, in the stone floor, into the dim columned crypt below, candlelight far down. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow push toward the edge of the hole, looking down into the crypt; dust drifts in a draught. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.8
+    },
+    {
+      "id": "W4",
+      "segment": "No.5 Washington",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "W4",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. The Capitol Rotunda floor in 1828: two masons in shirtsleeves lay stone slabs across the round opening, candles on the floor bending in a draught. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The masons slide a heavy slab into place over the hole; the candle flames bend sideways in the draught. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 7.7
+    },
+    {
+      "id": "W5",
+      "segment": "No.5 Washington",
+      "kind": "STILL",
+      "vo_id": "W5",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. The old tomb at Mount Vernon, Virginia: a low brick vault with an arched iron gate, set into a grassy slope under trees, overcast autumn light, fallen leaves. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.5
+    },
+    {
+      "id": "W6a",
+      "segment": "No.5 Washington",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "W6",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. April 1865, the Capitol: four workmen carry a long rough pine platform draped in black cloth down a narrow stone stair into a dark vault, seen from behind, one carrying a lantern. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The men carry the black-draped platform slowly down the stair into the darkness. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.3
+    },
+    {
+      "id": "W6b",
+      "segment": "No.5 Washington",
+      "kind": "STILL",
+      "vo_id": "W6",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark. A small bare stone burial chamber, empty except for a long low wooden platform draped in black cloth, lit by one hanging lamp. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.3
+    },
+    {
+      "id": "W7v",
+      "segment": "No.5 Washington",
+      "kind": "REUSE",
+      "of": "W6b",
+      "vo_id": "W7v",
+      "post": "Re-use W6b: slow push-in continues (no generation cost)",
+      "planned_s": 8.0
+    },
+    {
+      "id": "W7",
+      "segment": "No.5 Washington",
+      "kind": "SYNC",
+      "line": "A very distinguished table. But a table.",
+      "duration_s": 4,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "A very distinguished table. But a table."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The Crypt of the United States Capitol: a round hall of forty sturdy sandstone Doric columns under low groin vaults, a small white marble compass star set in the centre of the floor, warm museum light. He looks down at the compass star, then up into the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "C1v",
+      "segment": "No.4 Charles I",
+      "kind": "STILL",
+      "vo_id": "C1v",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Winter light. Whitehall, London, 30 January 1649: a black-draped wooden scaffold outside the classical Banqueting House, a silent crowd in the foreground seen from behind, soldiers, frost. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 3.0
+    },
+    {
+      "id": "C1",
+      "segment": "No.4 Charles I",
+      "kind": "SYNC",
+      "line": "Twenty-nine years later, Parliament decided he deserved a better tomb. Parliament, it's only fair to say, had been partly responsible.",
+      "duration_s": 9,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Twenty-nine years later, Parliament decided he deserved a better tomb. Parliament, it's only fair to say, had been partly responsible."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 9,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The quire of St George's Chapel, Windsor Castle: Gothic fan-vaulted stone ceiling, carved oak stalls, the knights' coloured banners hanging above, a plain black marble slab set in the floor. He stands beside the black marble slab.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "C1c",
+      "segment": "No.4 Charles I",
+      "kind": "CARD",
+      "text": "No. 4 · A Mausoleum for Charles I · Windsor · 1678 (overlay on C1, 0.3–4.0 s)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "C2a",
+      "segment": "No.4 Charles I",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "C2",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. The House of Commons in 1678, lit by candles: tiers of benches crowded with Members in wigs and dark coats, seen from the back of the chamber, the Speaker's chair far off, a clerk writing at the table. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow push down the chamber; Members rise and murmur; the clerk's quill moves. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.3
+    },
+    {
+      "id": "C2b",
+      "segment": "No.4 Charles I",
+      "kind": "STILL",
+      "vo_id": "C2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Close on a clerk's hand writing in a large leather-bound journal by candlelight, 1678, the ink still wet, the words too small to read. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.3
+    },
+    {
+      "id": "C3a",
+      "segment": "No.4 Charles I",
+      "kind": "STILL",
+      "vo_id": "C3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original architect's presentation drawing of the period, ink and watercolour wash on aged cream paper, fine linework, subtle foxing. No readable lettering. Christopher Wren's 1678 design for Charles I's mausoleum at Windsor: section through a domed rotunda, a ring of Corinthian columns outside, a gilt brass statue of Fame on the lantern, a statue group of four standing Virtues under the dome. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow tilt up across the whole beat (no generation cost)",
+      "planned_s": 6.7
+    },
+    {
+      "id": "C3b",
+      "segment": "No.4 Charles I",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "C3",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. The interior of Wren's royal mausoleum as if completed: a tall domed rotunda of white marble, gilt brass figures in niches, light from the lantern falling on an empty tomb in the centre. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow crane up from the empty tomb toward the lantern of the dome. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 6.7
+    },
+    {
+      "id": "C4",
+      "segment": "No.4 Charles I",
+      "kind": "STILL",
+      "vo_id": "C4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. 1678, a candlelit Whitehall office: ministers in wigs arguing over a table covered in papers and maps of France, seen from the side. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 13.0
+    },
+    {
+      "id": "C5",
+      "segment": "No.4 Charles I",
+      "kind": "STILL",
+      "vo_id": "C5",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. A dusty candlelit archive: a roll of large architectural drawings tied with a faded ribbon, pushed to the back of a high shelf crowded with other rolls, cobwebs. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 8.0
+    },
+    {
+      "id": "C6a",
+      "segment": "No.4 Charles I",
+      "kind": "STILL",
+      "vo_id": "C6",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. The Albert Memorial Chapel, Windsor Castle: a tall Gothic chapel with a glittering gold mosaic vaulted ceiling, inlaid marble walls, an empty east end, soft light. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 8.4
+    },
+    {
+      "id": "C6b",
+      "segment": "No.4 Charles I",
+      "kind": "STILL",
+      "vo_id": "C6",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. The crypt of St Paul's Cathedral, London: a massive polished black marble sarcophagus on a granite pedestal, under a low domed vault, dim warm light. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow pull-out across the whole beat (no generation cost)",
+      "planned_s": 8.4
+    },
+    {
+      "id": "C7v",
+      "segment": "No.4 Charles I",
+      "kind": "STILL",
+      "vo_id": "C7v",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Candlelight. Close insert: a plain black marble slab set into the stone floor of a Gothic chapel quire, worn smooth, candlelight across it, lettering too worn to read. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 8.0
+    },
+    {
+      "id": "C7",
+      "segment": "No.4 Charles I",
+      "kind": "SYNC",
+      "line": "The Stuarts never did catch a break.",
+      "duration_s": 4,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "The Stuarts never did catch a break."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The quire of St George's Chapel, Windsor Castle: Gothic fan-vaulted stone ceiling, carved oak stalls, the knights' coloured banners hanging above, a plain black marble slab set in the floor. He looks down at the slab, then back into the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "P1v",
+      "segment": "No.3 Evita",
+      "kind": "STILL",
+      "vo_id": "P1v",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. Buenos Aires, 1952: the domed Palace of the Argentine National Congress across a wide plaza, cars and pedestrians of the period. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.5
+    },
+    {
+      "id": "P1",
+      "segment": "No.3 Evita",
+      "kind": "SYNC",
+      "line": "She is said to have asked for one thing: \"Let it be the largest in the world.\"",
+      "duration_s": 8,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "She is said to have asked for one thing: \"Let it be the largest in the world.\""
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 8,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. A park plaza in the Recoleta district of Buenos Aires at dusk: jacaranda and palo borracho trees, and behind them only one building, the brutalist concrete National Library raised on massive piers. Serious, quiet delivery. Keep the performance restrained and respectful: no smirk. He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "P1c",
+      "segment": "No.3 Evita",
+      "kind": "CARD",
+      "text": "No. 3 · A Monument for Evita · Buenos Aires · 1952 (overlay on P1, 0.3–4.0 s)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "P2a",
+      "segment": "No.3 Evita",
+      "kind": "REUSE",
+      "of": "CO4",
+      "vo_id": "P2",
+      "post": "Re-use CO4: a different 5 s section, graded warmer (no generation cost)",
+      "planned_s": 7.5
+    },
+    {
+      "id": "P2b",
+      "segment": "No.3 Evita",
+      "kind": "STILL",
+      "vo_id": "P2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original architect's presentation drawing from the early 1950s, ink and watercolour wash on aged cream paper, fine linework, subtle foxing. No readable lettering. A cutaway section of the Monumento al Descamisado: the colossal statue above, a circular temple of many floors with lifts, and deep below, a round crypt with a silver sarcophagus at its centre. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow tilt down across the whole beat (no generation cost)",
+      "planned_s": 7.5
+    },
+    {
+      "id": "P3",
+      "segment": "No.3 Evita",
+      "kind": "STILL",
+      "vo_id": "P3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. Buenos Aires, July 1952: an enormous silent crowd in mourning fills a wide avenue in the rain, seen from behind and above, black drapes on the buildings, candles. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.9
+    },
+    {
+      "id": "P4a",
+      "segment": "No.3 Evita",
+      "kind": "STILL",
+      "vo_id": "P4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. Buenos Aires, April 1955: a large construction site on a riverside avenue, workers pouring the first concrete for a huge circular foundation, cranes. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 3.8
+    },
+    {
+      "id": "P4b",
+      "segment": "No.3 Evita",
+      "kind": "STILL",
+      "vo_id": "P4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. Buenos Aires, September 1955: tanks on a wide avenue, soldiers beside them, a fenced-off building site in the background. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 3.8
+    },
+    {
+      "id": "P4c",
+      "segment": "No.3 Evita",
+      "kind": "STILL",
+      "vo_id": "P4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. A colossal carved marble figure lying half-submerged in a murky brown river among reeds, only its shoulder and arm above the water. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 3.8
+    },
+    {
+      "id": "P5a",
+      "segment": "No.3 Evita",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "P5",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark. The Recoleta Cemetery, Buenos Aires, at night: a long avenue of ornate marble mausoleums, angels and domes, lamps glowing, a cat on a step. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow dolly forward along the avenue of mausoleums. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 7.8
+    },
+    {
+      "id": "P5b",
+      "segment": "No.3 Evita",
+      "kind": "STILL",
+      "vo_id": "P5",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark. A family vault in the Recoleta Cemetery: a dark polished granite facade with bronze plaques and a narrow door, fresh flowers tucked into the bronze railings. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 7.8
+    },
+    {
+      "id": "P6v",
+      "segment": "No.3 Evita",
+      "kind": "REUSE",
+      "of": "CO4",
+      "vo_id": "P6v",
+      "post": "Re-use CO4: its last 3 s, dusk grade (no generation cost)",
+      "planned_s": 5.3
+    },
+    {
+      "id": "P6",
+      "segment": "No.3 Evita",
+      "kind": "SYNC",
+      "line": "Instead, her family's vault became one of the most visited graves in Buenos Aires. Perhaps that is the monument.",
+      "duration_s": 9,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Instead, her family's vault became one of the most visited graves in Buenos Aires. Perhaps that is the monument."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 9,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The neoclassical entrance of the Recoleta Cemetery, Buenos Aires, at night: a portico of four Doric columns with a pediment, iron gates, marble mausoleums visible beyond, lamps glowing. Quiet, still, serious. Keep the performance restrained and respectful: no smirk. He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "N1",
+      "segment": "No.2 Newton",
+      "kind": "SYNC",
+      "line": "Isaac Newton is buried here, under a stone globe. That didn't stop a Frenchman designing him a second tomb. Slightly bigger.",
+      "duration_s": 9,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Isaac Newton is buried here, under a stone globe. That didn't stop a Frenchman designing him a second tomb. Slightly bigger."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 9,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The nave of Westminster Abbey at the choir screen, and against it the white and grey marble monument of Isaac Newton: a reclining figure on a sarcophagus beneath a large carved stone celestial globe. He stands in front of the monument.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "N1c",
+      "segment": "No.2 Newton",
+      "kind": "CARD",
+      "text": "No. 2 · The Cenotaph for Newton · Paris · 1784 (overlay on N1, 0.3–4.0 s)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "N2a",
+      "segment": "No.2 Newton",
+      "kind": "STILL",
+      "vo_id": "N2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original architect's presentation drawing by Étienne-Louis Boullée, 1784, ink and watercolour wash on aged cream paper, fine linework, subtle foxing. No readable lettering. Étienne-Louis Boullée's Cenotaph for Newton: a perfectly smooth colossal stone sphere about 150 metres across, half-set into a massive circular stepped drum, rings of tall dark cypress trees on its terraces, tiny human figures at the base for scale. Elevation view. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.2
+    },
+    {
+      "id": "N2b",
+      "segment": "No.2 Newton",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "N2",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Cinematic aerial by day. Étienne-Louis Boullée's Cenotaph for Newton: a perfectly smooth colossal stone sphere about 150 metres across, half-set into a massive circular stepped drum, rings of tall dark cypress trees on its terraces, tiny human figures at the base for scale. In daylight, a pale sky. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial push toward the colossal sphere over the cypress rings. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.2
+    },
+    {
+      "id": "N3a",
+      "segment": "No.2 Newton",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "N3",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series inside a vast dark dome, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark. Inside the colossal hollow sphere by day: total darkness pierced by thousands of tiny holes that shine like stars across the curved vault; far below, a small sarcophagus on a raised platform, a single tiny figure beside it. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow tilt down from the star-pierced vault to the tiny sarcophagus far below. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 7.7
+    },
+    {
+      "id": "N3b",
+      "segment": "No.2 Newton",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "N3",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series inside a vast dome, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark. Inside the colossal hollow sphere at night: a great lamp hung at the centre blazes like a sun and lights the whole curved interior; a small sarcophagus below. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The great lamp glows brighter, light washing across the curved walls. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 7.7
+    },
+    {
+      "id": "N4a",
+      "segment": "No.2 Newton",
+      "kind": "STILL",
+      "vo_id": "N4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Paris, 1780s: an architect at a candlelit desk, seen from behind, drawing a colossal sphere on a large sheet, instruments and ink around him. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.8
+    },
+    {
+      "id": "N4b",
+      "segment": "No.2 Newton",
+      "kind": "STILL",
+      "vo_id": "N4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original architect's presentation drawing by Étienne-Louis Boullée, 1784, ink and watercolour wash on aged cream paper, fine linework, subtle foxing. No readable lettering. A section through the colossal hollow sphere showing the tiny sarcophagus at the bottom and the vault pierced with stars. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.8
+    },
+    {
+      "id": "N5",
+      "segment": "No.2 Newton",
+      "kind": "SYNC",
+      "line": "The largest tomb ever designed, for nobody at all. Which brings us, rather neatly, to its opposite.",
+      "duration_s": 8,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "The largest tomb ever designed, for nobody at all. Which brings us, rather neatly, to its opposite."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 8,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The nave of Westminster Abbey at the choir screen, and against it the white and grey marble monument of Isaac Newton: a reclining figure on a sarcophagus beneath a large carved stone celestial globe. He glances up at the stone globe, then back to the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "Y1",
+      "segment": "No.1 Pyramid",
+      "kind": "SYNC",
+      "line": "This is Primrose Hill. The view you're looking at is protected by law. In 1830, an architect called Thomas Willson proposed blocking it with ninety-four storeys of the dead.",
+      "duration_s": 12,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "This is Primrose Hill. The view you're looking at is protected by law. In 1830, an architect called Thomas Willson proposed blocking it with ninety-four storeys of the dead."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 12,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The grassy summit of Primrose Hill, London, at dusk: the wide view over Regent's Park to the city skyline, with only one dome, St Paul's Cathedral, small and distinct in the far distance, a few Victorian lamp posts on the path. He stands on the summit with the view behind him.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "Y1c",
+      "segment": "No.1 Pyramid",
+      "kind": "CARD",
+      "text": "No. 1 · Willson's Pyramid · London · 1830 (overlay on Y1, 0.3–4.0 s)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "Y2",
+      "segment": "No.1 Pyramid",
+      "kind": "STILL",
+      "vo_id": "Y2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Night, lamplight. An overcrowded 1820s London churchyard at night, gravestones crammed together, a gravedigger by lantern light digging where an old grave has been opened. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.5
+    },
+    {
+      "id": "Y3",
+      "segment": "No.1 Pyramid",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "Y3",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Daylight, 1830s. A colossal stepped pyramid of dark brick faced with pale granite, about 270 metres square at the base and taller than any building in London, rising in 94 narrow terraces to a slender obelisk at the summit, standing on Primrose Hill above Regent's Park. In daylight, carriages and figures on the road in front for scale, 1830s London around it. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow crane up from the road to reveal the full height of the pyramid. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.0
+    },
+    {
+      "id": "Y3b",
+      "segment": "No.1 Pyramid",
+      "kind": "STILL",
+      "vo_id": "Y3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. The summit of the colossal pyramid: a slender obelisk with a small domed astronomical observatory, a telescope, London far below in haze. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow tilt up across the whole beat (no generation cost)",
+      "planned_s": 5.0
+    },
+    {
+      "id": "Y4a",
+      "segment": "No.1 Pyramid",
+      "kind": "STILL",
+      "vo_id": "Y4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original 1830s steel engraving, fine cross-hatched linework, sepia ink on aged paper. No readable lettering. A cutaway section of a colossal stepped pyramid: dozens of floors of small burial catacombs, gentle ramps rising between them, a vertical shaft in the centre for hoisting coffins. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow tilt up across the whole beat (no generation cost)",
+      "planned_s": 6.7
+    },
+    {
+      "id": "Y4b",
+      "segment": "No.1 Pyramid",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "Y4",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Lantern light. Inside the pyramid: a long vaulted brick gallery lined floor to ceiling with stacked catacomb niches, a gentle ramp rising into the distance, lanterns. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow dolly up the ramp between the endless walls of niches. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 6.7
+    },
+    {
+      "id": "Y5a",
+      "segment": "No.1 Pyramid",
+      "kind": "STILL",
+      "vo_id": "Y5",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original 1830s steel engraving, fine cross-hatched linework, sepia ink on aged paper. No readable lettering. A colossal stepped pyramid of dark brick faced with pale granite, about 270 metres square at the base and taller than any building in London, rising in 94 narrow terraces to a slender obelisk at the summit, standing on Primrose Hill above Regent's Park. An 1830 engraving as for a prospectus, with the London skyline tiny beside it. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 7.1
+    },
+    {
+      "id": "Y5b",
+      "segment": "No.1 Pyramid",
+      "kind": "STILL",
+      "vo_id": "Y5",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original 1830s steel engraving, fine cross-hatched linework, sepia ink on aged paper. No readable lettering. A diagram of the pyramid's 94 terraces pulled apart and laid out flat side by side like sheets of paper, covering a huge area of fields. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow pull-out across the whole beat (no generation cost)",
+      "planned_s": 7.1
+    },
+    {
+      "id": "Y6",
+      "segment": "No.1 Pyramid",
+      "kind": "SYNC",
+      "line": "Air rights. In 1831. He'd have loved Manhattan.",
+      "duration_s": 4,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Air rights. In 1831. He'd have loved Manhattan."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The grassy summit of Primrose Hill, London, at dusk: the wide view over Regent's Park to the city skyline, with only one dome, St Paul's Cathedral, small and distinct in the far distance, a few Victorian lamp posts on the path. Close-up, one eyebrow raised.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "Y7a",
+      "segment": "No.1 Pyramid",
+      "kind": "STILL",
+      "vo_id": "Y7",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. An 1828 London coffee house: gentlemen in top hats laughing over a newspaper at a table, pipe smoke, candlelight. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.3
+    },
+    {
+      "id": "Y7b",
+      "segment": "No.1 Pyramid",
+      "kind": "STILL",
+      "vo_id": "Y7",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. 1830s: a joint-stock company office, a clerk shaking his head over an empty subscription ledger, rain on the window. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.3
+    },
+    {
+      "id": "Y8",
+      "segment": "No.1 Pyramid",
+      "kind": "STILL",
+      "vo_id": "Y8",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Autumn. Kensal Green Cemetery, London: a tree-lined avenue of Victorian tombs, stone angels and ivy, golden autumn leaves. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.1
+    },
+    {
+      "id": "Y9",
+      "segment": "No.1 Pyramid",
+      "kind": "SYNC",
+      "line": "It's easy to laugh, and people did. But Willson was right about the problem. He was just wrong about the solution, by about ninety-four storeys.",
+      "duration_s": 11,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "It's easy to laugh, and people did. But Willson was right about the problem. He was just wrong about the solution, by about ninety-four storeys."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 11,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The grassy summit of Primrose Hill, London, at night: the wide view over Regent's Park to the city skyline, with only one dome, St Paul's Cathedral, small and distinct in the far distance, the city lights spread out below, one lamp post glowing beside him.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "Y9v",
+      "segment": "No.1 Pyramid",
+      "kind": "REUSE",
+      "of": "CO6",
+      "vo_id": "Y9v",
+      "post": "Re-use CO6: a different section (no generation cost)",
+      "planned_s": 6.9
+    },
+    {
+      "id": "O1",
+      "segment": "Outro",
+      "kind": "SYNC",
+      "line": "Five tombs. Not one of them ever held the people it was built for. The dead, it turns out, are very hard to plan for.",
+      "duration_s": 11,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Five tombs. Not one of them ever held the people it was built for. The dead, it turns out, are very hard to plan for."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 11,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. He walks slowly toward the camera between the graves holding the lantern, stops.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "O2",
+      "segment": "Outro",
+      "kind": "SYNC",
+      "line": "I'm Hugo Ashby. Dream big. Budget bigger.",
+      "duration_s": 4,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "I'm Hugo Ashby. Dream big. Budget bigger."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. Close-up, the lantern lighting his face, a small wry smile.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "END",
+      "segment": "Outro",
+      "kind": "CARD",
+      "text": "UNBUILT",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "X1",
+      "segment": "Stinger",
+      "kind": "STILL",
+      "vo_id": "X1",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An 1830 coloured lithograph, soft hand colouring on aged paper. No readable lettering. A proposed Grand National Cemetery on Primrose Hill: a classical Greek temple and a tall monumental column among formal walks and terraces, London in the distance. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 12.3
+    }
+  ]
+}
