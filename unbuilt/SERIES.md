@@ -7,7 +7,7 @@ UNBUILT runs two formats with two hosts. A host never crosses into the other for
 | | Standard episodes | Specials |
 |---|---|---|
 | **Host** | The series host: a woman in a navy trench coat over a navy-and-cream Breton top | **Hugo Ashby**: charming and acerbic, British |
-| **What** | One building or project per episode, reconstructed and walked through, with why it died and the site today | Themed episodes that cut across many projects: countdowns, comparisons, anthologies |
+| **What** | One building or project per episode, reconstructed and walked through, with why it died and the site today | **Always a countdown of at least five subjects** around one theme, escalating to No. 1. An honourable mention or stinger can come after it. |
 | **Example** | Wardenclyffe (in production, Sep 2026) | "Magnificent Delusions": five unbuilt projects, each bigger than the last |
 | **Voice** | Her own locked voice | Arthur (Higgsfield preset `30fc8796-…`) |
 
