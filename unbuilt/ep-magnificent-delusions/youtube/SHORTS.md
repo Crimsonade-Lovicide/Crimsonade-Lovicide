@@ -1,6 +1,6 @@
 # Shorts: "Magnificent Delusions"
 
-Four vertical cuts from the episode, built by `edit/shorts.py` at no credit cost. Each is 1080×1920 at -14 LUFS, with burned-in captions. The title block swaps to "Full episode on the channel" for the last 3 seconds.
+Five vertical cuts from the episode, built by `edit/shorts.py` at no credit cost. Each is 1080×1920 at -14 LUFS, with burned-in captions. The title block swaps to "Full episode on the channel" for the last 3 seconds.
 
 | # | File | Length | Title |
 |---|---|---|---|
@@ -8,6 +8,21 @@ Four vertical cuts from the episode, built by `edit/shorts.py` at no credit cost
 | 2 | `short_dome.mp4` | 0:38 | The Plan to Put Manhattan Under Glass |
 | 3 | `short_elephant.mp4` | 0:50 | Napoleon's Elephant Became a Rat Hotel |
 | 4 | `short_beach.mp4` | 0:50 | New York Had a Subway in 1870. Then Forgot It. |
+| 5 | `short_liverpool.mp4` | 0:58 | Liverpool Built the Basement of a Giant Cathedral. Then Gave Up. |
+
+## On YouTube (UNBUILT, @unbuiltdoc)
+
+Each Short is uploaded private and scheduled to go public at 20:00 UTC, with `containsSyntheticMedia` set (the altered-content disclosure). Each description links the episode, https://youtu.be/3uF2iZn0svY.
+
+| # | Video | Goes public |
+|---|---|---|
+| 1 | https://youtu.be/v-l9GDsNWtQ | 2026-09-28 |
+| 2 | https://youtu.be/nbA2MZqrcLQ | 2026-09-29 |
+| 3 | https://youtu.be/djaBKB93Zxo | 2026-09-30 |
+| 4 | https://youtu.be/GETQkSWSjtI | 2026-10-01 |
+| 5 | pending (upload throttled, retrying) | 2026-10-02 |
+
+Still manual in YouTube Studio: set each Short's **Related video** to the episode. The API can't set it.
 
 ## Posting
 
@@ -36,6 +51,12 @@ In 1960, Buckminster Fuller and Shoji Sadao proposed a two-mile glass dome over 
 ```
 Napoleon wanted a 24-metre bronze elephant fountain in Paris. He got a plaster model that stood for thirty years and filled with rats, and ended up in Les Misérables.
 #history #paris #architecture #unbuilt
+```
+
+**5 · Liverpool's cathedral**
+```
+In 1929 Sir Edwin Lutyens designed a Liverpool cathedral with a dome wider than St Peter's in Rome. They finished the crypt in 1958, stopped, and built a different cathedral on top.
+#history #liverpool #architecture #unbuilt
 ```
 
 **4 · Beach Pneumatic Transit**

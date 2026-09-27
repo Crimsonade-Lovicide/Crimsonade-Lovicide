@@ -51,6 +51,11 @@ SHORTS = {
         segs=[(8, 0, None, 1), (10, 0, None, 1), (11, 0, None, 1), (13, 0, None, 1), (15, 0, None, 1),
               (16, 0, None, 1)],
         crop={}),
+    "liverpool": dict(
+        title=["LIVERPOOL BUILT THE BASEMENT.", "THEN IT GAVE UP."],
+        segs=[(29, 0, None, 1), (30, 0, None, 1), (31, 0, None, 1), (32, 0, None, 1), (33, 0, None, 1),
+              (34, 0, None, 1), (35, 0, None, 1)],
+        crop={}),
     "beach": dict(
         title=["NEW YORK HAD A", "SUBWAY IN 1870"],
         segs=[(17, 0, None, 1), (18, 0, None, 1), (19, 0, None, 1), (21, 0, None, 1), (22, 0, None, 1),
@@ -63,7 +68,7 @@ FIX = {
     "sergall": "Sörgel", "sergil": "Sörgel", "sergio": "Sörgel", "sergel": "Sörgel", "sorgel": "Sörgel",
     "sergal": "Sörgel", "sergil's": "Sörgel's", "sergel's": "Sörgel's", "kilometers": "kilometres",
     "beech": "Beach", "beech's": "Beach's",
-    "lutjens": "Lutyens", "sadeo": "Sadao", "sado": "Sadao", "sado's": "Sadao's", "meters": "metres",
+    "lutjens": "Lutyens", "lutchens": "Lutyens", "sadeo": "Sadao", "sado": "Sadao", "sado's": "Sadao's", "meters": "metres",
     "neighbors": "neighbours", "miserables": "Misérables", "luce": "Loos", "stripped": "crypt",
     "hermann": "Herman",
 }
