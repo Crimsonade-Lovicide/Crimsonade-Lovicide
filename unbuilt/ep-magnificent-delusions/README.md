@@ -58,13 +58,15 @@ Higgsfield transaction log, 26 Sep 2026.
 | Stills, start frames and redos (Nano Banana Pro, GPT Image 2.5) | ≈ 110 |
 | Voice (≈ 60 Arthur TTS lines) | ≈ 45 |
 | Pre-production (casting, sheet, 480p proof) | 25.5 |
-| **Total** | **≈ 735** |
+| Upscale price tests (Topaz 3 + ByteDance 0.1) | 3.1 |
+| **Total** | **≈ 738** |
 
 ## Status
 
-- **Done:** research, script, host, all 15 sync shots, 20 b-roll clips, 46 stills plus redos, lip-aligned voice, graphics, score, and the final 720p master (7:32, -14 LUFS, peaks -1.1 dBFS).
+- **Done:** research, script, host, all 15 sync shots, 20 b-roll clips, 46 stills plus redos, lip-aligned voice, graphics, score, the final 720p master (7:34, -14 LUFS, peaks -1.1 dBFS), and a 1080p upload master upscaled locally at no credit cost.
 - **Not done: SFX and ambience.** The mix is voice plus score.
 - **Rebuild:** run `python3 edit/assemble.py <assets> voice_cut.mp4`, then `python3 edit/score.py <assets> "The Architect's Parade.mp3" voice_cut.mp4 final.mp4`.
+- **1080p:** `ffmpeg -i final.mp4 -vf "scale=1920:1080:flags=lanczos,unsharp=5:5:0.35:5:5:0" -c:v libx264 -preset slow -crf 17 -c:a copy -movflags +faststart final_1080p.mp4`. Paid upscalers were tested on a 5s clip first. Topaz (about 270 credits for the episode) was only marginally better on faces. ByteDance (about 9 credits) smoothed the skin to a waxy look. Neither beat the free version by enough to justify its cost.
 
 ## Post: what Higgsfield can't do
 
