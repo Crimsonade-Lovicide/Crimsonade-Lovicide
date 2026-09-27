@@ -179,7 +179,7 @@ def visual_filter(v, dur, idx):
         span = 0.10 + 0.01 * max(0.0, dur - 8.0)
         z = (f"1+{span:.3f}*on/{frames}" if idx % 2 == 0 else f"1+{span:.3f}-{span:.3f}*on/{frames}")
         chain = (f"[{idx}:v]{unbar}scale=2560:1440,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
-                 f"d={frames}:s={W}x{H}:fps={FPS}{grade},trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
+                 f"d={frames}:s={W}x{H}:fps={FPS},setsar=1{grade},trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
         return ["-loop", "1", "-t", f"{dur + 1:.3f}", "-i", src], chain
     src = os.path.join(A, "vid", f"{'sync' if kind == 'sync' else 'br'}_{key}.mp4")
     ss = sync_start(key) if kind == "sync" else v.get("start", 0.0)
@@ -195,7 +195,7 @@ def visual_filter(v, dur, idx):
         retime = (f"setpts=(PTS-STARTPTS)*{f:.4f},"
                   f"minterpolate=fps={FPS}:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,")
     chain = (f"[{idx}:v]trim=start={ss:.3f},setpts=PTS-STARTPTS,scale={zw}:{zh}:force_original_aspect_ratio=increase,"
-             f"crop={W}:{H},{retime}fps={FPS}{grade},"
+             f"crop={W}:{H},setsar=1,{retime}fps={FPS}{grade},"
              f"tpad=stop_mode=clone:stop_duration=30,trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
     return ["-i", src], chain
 
