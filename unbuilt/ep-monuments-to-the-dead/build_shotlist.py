@@ -21,7 +21,9 @@ import os
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-HOST_REFS = ["7af5b679-6105-40a6-bfbd-c1576bf5f064", "58601a7b-306f-4517-8840-c3589998e0d2"]
+# Special No. 2 wardrobe (27 Sep): GPT Image 2.5 edits of the locked hero portrait. Both references show the new
+# outfit, so the old charcoal coat can't leak back in. Files: host/hugo_halloween_portrait*.jpg
+HOST_REFS = ["255584ee-6543-4b54-b9fd-4806ff287ee8", "62d62b3d-61f4-4115-a0f3-323727f57e6e"]
 VOICE = {"model": "seed_audio", "voice_type": "preset", "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
          "name": "Arthur"}
 PRICE = {"sync_per_s": 4.5, "broll_per_s": 1.75, "still": 2.0, "tts_line": 0.75}
@@ -42,8 +44,9 @@ ENGRAVING = ("An original 1830s steel engraving, fine cross-hatched linework, se
              "No readable lettering.")
 PEOPLE = "Any real historical person is seen from behind, in silhouette or far off, never as a close face."
 
-HOST = ("The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his "
-        "charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing.")
+HOST = ("The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long "
+        "black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf "
+        "loosely draped around his neck.")
 SYNC_TAIL = ("He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in "
              "precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, "
              "no music, no subtitles.")

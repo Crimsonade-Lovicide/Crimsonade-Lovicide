@@ -2,8 +2,8 @@
   "episode": "UNBUILT Special No. 2 - Monuments to the Dead",
   "youtube_title": "London Nearly Built a Pyramid for 5 Million Dead (and Other Monuments to the Dead)",
   "host_refs": [
-    "7af5b679-6105-40a6-bfbd-c1576bf5f064",
-    "58601a7b-306f-4517-8840-c3589998e0d2"
+    "255584ee-6543-4b54-b9fd-4806ff287ee8",
+    "62d62b3d-61f4-4115-a0f3-323727f57e6e"
   ],
   "voice": {
     "model": "seed_audio",
@@ -58,18 +58,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. He stands among the graves holding an old brass lantern, which lights his face.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. He stands among the graves holding an old brass lantern, which lights his face.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -202,18 +202,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. Medium shot; he raises the lantern slightly on the last word, then turns and starts to walk away between the graves.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. Medium shot; he raises the lantern slightly on the last word, then turns and starts to walk away between the graves.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -247,18 +247,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The Crypt of the United States Capitol: a round hall of forty sturdy sandstone Doric columns under low groin vaults, a small white marble compass star set in the centre of the floor, warm museum light. He stands beside the compass star.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. The Crypt of the United States Capitol: a round hall of forty sturdy sandstone Doric columns under low groin vaults, a small white marble compass star set in the centre of the floor, warm museum light. He stands beside the compass star.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -461,18 +461,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The Crypt of the United States Capitol: a round hall of forty sturdy sandstone Doric columns under low groin vaults, a small white marble compass star set in the centre of the floor, warm museum light. He looks down at the compass star, then up into the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. The Crypt of the United States Capitol: a round hall of forty sturdy sandstone Doric columns under low groin vaults, a small white marble compass star set in the centre of the floor, warm museum light. He looks down at the compass star, then up into the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -511,18 +511,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The quire of St George's Chapel, Windsor Castle: Gothic fan-vaulted stone ceiling, carved oak stalls, the knights' coloured banners hanging above, a plain black marble slab set in the floor. He stands beside the black marble slab.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. The quire of St George's Chapel, Windsor Castle: Gothic fan-vaulted stone ceiling, carved oak stalls, the knights' coloured banners hanging above, a plain black marble slab set in the floor. He stands beside the black marble slab.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -701,18 +701,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The quire of St George's Chapel, Windsor Castle: Gothic fan-vaulted stone ceiling, carved oak stalls, the knights' coloured banners hanging above, a plain black marble slab set in the floor. He looks down at the slab, then back into the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. The quire of St George's Chapel, Windsor Castle: Gothic fan-vaulted stone ceiling, carved oak stalls, the knights' coloured banners hanging above, a plain black marble slab set in the floor. He looks down at the slab, then back into the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -751,18 +751,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. A park plaza in the Recoleta district of Buenos Aires at dusk: jacaranda and palo borracho trees, and behind them only one building, the brutalist concrete National Library raised on massive piers. Serious, quiet delivery. Keep the performance restrained and respectful: no smirk. He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. A park plaza in the Recoleta district of Buenos Aires at dusk: jacaranda and palo borracho trees, and behind them only one building, the brutalist concrete National Library raised on massive piers. Serious, quiet delivery. Keep the performance restrained and respectful: no smirk. He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -919,18 +919,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The neoclassical entrance of the Recoleta Cemetery, Buenos Aires, at night: a portico of four Doric columns with a pediment, iron gates, marble mausoleums visible beyond, lamps glowing. Quiet, still, serious. Keep the performance restrained and respectful: no smirk. He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. The neoclassical entrance of the Recoleta Cemetery, Buenos Aires, at night: a portico of four Doric columns with a pediment, iron gates, marble mausoleums visible beyond, lamps glowing. Quiet, still, serious. Keep the performance restrained and respectful: no smirk. He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -956,18 +956,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The nave of Westminster Abbey at the choir screen, and against it the white and grey marble monument of Isaac Newton: a reclining figure on a sarcophagus beneath a large carved stone celestial globe. He stands in front of the monument.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. The nave of Westminster Abbey at the choir screen, and against it the white and grey marble monument of Isaac Newton: a reclining figure on a sarcophagus beneath a large carved stone celestial globe. He stands in front of the monument.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -1121,18 +1121,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The nave of Westminster Abbey at the choir screen, and against it the white and grey marble monument of Isaac Newton: a reclining figure on a sarcophagus beneath a large carved stone celestial globe. He glances up at the stone globe, then back to the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. The nave of Westminster Abbey at the choir screen, and against it the white and grey marble monument of Isaac Newton: a reclining figure on a sarcophagus beneath a large carved stone celestial globe. He glances up at the stone globe, then back to the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -1158,18 +1158,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The grassy summit of Primrose Hill, London, at dusk: the wide view over Regent's Park to the city skyline, with only one dome, St Paul's Cathedral, small and distinct in the far distance, a few Victorian lamp posts on the path. He stands on the summit with the view behind him.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. The grassy summit of Primrose Hill, London, at dusk: the wide view over Regent's Park to the city skyline, with only one dome, St Paul's Cathedral, small and distinct in the far distance, a few Victorian lamp posts on the path. He stands on the summit with the view behind him.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -1322,18 +1322,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The grassy summit of Primrose Hill, London, at dusk: the wide view over Regent's Park to the city skyline, with only one dome, St Paul's Cathedral, small and distinct in the far distance, a few Victorian lamp posts on the path. Close-up, one eyebrow raised.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. The grassy summit of Primrose Hill, London, at dusk: the wide view over Regent's Park to the city skyline, with only one dome, St Paul's Cathedral, small and distinct in the far distance, a few Victorian lamp posts on the path. Close-up, one eyebrow raised.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -1398,18 +1398,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. The grassy summit of Primrose Hill, London, at night: the wide view over Regent's Park to the city skyline, with only one dome, St Paul's Cathedral, small and distinct in the far distance, the city lights spread out below, one lamp post glowing beside him.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. The grassy summit of Primrose Hill, London, at night: the wide view over Regent's Park to the city skyline, with only one dome, St Paul's Cathedral, small and distinct in the far distance, the city lights spread out below, one lamp post glowing beside him.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -1444,18 +1444,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. He walks slowly toward the camera between the graves holding the lantern, stops.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. He walks slowly toward the camera between the graves holding the lantern, stops.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },
@@ -1481,18 +1481,18 @@
         "medias": [
           {
             "role": "image",
-            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+            "value": "255584ee-6543-4b54-b9fd-4806ff287ee8"
           },
           {
             "role": "image",
-            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+            "value": "62d62b3d-61f4-4115-a0f3-323727f57e6e"
           },
           {
             "role": "audio",
             "value": "<tightened TTS media_id>"
           }
         ],
-        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. Close-up, the lantern lighting his face, a small wry smile.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a long black wool overcoat, open, over a charcoal ribbed roll-neck sweater, with a deep oxblood-red wool scarf loosely draped around his neck. A Victorian London cemetery at night in the 1840s style: leaning headstones, a stone angel, ivy, Gothic tombs, thin ground fog between the graves, bare trees against a moonlit sky. Close-up, the lantern lighting his face, a small wry smile.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
       },
       "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
     },

@@ -15,6 +15,9 @@ UNBUILT runs two formats with two hosts. A host never crosses into the other for
 
 - **Element:** `unbuilt_host_hugo_v1` (`026bc578-60a2-4cac-92b2-53d3ea1a43d8`). The reference images are in `ep-magnificent-delusions/host/`.
 - **Sign-off:** "I'm Hugo Ashby. Dream big. Budget bigger."
+- **Wardrobe:** a new outfit for each special, but always a dark overcoat as his signature shape. For each special, make a new reference portrait by editing the locked hero portrait, check the face still matches, then use only the new-outfit images as Seedance references.
+  - No. 1: a charcoal herringbone double-breasted coat and a navy crewneck.
+  - No. 2: a long black wool overcoat, a charcoal roll-neck and an oxblood scarf.
 - **Tone:** dry, precise and warm underneath. Jokes land on the idea, not on the people, and never on victims.
 
 ## Specials
