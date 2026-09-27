@@ -20,7 +20,7 @@ Each Short is uploaded private and scheduled to go public at 20:00 UTC, with `co
 | 2 | https://youtu.be/nbA2MZqrcLQ | 2026-09-29 |
 | 3 | https://youtu.be/djaBKB93Zxo | 2026-09-30 |
 | 4 | https://youtu.be/GETQkSWSjtI | 2026-10-01 |
-| 5 | pending (upload throttled, retrying) | 2026-10-02 |
+| 5 | pending: Zapier throttled the upload; retrying after the quota reset at 07:00 UTC | 2026-10-02 |
 
 Still manual in YouTube Studio: set each Short's **Related video** to the episode. The API can't set it.
 
@@ -53,22 +53,22 @@ Napoleon wanted a 24-metre bronze elephant fountain in Paris. He got a plaster m
 #history #paris #architecture #unbuilt
 ```
 
-**5 · Liverpool's cathedral**
-```
-In 1929 Sir Edwin Lutyens designed a Liverpool cathedral with a dome wider than St Peter's in Rome. They finished the crypt in 1958, stopped, and built a different cathedral on top.
-#history #liverpool #architecture #unbuilt
-```
-
 **4 · Beach Pneumatic Transit**
 ```
 In 1870 Alfred Ely Beach opened a one-block demonstration subway under Broadway, blown along by a giant fan. New York's first real subway came 34 years later.
 #history #newyork #nyc #unbuilt
 ```
 
+**5 · Liverpool's cathedral**
+```
+In 1929 Sir Edwin Lutyens designed a Liverpool cathedral with a dome wider than St Peter's in Rome. They finished the crypt in 1958, stopped, and built a different cathedral on top.
+#history #liverpool #architecture #unbuilt
+```
+
 ## Rebuild
 
 ```
-python3 edit/shorts.py <assets> "The Architect's Parade.mp3" <out_dir>            # all four
+python3 edit/shorts.py <assets> "The Architect's Parade.mp3" <out_dir>            # all five
 python3 edit/shorts.py <assets> "The Architect's Parade.mp3" <out_dir> dome       # one
 python3 edit/shorts.py <assets> "The Architect's Parade.mp3" <out_dir> --sheet    # crop review sheets
 ```
