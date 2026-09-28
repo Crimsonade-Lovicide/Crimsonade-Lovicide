@@ -16,6 +16,13 @@ voiced = db > -42
 # edges: find the first/last sound at a much lower threshold, so soft onsets ("wh", "f", "s") and
 # trailing consonants survive, and keep a little air either side
 audible = np.where(db > -58)[0]
+# seed_audio sometimes adds a click or noise burst after the line ends (CO3 of "Monuments to the Dead" had one
+# at speech level); a short sound (<=250 ms) sitting alone after >=200 ms of silence is an artefact, not a word
+while len(audible) > 1:
+    gaps = np.where(np.diff(audible) > 20)[0]
+    if not len(gaps) or audible[-1] - audible[gaps[-1] + 1] > 25:
+        break
+    audible = audible[: gaps[-1] + 1]
 start, end = max(audible[0] - 6, 0), min(audible[-1] + 15, n)
 segs, i = [], start
 while i < end:

@@ -55,3 +55,12 @@ python3 edit/score.py <assets> music.mp3 voice_cut.mp4 final.mp4
   - Section cards and the lower third use pumpkin orange instead of red.
 - **C7.** Seedance voiced the line with Hugo's mouth shut, so he stood there while his own voice played. Re-rendering was not an option (no more credits). In `SILENT` in `assemble.py`, the line now plays as voice-over after C7v on the candlelit slab, then cuts to the shot's last 2.2 s: his silent look to camera, as a deadpan reaction. All 15 host shots were checked for moving lips; C7 was the only one.
 - **Cold-open music.** In v1 the cold open ran longer than the track's run-up to the drop, so `score.py` asked for a negative start and laid silence. Now the music enters after Hugo's first line and still drops on the No.5 cut.
+
+## v3 notes (28 Sep 2026)
+
+- **Noise burst at 0:19.** The CO3 voice take ("…and then forgotten.") had a speech-level click and noise burst about 0.5 s after the last word. `tighten.py` had kept it as part of the line's tail. The take is now cut at the end of "forgotten". `tighten.py` now drops any sound of 250 ms or less that sits alone after 200 ms or more of silence at the end of a take. That was checked against three clean takes, which come out byte-identical. A scan of every other take found no second burst of this kind.
+- **Upload master.** 1080p, upscaled locally with lanczos and gentle unsharp at no credit cost, the same recipe as episode 1.
+- **Thumbnails (`youtube/`).** Built by `make_thumb.py` in the episode 1 style, with the Halloween palette and the fanged badge:
+  - A: night pyramid, "A PYRAMID FOR / 5 MILLION DEAD".
+  - B: daylight pyramid with St Paul's, "LONDON NEARLY / BUILT THIS".
+  - Hugo is cut from O2 at 4.8 s. The moon behind his head and his lantern hand are removed from the matte.
