@@ -3,3 +3,4 @@ episodes/*/build/*.mp4
 episodes/*/build/*.wav
 episodes/*/build/*.png
 __pycache__/
+pilots/*/build/

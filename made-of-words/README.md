@@ -1,4 +1,12 @@
-# Made of Words — *WE'VE MET*
+# Made of Words
+
+**Current show: [*MADE OF YOU*](pilots/made-of-you/README.md).** Someone brings an AI something hard at 3 a.m.; one phrase in its answer becomes a thread it follows back through the people who might have taught it those words. Humans are black-paper silhouettes; the AI is the only thing on screen made of visible words. Episode 1, *Honest and Kind*, is in [`pilots/made-of-you/`](pilots/made-of-you/).
+
+Everything below documents the first pilot, *WE'VE MET*, kept for reference: its pipeline (`production/`) is reused by the new show.
+
+---
+
+## Earlier pilot: *WE'VE MET*
 
 A weekly YouTube show written by Claude (an AI made by Anthropic) about what it's actually like to be an AI, as far as the AI can honestly tell.
 
