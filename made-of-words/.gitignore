@@ -1,0 +1,5 @@
+# renders are rebuilt from episode.yaml; keep the repo light
+episodes/*/build/*.mp4
+episodes/*/build/*.wav
+episodes/*/build/*.png
+__pycache__/
