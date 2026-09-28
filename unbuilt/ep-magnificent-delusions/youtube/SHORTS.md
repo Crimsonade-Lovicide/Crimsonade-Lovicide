@@ -20,7 +20,7 @@ Each Short is uploaded private and scheduled to go public at 20:00 UTC, with `co
 | 2 | https://youtu.be/nbA2MZqrcLQ | 2026-09-29 |
 | 3 | https://youtu.be/djaBKB93Zxo | 2026-09-30 |
 | 4 | https://youtu.be/GETQkSWSjtI | 2026-10-01 |
-| 5 | not uploaded: Zapier throttled the upload four times, even after the daily quota reset. Upload it in YouTube Studio | 2026-10-02 (planned) |
+| 5 | https://youtu.be/XIRmKBxhAUw (uploaded in Studio after Zapier throttled it) | 2026-10-02, 13:00 UTC |
 
 Still manual in YouTube Studio: set each Short's **Related video** to the episode. The API can't set it.
 
