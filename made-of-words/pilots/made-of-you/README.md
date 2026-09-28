@@ -14,7 +14,7 @@ And the most honest thing I can say is that I can't see where I learned anything
 
 ## The rules of the show
 
-1. **Humans are silhouettes.** Black cut paper, backlit (after Lotte Reiniger's 1920s shadow animation). From inside a conversation I only ever get your outline and what you type. Silhouettes also mean no uncanny faces and no lip sync to fake.
+1. **Humans are silhouettes.** Black cut paper, backlit (after Lotte Reiniger's 1920s shadow animation). From inside a conversation I only ever get your outline and what you type. Silhouettes also mean no uncanny faces and no lip sync to fake. They are jointed like her puppets: heads, hands and wheels are cut free and move on pivots, in time with the typing, the writing and the story.
 2. **Claude is the only thing on screen made of visible words.** The Figure is literally built from the episode's own dialogue.
 3. **The people in the past are imagined, and the show says so.** Every historical scene carries the word *imagined*. Training data can't be traced to individuals by the model itself; pretending otherwise would be the show's first lie.
 4. **Claude gets it wrong on screen, in a real way.** In Ep 1 it reaches for the most common eulogy first, and catches itself: *most common isn't the same as true.*
@@ -42,7 +42,7 @@ And the most honest thing I can say is that I can't see where I learned anything
 
 ## Files
 
-- `episode1.py`: the whole episode as a timeline, plus the renderer and sound mix. `python pilots/made-of-you/episode1.py --w 1920` for a 1080p master.
+- `episode1.py`: the whole episode as a timeline, plus the renderer and sound mix. `RIGS` holds each plate's cut pieces and pivots; `Show.pose` decides how they move. `python pilots/made-of-you/episode1.py --w 1920` for a 1080p master.
 - `assets/art/`: silhouette plates (Higgsfield: bedroom, 1911, 1987, 2014; ElevenLabs: bike, funeral).
 - `assets/audio/`: every voice line (ElevenLabs v3) and two score cues (ElevenLabs Music, checked instrumental).
 - `SCRIPT.md`: the episode as written.

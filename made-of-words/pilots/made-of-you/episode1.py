@@ -235,6 +235,170 @@ SCENES = {
 }
 
 
+# ============================================================== puppet rigs
+# Each plate is cut into jointed pieces, the way Reiniger built her puppets:
+# a piece is a polygon of the plate (u, v in 0..1) that turns about a pivot.
+# The body keeps a thin band of paper along every cut, so a turning piece never
+# opens a gap at its joint (the overlap real cut-out puppets have at the rivet).
+RIGS = {
+    "bedroom": [
+        dict(name="head", pivot=(0.415, 0.36),
+             poly=[(0.30, 0.19), (0.445, 0.19), (0.445, 0.30), (0.428, 0.322), (0.403, 0.372), (0.395, 0.40),
+                   (0.30, 0.40)]),
+        dict(name="arms", pivot=(0.445, 0.535),
+             poly=[(0.295, 0.50), (0.335, 0.49), (0.36, 0.505), (0.41, 0.495), (0.425, 0.49), (0.45, 0.50),
+                   (0.455, 0.55), (0.41, 0.55), (0.37, 0.568), (0.33, 0.57), (0.295, 0.54)]),
+    ],
+    "2014": [
+        dict(name="head", pivot=(0.52, 0.465),
+             poly=[(0.40, 0.30), (0.428, 0.268), (0.44, 0.205), (0.49, 0.175), (0.545, 0.185), (0.566, 0.268),
+                   (0.572, 0.30), (0.572, 0.37), (0.558, 0.40), (0.52, 0.45), (0.49, 0.487), (0.465, 0.497),
+                   (0.44, 0.47), (0.40, 0.40)]),
+        dict(name="hands", pivot=(0.49, 0.725),
+             poly=[(0.335, 0.685), (0.35, 0.665), (0.40, 0.66), (0.44, 0.672), (0.48, 0.69), (0.48, 0.755),
+                   (0.42, 0.77), (0.37, 0.77), (0.345, 0.73)]),
+    ],
+    "1987": [
+        dict(name="head", pivot=(0.29, 0.435),
+             poly=[(0.19, 0.10), (0.40, 0.10), (0.40, 0.40), (0.36, 0.44), (0.336, 0.458), (0.232, 0.412),
+                   (0.19, 0.405)]),
+        dict(name="hands", pivot=(0.345, 0.69),
+             poly=[(0.335, 0.625), (0.37, 0.60), (0.458, 0.615), (0.458, 0.685), (0.44, 0.69), (0.40, 0.692),
+                   (0.375, 0.725), (0.335, 0.725)]),
+    ],
+    "1911": [
+        dict(name="head", pivot=(0.415, 0.268),
+             poly=[(0.37, 0.09), (0.50, 0.09), (0.50, 0.22), (0.478, 0.262), (0.455, 0.292), (0.428, 0.292),
+                   (0.40, 0.247), (0.37, 0.245)]),
+        dict(name="hand", pivot=(0.49, 0.455),
+             poly=[(0.495, 0.365), (0.528, 0.36), (0.548, 0.43), (0.548, 0.47), (0.49, 0.47), (0.486, 0.438)]),
+    ],
+    "bike": [
+        dict(name="wheel", kind="wheel", hub=(0.113, 0.608), rim=(0.0625, 0.107), spokes=32, hubr=0.011,
+             protect=[[(0.108, 0.62), (0.118, 0.615), (0.135, 0.70), (0.135, 0.74), (0.12, 0.74)]]),
+        dict(name="can", pivot=(0.355, 0.575),
+             poly=[(0.255, 0.585), (0.258, 0.53), (0.27, 0.51), (0.30, 0.505), (0.345, 0.535), (0.362, 0.568),
+                   (0.35, 0.595), (0.315, 0.582), (0.30, 0.598), (0.268, 0.598)]),
+        dict(name="head", pivot=(0.39, 0.49),
+             poly=[(0.32, 0.35), (0.415, 0.35), (0.415, 0.465), (0.385, 0.49), (0.37, 0.51), (0.355, 0.51),
+                   (0.345, 0.47), (0.32, 0.44)]),
+        dict(name="child", pivot=(0.55, 0.605),
+             poly=[(0.505, 0.48), (0.59, 0.48), (0.59, 0.59), (0.56, 0.605), (0.54, 0.612), (0.525, 0.605),
+                   (0.505, 0.58)]),
+    ],
+    "funeral": [
+        dict(name="head", pivot=(0.455, 0.43),
+             poly=[(0.41, 0.26), (0.52, 0.26), (0.52, 0.40), (0.50, 0.425), (0.483, 0.44), (0.465, 0.445),
+                   (0.44, 0.425), (0.425, 0.42), (0.41, 0.38)]),
+        dict(name="paper", pivot=(0.53, 0.545),
+             poly=[(0.52, 0.53), (0.525, 0.50), (0.56, 0.445), (0.59, 0.445), (0.59, 0.51), (0.572, 0.535),
+                   (0.558, 0.55), (0.53, 0.555)]),
+    ],
+}
+
+
+def rot(deg, px, py):
+    """Screen-space rotation (y down), positive = anticlockwise as seen."""
+    a = math.radians(deg)
+    return px * math.cos(a) + py * math.sin(a), -px * math.sin(a) + py * math.cos(a)
+
+
+class Rig:
+    """Cut pieces of one plate, posed per frame on top of the remaining body."""
+
+    def __init__(self, alpha: np.ndarray, parts: list):
+        H, W = alpha.shape
+        self.W, self.H = W, H
+        band = max(3, int(round(W * 0.006)))
+        pad = int(W * 0.03)
+        cut = np.zeros_like(alpha)
+        self.parts = []
+        for p in parts:
+            m = Image.new("L", (W, H), 0)
+            d = ImageDraw.Draw(m)
+            if p.get("kind") == "wheel":
+                cx, cy = p["hub"][0] * W, p["hub"][1] * H
+                rx, ry = p["rim"][0] * W, p["rim"][1] * H
+                d.ellipse([cx - rx, cy - ry, cx + rx, cy + ry], fill=255)
+                for poly in p.get("protect", []):
+                    d.polygon([(u * W, v * H) for u, v in poly], fill=0)
+                mask = np.asarray(m, np.float32) / 255
+                cut = np.maximum(cut, mask)
+                self.parts.append(dict(p, cx=cx, cy=cy, rx=rx, ry=ry,
+                                       box=(int(cx - rx - 2), int(cy - ry - 2), int(cx + rx + 3), int(cy + ry + 3))))
+                continue
+            d.polygon([(u * W, v * H) for u, v in p["poly"]], fill=255)
+            xs = [u * W for u, _ in p["poly"]]
+            ys = [v * H for _, v in p["poly"]]
+            x0, y0 = max(0, int(min(xs)) - pad), max(0, int(min(ys)) - pad)
+            x1, y1 = min(W, int(max(xs)) + pad), min(H, int(max(ys)) + pad)
+            m = m.crop((x0, y0, x1, y1)).filter(ImageFilter.GaussianBlur(0.8))
+            mask = np.asarray(m, np.float32) / 255
+            a = alpha[y0:y1, x0:x1]
+            # a band just inside the cut stays on the body (the joint's overlap), but
+            # only where the paper carries on across the cut; elsewhere the piece's
+            # own outline would leave a stub behind when it moves
+            inner = np.asarray(m.filter(ImageFilter.MinFilter(2 * band + 1)), np.float32) / 255
+            across = Image.fromarray((((a > 0.5) & (mask < 0.5)) * 255).astype(np.uint8))
+            near = np.asarray(across.filter(ImageFilter.MaxFilter(2 * band + 3)), np.float32) / 255
+            keep = mask * (1 - inner) * near
+            cut[y0:y1, x0:x1] = np.maximum(cut[y0:y1, x0:x1], mask - keep)
+            piece = Image.fromarray((a * mask * 255).astype(np.uint8))
+            self.parts.append(dict(p, piece=piece, box=(x0, y0, x1, y1),
+                                   px=p["pivot"][0] * W - x0, py=p["pivot"][1] * H - y0))
+        self.base = alpha * (1 - cut)
+
+    def pose(self, pose: dict) -> np.ndarray:
+        out = self.base.copy()
+        for p in self.parts:
+            x0, y0, x1, y1 = p["box"]
+            if p.get("kind") == "wheel":
+                im = Image.new("L", (x1 - x0, y1 - y0), 0)
+                d = ImageDraw.Draw(im)
+                cx, cy, rx, ry = p["cx"] - x0, p["cy"] - y0, p["rx"] + 2, p["ry"] + 2
+                a0 = pose.get(p["name"], 0.0)
+                n = p["spokes"]
+                w = max(1, int(round(self.W * 0.0022)))
+                hr = p["hubr"] * self.W
+                for i in range(n):
+                    a = a0 + 2 * math.pi * i / n
+                    lace = 0.55 if i % 2 else -0.55          # tangential lacing, like the plate
+                    hx, hy = cx + hr * math.cos(a + lace), cy + hr * 0.95 * math.sin(a + lace)
+                    d.line([(hx, hy), (cx + rx * math.cos(a), cy + ry * math.sin(a))], fill=255, width=w)
+                d.ellipse([cx - hr, cy - hr, cx + hr, cy + hr], fill=255)
+                spk = np.asarray(im, np.float32) / 255
+                out[y0:y1, x0:x1] = np.maximum(out[y0:y1, x0:x1], spk)
+                continue
+            deg, du, dv = pose.get(p["name"], (0.0, 0.0, 0.0))
+            pc = p["piece"]
+            if abs(deg) < 1e-3 and abs(du) < 1e-5 and abs(dv) < 1e-5:
+                arr = np.asarray(pc, np.float32) / 255
+            else:
+                # inverse map: output pixel → source pixel (rotate about pivot, then shift)
+                a = math.radians(deg)
+                c, s = math.cos(a), math.sin(a)
+                tx, ty = du * self.W, dv * self.H
+                px, py = p["px"], p["py"]
+                # forward: q = R (x - p) + p + t, with R = [[c, s], [-s, c]]; inverse: x = R^T (q - p - t) + p
+                A, B = c, -s
+                D, E = s, c
+                C = px - (A * (px + tx) + B * (py + ty))
+                F_ = py - (D * (px + tx) + E * (py + ty))
+                arr = np.asarray(pc.transform(pc.size, Image.AFFINE, (A, B, C, D, E, F_), Image.BICUBIC),
+                                 np.float32) / 255
+            out[y0:y1, x0:x1] = np.maximum(out[y0:y1, x0:x1], arr)
+        return out
+
+    def point(self, name, u, v, pose):
+        """Where a plate point (u, v) on piece `name` ends up under `pose`."""
+        for p in self.parts:
+            if p["name"] == name and "pivot" in p:
+                deg, du, dv = pose.get(name, (0.0, 0.0, 0.0))
+                x, y = rot(deg, (u - p["pivot"][0]) * self.W, (v - p["pivot"][1]) * self.H)
+                return p["pivot"][0] + x / self.W + du, p["pivot"][1] + y / self.H + dv
+        return u, v
+
+
 class Silhouette:
     """A backlit paper stage: coloured light behind, black cut paper in front."""
 
@@ -247,6 +411,7 @@ class Silhouette:
         g = np.asarray(src.resize((self.BW, self.BH), Image.LANCZOS), np.float32)
         self.alpha = np.clip((175 - g) / 110, 0, 1)
         self.alpha_img = Image.fromarray((self.alpha * 255).astype(np.uint8))
+        self.rig = Rig(self.alpha, RIGS[key]) if key in RIGS else None
 
     def uv(self, u, v, cam):
         """Source-normalised (u,v) → screen pixels under camera `cam`."""
@@ -257,7 +422,7 @@ class Silhouette:
         y0 = (self.BH - ch) / 2 + oy * (self.BH - ch) / 2
         return (bx - x0) / cw * self.W, (by - y0) / ch * self.H, self.W / cw
 
-    def frame(self, t, cam, light_mult=1.0, core=None, edge=None, flicker=0.0):
+    def frame(self, t, cam, light_mult=1.0, core=None, edge=None, flicker=0.0, pose=None):
         W, H, tex = self.W, self.H, self.tex
         z, ox, oy = cam
         cfg = self.cfg
@@ -272,7 +437,10 @@ class Silhouette:
         cw, ch = self.BW / z, self.BH / z
         x0 = (self.BW - cw) / 2 + ox * (self.BW - cw) / 2
         y0 = (self.BH - ch) / 2 + oy * (self.BH - ch) / 2
-        a = np.asarray(self.alpha_img.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch)),
+        src = self.alpha_img
+        if pose is not None and self.rig is not None:
+            src = Image.fromarray((self.rig.pose(pose) * 255).clip(0, 255).astype(np.uint8))
+        a = np.asarray(src.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch)),
                        np.float32)[..., None] / 255
         sil = np.array([13, 11, 11], np.float32) * (1 + tex.paper * 2)
         # a thin rim of light around the paper edges (light bleeding past the cut)
@@ -399,6 +567,26 @@ def subtitles(im: Image.Image, beat: Beat, t: float, W, H, dark=True):
             return
 
 
+# ================================================================ puppetry
+def span_env(spans, t, ramp=0.25):
+    """0..1: how far inside any (start, end) span t is, with soft edges."""
+    k = 0.0
+    for a, b in spans:
+        k = max(k, min(ease((t - a) / ramp + 1) if t < a else 1.0, ease((b - t) / ramp + 1) if t > b else 1.0))
+    return k
+
+
+def tap(t, seed=0.0):
+    """Typing jitter in -1..1: a few incommensurate rhythms, never a loop."""
+    return (0.5 * math.sin(2 * math.pi * 5.3 * t + seed) + 0.3 * math.sin(2 * math.pi * 7.9 * t + 2 * seed)
+            + 0.2 * math.sin(2 * math.pi * 11.3 * t + 3 * seed))
+
+
+def breath(t, seed=0.0):
+    """Slow idle sway in -1..1, so nobody is ever frozen."""
+    return 0.7 * math.sin(2 * math.pi * 0.23 * t + seed) + 0.3 * math.sin(2 * math.pi * 0.51 * t + 2 * seed)
+
+
 # ============================================================= the renderer
 class Show:
     def __init__(self, W, H):
@@ -409,6 +597,54 @@ class Show:
         self.total = sum(b.dur for b in EPISODE)
         self.abyss = self._abyss_sprites()
         self.chat = []   # typed history for bedroom
+
+    # ------------------------------------------------------------ puppetry
+    def pose(self, key, b: Beat, t: float) -> dict:
+        """Joint angles (degrees, anticlockwise as seen) for one plate at beat time t."""
+        says = {e.name: (e.t, e.t + e.dur) for e in b.says()}
+        if key == "bedroom":                       # faces left: chin up = clockwise
+            typing = span_env([(e.t, e.t + e.dur) for e in b.typed()], t)
+            head = 0.8 * breath(t) + typing * (0.6 * tap(t * 0.35, 1) + 1.0)
+            arms = 0.4 * breath(t, 2) + typing * (0.9 * tap(t) - 0.8)
+            dv = typing * 0.0015 * tap(t * 1.2, 3)
+            if b.opts.get("light") == "dawn":      # "ok. starting now." — and they look up
+                done = max(e.t + e.dur for e in b.typed())
+                lift = ease((t - done - 0.3) / 1.6)
+                head -= 10 * lift
+                arms += 4 * lift
+            return {"head": (head, 0, 0), "arms": (arms, 0, dv)}
+        if key == "2014":                          # faces left
+            typing = span_env([says["h2014a"]], t)
+            reply = b.mark("reply") or 99
+            head = 0.6 * breath(t) + typing * 0.8 - 3.0 * ease((t - reply - 0.4) / 0.9)
+            hands = typing * 1.3 * tap(t, 0.7)
+            return {"head": (head, 0, 0), "hands": (hands, 0, typing * 0.002 * abs(tap(t * 1.3)))}
+        if key == "1987":                          # faces right: chin up = anticlockwise
+            typing = span_env([says["h1987a"], says["d03"]], t)
+            reading = span_env([says["d01"]], t, 0.6)
+            head = 0.6 * breath(t) + 2.8 * reading - typing * (1.0 + 0.4 * tap(t * 0.5, 2))
+            hands = typing * 1.4 * tap(t, 1.3)
+            return {"head": (head, 0, 0), "hands": (hands, 0, typing * 0.0025 * (0.5 + 0.5 * tap(t * 1.7)))}
+        if key == "1911":                          # faces right
+            end = says["s02"][1]
+            writing = 1 - ease((t - end) / 0.6)
+            w = 0.5 + 0.5 * math.sin(t * 9) ** 2       # the pen-scratch sound's own rhythm
+            hand = writing * (2.2 * w * math.sin(2 * math.pi * 2.9 * t) + math.sin(2 * math.pi * 0.7 * t))
+            head = 0.5 * breath(t) + writing * 0.3 * math.sin(2 * math.pi * 1.45 * t) + 3.5 * (1 - writing)
+            return {"head": (head, 0, 0), "hand": (hand, writing * 0.003 * math.sin(2 * math.pi * 0.18 * t), 0)}
+        if key == "bike":                          # both face left
+            spin = 4.0 * 3.5 * (1 - math.exp(-t / 3.5)) + 0.5 * t
+            pour = 0.5 - 0.5 * math.cos(2 * math.pi * t / 3.2)
+            look = ease((t - 2.0) / 1.2) - ease((t - 6.5) / 1.2)
+            return {"wheel": -spin,
+                    "can": (4.0 * pour + 0.3 * breath(t, 1), 0, 0),
+                    "head": (1.2 * pour + 0.4 * breath(t, 2), 0, 0),
+                    "child": (-4.5 * look + 0.8 * breath(t, 3), 0, 0.002 * math.sin(2 * math.pi * 0.9 * t))}
+        if key == "funeral":                       # faces right
+            look = ease((t - 4.2) / 1.3)
+            return {"head": (8 * look + 0.4 * breath(t), 0, 0),
+                    "paper": (0.35 * tap(t * 0.6, 4) + 0.5 * breath(t, 1) - 2 * look, 0, 0)}
+        return {}
 
     # ------------------------------------------------------------ bedroom
     def bedroom(self, b: Beat, t: float):
@@ -423,9 +659,10 @@ class Show:
             core = tuple(np.array([96, 128, 196]) * (1 - p) + np.array([250, 190, 170]) * p)
             edge = tuple(np.array([10, 14, 32]) * (1 - p) + np.array([60, 40, 58]) * p)
             mult = 1 + 0.3 * p
-        arr = s.frame(t, cam, mult, core, edge)
-        # the phone's glow on hands and face
-        px, py, sc = s.uv(0.325, 0.515, cam)
+        pose = self.pose("bedroom", b, t)
+        arr = s.frame(t, cam, mult, core, edge, pose=pose)
+        # the phone's glow on hands and face (it moves with the hands)
+        px, py, sc = s.uv(*s.rig.point("arms", 0.325, 0.515, pose), cam)
         typing = any(e.t <= t < e.t + e.dur for e in b.typed())
         k = 0.55 + 0.25 * typing + 0.05 * math.sin(t * 3)
         arr = arr + np.array([150, 185, 255], np.float32) * self.tex.radial(px, py, H * 0.07 * sc) * k
@@ -555,7 +792,7 @@ class Show:
         z = 1.06 + 0.06 * ease(t / max(1, b.dur))
         cam = (z, 0.05 * math.sin(t * 0.2), 0.0)
         flick = 1.0 if key == "1911" else 0.25
-        arr = s.frame(t, cam, 1.0, flicker=flick)
+        arr = s.frame(t, cam, 1.0, flicker=flick, pose=self.pose(key, b, t))
         if key == "2014":
             sx, sy, sc = s.uv(0.245, 0.42, cam)
             arr = arr + np.array([90, 140, 255], np.float32) * self.tex.radial(sx, sy, H * 0.16 * sc) * 0.55
@@ -805,7 +1042,7 @@ class Show:
             s = self.sil[sc]
             z = 1.04 + 0.08 * ease(t / b.dur)
             cam = (z, 0.1 * math.sin(t * 0.15), 0)
-            arr = s.frame(t, cam, 1.0, flicker=0.1)
+            arr = s.frame(t, cam, 1.0, flicker=0.1, pose=self.pose(sc, b, t))
             im = self.finish(arr, t)
             if sc == "bike":
                 self.motes(im, t)
