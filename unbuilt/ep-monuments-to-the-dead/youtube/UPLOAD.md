@@ -1,6 +1,6 @@
 # YouTube upload: "Monuments to the Dead" (UNBUILT Halloween Special)
 
-**Status (28 Sep, 08:35 UTC): upload it in YouTube Studio.** The API upload through Zapier failed five times: three "Access Denied" (with both the 470 MB and the 121 MB file), then "throttled without retry" after the daily quota reset. The Liverpool Short hit the same throttle and went up by hand. Use the full-quality file: https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/9fbe2fdb-b98f-4509-b921-2db84b32405f.mp4 (1080p, 470 MB).
+**Status (28 Sep, 08:35 UTC): upload it in YouTube Studio.** The API upload through Zapier failed repeatedly. The three "Access Denied" errors turned out to be YouTube failing to fetch the file: Higgsfield pulled both uploaded videos from its library, and their links went dead. After that, every attempt, including one with a fresh working link, was "throttled without retry". The Liverpool Short hit the same throttle and went up by hand. Use the full-quality file: https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/92914394-8fde-4998-943b-6c27c665d393.mp4 (zipped copy, if the .mp4 link dies again: https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/43fc2333-ad54-4190-b235-e5ab64ea258d.zip) (1080p, 470 MB).
 
 **Publish:** Saturday 10 October 2026, 20:00 UTC. That's three weeks before Halloween, so YouTube has time to start recommending it before Halloween searches peak, and it's the same slot as episode 1. The video is uploaded private and scheduled to go public at that time.
 

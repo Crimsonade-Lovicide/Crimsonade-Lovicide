@@ -59,7 +59,7 @@ python3 edit/score.py <assets> music.mp3 voice_cut.mp4 final.mp4
 ## v3 notes (28 Sep 2026)
 
 - **Noise burst at 0:19.** The CO3 voice take ("…and then forgotten.") had a speech-level click and noise burst about 0.5 s after the last word. `tighten.py` had kept it as part of the line's tail. The take is now cut at the end of "forgotten". `tighten.py` now drops any sound of 250 ms or less that sits alone after 200 ms or more of silence at the end of a take. That was checked against three clean takes, which come out byte-identical. A scan of every other take found no second burst of this kind.
-- **Upload master.** 1080p, upscaled locally with lanczos and gentle unsharp at no credit cost, the same recipe as episode 1. Specs: 7:39.7, -14.1 LUFS, peak -1.2 dBFS, 470 MB. Download (Higgsfield media `9fbe2fdb-…`): https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/9fbe2fdb-b98f-4509-b921-2db84b32405f.mp4
+- **Upload master.** 1080p, upscaled locally with lanczos and gentle unsharp at no credit cost, the same recipe as episode 1. Specs: 7:39.7, -14.1 LUFS, peak -1.2 dBFS, 470 MB. Download (Higgsfield media `92914394-…`; the first upload, `9fbe2fdb-…`, was pulled from the library and now returns Access Denied): https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/92914394-8fde-4998-943b-6c27c665d393.mp4 (zipped copy, if the .mp4 link dies again: https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/43fc2333-ad54-4190-b235-e5ab64ea258d.zip)
 - **Thumbnails (`youtube/`).** Built by `make_thumb.py` in the episode 1 style, with the Halloween palette and the fanged badge:
   - A: night pyramid, "A PYRAMID FOR / 5 MILLION DEAD".
   - B: daylight pyramid with St Paul's, "LONDON NEARLY / BUILT THIS".
