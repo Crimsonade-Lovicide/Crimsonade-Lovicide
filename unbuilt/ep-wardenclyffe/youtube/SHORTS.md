@@ -10,6 +10,18 @@ Five vertical cuts from the episode (https://youtu.be/ZR6H4mVwAMs), built by `sh
 | 4 | `short_morgan.mp4` | 3:25–4:18 | 0:53 | Tesla Finally Told J. P. Morgan the Truth. Morgan Replied in One Sentence. |
 | 5 | `short_worked.mp4` | 7:05–8:05 | 0:59 | Could Tesla's Tower Have Worked? |
 
+## Status
+
+Rendered 28 Sep 2026; none are on YouTube yet. The Zapier upload is still "throttled without retry", so upload them in YouTube Studio. Copies are hosted on Higgsfield (`https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/<id>.mp4`):
+
+| # | Higgsfield media |
+|---|---|
+| 1 | `7c642edd-a1b2-4f48-ae70-2212d694a0d0` |
+| 2 | `76760cfe-4ab4-4d7e-b014-05129924eb27` |
+| 3 | `71187a60-f03e-4c3b-8121-494446c55936` |
+| 4 | `ea348a23-dc63-4167-8024-8d80e11f512e` |
+| 5 | `00fd3ed2-e84f-4235-a21b-ee6cf25cac81` |
+
 ## Posting
 
 - **Schedule, 20:00 UTC, one a day:** 5, 6, 7, 8 and 9 October 2026, in the order above.
