@@ -40,13 +40,17 @@ SANS_B = ImageFont.truetype(FONT + "LiberationSans-Bold.ttf", 30)
 SANS = ImageFont.truetype(FONT + "LiberationSans-Regular.ttf", 20)
 SERIF_I = ImageFont.truetype(FONT + "LiberationSerif-Italic.ttf", 44)
 BIG = ImageFont.truetype(FONT + "LiberationSans-Bold.ttf", 96)
-RED = (229, 9, 20, 255)
+ACCENT = (255, 122, 26, 255)  # pumpkin orange: this is the Halloween special
+sys.path.insert(0, HERE)
+import halloween  # noqa: E402  (fanged wordmark for the title and end cards)
 
 # per-shot picture fixes: extra zoom to crop off an artefact (P5a's start frame carried a burned-in timecode)
 ZOOM = {"P5a": 1.16}
 # re-uses: (source kind, source key, start offset in the source clip, extra grade)
 WARM = "colorbalance=rs=.06:gs=.02:bs=-.06"
 DUSK = "colorbalance=rs=.04:bs=.06,eq=brightness=-0.03"
+# sync shots whose mouth never moved (C7: Seedance voiced the line with his lips shut): (clip start, seconds)
+SILENT = {"C7": (1.75, 2.2)}
 REUSE = {"W7v": ("still", "W6b", 0.0, ""), "P2a": ("br", "CO4", 0.0, WARM),
          "P6v": ("br", "CO4", 2.0, DUSK), "Y9v": ("br", "CO6", 0.0, "")}
 
@@ -128,8 +132,8 @@ def card_png(name, number, title, place):
     for i in range(260):
         gd.line([(0, i), (W, i)], fill=(0, 0, 0, int(150 * i / 260)))
     im.alpha_composite(grad, (0, H - 260))
-    d.rectangle([64, H - 190, 67, H - 70], fill=RED)
-    spaced(d, (84, H - 192), number.upper(), SANS_B, (255, 255, 255, 255), 6)
+    d.rectangle([64, H - 190, 67, H - 70], fill=ACCENT)
+    spaced(d, (84, H - 192), number.upper(), SANS_B, ACCENT, 6)
     d.text((84, H - 150), title, font=SERIF_I, fill=(255, 255, 255, 255))
     spaced(d, (86, H - 94), place.upper(), SANS, (215, 215, 215, 255), 4)
     p = os.path.join(TMP, name)
@@ -140,7 +144,7 @@ def card_png(name, number, title, place):
 def lower_third_png(name, line):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    d.rectangle([60, H - 128, 63, H - 64], fill=RED)
+    d.rectangle([60, H - 128, 63, H - 64], fill=ACCENT)
     spaced(d, (78, H - 130), "HUGO ASHBY", SANS_B, (255, 255, 255, 255), 5)
     d.text((79, H - 90), line, font=SANS, fill=(222, 222, 222, 255))
     p = os.path.join(TMP, name)
@@ -153,7 +157,7 @@ def title_png(name, top, sub):
     d = ImageDraw.Draw(im)
     tw = sum(d.textlength(c, font=BIG) + 22 for c in top) - 22
     spaced(d, ((W - tw) / 2, H / 2 - 90), top, BIG, (255, 255, 255, 255), 22)
-    d.rectangle([W / 2 - 40, H / 2 + 28, W / 2 + 40, H / 2 + 31], fill=RED)
+    d.rectangle([W / 2 - 40, H / 2 + 28, W / 2 + 40, H / 2 + 31], fill=ACCENT)
     if sub:
         sw = d.textlength(sub, font=SERIF_I)
         d.text(((W - sw) / 2, H / 2 + 46), sub, font=SERIF_I, fill=(230, 230, 230, 255))
@@ -162,6 +166,17 @@ def title_png(name, top, sub):
     # full-frame cards play as stills
     Image.open(p).convert("RGB").save(os.path.join(A, "img", name.replace(".png", "_BG.png")))
     return name.replace(".png", "_BG")
+
+
+def fanged_png(name, sub):
+    """Full-frame Halloween card: the fanged UNBUILT wordmark over the sting's dark background."""
+    bg = halloween.background(2.0, np.random.default_rng(3), np.zeros((H, W * 2)))
+    logo, tips = halloween.wordmark(A, sub=sub)
+    bg.alpha_composite(logo)
+    halloween.drop(bg, tips[0][0], tips[0][1] + 4, 8)
+    key = name.replace(".png", "_BG")
+    bg.convert("RGB").save(os.path.join(A, "img", f"{key}.png"))
+    return key
 
 
 def visual_filter(v, dur, idx):
@@ -182,8 +197,8 @@ def visual_filter(v, dur, idx):
                  f"d={frames}:s={W}x{H}:fps={FPS},setsar=1{grade},trim=duration={dur:.3f},setpts=PTS-STARTPTS[v{idx}]")
         return ["-loop", "1", "-t", f"{dur + 1:.3f}", "-i", src], chain
     src = os.path.join(A, "vid", f"{'sync' if kind == 'sync' else 'br'}_{key}.mp4")
-    ss = sync_start(key) if kind == "sync" else v.get("start", 0.0)
-    zoom = max(v.get("zoom", 1.0), bar_zoom(src, True) if kind == "br" else 1.0)
+    ss = v["start"] if "start" in v else (sync_start(key) if kind == "sync" else 0.0)
+    zoom = max(v.get("zoom", 1.0), bar_zoom(src, True) if kind == "br" and not v.get("nobar") else 1.0)
     zw, zh = int(W * zoom) // 2 * 2, int(H * zoom) // 2 * 2
     retime = ""
     avail = clip_len(src) - ss
@@ -200,8 +215,25 @@ def visual_filter(v, dur, idx):
     return ["-i", src], chain
 
 
+def concat_wavs(paths, gap, out):
+    """Join voice takes with a breath between them, at 48 kHz stereo."""
+    raw = b""
+    for j, p in enumerate(paths):
+        pcm = subprocess.run([FF, "-nostdin", "-loglevel", "error", "-i", p, "-ac", "2", "-ar", "48000",
+                              "-f", "s16le", "-"], capture_output=True, check=True).stdout
+        raw += pcm + (b"\0" * (int(gap * 48000) * 4) if j < len(paths) - 1 else b"")
+    w = wave.open(out, "wb")
+    w.setnchannels(2); w.setsampwidth(2); w.setframerate(48000)
+    w.writeframes(raw)
+    w.close()
+
+
 def render_beat(i, b):
-    if b["audio"] is not None:
+    if isinstance(b["audio"], list):
+        apath = os.path.join(TMP, f"cat_{i:03d}.wav")
+        concat_wavs([os.path.join(A, "audio", f"t_{k}.wav") for k in b["audio"]], PAD, apath)
+        dur = wav_len(apath) + b["pad"]
+    elif b["audio"] is not None:
         apath = os.path.join(A, "audio", f"t_{b['audio']}.wav")
         v0 = b["visuals"][0]
         aligned = os.path.join(A, "audio", f"t_s_{v0['key']}.wav")
@@ -267,16 +299,22 @@ def build_edl():
         beats.append(dict(visuals=visuals, audio=audio, overlay=overlay, hold=hold, pad=pad,
                           fade_in=fade_in, fade_out=fade_out, segment=segment))
 
+    # the Halloween sting opens the episode (drawn by halloween.py)
+    new([dict(kind="br", key="STING", nobar=True)], "STING", pad=0.0, segment="Cold open")
     for s in SHOTS:
         sid, kind = s["id"], s["kind"]
-        if kind == "SYNC":
+        if kind == "SYNC" and sid in SILENT:
+            # the shot's lips never move: its line joins the previous voice-over, then his silent look to camera
+            beats[-1]["audio"] = [beats[-1]["audio"], sid]
+            new([dict(kind="sync", key=sid, start=SILENT[sid][0])], hold=SILENT[sid][1], segment=s["segment"])
+        elif kind == "SYNC":
             new([dict(kind="sync", key=sid)], sid, overlay=overlays.get(sid), segment=s["segment"],
                 fade_in=(sid == "CO1"))
         elif kind == "CARD" and sid == "CO8":
-            new([dict(kind="still", key=title_png("title.png", "UNBUILT", "Monuments to the Dead"))],
+            new([dict(kind="still", key=fanged_png("title.png", "MONUMENTS TO THE DEAD"))],
                 hold=4.0, fade_in=True, fade_out=True, segment=s["segment"])
         elif kind == "CARD" and sid == "END":
-            new([dict(kind="still", key=title_png("end.png", "UNBUILT", ""))], hold=3.0, fade_in=True,
+            new([dict(kind="still", key=fanged_png("end.png", None))], hold=3.0, fade_in=True,
                 fade_out=True, segment=s["segment"])
             new([dict(kind="still", key=title_png("hon.png", "", "Honourable mention"))], hold=1.6,
                 fade_in=True, segment="Stinger")

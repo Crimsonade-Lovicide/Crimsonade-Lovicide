@@ -83,8 +83,10 @@ def key(t, g):
 
 # cold open: align the drop (beat 64) to the first No.5 frame
 t_no5 = starts[TITLE + 1]
-off = PH[64] - t_no5
-lay(0, t_no5, off, loop=False, fade_in=1.0)
+# This cold open is longer than the track's run-up to the drop, so the music enters partway through (never
+# before Hugo's first line has landed), from wherever makes the drop hit the No.5 cut.
+t_in = max(starts[first("Cold open") + 2], t_no5 - PH[64])  # after the sting and CO1
+lay(t_in, t_no5, PH[64] - (t_no5 - t_in), loop=False, fade_in=1.5)
 key(starts[TITLE] - 0.5, BASE + 2); key(starts[TITLE], PEAK); key(t_no5, PEAK); key(t_no5 + 1.5, BASE)
 
 # countdown segments; No.1 runs into the finale without looping

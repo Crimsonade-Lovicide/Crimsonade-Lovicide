@@ -19,13 +19,15 @@
 - `host/`: the new-wardrobe reference portraits used for every Seedance shot.
 - `edit/assemble.py`: builds the voice cut. **The edit list is generated from `shotlist.json`** (shots that share a voice line split it; `(overlay on X…)` cards go over shot X), so a script change flows through without retyping an edit list. `LIST=1 python3 edit/assemble.py <assets> x` prints it; `ONLY=3,8` re-renders selected beats.
 - `edit/score.py`: the episode 1 scoring (theme on its 16-beat phrase grid, sidechain duck, -14 LUFS), with beat indices read from `build/timeline.json`.
-- `edit/qc_sync.py`: transcribes each Seedance shot against the script and writes a 4-frame strip for likeness/wardrobe review.
+- `edit/qc_sync.py`: transcribes each Seedance shot against the script and writes a 4-frame strip for likeness/wardrobe review, plus a face-tracked mouth strip (orange border = voice audible). **Check the mouth strip.** A shot can pass the transcript with his lips shut; C7 did.
+- `edit/halloween.py`: the Halloween identity, drawn and synthesised at no credit cost. It makes the fanged UNBUILT wordmark, the 4 s opening sting and its sound hit (`vid/br_STING.mp4`, `audio/t_STING.wav`), and `halloween_logo.png`. `assemble.py` uses the wordmark on the title and end cards.
 - Shared from episode 1: `../ep-magnificent-delusions/edit/tighten.py` and `sync_audio.py`.
 
 ## Rebuild
 
 ```
 export FFMPEG=<ffmpeg>
+python3 edit/halloween.py <assets>        # sting + logo (fonts: Anton, Bebas Neue in $FONTS)
 python3 edit/assemble.py <assets> voice_cut.mp4
 python3 edit/score.py <assets> music.mp3 voice_cut.mp4 final.mp4
 ```
@@ -44,3 +46,12 @@ python3 edit/score.py <assets> music.mp3 voice_cut.mp4 final.mp4
   - Originals are kept as `t_s_Y6_native.wav` and `t_s_C7_native.wav`.
 - **Voice QC.** All 50 lines pass. Every match below 1.0 is a numeral or a spelling difference ("£70,000", "Boulet" for Boullée, "stories" for storeys).
 - **Spend.** The balance was 1,099 before the render and 248.5 after, so about 850 credits including the earlier tests. The budget was 880.
+
+## v2 notes (28 Sep 2026)
+
+- **Halloween identity.** The owner's note was that v1 didn't read as a Halloween special. v2 fixes that:
+  - It opens on the fanged "UNBUILT / HALLOWEEN SPECIAL" sting.
+  - The title and end cards use the fanged wordmark on black, with orange type.
+  - Section cards and the lower third use pumpkin orange instead of red.
+- **C7.** Seedance voiced the line with Hugo's mouth shut, so he stood there while his own voice played. Re-rendering was not an option (no more credits). In `SILENT` in `assemble.py`, the line now plays as voice-over after C7v on the candlelit slab, then cuts to the shot's last 2.2 s: his silent look to camera, as a deadpan reaction. All 15 host shots were checked for moving lips; C7 was the only one.
+- **Cold-open music.** In v1 the cold open ran longer than the track's run-up to the drop, so `score.py` asked for a negative start and laid silence. Now the music enters after Hugo's first line and still drops on the No.5 cut.
