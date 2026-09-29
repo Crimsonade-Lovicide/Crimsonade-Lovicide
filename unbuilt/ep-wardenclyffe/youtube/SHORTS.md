@@ -12,7 +12,17 @@ Five vertical cuts from the episode (https://youtu.be/ZR6H4mVwAMs), built by `sh
 
 ## Status
 
-Rendered 28 Sep 2026; none are on YouTube yet. The Zapier upload is still "throttled without retry", so upload them in YouTube Studio. Copies are hosted on Higgsfield (`https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/<id>.mp4`):
+| # | On YouTube | Goes public |
+|---|---|---|
+| 1 | https://youtu.be/y0kAqYExtSg | 2026-10-05 20:00 UTC |
+| 2 | https://youtu.be/njxaddFysow | 2026-10-06 20:00 UTC |
+| 3 | https://youtu.be/BwLJOajBtuE | 2026-10-07 20:00 UTC |
+| 4 | not yet: the Zapier upload was throttled after three uploads | 2026-10-08 20:00 UTC |
+| 5 | not yet (as above) | 2026-10-09 20:00 UTC |
+
+Uploaded 29 Sep 2026 through the Zapier YouTube connection. Each is private, scheduled, category Education, not made for kids, with `containsSyntheticMedia` set. Still manual in Studio: **Related video**.
+
+The source files are hosted on Higgsfield, at `https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/<id>.mp4`:
 
 | # | Higgsfield media |
 |---|---|

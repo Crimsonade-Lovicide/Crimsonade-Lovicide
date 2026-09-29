@@ -2,6 +2,12 @@
 
 **Status (28 Sep, 08:35 UTC): upload it in YouTube Studio.** The API upload through Zapier failed repeatedly. The three "Access Denied" errors turned out to be YouTube failing to fetch the file: Higgsfield pulled both uploaded videos from its library, and their links went dead. After that, every attempt, including one with a fresh working link, was "throttled without retry". The Liverpool Short hit the same throttle and went up by hand. Use the full-quality file: https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/92914394-8fde-4998-943b-6c27c665d393.mp4 (zipped copy, if the .mp4 link dies again: https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/43fc2333-ad54-4190-b235-e5ab64ea258d.zip) (1080p, 470 MB).
 
+**Update (29 Sep, 02:45 UTC):** the Zapier upload works again, and three Tesla Shorts went up. The special failed twice more:
+- The 470 MB master got "Access Denied", even though its link downloads in full. That points to a size limit on the Zapier side; the Shorts, all under 60 MB, uploaded fine.
+- A 240 MB encode of the same 1080p master (3.9 Mbps; SSIM 0.987 against the master) then hit the upload throttle.
+
+That encode is hosted at https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/3d3974a7-16e8-4879-b1d2-d007613822c6.mp4, and an hourly retry uploads it.
+
 **Publish:** Saturday 10 October 2026, 20:00 UTC. That's three weeks before Halloween, so YouTube has time to start recommending it before Halloween searches peak, and it's the same slot as episode 1. The video is uploaded private and scheduled to go public at that time.
 
 ## Title

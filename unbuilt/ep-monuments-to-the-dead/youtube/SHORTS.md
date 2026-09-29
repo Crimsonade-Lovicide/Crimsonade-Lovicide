@@ -17,6 +17,18 @@ What each one cuts from the special, to fit under a minute:
 - **Evita:** P5 (the body's journey). It's played straight, as in the special.
 - **Newton:** N5's hand-off to No. 1. It ends on "for nobody at all."
 
+## Status
+
+Not on YouTube yet. They go up once the special has a video ID, because every description links to it. The files are hosted on Higgsfield, at `https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/<id>.mp4`:
+
+| # | Higgsfield media |
+|---|---|
+| 1 | `a5efc8d1-e05f-4e33-9193-eb9283240874` |
+| 2 | `efc52563-c348-4410-b05a-5a51d00abce9` |
+| 3 | `135e7de0-1f6b-4043-a67a-e1c16c55bf69` |
+| 4 | `25630efc-710d-425c-b6c3-84e61ff59a0e` |
+| 5 | `ae579b92-7608-4ec0-9c47-e9f5287254ac` |
+
 ## Posting
 
 - **Only after the special is public** (Sat 10 Oct 2026, 20:00 UTC). Each description links to it, and each Short's **Related video** should point to it. Neither can work while the special is private.
