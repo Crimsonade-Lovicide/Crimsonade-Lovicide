@@ -104,7 +104,7 @@ The layout is rebuilt for a phone rather than center-cropped: a hook line on top
 | `meanwhile_short_saopaulo.mp4` | 0:28 | Grandma asked an AI for a poem about her cat | Almirante was not impressed. #MEANWHILE #AI #cats |
 | `meanwhile_short_tokyo.mp4` | 0:48 | 4 a.m. in Tokyo: "are you conscious?" | The honest answer. #MEANWHILE #AI #philosophy |
 | `meanwhile_short_chicago.mp4` | 0:33 | She asked an AI for 50 fake reviews | It said no, and gave her a better idea. #MEANWHILE #AI #smallbusiness |
-| `meanwhile_short_medium.mp4` | 0:52 | An AI on what it actually is | Not a big thing. Not a small thing. #MEANWHILE #AI #stopmotion |
+| `meanwhile_short_medium.mp4` | 0:53 | An AI on what it actually is | Not a big thing. Not a small thing. #MEANWHILE #AI #stopmotion |
 
 Post one Short a day for six days, starting the day the full episode goes public. On YouTube, append #Shorts to the title (it doesn't count toward the 3 hashtags in the description). On Instagram, keep to 5 hashtags or fewer.
 
