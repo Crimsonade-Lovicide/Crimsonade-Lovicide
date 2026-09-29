@@ -1,6 +1,6 @@
 # UNBUILT Special No. 3: Frank Lloyd Wright (working title)
 
-**Status:** first draft for review, 29 Sep 2026. No shots planned or rendered, and no credits spent.
+**Status:** first draft for review, 29 Sep 2026. Shots planned in `SHOTLIST.md` (about 810 credits, or about 608 lean). Nothing rendered, and no credits spent.
 **Runtime:** about 7:45. **Format:** 16:9, 720p (1080p upload master). **Host:** Hugo Ashby, on camera and in VO, voice Arthur.
 **Release target:** to be set after the render decision (about 7–8 Oct, once the 3–4 Oct Shorts data is in). Suggested date: Sat 7 Nov 2026, four weeks after the Halloween special.
 
@@ -240,4 +240,4 @@ Every alternative leads with his name, which is the searchable term (week-one re
   - P1–P7: "Frank Lloyd Wright Said Pittsburgh Should Be Abandoned. Then He Redesigned It."
   - B2–B3: "Frank Lloyd Wright Wanted a Golden Aladdin on an Opera House in Baghdad"
   - M1–M5: "Frank Lloyd Wright's Mile-High Skyscraper Needed 200 More Elevators"
-- **Budget:** Special No. 2 used about 850 credits. Rendering this needs a top-up, since about 563 are available. It is not being rendered until you approve the spend.
+- **Budget:** see `SHOTLIST.md`. The full plan is about 810 credits and the lean fallback about 608, against about 563 available. Either needs a top-up and your go-ahead before anything is rendered.

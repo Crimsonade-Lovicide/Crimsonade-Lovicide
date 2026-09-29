@@ -27,4 +27,4 @@ UNBUILT runs two formats with two hosts. A host never crosses into the other for
 |---|---|---|
 | 1 | Magnificent Delusions | Published 26 Sep 2026 (https://youtu.be/3uF2iZn0svY) |
 | 2 | London Nearly Built a Pyramid for 5 Million Dead (and Other Monuments to the Dead): a Halloween countdown of unbuilt tombs | All shots rendered 27 Sep (about 850 credits); in the edit; release target 31 Oct 2026 |
-| 3 | Frank Lloyd Wright's 5 Wildest Buildings That Were Never Built (working title): Automobile Objective, Pittsburgh Point Park, Baghdad, Broadacre City, Mile-High Illinois | Script first draft 29 Sep 2026 (`ep-frank-lloyd-wright/`). Not rendered: needs a credit top-up and your go-ahead, decided after the 3–4 Oct Shorts data |
+| 3 | Frank Lloyd Wright's 5 Wildest Buildings That Were Never Built (working title): Automobile Objective, Pittsburgh Point Park, Baghdad, Broadacre City, Mile-High Illinois | Script and shot plan drafted 29 Sep 2026 (`ep-frank-lloyd-wright/`): about 810 credits, or about 608 lean. Not rendered: needs a credit top-up and your go-ahead, decided after the 3–4 Oct Shorts data |
