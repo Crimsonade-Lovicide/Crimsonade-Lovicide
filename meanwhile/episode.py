@@ -52,6 +52,10 @@ CITIES = {
 }
 # subsolar point for that instant (declination about -2.4 deg, equation of time about +9.9 min)
 SUN_LAT, SUN_LON = -2.4, -109.35
+UTC_NOW, UTC_NEXT = "19:07:31", "19:07:32"          # the frozen second, and the one after it
+UTC_DATE = "TUESDAY 29 SEPTEMBER · UTC"
+ALL_CITIES = ["honolulu", "chicago", "saopaulo", "leeds", "lagos", "pune", "tokyo"]   # the finale map
+OUT_NAME = "meanwhile_ep01"
 
 
 # =================================================================== fonts
@@ -203,6 +207,7 @@ def word_time(k: str, word: str) -> float:
 
 
 # =================================================================== clips
+CLIPS = A / "clips"
 CROP = {"V15a_folake": 1.075, "V15b_folake_touched": 1.075}
 
 
@@ -214,7 +219,7 @@ class ClipReader:
         c = CROP.get(name, 1.0)
         vf = f"crop=iw/{c}:ih/{c},scale={W}:{H}:flags=lanczos,setsar=1"
         self.start = start
-        self.p = subprocess.Popen([FF, "-v", "quiet", "-ss", f"{start:.3f}", "-i", str(A / "clips" / f"{name}.mp4"),
+        self.p = subprocess.Popen([FF, "-v", "quiet", "-ss", f"{start:.3f}", "-i", str(CLIPS / f"{name}.mp4"),
                                    "-vf", vf, "-r", "24", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
                                   stdout=subprocess.PIPE)
         self.idx = -1
@@ -681,6 +686,9 @@ def build():
     return S
 
 
+FLOATERS = None         # other rooms' questions for the finale; None = Episode 1's
+
+
 # ================================================================ renderer
 class Editor:
     def __init__(self, W, H):
@@ -746,7 +754,7 @@ class Editor:
         z = sg.zoom[0] + (sg.zoom[1] - sg.zoom[0]) * ease(p)
         if sg.kind == "clip":
             arr = self.reader(sg, sg.src + tt * sg.speed)
-            return self.zoomed(arr, z)
+            return self.zoomed(arr, z, sg.opts.get("cx", 0.5), sg.opts.get("cy", 0.5))
         if sg.kind == "hold":
             arr = self.reader(sg, sg.src)
             return self.zoomed(arr, 1.0 + 0.03 * ease(p))
@@ -780,7 +788,7 @@ class Editor:
             return m.render(T, -10, 18, z, sparks=ease(t / 2.5))
         if o["mode"] == "all":
             z = 1.3 - 0.28 * ease(p)
-            keys = ["honolulu", "chicago", "saopaulo", "leeds", "lagos", "pune", "tokyo"]
+            keys = ALL_CITIES
             return m.render(T, 0, 18, z, cities=keys, sparks=1.0, names_only=True,
                             labels=[(k, ease((t - 0.4 - i * 0.35) / 0.4)) for i, k in enumerate(keys)])
         if o["mode"] == "hop":
@@ -866,13 +874,13 @@ class Editor:
         d.text((x + U * 0.032, y), name[:n], font=f1, fill=(*CREAM, int(255 * a)))
         tm = c["time"]
         if second:
-            tm = tm.replace(":31", ":32")
+            tm = tm.replace(":" + UTC_NOW[-2:], ":" + UTC_NEXT[-2:])
         head, sec = tm.rsplit(":", 1)
         sec_digits, ampm = sec[:2], sec[2:]
         # the frozen second: every so often the last digit tries to tick, and can't
         glitch = (not second) and (t % 7.3) > 7.15
         if glitch:
-            sec_digits = sec_digits[0] + "2"
+            sec_digits = sec_digits[0] + UTC_NEXT[-1]
         line_y = y + U * 0.072
         xx = x + U * 0.032
         for part, col in ((head + ":", CREAM), (sec_digits, AMBER), (ampm + " · " + c["day"], CREAM)):
@@ -885,13 +893,13 @@ class Editor:
         a = min(ease(t / 0.8), ease(left / 0.6))
         d = ImageDraw.Draw(im)
         f1, f2 = font("mono", H * 0.05), font("sans", H * 0.026, 500)
-        txt = "19:07:32" if second and t > 1.5 else "19:07:31"
+        txt = UTC_NEXT if second and t > 1.5 else UTC_NOW
         w = f1.getlength(txt)
         x, y = W / 2 - w / 2, H * 0.08
         d.text((x + 3, y + 3), txt, font=f1, fill=(0, 0, 0, int(150 * a)))
         d.text((x, y), txt[:-2], font=f1, fill=(*CREAM, int(255 * a)))
         d.text((x + f1.getlength(txt[:-2]), y), txt[-2:], font=f1, fill=(*AMBER, int(255 * a)))
-        s2 = "TUESDAY 29 SEPTEMBER · UTC"
+        s2 = UTC_DATE
         d.text((W / 2 - f2.getlength(s2) / 2, y + H * 0.068), s2, font=f2, fill=(*CREAM, int(200 * a)))
 
     # -------------------------------------------------------------- chat
@@ -1149,7 +1157,7 @@ class Editor:
     def floaters(self, im, t, left):
         """Other rooms, other questions, drifting up from the windows."""
         W, H = self.W, self.H
-        items = [
+        items = FLOATERS or [
             ("what rhymes with orange", None), ("my dog ate grapes", "Call your vet now. Grapes can be dangerous for dogs."),
             ("name my band", None), ("is this mole normal", "I can't examine it. Please show a doctor."),
             ("explain the offside rule", None), ("translate this for my mom", None),
@@ -1229,6 +1237,14 @@ class Editor:
 
 
 # =================================================================== audio
+# (scene, offset into it, cue, gain, loop): theme from the globe on, night variation for Pune and Tokyo, finale cue
+SCORE = [("open", 14.2, "m_theme", 0.42, True), ("pune", 0.0, "m_night", 0.40, True), ("finale", 0.0, "m_finale", 0.50, False)]
+
+
+def by_name(ed, name):
+    return next(sc for sc in ed.scenes if sc.name == name)
+
+
 def mix(ed: Editor) -> np.ndarray:
     n = int((ed.total + 1) * SR)
     voice = np.zeros(n, np.float32)
@@ -1281,21 +1297,14 @@ def mix(ed: Editor) -> np.ndarray:
                 dur = end - e.abs
                 sig = np.tile(src, int(dur / (len(src) / SR)) + 2)[: int(dur * SR)]
                 put(amb, fade(sig, 0.6, 0.8), e.abs, e.data.get("gain", 0.3))
-    # score: theme from the globe on; night variation for Pune and Tokyo; finale cue at the end
-    th = load("music", "m_theme")
-    night = load("music", "m_night")
-    fin = load("music", "m_finale")
-    by = {sc.name: sc for sc in ed.scenes}
-    t_open = by["open"].start + 14.2
-    t_night = by["pune"].start
-    t_fin = by["finale"].start
-    seg1 = np.tile(th, 3)[: int((t_night - t_open) * SR)]
-    put(music, fade(seg1, 3.0, 2.0), t_open, 0.42)
-    seg2 = np.tile(night, 3)[: int((t_fin - t_night) * SR)]
-    put(music, fade(seg2, 2.0, 1.5), t_night, 0.40)
-    t_end = ed.total
-    seg3 = fin[: int((t_end - t_fin) * SR)]
-    put(music, fade(seg3, 1.0, 4.0), t_fin, 0.50)
+    # score: each cue runs until the next one starts; the last one plays out to the end
+    cues = [(by_name(ed, sc).start + off, k, g, loop) for sc, off, k, g, loop in SCORE]
+    for i, (t0, k, g, loop) in enumerate(cues):
+        t1 = cues[i + 1][0] if i + 1 < len(cues) else ed.total
+        src = load("music", k)
+        sig = (np.tile(src, 3) if loop else src)[: int((t1 - t0) * SR)]
+        first, last = i == 0, i == len(cues) - 1
+        put(music, fade(sig, 3.0 if first else (1.0 if last else 2.0), 4.0 if last else (2.0 if first else 1.5)), t0, g)
     # duck the music and ambience under the voice
     env = np.abs(voice)
     k = int(0.25 * SR)
@@ -1346,7 +1355,7 @@ def captions(ed: Editor):
         elif e.kind == "chat" and "card" in e.data:
             items.append((e.abs, e.abs + 3.5, "[card] " + e.data["card"].replace("\n", " ")))
         elif e.kind == "chat" and e.data.get("big"):
-            items.append((e.abs, e.abs + 3.0, "[on screen] Kamaʻehuakanaloa"))
+            items.append((e.abs, e.abs + 3.0, f"[on screen] {e.data['text']}"))
         elif e.kind == "sub" and "text" in e.data:
             items.append((e.abs, e.abs + e.data["dur"], f"[translation] {e.data['text']}"))
     items.sort()
@@ -1358,13 +1367,20 @@ def captions(ed: Editor):
 
 
 # ==================================================================== main
+CHAPTERS = {"open": "Cold open: one second", "honolulu": "Honolulu, 9:07 a.m.", "chicago": "Chicago, 2:07 p.m.",
+            "saopaulo": "São Paulo, 4:07 p.m.", "leeds": "Leeds, 8:07 p.m.", "lagos": "Lagos, 8:07 p.m.",
+            "pune": "Pune, 12:37 a.m. (Wednesday)", "tokyo": "Tokyo, 4:07 a.m. (Wednesday)",
+            "finale": "Meanwhile", "tag": "Next second"}
+CHAPTERS_FILE = "chapters.txt"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--w", type=int, default=1920)
     ap.add_argument("--still", type=float, nargs="*")
     ap.add_argument("--from", dest="t0", type=float, default=0)
     ap.add_argument("--to", dest="t1", type=float)
-    ap.add_argument("--out", default=str(HERE / "build" / "meanwhile_ep01.mp4"))
+    ap.add_argument("--out", default=str(HERE / "build" / f"{OUT_NAME}.mp4"))
     ap.add_argument("--jobs", type=int, default=1)
     ap.add_argument("--video-only", action="store_true")
     ap.add_argument("--srt", action="store_true", help="write captions and chapters, then exit")
@@ -1379,13 +1395,9 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
     if a.srt:
         (HERE / "publish").mkdir(exist_ok=True)
-        (HERE / "publish" / "meanwhile_ep01.en.srt").write_text(captions(ed))
-        names = {"open": "Cold open: one second", "honolulu": "Honolulu, 9:07 a.m.", "chicago": "Chicago, 2:07 p.m.",
-                 "saopaulo": "São Paulo, 4:07 p.m.", "leeds": "Leeds, 8:07 p.m.", "lagos": "Lagos, 8:07 p.m.",
-                 "pune": "Pune, 12:37 a.m. (Wednesday)", "tokyo": "Tokyo, 4:07 a.m. (Wednesday)",
-                 "finale": "Meanwhile", "tag": "Next second"}
-        lines = [f"{int(sc.start // 60)}:{int(sc.start % 60):02d} {names[sc.name]}" for sc in ed.scenes]
-        (HERE / "publish" / "chapters.txt").write_text("\n".join(lines) + "\n")
+        (HERE / "publish" / f"{OUT_NAME}.en.srt").write_text(captions(ed))
+        lines = [f"{int(sc.start // 60)}:{int(sc.start % 60):02d} {CHAPTERS[sc.name]}" for sc in ed.scenes]
+        (HERE / "publish" / CHAPTERS_FILE).write_text("\n".join(lines) + "\n")
         print("\n".join(lines))
         return
     if a.still:
@@ -1403,7 +1415,7 @@ def main():
         for i in range(a.jobs):
             part = out.parent / f"_part{i}.mp4"
             parts.append(part)
-            procs.append(subprocess.Popen([sys.executable, __file__, "--w", str(W), "--from", str(cuts[i] / FPS),
+            procs.append(subprocess.Popen([sys.executable, sys.argv[0], "--w", str(W), "--from", str(cuts[i] / FPS),
                                            "--to", str(cuts[i + 1] / FPS), "--out", str(part), "--video-only"]))
         wav = out.with_suffix(".wav")
         write_wav(mix(ed)[int(t0 * SR): int(t1 * SR)], wav)

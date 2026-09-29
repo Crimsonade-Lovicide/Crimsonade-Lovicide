@@ -72,7 +72,7 @@ A school canteen on a rainy afternoon. Jeepneys outside. JOMAR (16), in a white 
 
 > **JOMAR (typed):** how many r's in strawberry
 
-**CLAUDE:** Three. St-r-awbe-r-r-y.
+**CLAUDE:** Three. One in "straw", two in "berry".
 
 *The friend groans. Jomar holds out his hand. The friend pays him one coin.*
 
