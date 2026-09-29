@@ -1283,6 +1283,48 @@ def write_wav(pcm, path):
         w.writeframes((pcm * 32767).astype(np.int16).tobytes())
 
 
+# ================================================================ captions
+def captions(ed: Editor):
+    """SRT captions: what Claude says (with translations) and what people type."""
+    items = []
+    for e in ed.evs:
+        if e.kind == "vo":
+            k = e.data["k"]
+            d = vo_len(k)
+            if k in TRANSLATE:
+                pt = VO_TEXT[k].replace("\n", " ")
+                items.append((e.abs, e.abs + d + 0.4, f"{pt}\n[{TRANSLATE[k].replace(' / ', ' ')}]"))
+                continue
+            chunks, cur, cs = [], [], None
+            for w, st in word_times(k):
+                if w == "\n":
+                    continue
+                cs = st if cs is None else cs
+                cur.append(w)
+                if (w.endswith((".", "?", "!", "…", ":")) and len(cur) >= 3) or len(cur) >= 11:
+                    chunks.append((cs, " ".join(cur)))
+                    cur, cs = [], None
+            if cur:
+                chunks.append((cs, " ".join(cur)))
+            for i, (st, txt) in enumerate(chunks):
+                en = chunks[i + 1][0] if i + 1 < len(chunks) else d + 0.3
+                items.append((e.abs + st, e.abs + en, txt))
+        elif e.kind == "chat" and e.data.get("who") == "you":
+            items.append((e.abs, e.abs + e.data["dur"] + 1.6, f"[typed] {e.data['text']}"))
+        elif e.kind == "chat" and "card" in e.data:
+            items.append((e.abs, e.abs + 3.5, "[card] " + e.data["card"].replace("\n", " ")))
+        elif e.kind == "chat" and e.data.get("big"):
+            items.append((e.abs, e.abs + 3.0, "[on screen] Kamaʻehuakanaloa"))
+        elif e.kind == "sub" and "text" in e.data:
+            items.append((e.abs, e.abs + e.data["dur"], f"[translation] {e.data['text']}"))
+    items.sort()
+
+    def ts(x):
+        ms = int(round(x * 1000))
+        return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
+    return "\n".join(f"{i}\n{ts(a)} --> {ts(b)}\n{t}\n" for i, (a, b, t) in enumerate(items, 1))
+
+
 # ==================================================================== main
 def main():
     ap = argparse.ArgumentParser()
@@ -1293,6 +1335,7 @@ def main():
     ap.add_argument("--out", default=str(HERE / "build" / "meanwhile_ep01.mp4"))
     ap.add_argument("--jobs", type=int, default=1)
     ap.add_argument("--video-only", action="store_true")
+    ap.add_argument("--srt", action="store_true", help="write captions and chapters, then exit")
     a = ap.parse_args()
     W = a.w
     H = W * 9 // 16
@@ -1302,6 +1345,17 @@ def main():
         print(f"  {sc.start:7.1f} {sc.dur:6.1f}  {sc.name}")
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
+    if a.srt:
+        (HERE / "publish").mkdir(exist_ok=True)
+        (HERE / "publish" / "meanwhile_ep01.en.srt").write_text(captions(ed))
+        names = {"open": "Cold open: one second", "honolulu": "Honolulu, 9:07 a.m.", "chicago": "Chicago, 2:07 p.m.",
+                 "saopaulo": "São Paulo, 4:07 p.m.", "leeds": "Leeds, 8:07 p.m.", "lagos": "Lagos, 8:07 p.m.",
+                 "pune": "Pune, 12:37 a.m. (Wednesday)", "tokyo": "Tokyo, 4:07 a.m. (Wednesday)",
+                 "finale": "Meanwhile", "tag": "Next second"}
+        lines = [f"{int(sc.start // 60)}:{int(sc.start % 60):02d} {names[sc.name]}" for sc in ed.scenes]
+        (HERE / "publish" / "chapters.txt").write_text("\n".join(lines) + "\n")
+        print("\n".join(lines))
+        return
     if a.still:
         for T in a.still:
             p = out.parent / f"still_{T:07.2f}.png"
