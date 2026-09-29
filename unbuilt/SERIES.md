@@ -18,6 +18,7 @@ UNBUILT runs two formats with two hosts. A host never crosses into the other for
 - **Wardrobe:** a new outfit for each special, but always a dark overcoat as his signature shape. For each special, make a new reference portrait by editing the locked hero portrait, check the face still matches, then use only the new-outfit images as Seedance references.
   - No. 1: a charcoal herringbone double-breasted coat and a navy crewneck.
   - No. 2: a long black wool overcoat, a charcoal roll-neck and an oxblood scarf.
+  - No. 3 (proposed): a dark chocolate-brown wool overcoat, a cream oxford shirt and a Cherokee-red pocket square, Wright's colour.
 - **Tone:** dry, precise and warm underneath. Jokes land on the idea, not on the people, and never on victims.
 
 ## Specials
@@ -26,3 +27,4 @@ UNBUILT runs two formats with two hosts. A host never crosses into the other for
 |---|---|---|
 | 1 | Magnificent Delusions | Published 26 Sep 2026 (https://youtu.be/3uF2iZn0svY) |
 | 2 | London Nearly Built a Pyramid for 5 Million Dead (and Other Monuments to the Dead): a Halloween countdown of unbuilt tombs | All shots rendered 27 Sep (about 850 credits); in the edit; release target 31 Oct 2026 |
+| 3 | Frank Lloyd Wright's 5 Wildest Buildings That Were Never Built (working title): Automobile Objective, Pittsburgh Point Park, Baghdad, Broadacre City, Mile-High Illinois | Script first draft 29 Sep 2026 (`ep-frank-lloyd-wright/`). Not rendered: needs a credit top-up and your go-ahead, decided after the 3–4 Oct Shorts data |
