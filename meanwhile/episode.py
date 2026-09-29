@@ -709,6 +709,7 @@ class Editor:
         r = np.sqrt(((xx - W / 2) / W) ** 2 + ((yy - H / 2) / H) ** 2)
         self.vignette = (1 - np.clip(r - 0.35, 0, 1) ** 1.6 * 1.1).clip(0.55, 1)[..., None]
         self.readers = {}
+        self.geo = None          # overlay geometry override (vertical cutdowns)
 
     # ---------------------------------------------------------- picture
     def seg_at(self, T):
@@ -836,25 +837,33 @@ class Editor:
 
     def location(self, im, sc, t, left, second=False):
         W, H = self.W, self.H
+        g = self.geo or {}
+        U = g.get("loc_u", H)
         c = CITIES[sc.city]
         a = min(ease(t / 0.5), ease(left / 0.5))
         if a <= 0:
             return
         ov = Image.new("RGBA", im.size, (0, 0, 0, 0))
         d = ImageDraw.Draw(ov)
-        x, y = W * 0.045, H * 0.06
-        # soft dark field behind for legibility
-        if not hasattr(self, "_locmask"):
-            g = Image.new("L", (int(W * 0.42), int(H * 0.3)), 0)
-            ImageDraw.Draw(g).ellipse([-g.width * 0.35, -g.height * 0.6, g.width * 0.85, g.height * 0.85], fill=115)
-            self._locmask = np.asarray(g.filter(ImageFilter.GaussianBlur(H * 0.05)), np.float32)
-        g = Image.fromarray((self._locmask * a).astype(np.uint8))
-        ov.paste((0, 0, 0, 255), (0, 0), g)
-        f1, f2 = font("serif", H * 0.052, 650), font("mono", H * 0.028)
+        x, y = g.get("loc_xy", (W * 0.045, H * 0.06))
+        # soft dark field behind for legibility (the vertical layout uses a small backing card instead)
+        if not g:
+            if not hasattr(self, "_locmask"):
+                mk = Image.new("L", (int(W * 0.42), int(H * 0.3)), 0)
+                ImageDraw.Draw(mk).ellipse([-mk.width * 0.35, -mk.height * 0.6, mk.width * 0.85, mk.height * 0.85],
+                                           fill=115)
+                self._locmask = np.asarray(mk.filter(ImageFilter.GaussianBlur(H * 0.05)), np.float32)
+            m = Image.fromarray((self._locmask * a).astype(np.uint8))
+            ov.paste((0, 0, 0, 255), (0, 0), m)
+        f1, f2 = font("serif", U * 0.052, 650), font("mono", U * 0.028)
         name = c["name"]
+        if g.get("loc_bg"):
+            wbg = max(f1.getlength(name), f2.getlength(c["time"] + " · " + c["day"])) + U * 0.07
+            d.rounded_rectangle([x - U * 0.02, y - U * 0.012, x + wbg, y + U * 0.12], radius=int(U * 0.02),
+                                fill=(10, 14, 24, int(150 * a)))
         n = int(len(name) * min(1, t / 0.45))
-        d.ellipse([x, y + H * 0.024, x + H * 0.016, y + H * 0.04], fill=(*AMBER, int(255 * a)))
-        d.text((x + H * 0.032, y), name[:n], font=f1, fill=(*CREAM, int(255 * a)))
+        d.ellipse([x, y + U * 0.024, x + U * 0.016, y + U * 0.04], fill=(*AMBER, int(255 * a)))
+        d.text((x + U * 0.032, y), name[:n], font=f1, fill=(*CREAM, int(255 * a)))
         tm = c["time"]
         if second:
             tm = tm.replace(":31", ":32")
@@ -864,8 +873,8 @@ class Editor:
         glitch = (not second) and (t % 7.3) > 7.15
         if glitch:
             sec_digits = sec_digits[0] + "2"
-        line_y = y + H * 0.072
-        xx = x + H * 0.032
+        line_y = y + U * 0.072
+        xx = x + U * 0.032
         for part, col in ((head + ":", CREAM), (sec_digits, AMBER), (ampm + " · " + c["day"], CREAM)):
             d.text((xx, line_y), part, font=f2, fill=(*col, int(235 * a)))
             xx += f2.getlength(part)
@@ -914,13 +923,16 @@ class Editor:
             end_fade = ease((sc.start + sc.segs[0].dur - T) / 0.3)
         if end_fade <= 0:
             return
-        colw = W * 0.30
-        x0 = W * 0.045 if sc.side == "L" else W - W * 0.045 - colw
-        bottom = H * 0.86
-        f = font("sans", H * 0.03, 500)
-        fbig = font("serif", H * 0.05, 600)
-        fcard = font("serif", H * 0.036, 600)
-        pad = H * 0.018
+        g = self.geo or {}
+        U = g.get("u", H)
+        colw = g.get("chat_colw", W * 0.30)
+        x0 = g.get("chat_x0", W * 0.045 if sc.side == "L" else W - W * 0.045 - colw)
+        bottom = g.get("chat_bottom", H * 0.86)
+        top = g.get("chat_top", H * 0.21)
+        f = font("sans", U * 0.03, 500)
+        fbig = font("serif", U * 0.05, 600)
+        fcard = font("serif", U * 0.036, 600)
+        pad = U * 0.018
         lh = f.size * 1.32
         items = []
         for e in evs:
@@ -935,7 +947,7 @@ class Editor:
         for kind, e, full, upto, age in items:
             who = e.data.get("who")
             if kind == "dots":
-                bw, bh = H * 0.1, lh + pad * 2
+                bw, bh = U * 0.1, lh + pad * 2
                 blocks.append((kind, e, None, bw, bh, age, None))
                 continue
             if e.data.get("big"):
@@ -944,10 +956,10 @@ class Editor:
                 fnt, lhh = fcard, fcard.size * 1.3
             else:
                 fnt, lhh = f, lh
-            maxw = colw - pad * 2 - (H * 0.03 if who == "claude" else 0)
+            maxw = colw - pad * 2 - (U * 0.03 if who == "claude" else 0)
             lines = wrap(full, fnt, maxw)
             tw = max(fnt.getlength(l) for l in lines) if lines else 0
-            bw = tw + pad * 2 + (H * 0.03 if who == "claude" else 0)
+            bw = tw + pad * 2 + (U * 0.03 if who == "claude" else 0)
             bh = len(lines) * lhh + pad * 2 - (lhh - fnt.size) * 0.6
             blocks.append((kind, e, (lines, fnt, lhh, upto), bw, bh, age, who))
         y = bottom
@@ -955,16 +967,16 @@ class Editor:
         for blk in reversed(blocks):
             y -= blk[4]
             placed.append((blk, y))
-            y -= H * 0.018
+            y -= U * 0.018
         ov = Image.new("RGBA", im.size, (0, 0, 0, 0))
         d = ImageDraw.Draw(ov)
         for (kind, e, payload, bw, bh, age, who), yy in placed:
             a = ease(age / 0.25) * end_fade
-            fade_top = ease((yy - H * 0.21) / (H * 0.07))
+            fade_top = ease((yy - top) / (U * 0.07))
             a *= fade_top
             if a <= 0.01:
                 continue
-            slide = (1 - ease_out(age / 0.3)) * H * 0.02
+            slide = (1 - ease_out(age / 0.3)) * U * 0.02
             yy += slide
             if kind == "dots" or who == "claude":
                 bx = x0 if sc.side == "L" or True else x0
@@ -974,27 +986,27 @@ class Editor:
                 bx = x0 + colw - bw
                 fill, txtc = (255, 255, 255, int(240 * a)), INK
             # shadow
-            sh = self.shadow(int(bw), int(bh))
+            sh = self.shadow(int(bw), int(bh), int(U))
             if a < 0.99:
                 sh = sh.copy()
                 sh.putalpha(sh.getchannel("A").point(lambda v, a=a: int(v * a)))
-            ov.alpha_composite(sh, (int(bx - H * 0.03), int(yy - H * 0.03)))
+            ov.alpha_composite(sh, (int(bx - U * 0.03), int(yy - U * 0.03)))
             if "card" in (e.data if e else {}):
                 fill = (252, 248, 236, int(250 * a))
-            d.rounded_rectangle([bx, yy, bx + bw, yy + bh], radius=int(H * 0.022), fill=fill)
+            d.rounded_rectangle([bx, yy, bx + bw, yy + bh], radius=int(U * 0.022), fill=fill)
             if kind == "dots":
                 for i in range(3):
                     ph = (age * 3 - i * 0.3) % 1
-                    rr = H * 0.007 * (1 + 0.35 * math.sin(ph * math.tau))
-                    cx = bx + pad + H * 0.012 + i * H * 0.025
+                    rr = U * 0.007 * (1 + 0.35 * math.sin(ph * math.tau))
+                    cx = bx + pad + U * 0.012 + i * U * 0.025
                     d.ellipse([cx - rr, yy + bh / 2 - rr, cx + rr, yy + bh / 2 + rr], fill=(*AMBER, int(255 * a)))
                 continue
             lines, fnt, lhh, upto = payload
             tx = bx + pad
             if who == "claude":
-                d.ellipse([bx + pad * 0.7, yy + pad + fnt.size * 0.35, bx + pad * 0.7 + H * 0.014,
-                           yy + pad + fnt.size * 0.35 + H * 0.014], fill=(*AMBER, int(255 * a)))
-                tx += H * 0.03
+                d.ellipse([bx + pad * 0.7, yy + pad + fnt.size * 0.35, bx + pad * 0.7 + U * 0.014,
+                           yy + pad + fnt.size * 0.35 + U * 0.014], fill=(*AMBER, int(255 * a)))
+                tx += U * 0.03
             count = 0
             for i, ln in enumerate(lines):
                 ly = yy + pad + i * lhh
@@ -1018,8 +1030,8 @@ class Editor:
         im.alpha_composite(ov)
 
     @lru_cache(maxsize=512)
-    def shadow(self, bw, bh):
-        H = self.H
+    def shadow(self, bw, bh, H=None):
+        H = H or self.H
         sh = Image.new("RGBA", (int(bw + H * 0.06), int(bh + H * 0.06)), (0, 0, 0, 0))
         ImageDraw.Draw(sh).rounded_rectangle([H * 0.03, H * 0.035, H * 0.03 + bw, H * 0.035 + bh],
                                              radius=int(H * 0.022), fill=(0, 0, 0, 70))
@@ -1028,7 +1040,7 @@ class Editor:
     # --------------------------------------------------------- subtitles
     def subtitles(self, im, T):
         W, H = self.W, self.H
-        f = font("sans", H * 0.034, 560)
+        f = font("sans", (self.geo or {}).get("sub_u", H) * 0.034, 560)
         for e in self.evs:
             if e.kind != "sub":
                 continue
@@ -1077,12 +1089,14 @@ class Editor:
         a = min(ease(t / 0.15), ease(left / 0.15))
         if a <= 0:
             return
-        lines = wrap(text, f, W * 0.7)
+        g = self.geo or {}
+        lines = wrap(text, f, g.get("sub_w", W * 0.7))
         d = ImageDraw.Draw(im)
-        y = H * 0.9 - len(lines) * f.size * 1.3
+        y = g.get("sub_y", H * 0.9) - len(lines) * f.size * 1.3
+        cxm = g.get("sub_cx", W / 2)
         for ln in lines:
             w = f.getlength(ln)
-            x = W / 2 - w / 2
+            x = cxm - w / 2
             for dx, dy in ((0, 3), (2, 2), (-2, 2), (0, -1)):
                 d.text((x + dx, y + dy), ln, font=f, fill=(0, 0, 0, int(120 * a)))
             d.text((x, y), ln, font=f, fill=((255, 226, 180) if italic else CREAM) + (int(255 * a),))
@@ -1169,7 +1183,7 @@ class Editor:
         im.alpha_composite(ov)
 
     # ------------------------------------------------------------- frame
-    def frame(self, T):
+    def frame(self, T, picture_only=False):
         sg = self.seg_at(T)
         t = T - sg.start
         arr = self.picture(sg, t, T)
@@ -1192,8 +1206,26 @@ class Editor:
         g += gr
         g = g * k
         im = Image.fromarray(g.clip(0, 255).astype(np.uint8)).convert("RGBA")
+        if picture_only:
+            self.picture_overlays(im, sg, t, T)
+            return im
         self.overlays(im, sg, t, T)
         return im.convert("RGB")
+
+    def picture_overlays(self, im, sg, t, T):
+        """The overlays that belong to the picture itself: titles, the UTC readout, the floaters."""
+        if sg.kind == "title":
+            self.title(im, t, sg)
+        if sg.kind == "end":
+            self.end_card(im, t)
+        for e in self.evs:
+            if e.kind in ("utc", "floaters"):
+                until = e.scene.start + e.data["until"]
+                if e.abs <= T < until:
+                    if e.kind == "utc":
+                        self.utc(im, T - e.abs, until - T, e.data.get("second"))
+                    else:
+                        self.floaters(im, T - e.abs, until - T)
 
 
 # =================================================================== audio

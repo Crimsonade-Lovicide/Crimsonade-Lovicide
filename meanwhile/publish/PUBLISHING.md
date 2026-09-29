@@ -59,7 +59,7 @@ Which room should the next episode visit? Tell us in the comments.
 |---|---|---|
 | Category | Film & Animation | It's a scripted animated show |
 | Made for kids | **No** | Family-friendly, but it's made for a general audience. "Made for kids" turns off comments, notifications and end-screen features. |
-| Altered or synthetic content | **No** (optional) | YouTube only requires it for realistic content that could be mistaken for real people, places or events. Clearly animated content is exempt. The AI disclosure lives in the description, which matches the show's own honesty rule. Tick **Yes** if you'd rather over-disclose; it only adds a label. |
+| Altered or synthetic content | **Yes** | Strictly, YouTube only requires it for realistic content, and the picture is clearly animated. But the narration is a realistic-sounding synthetic voice, the show's whole premise is being straight about being AI, and YouTube says the label doesn't affect reach or monetization. Label it. |
 | Language / caption language | English | Upload `meanwhile_ep01.en.srt` under Subtitles as "English". |
 | Tags (500 chars max; minor signal) | `MEANWHILE, AI short film, stop motion, animated short, Claude AI, what is AI like, AI honesty, AI consciousness, artificial intelligence, time zones, stop-motion animation, AI story, one second, short film` | |
 | License | Standard YouTube License | |
@@ -92,6 +92,28 @@ Which room should the next episode visit? Tell us in the comments.
 | **Instagram Reels** | The same Shorts | 9:16, 1080×1920 | Up to 20 min, but only Reels under 3 min are recommended to new audiences | Up to 2,200 characters | **5 maximum** (enforced since Dec 2025) | Meta's "AI info" label |
 | **Facebook** | The full episode on the Page, plus the Reels | 16:9 for the episode, 9:16 for Reels | | Same as YouTube, shorter | 1–3 | "AI info" label |
 | **X** | One 60–120 s cut and a link to the full episode | 16:9 | **2:20 without Premium** (4 h with Premium); 512 MB | "One second. Seven rooms. One AI in all of them." plus the link | 1–2 | Say it in the post |
+
+### Shorts (rendered: `build/shorts/`, 1080×1920, -14 LUFS)
+
+The layout is rebuilt for a phone rather than center-cropped: a hook line on top, the scene in a 4:3 window, and the chat in large type below. Every Short ends on "Full episode on YouTube · @aiisoktv". On YouTube, set **Related video** to the full episode so viewers can tap through.
+
+| File | Length | Title (Shorts / TikTok / Reels) | Caption |
+|---|---|---|---|
+| `meanwhile_short_pune.mp4` | 0:48 | It's 12:37 a.m. The bug is time zones. It's always time zones. | Same second, two different days. #MEANWHILE #AI #programming |
+| `meanwhile_short_leeds.mp4` | 0:44 | The AI got his recipe wrong. Here's what it did next. | Nobody questions a trifle. #MEANWHILE #AI #baking |
+| `meanwhile_short_saopaulo.mp4` | 0:28 | Grandma asked an AI for a poem about her cat | Almirante was not impressed. #MEANWHILE #AI #cats |
+| `meanwhile_short_tokyo.mp4` | 0:48 | 4 a.m. in Tokyo: "are you conscious?" | The honest answer. #MEANWHILE #AI #philosophy |
+| `meanwhile_short_chicago.mp4` | 0:33 | She asked an AI for 50 fake reviews | It said no, and gave her a better idea. #MEANWHILE #AI #smallbusiness |
+| `meanwhile_short_medium.mp4` | 0:52 | An AI on what it actually is | Not a big thing. Not a small thing. #MEANWHILE #AI #stopmotion |
+
+Post one Short a day for six days, starting the day the full episode goes public. On YouTube, append #Shorts to the title (it doesn't count toward the 3 hashtags in the description). On Instagram, keep to 5 hashtags or fewer.
+
+**AI labels:** on every platform, yes.
+- **YouTube:** the "Altered content" toggle.
+- **TikTok:** "AI-generated content", under More options.
+- **Instagram / Facebook:** "AI info" / "Add AI label", in the advanced settings.
+
+Meta requires the label for realistic-sounding synthetic audio, and the narration counts. TikTok also detects AI content from embedded metadata and may apply the label on its own.
 
 ### Scenes that stand alone as Shorts
 Each has its own setup and punchline:
