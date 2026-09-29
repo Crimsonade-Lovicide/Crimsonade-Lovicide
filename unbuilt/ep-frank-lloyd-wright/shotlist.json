@@ -1,0 +1,1527 @@
+{
+  "episode": "UNBUILT Special No. 3 - Frank Lloyd Wright",
+  "youtube_title": "Frank Lloyd Wright's 5 Wildest Buildings That Were Never Built",
+  "host_refs": [
+    "<wardrobe portrait 1 media_id>",
+    "<wardrobe portrait 2 media_id>"
+  ],
+  "voice": {
+    "model": "seed_audio",
+    "voice_type": "preset",
+    "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+    "name": "Arthur"
+  },
+  "prices": {
+    "sync_per_s": 4.5,
+    "broll_per_s": 1.75,
+    "still": 2.0,
+    "tts_line": 0.75
+  },
+  "budget": {
+    "sync_video": 477.0,
+    "broll_video": 105.0,
+    "stills_and_frames": 106.0,
+    "tts": 34.5,
+    "retakes_15pct_of_video": 87.3,
+    "total": 809.8,
+    "sync_seconds": 106,
+    "vo_seconds": 359.0,
+    "counts": {
+      "SYNC": 13,
+      "BROLL_VIDEO": 12,
+      "STILL": 41,
+      "REUSE": 7,
+      "CARD": 7,
+      "GRAPHIC": 2
+    },
+    "stretch_warnings": [],
+    "lean": {
+      "voice_over_instead": {
+        "CO2": "over re-uses of P2b (Fallingwater) and G6a (the Guggenheim), his built work",
+        "B8": "over a re-use of B7b, the archive drawer",
+        "A6": "over a re-use of A3b, the Broadacre model",
+        "O1": "over a re-use montage of the five hero clips, CO3, CO4, CO5, CO6, CO1"
+      },
+      "saves": 201.8,
+      "total": 608.0,
+      "sync_seconds": 67
+    }
+  },
+  "shots": [
+    {
+      "id": "CO1",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "CO1",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Cinematic aerial by day. Frank Lloyd Wright's 1956 Mile-High Illinois: a single needle-thin tapering skyscraper a mile tall, triangular in plan like a tripod blade, gold and silver in the sun, rising from the Chicago lakefront far above every other building, clouds drifting past its middle. The rest of Chicago tiny below. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial rise up the tower's side, through the cloud layer, the city dropping away below. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.7
+    },
+    {
+      "id": "CO2",
+      "segment": "Cold open",
+      "kind": "SYNC",
+      "line": "Wright designed more than eleven hundred buildings. About half were built. The other half are where he really let himself go.",
+      "duration_s": 9,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Wright designed more than eleven hundred buildings. About half were built. The other half are where he really let himself go."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 9,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. The drafting room at Taliesin West in the Arizona desert: low walls of rough desert stone set in concrete, redwood beams under a translucent white canvas roof glowing with daylight, long drafting tables, architectural drawings pinned to the walls, and through the open end only one view, the McDowell Mountains. He stands by a drafting table.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "CO3",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "CO3",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Autumn. Frank Lloyd Wright's 1925 Automobile Objective on the summit of Sugarloaf Mountain, Maryland: a massive round stepped ziggurat of warm stone crowning the wooded mountain, a broad ramp spiralling round its outside with 1920s open motor cars climbing it, a low dome at its heart. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial orbit around the summit; the open cars climb the spiral ramp. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 3.8
+    },
+    {
+      "id": "CO4",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "CO4",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Cinematic aerial at dusk. Frank Lloyd Wright's 1947 Point Park Civic Center at the fork of two rivers in Pittsburgh: a vast round terraced drum a fifth of a mile across, wrapped in a spiral roadway with 1940s cars climbing it, roof gardens on its terraces, a slender tower at the river's point. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial push toward the drum across the river, cars' headlights moving up the spiral. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.0
+    },
+    {
+      "id": "CO5",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "CO5",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Cinematic aerial at dusk. Frank Lloyd Wright's 1957 opera house for Baghdad on an island in the Tigris: a round domed hall under one great sweeping crescent arch of gold and turquoise, a small golden figure of Aladdin holding a lamp on the crown of the dome, gardens and fountains in front, palm trees. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial push toward the crescent arch across the water, the golden figure catching the last light. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.7
+    },
+    {
+      "id": "CO6",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "CO6",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Cinematic aerial by day. Frank Lloyd Wright's Broadacre City: open countryside laid out in a grid of one-acre plots, small flat-roofed houses among orchards and fields, small factories, a school, a highway with a flyover, a few slim towers standing alone in green space, and no downtown at all. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial drift over the grid of small farms and houses, a few cars moving on the highway. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.3
+    },
+    {
+      "id": "CO7",
+      "segment": "Cold open",
+      "kind": "SYNC",
+      "line": "I'm Hugo Ashby. He'd hate being ranked. Let's rank him.",
+      "duration_s": 5,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "I'm Hugo Ashby. He'd hate being ranked. Let's rank him."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. The drafting room at Taliesin West in the Arizona desert: low walls of rough desert stone set in concrete, redwood beams under a translucent white canvas roof glowing with daylight, long drafting tables, architectural drawings pinned to the walls, and through the open end only one view, the McDowell Mountains. He unpins a large drawing from the wall, rolls it under his arm and turns to go.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "CO8",
+      "segment": "Cold open",
+      "kind": "CARD",
+      "text": "UNBUILT / Frank Lloyd Wright (sting)",
+      "duration_s": 1.5,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "G1",
+      "segment": "No.5 Automobile Objective",
+      "kind": "SYNC",
+      "line": "This is the Guggenheim. Its spiral was first drawn in 1924, for cars. On top of a mountain.",
+      "duration_s": 8,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "This is the Guggenheim. Its spiral was first drawn in 1924, for cars. On top of a mountain."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 8,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. Fifth Avenue, New York, on a bright autumn day: behind him only one building, the white concrete spiral of the Solomon R. Guggenheim Museum, widening as it rises, Central Park's trees across the street. He stands on the pavement, the spiral filling the frame behind him.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "G1c",
+      "segment": "No.5 Automobile Objective",
+      "kind": "CARD",
+      "text": "No. 5 · The Automobile Objective · Sugarloaf Mountain, Maryland · 1924 (overlay on G1, 0.3–4.0 s)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "G2a",
+      "segment": "No.5 Automobile Objective",
+      "kind": "STILL",
+      "vo_id": "G2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Autumn. Sugarloaf Mountain, Maryland, from the air: a lone wooded mountain in red and gold autumn leaves rising from flat farmland, a winding road up its side. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.2
+    },
+    {
+      "id": "G2b",
+      "segment": "No.5 Automobile Objective",
+      "kind": "STILL",
+      "vo_id": "G2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. 1920s Maryland: two open touring cars with their hoods down on a dusty country road towards a lone wooded mountain, passengers in hats and goggles, seen from behind. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.2
+    },
+    {
+      "id": "G3a",
+      "segment": "No.5 Automobile Objective",
+      "kind": "REUSE",
+      "of": "CO3",
+      "vo_id": "G3",
+      "post": "Re-use CO3: a different 5 s section (no generation cost)",
+      "planned_s": 7.3
+    },
+    {
+      "id": "G3b",
+      "segment": "No.5 Automobile Objective",
+      "kind": "STILL",
+      "vo_id": "G3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Inside the Automobile Objective: a great round planetarium hall under a dark dome 150 feet across, stars projected across it, rows of 1920s visitors seen from behind, looking up. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow tilt up across the whole beat (no generation cost)",
+      "planned_s": 7.3
+    },
+    {
+      "id": "G4a",
+      "segment": "No.5 Automobile Objective",
+      "kind": "STILL",
+      "vo_id": "G4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. 1925, a wood-panelled Chicago office: a businessman in a three-piece suit at a big desk, seen from behind, reading a large architectural drawing of a spiral building. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 7.7
+    },
+    {
+      "id": "G4b",
+      "segment": "No.5 Automobile Objective",
+      "kind": "STILL",
+      "vo_id": "G4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An old engraving, fine cross-hatched linework, sepia ink on aged paper. No readable lettering. The Tower of Babel: a colossal spiralling tower under construction, ramps winding round its outside, tiny workers and scaffolding, clouds at its top. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 7.7
+    },
+    {
+      "id": "G5a",
+      "segment": "No.5 Automobile Objective",
+      "kind": "STILL",
+      "vo_id": "G5",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Night, lamplight. Frank Lloyd Wright seen only from behind or in silhouette: an elderly man in a flat-brimmed porkpie hat and a long cape, holding a cane. He sits at a drafting table by lamplight, writing a letter, pencils and T-square around him, a porkpie hat on the table. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.8
+    },
+    {
+      "id": "G5b",
+      "segment": "No.5 Automobile Objective",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "G5",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Night, lamplight. Close-up of a garden snail on a stone windowsill at night, its spiral shell lit from behind by lamplight. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The snail stretches and glides slowly along the sill. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.8
+    },
+    {
+      "id": "G6a",
+      "segment": "No.5 Automobile Objective",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "G6",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Inside the Solomon R. Guggenheim Museum, New York, looking straight up the white spiral ramp to the round glass skylight, visitors walking down the ramp, seen from far off. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow tilt up the spiral to the skylight. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 7.1
+    },
+    {
+      "id": "G6b",
+      "segment": "No.5 Automobile Objective",
+      "kind": "STILL",
+      "vo_id": "G6",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original Frank Lloyd Wright studio presentation perspective, coloured pencil and ink on tan tracing paper, fine ruled linework, soft earthy colours with touches of gold and Cherokee red, generous empty margins. No readable lettering, no signature. Two spiral buildings drawn side by side for comparison: on the left a stepped spiral that narrows as it rises, on the right the same spiral turned upside down so it widens as it rises. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 7.1
+    },
+    {
+      "id": "G7",
+      "segment": "No.5 Automobile Objective",
+      "kind": "SYNC",
+      "line": "So if you've ever walked down the Guggenheim, you've driven down a mountain in Maryland. Slowly, and without the car.",
+      "duration_s": 9,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "So if you've ever walked down the Guggenheim, you've driven down a mountain in Maryland. Slowly, and without the car."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 9,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. Fifth Avenue, New York, on a bright autumn day: behind him only one building, the white concrete spiral of the Solomon R. Guggenheim Museum, widening as it rises, Central Park's trees across the street. He glances up at the spiral, then back to the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "P1",
+      "segment": "No.4 Pittsburgh",
+      "kind": "STILL",
+      "vo_id": "P1",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. Pittsburgh in 1935: steel mills and smokestacks along a wide river, the downtown dim in the haze, a barge in the foreground. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 8.8
+    },
+    {
+      "id": "P1c",
+      "segment": "No.4 Pittsburgh",
+      "kind": "CARD",
+      "text": "No. 4 · The Point Park Civic Center · Pittsburgh · 1947 (overlay on P1, 0.3–4.0 s)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "P2a",
+      "segment": "No.4 Pittsburgh",
+      "kind": "STILL",
+      "vo_id": "P2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. Pittsburgh in the 1940s: a grand downtown department store with a big clock over the entrance, streetcars and crowds in hats on the street. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 3.5
+    },
+    {
+      "id": "P2b",
+      "segment": "No.4 Pittsburgh",
+      "kind": "STILL",
+      "vo_id": "P2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Autumn. Fallingwater, the house by Frank Lloyd Wright in the woods of Pennsylvania: cantilevered cream concrete terraces over a waterfall, autumn leaves. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 3.5
+    },
+    {
+      "id": "P3a",
+      "segment": "No.4 Pittsburgh",
+      "kind": "REUSE",
+      "of": "CO4",
+      "vo_id": "P3",
+      "post": "Re-use CO4: a different 5 s section (no generation cost)",
+      "planned_s": 6.5
+    },
+    {
+      "id": "P3b",
+      "segment": "No.4 Pittsburgh",
+      "kind": "STILL",
+      "vo_id": "P3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original Frank Lloyd Wright studio presentation perspective, coloured pencil and ink on tan tracing paper, fine ruled linework, soft earthy colours with touches of gold and Cherokee red, generous empty margins. No readable lettering, no signature. A presentation perspective of a vast round terraced building a fifth of a mile across at the meeting of two rivers, a spiral roadway wrapped round it, bridges on both sides. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow pull-out across the whole beat (no generation cost)",
+      "planned_s": 6.5
+    },
+    {
+      "id": "P3c",
+      "segment": "No.4 Pittsburgh",
+      "kind": "STILL",
+      "vo_id": "P3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Inside a 1940s aquarium pavilion: large clear glass spheres on bronze stands, each holding bright fish, river light through tall windows, a child seen from behind looking up. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.5
+    },
+    {
+      "id": "P4a",
+      "segment": "No.4 Pittsburgh",
+      "kind": "STILL",
+      "vo_id": "P4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. 1947, a panelled Pittsburgh boardroom: businessmen in suits round a long table, seen from behind, looking at an enormous architectural drawing eight feet long. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.6
+    },
+    {
+      "id": "P4b",
+      "segment": "No.4 Pittsburgh",
+      "kind": "STILL",
+      "vo_id": "P4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Close on a pencil tapping the edge of a huge coloured-pencil drawing of a spiral building, a cost ledger beside it. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.6
+    },
+    {
+      "id": "P5a",
+      "segment": "No.4 Pittsburgh",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "P5",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Cinematic aerial at dusk. Frank Lloyd Wright's 1948 second plan for Pittsburgh: a single slender tower about a thousand feet tall at the point where two rivers meet, holding up two long concrete bridges on fans of cables. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial orbit around the tower, cars crossing the bridges. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 7.8
+    },
+    {
+      "id": "P5b",
+      "segment": "No.4 Pittsburgh",
+      "kind": "STILL",
+      "vo_id": "P5",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original Frank Lloyd Wright studio presentation perspective, coloured pencil and ink on tan tracing paper, fine ruled linework, soft earthy colours with touches of gold and Cherokee red, generous empty margins. No readable lettering, no signature. A tall presentation perspective of a single slender tower at a river point, fans of cables reaching down from it to two bridges. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow tilt up across the whole beat (no generation cost)",
+      "planned_s": 7.8
+    },
+    {
+      "id": "P6",
+      "segment": "No.4 Pittsburgh",
+      "kind": "STILL",
+      "vo_id": "P6",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Point State Park, Pittsburgh, today from the air: green lawns at the fork of two rivers, a round fountain throwing a tall jet at the tip, office towers behind. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 7.3
+    },
+    {
+      "id": "P7",
+      "segment": "No.4 Pittsburgh",
+      "kind": "SYNC",
+      "line": "Which, to be fair, was cheaper than abandoning it.",
+      "duration_s": 5,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Which, to be fair, was cheaper than abandoning it."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. Point State Park, Pittsburgh, on a clear evening: behind him only one landmark, the large round fountain at the tip where two rivers meet, throwing a single tall jet of water, the downtown skyline beyond. Close-up, a small dry smile.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "B1v",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B1v",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Baghdad, May 1957: the wide Tigris at sunset, palm trees along the bank, a four-engine propeller airliner descending in the distance. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.0
+    },
+    {
+      "id": "B1a",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B1",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. Baghdad, 1957: a broad new boulevard under construction, cranes and scaffolding, 1950s cars, palm trees. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.2
+    },
+    {
+      "id": "B1b",
+      "segment": "No.3 Baghdad",
+      "kind": "REUSE",
+      "of": "B2c",
+      "vo_id": "B1",
+      "post": "Re-use B2c: its first seconds, a slow push in (no generation cost)",
+      "planned_s": 5.2
+    },
+    {
+      "id": "B1c",
+      "segment": "No.3 Baghdad",
+      "kind": "CARD",
+      "text": "No. 3 · The Plan for Greater Baghdad · Baghdad · 1957 (overlay on B1v, 0.3–4.0 s)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "B2a",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. A low, wild, flat island in the middle of a wide brown river, reeds and scrub, palm groves on the far bank, 1950s, no buildings. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.0
+    },
+    {
+      "id": "B2b",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. A wild boar standing among tall reeds on a riverbank at dawn, mist on the water. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.0
+    },
+    {
+      "id": "B2c",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original Frank Lloyd Wright studio presentation perspective, coloured pencil and ink on tan tracing paper, fine ruled linework, soft earthy colours with touches of gold and Cherokee red, generous empty margins. No readable lettering, no signature. A site plan of a long island in a river, with round buildings, gardens, fountains and a long central esplanade. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.0
+    },
+    {
+      "id": "B3a",
+      "segment": "No.3 Baghdad",
+      "kind": "REUSE",
+      "of": "CO5",
+      "vo_id": "B3",
+      "post": "Re-use CO5: a different 5 s section (no generation cost)",
+      "planned_s": 5.9
+    },
+    {
+      "id": "B3b",
+      "segment": "No.3 Baghdad",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "B3",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Cinematic aerial at dusk. At the far end of a river island, a colossal gilded statue of a caliph in robes standing on a tall spiral stepped tower, about three hundred feet in all, over palm gardens. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial rise up the spiral tower to the golden statue. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 5.9
+    },
+    {
+      "id": "B3c",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Close on the crown of a dome: a small golden figure of Aladdin holding up a lamp against a deep blue evening sky. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.9
+    },
+    {
+      "id": "B4a",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original Frank Lloyd Wright studio presentation perspective, coloured pencil and ink on tan tracing paper, fine ruled linework, soft earthy colours with touches of gold and Cherokee red, generous empty margins. No readable lettering, no signature. A circular university campus plan: rings of buildings round a central tower, ringed outside by terraces of parked cars, beside a bend in a river. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.6
+    },
+    {
+      "id": "B4b",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. Baghdad, 1957: a wide empty plain in a bend of the Tigris, surveyors with a tripod, seen from far off. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.6
+    },
+    {
+      "id": "B5",
+      "segment": "No.3 Baghdad",
+      "kind": "SYNC",
+      "line": "Wright noted that the drawings were \"voluntarily submitted.\" Which is one way of putting it.",
+      "duration_s": 7,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Wright noted that the drawings were \"voluntarily submitted.\" Which is one way of putting it."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 7,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. A quiet architectural drawings archive: a long oak table under a green-shaded lamp, grey flat-file cabinets behind, and on the table only one large sheet, a coloured-pencil site plan of an island in a river. He taps the margin of the drawing.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "B6a",
+      "segment": "No.3 Baghdad",
+      "kind": "REUSE",
+      "of": "B2c",
+      "vo_id": "B6",
+      "post": "Re-use B2c: slow push across the drawing, music out (no generation cost)",
+      "planned_s": 4.2
+    },
+    {
+      "id": "B6b",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B6",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. An empty palace courtyard at dawn in grey light, arcades and a dry fountain, nobody there. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.2
+    },
+    {
+      "id": "B7a",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B7",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. The Tigris at dusk from the bank, the long low island a dark line in the water, city lights coming on beyond. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.7
+    },
+    {
+      "id": "B7b",
+      "segment": "No.3 Baghdad",
+      "kind": "STILL",
+      "vo_id": "B7",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. An archive flat-file drawer pulled open under soft light, large coloured-pencil drawings of domes and gardens lying in it. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.7
+    },
+    {
+      "id": "B8",
+      "segment": "No.3 Baghdad",
+      "kind": "SYNC",
+      "line": "He drew Baghdad out of a storybook. The real city had its own history to get on with.",
+      "duration_s": 8,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "He drew Baghdad out of a storybook. The real city had its own history to get on with."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 8,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. A quiet architectural drawings archive: a long oak table under a green-shaded lamp, grey flat-file cabinets behind, and on the table only one large sheet, a coloured-pencil site plan of an island in a river. Quiet and still, looking down at the drawing, then up to the lens. Keep the performance restrained: no smirk.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "A1",
+      "segment": "No.2 Broadacre City",
+      "kind": "SYNC",
+      "line": "In 1935, right here in Rockefeller Center, Frank Lloyd Wright put on show a plan to get rid of places like this.",
+      "duration_s": 10,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "In 1935, right here in Rockefeller Center, Frank Lloyd Wright put on show a plan to get rid of places like this."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 10,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. Rockefeller Center, New York, in autumn: on the plaza by the flags, and behind him only one tower, 30 Rockefeller Plaza, soaring up in pale limestone. He gestures up at the tower.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "A1c",
+      "segment": "No.2 Broadacre City",
+      "kind": "CARD",
+      "text": "No. 2 · Broadacre City · Everywhere · 1932 (overlay on A1, 0.3–4.0 s)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "A2a",
+      "segment": "No.2 Broadacre City",
+      "kind": "STILL",
+      "vo_id": "A2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. Depression-era Manhattan, 1932: a crowded street under an elevated railway, men in hats and overcoats, smoke and steam. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.9
+    },
+    {
+      "id": "A2b",
+      "segment": "No.2 Broadacre City",
+      "kind": "STILL",
+      "vo_id": "A2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. A 1932 cloth-bound book lying on a desk by a window, plain cover, no readable lettering, a city street map open beside it. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.9
+    },
+    {
+      "id": "A3a",
+      "segment": "No.2 Broadacre City",
+      "kind": "STILL",
+      "vo_id": "A3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. Winter light. Winter in the Arizona desert, 1935: young architecture apprentices in shirtsleeves building a huge square model landscape on trestles outdoors, seen from behind, saguaro cactus beyond. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.8
+    },
+    {
+      "id": "A3b",
+      "segment": "No.2 Broadacre City",
+      "kind": "STILL",
+      "vo_id": "A3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. A huge square architectural model of a whole landscape of small farms, houses and roads, seen from above under gallery lights. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.8
+    },
+    {
+      "id": "A4a",
+      "segment": "No.2 Broadacre City",
+      "kind": "REUSE",
+      "of": "CO6",
+      "vo_id": "A4",
+      "post": "Re-use CO6: a different 5 s section (no generation cost)",
+      "planned_s": 6.2
+    },
+    {
+      "id": "A4b",
+      "segment": "No.2 Broadacre City",
+      "kind": "STILL",
+      "vo_id": "A4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Close on an architectural model: a tiny highway flyover with tiny cars, little farms and orchards around it, shallow depth of field. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.2
+    },
+    {
+      "id": "A5a",
+      "segment": "No.2 Broadacre City",
+      "kind": "STILL",
+      "vo_id": "A5",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. American suburbs from the air: curving cul-de-sacs, rows of houses on big lawns, a highway running through, a car on every drive. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.2
+    },
+    {
+      "id": "A5b",
+      "segment": "No.2 Broadacre City",
+      "kind": "STILL",
+      "vo_id": "A5",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. A 1950s single-storey ranch house on a wide lawn, a two-tone car in the drive, a white picket fence. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.2
+    },
+    {
+      "id": "A6",
+      "segment": "No.2 Broadacre City",
+      "kind": "SYNC",
+      "line": "For a quarter of a century, Wright told Americans to spread out. Then, at eighty-nine, he drew the exact opposite.",
+      "duration_s": 9,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "For a quarter of a century, Wright told Americans to spread out. Then, at eighty-nine, he drew the exact opposite."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 9,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. Rockefeller Center, New York, in autumn: on the plaza by the flags, and behind him only one tower, 30 Rockefeller Plaza, soaring up in pale limestone. He looks up at the tower, then back to the lens.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "M1",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "SYNC",
+      "line": "In 1956, Frank Lloyd Wright offered Chicago a skyscraper a mile high. \"The Empire State Building,\" he said, \"would be a mouse by comparison.\"",
+      "duration_s": 11,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "In 1956, Frank Lloyd Wright offered Chicago a skyscraper a mile high. \"The Empire State Building,\" he said, \"would be a mouse by comparison.\""
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 11,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. The Chicago lakefront at dusk from the Museum Campus: Lake Michigan on one side, and behind him the city skyline, with only one very tall black tower, the Willis Tower. He stands with the skyline behind him.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "M1c",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "CARD",
+      "text": "No. 1 · The Mile-High Illinois · Chicago · 1956 (overlay on M1, 0.3–4.0 s)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "M2a",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "REUSE",
+      "of": "CO1",
+      "vo_id": "M2",
+      "post": "Re-use CO1: a different 5 s section (no generation cost)",
+      "planned_s": 6.5
+    },
+    {
+      "id": "M2b",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "STILL",
+      "vo_id": "M2",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Halfway up a needle-thin mile-high skyscraper: a helicopter landing deck cantilevered from its side, 1950s helicopters circling it, Lake Michigan far below. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 6.5
+    },
+    {
+      "id": "M3a",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "STILL",
+      "vo_id": "M3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. 16 October 1956, a grand Chicago hotel ballroom: an enormous drawing of a needle-thin skyscraper hung floor to ceiling, press photographers with flashbulbs, a crowd in suits. Frank Lloyd Wright seen only from behind or in silhouette: an elderly man in a flat-brimmed porkpie hat and a long cape, holding a cane. He stands before the drawing. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.6
+    },
+    {
+      "id": "M3b",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "STILL",
+      "vo_id": "M3",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. 1956: a crowd in a hotel ballroom applauding, looking up at a giant drawing, seen from behind. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.6
+    },
+    {
+      "id": "M4a",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "M4",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Frank Lloyd Wright's Broadacre City: open countryside laid out in a grid of one-acre plots, small flat-roofed houses among orchards and fields, small factories, a school, a highway with a flyover, a few slim towers standing alone in green space, and no downtown at all. A long shadow of a needle-thin tower falls across the fields. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The tower's shadow sweeps slowly across the small farms as the sun moves. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 4.2
+    },
+    {
+      "id": "M4b",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "STILL",
+      "vo_id": "M4",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic black-and-white press photograph of the period, soft focus at the edges, fine grain and small scratches. No readable text. A 1956 Chicago newspaper folded on a desk, a large photograph of a needle-thin tower on the front page, headlines too small to read. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.2
+    },
+    {
+      "id": "M5a",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "M5",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. A cutaway of a skyscraper's core: tall elevator cabs, each five storeys high, stacked and racing up rails side by side, lit from inside. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The cabs race upwards past each other. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 4.6
+    },
+    {
+      "id": "M5b",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "STILL",
+      "vo_id": "M5",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. A vast skyscraper lobby packed with office workers queueing at a bank of elevator doors, seen from above. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 4.6
+    },
+    {
+      "id": "M6a",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "BROLL_VIDEO",
+      "vo_id": "M6",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "Cinematic drone footage from a high-end documentary series, natural grade, gentle haze, fine grain. No text, no logos, no watermark. Dubai at dawn: the Burj Khalifa rising far above the city, pale light on its steps. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial rise alongside the tower towards its spire. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      },
+      "planned_s": 6.5
+    },
+    {
+      "id": "M6b",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "GRAPHIC",
+      "text": "Height comparison drawn to scale as silhouettes: Empire State Building 381 m (roof), Burj Khalifa 828 m, the Mile-High Illinois 1,609 m (5,280 ft).",
+      "vo_id": "M6",
+      "post": "Pillow-drawn graphic in the edit (no generation cost)",
+      "planned_s": 6.5
+    },
+    {
+      "id": "M7",
+      "segment": "No.1 Mile-High Illinois",
+      "kind": "SYNC",
+      "line": "Seventy years later, nobody has built a mile. Not bad for a man who didn't like cities.",
+      "duration_s": 8,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Seventy years later, nobody has built a mile. Not bad for a man who didn't like cities."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 8,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. The Chicago lakefront at night from the Museum Campus: Lake Michigan on one side, and behind him the city skyline, lit, with only one very tall black tower, the Willis Tower. Close-up, a small smile.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series at night, moonlight and warm practical light, low mist, deep shadows, fine film grain. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "O1",
+      "segment": "Outro",
+      "kind": "SYNC",
+      "line": "A mountain, a riverfront, an island, a country and a mile of sky. Wright heard \"no\" a great deal. He never once took it as a reason to draw smaller.",
+      "duration_s": 13,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "A mountain, a riverfront, an island, a country and a mile of sky. Wright heard \"no\" a great deal. He never once took it as a reason to draw smaller."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 13,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. The drafting room at Taliesin West in the Arizona desert: low walls of rough desert stone set in concrete, redwood beams under a translucent white canvas roof glowing with daylight, long drafting tables, architectural drawings pinned to the walls, and through the open end only one view, the McDowell Mountains. In late afternoon light, he unrolls the large drawing across a drafting table.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "O2",
+      "segment": "Outro",
+      "kind": "SYNC",
+      "line": "I'm Hugo Ashby. Dream big. Budget bigger.",
+      "duration_s": 4,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "I'm Hugo Ashby. Dream big. Budget bigger."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 1 media_id>"
+          },
+          {
+            "role": "image",
+            "value": "<wardrobe portrait 2 media_id>"
+          },
+          {
+            "role": "audio",
+            "value": "<tightened TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. The presenter: exactly the same man as the reference images, same face, hair and stubble, wearing a dark chocolate-brown wool overcoat, open, over a cream oxford shirt with the collar open, and a Cherokee-red silk pocket square in the coat's breast pocket. The drafting room at Taliesin West in the Arizona desert: low walls of rough desert stone set in concrete, redwood beams under a translucent white canvas roof glowing with daylight, long drafting tables, architectural drawings pinned to the walls, and through the open end only one view, the McDowell Mountains. In late afternoon light. Close-up, a small wry smile.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry, warm British delivery. Subtle handheld camera. Quiet location ambience only, no music, no subtitles. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark."
+      },
+      "post": "edit/sync_audio.py: keep the clip's own lip-synced audio; patch wrong words from the TTS take."
+    },
+    {
+      "id": "END",
+      "segment": "Outro",
+      "kind": "CARD",
+      "text": "UNBUILT (end screen: the full Mile-High episode, subscribe)",
+      "duration_s": 3.0,
+      "post": "Pillow-rendered card (no generation cost)"
+    },
+    {
+      "id": "X1a",
+      "segment": "Stinger",
+      "kind": "STILL",
+      "vo_id": "X1",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original Frank Lloyd Wright studio presentation perspective, coloured pencil and ink on tan tracing paper, fine ruled linework, soft earthy colours with touches of gold and Cherokee red, generous empty margins. No readable lettering, no signature. Washington, 1940: a cluster of tall glass-and-bronze towers rising above a leafy hillside of old rooftops, terraces and gardens between them. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.8
+    },
+    {
+      "id": "X1b",
+      "segment": "Stinger",
+      "kind": "STILL",
+      "vo_id": "X1",
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, candlelit where indoors, period-accurate costume and architecture. No readable text, no logos. 1940, a government office: a clerk's hand bringing down a rubber stamp on a thick file, no readable lettering. Any real historical person is seen from behind, in silhouette or far off, never as a close face."
+      },
+      "post": "ffmpeg zoompan: slow push-in across the whole beat (no generation cost)",
+      "planned_s": 5.8
+    },
+    {
+      "id": "X1c",
+      "segment": "Stinger",
+      "kind": "GRAPHIC",
+      "text": "Two silhouettes to scale: 135 ft (the refused towers) beside 5,280 ft (the Mile-High), the first barely a sliver at the foot of the second.",
+      "vo_id": "X1",
+      "post": "Pillow-drawn graphic in the edit (no generation cost)",
+      "planned_s": 5.8
+    }
+  ]
+}

@@ -77,7 +77,7 @@ Every alternative leads with his name, which is the searchable term (week-one re
 
 ## No. 4 · THE POINT PARK CIVIC CENTER · Pittsburgh, 1947 (1:50–3:05)
 
-**[P1] SYNC** · Point State Park, the fountain at the meeting of the rivers, downtown Pittsburgh behind
+**[P1] VO** · Pittsburgh in 1935, an archive photograph: steel mills and smoke along the river, the downtown dim in the haze
 > In 1935, reporters asked Frank Lloyd Wright what could be done about Pittsburgh. "It would be cheaper," he said, "to abandon it!"
 
 **[P2] VO** · Kaufmann's department store in the 1940s; then Fallingwater in autumn, the falls beneath the terraces
@@ -107,7 +107,7 @@ Every alternative leads with his name, which is the searchable term (week-one re
 **[B1v] VO** · Baghdad, 1957: the Tigris at sunset, palms along the bank, a propeller airliner coming in to land
 > In May 1957, Frank Lloyd Wright flew to Baghdad. He was eighty-nine.
 
-**[B1] SYNC** · a drawings archive: Hugo beside a long sheet on a table showing an island in a river
+**[B1] VO** · Baghdad in 1957: a broad new boulevard, oil-boom construction cranes; then Wright's coloured site plan of the island
 > Iraq's Development Board, flush with oil money, had invited the world's great architects. Wright was asked for an opera house. He came back with rather more.
 
 **[B2] VO** · the island in the Tigris from above, low and wild; then the drawing's title block, "Isle of Edena"
@@ -232,7 +232,7 @@ Every alternative leads with his name, which is the searchable term (week-one re
   - Rockefeller Center
   - the Chicago lakefront at dusk and at night
 
-  That is six sync locations and 15 sync shots, about 110 seconds on camera. Hugo is never placed in Baghdad: the archive keeps him away from the coup imagery.
+  That is six sync locations and 13 sync shots, about 100 seconds on camera. P1 and B1 were written as sync and moved to voice-over to save about 110 credits (see SHOTLIST.md). Hugo is never placed in Baghdad: the archive keeps him away from the coup imagery.
 - **Wardrobe (Special No. 3):** a dark chocolate-brown wool overcoat, a cream oxford shirt, and a Cherokee-red pocket square, Wright's signature colour. Make a new reference portrait from the locked hero portrait, as SERIES.md describes.
 - **Shorts to cut from it later** (Wright's name in each title):
   - G1–G7: "The Guggenheim Was First Designed for Cars on a Mountain"
