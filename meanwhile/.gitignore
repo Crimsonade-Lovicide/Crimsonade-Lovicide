@@ -1,3 +1,4 @@
 build/
 assets/clips/*.mp4
 assets/keys/*.png
+__pycache__/
