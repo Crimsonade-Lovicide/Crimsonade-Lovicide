@@ -64,3 +64,10 @@ python3 edit/score.py <assets> music.mp3 voice_cut.mp4 final.mp4
   - A: night pyramid, "A PYRAMID FOR / 5 MILLION DEAD".
   - B: daylight pyramid with St Paul's, "LONDON NEARLY / BUILT THIS".
   - Hugo is cut from O2 at 4.8 s. The moon behind his head and his lantern hand are removed from the matte.
+
+## v4 notes (29 Sep 2026)
+
+- **Sting cut from 4 s to 1.5 s.** Episode 1's week-one retention showed 17% of viewers leaving in the first 14 s. `halloween.sting()` and `sound()` now take a `pace` setting, which scales the original timeline: the lamp strike, the fang drop (now at 0.4 s), the subtitle and the blood drop. `pace=1.0, dur=4.0` rebuilds the original. Hugo now speaks at 1.5 s.
+- **Chapters:** 0:00 / 0:36 / 1:48 / 3:15 / 4:29 / 5:24 / 7:03 / 7:20. Specs: 7:37.2, -14.1 LUFS.
+- **Upload master:** 1080p (lanczos and unsharp), two-pass 3.9 Mbps, 238 MB. Higgsfield media `4b535357-…`. The 470 MB file size is what got "Access Denied" from the Zapier upload.
+- **Unchanged:** the five Halloween Shorts, which don't use the sting.

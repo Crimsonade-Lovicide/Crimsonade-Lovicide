@@ -8,6 +8,8 @@
 
 That encode is hosted at https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/3d3974a7-16e8-4879-b1d2-d007613822c6.mp4, and an hourly retry uploads it.
 
+**Update (29 Sep, 21:00 UTC): v4.** The opening sting is cut from 4 s to 1.5 s, following the week-one retention readout (viewers were leaving during the cold open). Every chapter is 2.5 s earlier, and the chapters above are already updated. The file to upload is now https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/4b535357-e0b7-4c50-907f-225acea0a214.mp4. It is 1080p, 7:37, 238 MB and -14.1 LUFS.
+
 **Publish:** Saturday 10 October 2026, 20:00 UTC. That's three weeks before Halloween, so YouTube has time to start recommending it before Halloween searches peak, and it's the same slot as episode 1. The video is uploaded private and scheduled to go public at that time.
 
 ## Title
@@ -38,13 +40,13 @@ No. 1: Thomas Willson's Pyramid, 94 storeys of catacombs above Regent's Park.
 
 CHAPTERS
 0:00 Cold open
-0:39 No. 5 · Washington's empty tomb (Washington, D.C., 1799)
-1:51 No. 4 · A mausoleum for Charles I (Windsor, 1678)
-3:18 No. 3 · A monument for Evita (Buenos Aires, 1952)
-4:32 No. 2 · The Cenotaph for Newton (Paris, 1784)
-5:26 No. 1 · Willson's Pyramid (London, 1830)
-7:06 Five tombs, no occupants
-7:23 Honourable mention: Goodwin's Grand National Cemetery
+0:36 No. 5 · Washington's empty tomb (Washington, D.C., 1799)
+1:48 No. 4 · A mausoleum for Charles I (Windsor, 1678)
+3:15 No. 3 · A monument for Evita (Buenos Aires, 1952)
+4:29 No. 2 · The Cenotaph for Newton (Paris, 1784)
+5:24 No. 1 · Willson's Pyramid (London, 1830)
+7:03 Five tombs, no occupants
+7:20 Honourable mention: Goodwin's Grand National Cemetery
 
 SOURCES
 Washington's tomb: Architect of the Capitol (aoc.gov: the Crypt; the Lincoln Catafalque) · US House History, Art & Archives

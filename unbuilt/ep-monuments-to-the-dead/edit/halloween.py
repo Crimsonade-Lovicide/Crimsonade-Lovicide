@@ -137,7 +137,9 @@ def ease_out_back(u):
     return 1 + (c + 1) * (u - 1) ** 3 + c * (u - 1) ** 2
 
 
-def sting(a, dur=4.0):
+def sting(a, dur=1.5, pace=0.35):
+    """The opening sting. pace scales the animation's timeline: 1.0 is the original 4 s cut (dur=4.0), 0.35 packs
+    the same lamp strike, fang drop and blood into 1.5 s (week-one retention: viewers leave during the cold open)."""
     rng = np.random.default_rng(31)
     small = rng.random((18, 64 * 2))
     fog = np.asarray(Image.fromarray((small * 255).astype(np.uint8)).resize((W * 2, H), Image.BICUBIC)
@@ -153,24 +155,27 @@ def sting(a, dur=4.0):
     drop_y, drop_v = None, 0.0
     for i in range(n):
         t = i / FPS
-        frame = background(t, rng, fog)
-        wa = flicker.get(i, 1.0 if i > 17 else 0.0)
-        fd = 0.0 if t < 1.2 else min(1.0, ease_out_back(min(1.0, (t - 1.2) / 0.28)))
-        sa = 0.0 if t < 1.55 else min(1.0, (t - 1.55) / 0.6)
+        te = t / pace  # time on the original 4 s timeline
+        frame = background(te, rng, fog)
+        fi = int(te * FPS)
+        wa = flicker.get(fi, 1.0 if fi > 17 else 0.0)
+        fd = 0.0 if te < 1.2 else min(1.0, ease_out_back(min(1.0, (te - 1.2) / 0.28)))
+        sa = 0.0 if te < 1.55 else min(1.0, (te - 1.55) / 0.6)
         logo, tips = wordmark(a, fang_drop=fd, sub_alpha=sa, word_alpha=wa)
         frame.alpha_composite(logo)
-        if tips and t > 1.9:  # a drop of blood gathers on the left fang, then falls
+        if tips and te > 1.9:  # a drop of blood gathers on the left fang, then falls
             tx, ty = tips[0]
-            grow = min(1.0, (t - 1.9) / 0.7)
-            if t < 2.6:
+            grow = min(1.0, (te - 1.9) / 0.7)
+            if te < 2.6:
                 y = ty
             else:
-                drop_v += 2200 / FPS
-                drop_y = (ty if drop_y is None else drop_y) + drop_v / FPS
+                drop_v += 2200 / FPS / pace
+                drop_y = (ty if drop_y is None else drop_y) + drop_v / FPS / pace
                 y = drop_y
             drop(frame, tx, y, 3 + 5 * grow)
-        if t > dur - 0.5:  # fade to black into the cold open
-            k = (dur - t) / 0.5
+        fade = min(0.5, dur * 0.25)
+        if t > dur - fade:  # fade to black into the cold open
+            k = (dur - t) / fade
             frame = Image.fromarray((np.asarray(frame.convert("RGB")).astype(float) * k).astype(np.uint8)).convert("RGBA")
         p.stdin.write(frame.convert("RGB").tobytes())
     p.stdin.close()
@@ -178,21 +183,21 @@ def sting(a, dur=4.0):
     return out
 
 
-def sound(a, dur=4.0, sr=48000):
-    """Drone, a heavy hit on the fang drop (1.2 s), a rumble tail. Synthesised, so no licence question."""
+def sound(a, dur=1.5, pace=0.35, sr=48000):
+    """Drone, a heavy hit on the fang drop (1.2 s x pace), a rumble tail. Synthesised, so no licence question."""
     t = np.arange(int(dur * sr)) / sr
     rng = np.random.default_rng(7)
-    drone = (np.sin(2 * np.pi * 43 * t) + 0.5 * np.sin(2 * np.pi * 64.5 * t + 1)) * np.clip(t / 1.2, 0, 1) * 0.10
+    drone = (np.sin(2 * np.pi * 43 * t) + 0.5 * np.sin(2 * np.pi * 64.5 * t + 1)) * np.clip(t / (1.2 * pace), 0, 1) * 0.10
     noise = rng.normal(0, 1, len(t))
     k = np.exp(-np.arange(int(0.004 * sr)) / (0.0015 * sr))
     dark = np.convolve(noise, k / k.sum(), "same")  # a crude low-pass
-    hit_t = np.clip(t - 1.2, 0, None)
-    on = t >= 1.2
+    hit_t = np.clip(t - 1.2 * pace, 0, None)
+    on = t >= 1.2 * pace
     boom = on * np.sin(2 * np.pi * (60 * hit_t - 12 * hit_t ** 2)) * np.exp(-hit_t / 0.55) * 0.75
     crack = on * noise * np.exp(-hit_t / 0.03) * 0.25
     rumble = on * dark * np.exp(-hit_t / 1.1) * 1.4
     y = drone + boom + crack + rumble
-    y *= np.clip((dur - t) / 0.5, 0, 1)  # fade with the picture
+    y *= np.clip((dur - t) / min(0.5, dur * 0.25), 0, 1)  # fade with the picture
     y = y / (np.abs(y).max() + 1e-9) * 0.7
     st = (np.stack([y, y], 1) * 32767).astype(np.int16)
     out = os.path.join(a, "audio", "t_STING.wav")
