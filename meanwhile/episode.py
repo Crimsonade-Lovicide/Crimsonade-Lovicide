@@ -935,7 +935,7 @@ class Editor:
         U = g.get("u", H)
         colw = g.get("chat_colw", W * 0.30)
         x0 = g.get("chat_x0", W * 0.045 if sc.side == "L" else W - W * 0.045 - colw)
-        bottom = g.get("chat_bottom", H * 0.86)
+        bottom = g.get("chat_bottom", H * getattr(sc, "chat_bottom", 0.86))   # a scene can lift its chat above subtitles
         top = g.get("chat_top", H * 0.21)
         f = font("sans", U * 0.03, 500)
         fbig = font("serif", U * 0.05, 600)

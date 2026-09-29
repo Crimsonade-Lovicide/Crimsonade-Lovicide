@@ -249,6 +249,7 @@ def build():
 
     # ------------------------------------------------------------- mexico
     s = Scene("mexico", "mexico", side="R")
+    s.chat_bottom = 0.72                         # the translations sit underneath
     t0 = hop(s, "mexico")
     s.clip("W14_cdmx_ext", 0, 5.0)
     a = t0 + 5.0

@@ -26,6 +26,7 @@ import episode as E  # noqa: E402
 VW, VH = 1080, 1920
 PANEL_Y, PANEL_H = 380, 810          # 4:3 picture window
 OUT = E.HERE / "build" / "shorts"
+EP_LABEL = "Ep. 1 · One Second"
 
 # name: (start, end) in episode seconds, hook line, horizontal centre of the 4:3 window
 SHORTS = {
@@ -84,7 +85,7 @@ class Vertical:
         cx = 60 + fw.getlength("MEANWHILE") + 10
         if int(T * 2.2) % 2 == 0:
             d.rectangle([cx, 118, cx + 8, 160], fill=(*E.AMBER, 255))
-        d.text((cx + 26, 124), "Ep. 1 · One Second", font=E.font("sans", 30, 500), fill=(*E.AMBER, 255))
+        d.text((cx + 26, 124), EP_LABEL, font=E.font("sans", 30, 500), fill=(*E.AMBER, 255))
         fh = E.font("sans", 62, 650)
         y = 196
         for ln in self.hook_lines:
@@ -112,7 +113,7 @@ class Vertical:
 
     def render(self):
         OUT.mkdir(parents=True, exist_ok=True)
-        wav_full = E.HERE / "build" / "meanwhile_ep01.wav"
+        wav_full = E.HERE / "build" / f"{E.OUT_NAME}.wav"
         if not wav_full.exists():
             E.write_wav(E.mix(self.ed), wav_full)
         with wave.open(str(wav_full)) as w:
@@ -154,7 +155,7 @@ def main():
     if a.only:
         Vertical(a.only).render()
         return
-    procs = [subprocess.Popen([sys.executable, __file__, "--only", n]) for n in SHORTS]
+    procs = [subprocess.Popen([sys.executable, sys.argv[0], "--only", n]) for n in SHORTS]
     for p in procs:
         p.wait()
 
