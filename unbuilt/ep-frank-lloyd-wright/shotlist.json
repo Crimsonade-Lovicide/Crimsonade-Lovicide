@@ -2,8 +2,8 @@
   "episode": "UNBUILT Special No. 3 - Frank Lloyd Wright",
   "youtube_title": "Frank Lloyd Wright's 5 Wildest Buildings That Were Never Built",
   "host_refs": [
-    "<wardrobe portrait 1 media_id>",
-    "<wardrobe portrait 2 media_id>"
+    "292cd695-8ce4-4d61-be63-22ab22dc6aee",
+    "8fa8b468-e355-4ee0-8ef0-265058992202"
   ],
   "voice": {
     "model": "seed_audio",
@@ -97,11 +97,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -242,11 +242,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -287,11 +287,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -486,11 +486,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -684,11 +684,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -878,11 +878,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -963,11 +963,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -1000,11 +1000,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -1145,11 +1145,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -1182,11 +1182,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -1391,11 +1391,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -1428,11 +1428,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",
@@ -1465,11 +1465,11 @@
         "medias": [
           {
             "role": "image",
-            "value": "<wardrobe portrait 1 media_id>"
+            "value": "292cd695-8ce4-4d61-be63-22ab22dc6aee"
           },
           {
             "role": "image",
-            "value": "<wardrobe portrait 2 media_id>"
+            "value": "8fa8b468-e355-4ee0-8ef0-265058992202"
           },
           {
             "role": "audio",

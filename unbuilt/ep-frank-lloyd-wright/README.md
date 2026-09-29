@@ -2,7 +2,7 @@
 
 A Hugo Ashby countdown of five unbuilt Wright projects, escalating in scale: the Automobile Objective, Pittsburgh's Point Park Civic Center, the Plan for Greater Baghdad, Broadacre City and the Mile-High Illinois. Crystal Heights is the stinger.
 
-**State (29 Sep 2026):** script and shot plan drafted. Nothing rendered, and no credits spent.
+**State (29 Sep 2026):** script, shot plan and wardrobe references done. Nothing else rendered: 0.25 credits spent so far.
 
 ## Files
 
@@ -14,7 +14,7 @@ A Hugo Ashby countdown of five unbuilt Wright projects, escalating in scale: the
 ## Before rendering
 
 1. **Approve the spend.** The plan is about 810 credits, or about 608 lean, against about 563 available.
-2. **Make the wardrobe references.** Two GPT Image 2.5 edits of the locked hero portrait (0.25 credits each): the chocolate-brown overcoat, cream oxford and Cherokee-red pocket square. Check the face still matches, then put the media IDs in `HOST_REFS`.
+2. ~~Make the wardrobe references.~~ Done 29 Sep, for 0.25 credits: `host/hugo_wright_portrait.jpg` (`292cd695-…`) and `host/hugo_wright_portrait_alt.jpg` (`8fa8b468-…`). Both are GPT Image 2.5 edits of the locked hero portrait, both hold the likeness, and both are now in `HOST_REFS`.
 3. **Check the quotes** against the page scans listed in the script notes.
 4. **Render in the same order as Special No. 2:**
    - voice lines first;

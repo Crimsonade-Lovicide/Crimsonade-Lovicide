@@ -18,7 +18,7 @@ UNBUILT runs two formats with two hosts. A host never crosses into the other for
 - **Wardrobe:** a new outfit for each special, but always a dark overcoat as his signature shape. For each special, make a new reference portrait by editing the locked hero portrait, check the face still matches, then use only the new-outfit images as Seedance references.
   - No. 1: a charcoal herringbone double-breasted coat and a navy crewneck.
   - No. 2: a long black wool overcoat, a charcoal roll-neck and an oxblood scarf.
-  - No. 3 (proposed): a dark chocolate-brown wool overcoat, a cream oxford shirt and a Cherokee-red pocket square, Wright's colour.
+  - No. 3: a dark chocolate-brown wool overcoat, a cream oxford shirt and a Cherokee-red pocket square, Wright's colour. References are in `ep-frank-lloyd-wright/host/`.
 - **Tone:** dry, precise and warm underneath. Jokes land on the idea, not on the people, and never on victims.
 
 ## Specials

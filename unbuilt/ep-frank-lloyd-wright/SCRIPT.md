@@ -2,7 +2,7 @@
 
 **Status:** first draft for review, 29 Sep 2026. Shots planned in `SHOTLIST.md` (about 810 credits, or about 608 lean). Nothing rendered, and no credits spent.
 **Runtime:** about 7:45. **Format:** 16:9, 720p (1080p upload master). **Host:** Hugo Ashby, on camera and in VO, voice Arthur.
-**Release target:** to be set after the render decision (about 7–8 Oct, once the 3–4 Oct Shorts data is in). Suggested date: Sat 7 Nov 2026, four weeks after the Halloween special.
+**Release target (proposed):** Sat 17 Oct 2026, 20:00 UTC, 70 years to the day after Chicago's Frank Lloyd Wright Day, which followed the Mile-High unveiling on 16 Oct 1956. This needs the render approved by about 7 Oct. If it slips, the fallback is Sat 7 Nov.
 
 **YouTube title (proposed):** *Frank Lloyd Wright's 5 Wildest Buildings That Were Never Built*
 

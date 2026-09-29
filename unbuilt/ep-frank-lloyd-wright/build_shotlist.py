@@ -29,9 +29,10 @@ import os
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-# Special No. 3 wardrobe: not made yet. Two GPT Image 2.5 edits of the locked hero portrait (0.25 credits each),
-# checked for likeness, then used as the only Seedance references so no earlier outfit leaks back in.
-HOST_REFS = ["<wardrobe portrait 1 media_id>", "<wardrobe portrait 2 media_id>"]
+# Special No. 3 wardrobe (29 Sep): GPT Image 2.5 edits of the locked hero portrait (7af5b679-…), 0.25 credits for
+# both. Both references show the new outfit, so no earlier coat can leak back in.
+# Files: host/hugo_wright_portrait.jpg (the closer likeness, listed first) and host/hugo_wright_portrait_alt.jpg
+HOST_REFS = ["292cd695-8ce4-4d61-be63-22ab22dc6aee", "8fa8b468-e355-4ee0-8ef0-265058992202"]
 VOICE = {"model": "seed_audio", "voice_type": "preset", "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
          "name": "Arthur"}
 PRICE = {"sync_per_s": 4.5, "broll_per_s": 1.75, "still": 2.0, "tts_line": 0.75}
