@@ -1308,7 +1308,11 @@ def mix(ed: Editor) -> np.ndarray:
     # duck the music and ambience under the voice
     env = np.abs(voice)
     k = int(0.25 * SR)
-    env = np.convolve(env, np.ones(k) / k, mode="same")
+    # moving average (same as np.convolve(env, ones(k)/k, "same"), in linear time)
+    c = np.concatenate([[0.0], np.cumsum(env, dtype=np.float64)])
+    lo = np.clip(np.arange(len(env)) - k // 2, 0, len(env))
+    hi = np.clip(np.arange(len(env)) - k // 2 + k, 0, len(env))
+    env = ((c[hi] - c[lo]) / k).astype(np.float32)
     duck = 1 - 0.65 * np.clip(env / 0.05, 0, 1)
     # titles breathe: lift the score where nothing is said
     out = voice * 1.0 + fx + amb * (0.6 + 0.4 * duck) + music * duck

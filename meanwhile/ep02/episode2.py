@@ -165,7 +165,7 @@ def build():
     span(s, "W04b_otieno_laugh", 0.0, 2.4, n4 + word_time("e2_n4", "Use") - h2, zoom=(1.0, 1.03))
     k = s.dur
     span(s, "W04b_otieno_laugh", 2.4, 5.0, max(3.4, e + 1.2 - k), zoom=(1.02, 1.06))   # he laughs
-    s.ev("amb", 0.0, k="amb_nairobi", gain=0.35)
+    s.ev("amb", 0.0, k="amb_nairobi", gain=0.22)
     S.append(s)
     prev = "nairobi"
 
@@ -192,7 +192,7 @@ def build():
     span(s, "W06_park", 7.4, 10.0, (e - vo_len("e2_k2") + ln) - d, zoom=(1.0, 1.03))
     f = s.dur
     span(s, "W07_clipboard", 2.4, 5.0, max(3.2, e + 1.4 - f), zoom=(1.12, 1.2), cx=0.7, cy=0.55)   # underlined twice
-    s.ev("amb", 0.0, k="amb_seoul", gain=0.35)
+    s.ev("amb", 0.0, k="amb_seoul", gain=0.6)
     S.append(s)
     prev = "seoul"
 
@@ -219,7 +219,7 @@ def build():
     e = s.typed("an EASY WAY TO SAY NO??", d + 0.9, cps=16, device="phone")
     e = s.vo("e2_m3", e + 0.5)
     span(s, "W09b_jomar_shock", 0.6, 5.0, e + 1.2 - d)
-    s.ev("amb", 0.0, k="amb_manila", gain=0.35)
+    s.ev("amb", 0.0, k="amb_manila", gain=0.2)
     S.append(s)
     prev = "manila"
 
@@ -243,7 +243,7 @@ def build():
     span(s, "W12_brothers", 0.4, 3.0, e + 0.2 - d, zoom=(1.25, 1.3), cx=0.5, cy=0.35)
     f = s.dur
     span(s, "W12_brothers", 6.4, 10.0, 4.4, zoom=(1.0, 1.02))              # they split it
-    s.ev("amb", 0.0, k="amb_auckland", gain=0.35)
+    s.ev("amb", 0.0, k="amb_auckland", gain=0.28)
     S.append(s)
     prev = "auckland"
 
@@ -274,7 +274,7 @@ def build():
     s.ev("sub", c + 0.4, text="“Same as me, then.”", dur=e - c + 0.6)
     e = s.vo("e2_x4", e + 1.1, chat=False, sub=True)
     span(s, "W15_beto", 5.0, 8.4, e + 0.8 - c, zoom=(1.0, 1.04))           # a smile under the moustache
-    s.ev("amb", 0.0, k="amb_cdmx", gain=0.35)
+    s.ev("amb", 0.0, k="amb_cdmx", gain=0.25)
     S.append(s)
     prev = "mexico"
 
@@ -298,7 +298,7 @@ def build():
     d = s.dur
     e = s.vo("e2_y4", d + 0.3)
     s.seg("hold", e + 1.6 - d, clip="W17b_dani_sleep", src=4.9)
-    s.ev("amb", 0.0, k="amb_nyc", gain=0.35)
+    s.ev("amb", 0.0, k="amb_nyc", gain=0.45)
     S.append(s)
     prev = "newyork"
 
@@ -347,6 +347,10 @@ def build():
 
 
 E.build = build
+
+# headroom: a few loud moments ("Please don't!", the final tick) would otherwise clip before loudness normalisation
+_mix = E.mix
+E.mix = lambda ed: _mix(ed) * 0.68
 
 if __name__ == "__main__":
     E.main()
