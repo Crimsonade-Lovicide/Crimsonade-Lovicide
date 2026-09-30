@@ -10,6 +10,15 @@ That encode is hosted at https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qP
 
 **Update (29 Sep, 21:00 UTC): v4.** The opening sting is cut from 4 s to 1.5 s, following the week-one retention readout (viewers were leaving during the cold open). Every chapter is 2.5 s earlier, and the chapters above are already updated. The file to upload is now https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/4b535357-e0b7-4c50-907f-225acea0a214.mp4. It is 1080p, 7:37, 238 MB and -14.1 LUFS.
 
+**Uploaded (30 Sep, 02:43 UTC): https://youtu.be/SwJYHf9xcBw** (`SwJYHf9xcBw`). This is v4, the 238 MB file. It is private and scheduled to go public at 2026-10-10 20:00 UTC. It is processed, HD and 7:38 long.
+- Thumbnail B is set. It is hosted on Higgsfield as `9fe224e0-…`.
+- "Altered or synthetic content" is set, through the API.
+- The tag "UNBUILT" was dropped, because the list came to 504 characters and YouTube's limit is 500. "unbuilt" stays.
+- **Still manual in Studio:**
+  - Test & Compare with thumbnail A
+  - the end screen
+  - the pinned comment
+
 **Publish:** Saturday 10 October 2026, 20:00 UTC. That's three weeks before Halloween, so YouTube has time to start recommending it before Halloween searches peak, and it's the same slot as episode 1. The video is uploaded private and scheduled to go public at that time.
 
 ## Title
@@ -66,7 +75,7 @@ Music: "The Architect's Parade"
 
 ## Tags
 
-unbuilt, Halloween special, Willson's pyramid, pyramid on Primrose Hill, Thomas Willson, Metropolitan Sepulchre, London pyramid cemetery, Kensal Green, Magnificent Seven cemeteries, Washington's tomb, Capitol Crypt, Charles I mausoleum, Christopher Wren, Monumento al Descamisado, Eva Perón, Evita, Boullée, Cenotaph for Newton, Isaac Newton, Francis Goodwin, unbuilt architecture, buildings never built, tombs, mausoleums, cemetery history, London history, architecture history, UNBUILT
+unbuilt, Halloween special, Willson's pyramid, pyramid on Primrose Hill, Thomas Willson, Metropolitan Sepulchre, London pyramid cemetery, Kensal Green, Magnificent Seven cemeteries, Washington's tomb, Capitol Crypt, Charles I mausoleum, Christopher Wren, Monumento al Descamisado, Eva Perón, Evita, Boullée, Cenotaph for Newton, Isaac Newton, Francis Goodwin, unbuilt architecture, buildings never built, tombs, mausoleums, cemetery history, London history, architecture history
 
 ## Upload settings
 

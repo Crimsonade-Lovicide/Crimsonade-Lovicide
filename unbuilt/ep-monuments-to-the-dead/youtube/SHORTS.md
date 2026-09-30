@@ -19,7 +19,17 @@ What each one cuts from the special, to fit under a minute:
 
 ## Status
 
-Not on YouTube yet. They go up once the special has a video ID, because every description links to it. The files are hosted on Higgsfield, at `https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/<id>.mp4`:
+The special is https://youtu.be/SwJYHf9xcBw, and `<special>` in the descriptions below is that link.
+
+| # | On YouTube | Goes public |
+|---|---|---|
+| 1 | Pyramid: https://youtu.be/gMbKseccqzA (uploaded 30 Sep, AI label set) | 2026-10-11 20:00 UTC |
+| 2 | Washington: not yet; the 30 Sep upload was throttled after four uploads, and a retry is scheduled | 2026-10-16 20:00 UTC |
+| 3 | Charles: not yet | 2026-10-21 20:00 UTC |
+| 4 | Evita: not yet | 2026-10-26 20:00 UTC |
+| 5 | Newton: not yet | 2026-10-31 20:00 UTC |
+
+The files are hosted on Higgsfield, at `https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/<id>.mp4`:
 
 | # | Higgsfield media |
 |---|---|
