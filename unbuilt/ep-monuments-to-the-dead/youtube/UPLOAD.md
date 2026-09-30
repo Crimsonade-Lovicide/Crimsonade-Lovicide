@@ -87,4 +87,6 @@ unbuilt, Halloween special, Willson's pyramid, pyramid on Primrose Hill, Thomas 
 
 ## Pinned comment
 
+This is superseded by the version in `LAUNCH.md`, which also has the full launch-day copy.
+
 > Five tombs, and between them they managed to hold exactly nobody they were built for. Which one would you have wanted built? I'd have taken the sphere. Night at noon sounds restful. — Hugo
