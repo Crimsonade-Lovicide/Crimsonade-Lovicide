@@ -1,0 +1,223 @@
+<title>Democracy Documentary Slate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap">
+<style>
+/* Layout: a screening-room dossier. One full-width index, then a case file per series: player left, dossier right. */
+:root {
+  color-scheme: dark;
+  --bg: #0b0b0d;
+  --panel: #141418;
+  --rule: #2a2a32;
+  --fg: #ecebe6;
+  --muted: #a3a3ad;
+  --faint: #6f6f79;
+  --accent: #e8e6df;
+  --display: "Bebas Neue", "Oswald", Impact, "Arial Narrow", sans-serif;
+  --body: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 18px; line-height: 1.55; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 24px; padding-block: 48px 96px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(56px, 9vw, 120px); line-height: .9; letter-spacing: .01em; margin: 14px 0 18px; text-wrap: balance; }
+.lede { max-width: 62ch; font-size: 20px; color: var(--fg); margin: 0; }
+.lede em { color: var(--muted); }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 22px; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+.meta b { color: var(--fg); font-weight: 600; }
+
+/* index */
+.index { margin-top: 56px; border-top: 1px solid var(--rule); }
+.row { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr) auto; gap: 8px 24px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid var(--rule); color: inherit; text-decoration: none; }
+.row:hover .row-name, .row:focus-visible .row-name { color: var(--c); }
+.row:focus-visible { outline: 2px solid var(--c); outline-offset: 4px; }
+.row-layer { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+.row-name { font-family: var(--display); font-size: 34px; line-height: 1; transition: color .15s; }
+.row-pitch { display: block; font-size: 16px; color: var(--muted); margin-top: 4px; }
+.row-score { font-family: var(--mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.row-score b { color: var(--fg); font-size: 18px; }
+.chip { display: inline-block; font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border: 1px solid var(--c, var(--rule)); color: var(--c, var(--muted)); margin-left: 10px; vertical-align: 3px; }
+
+/* recommendation */
+.rec { margin-top: 64px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; }
+.rec h2, .series h2 { font-family: var(--display); font-weight: 400; font-size: 44px; line-height: 1; margin: 0 0 14px; letter-spacing: .01em; }
+.rec ol { margin: 0; padding-left: 1.2em; display: grid; gap: 12px; }
+.rec li { padding-left: 4px; }
+.rec li strong { font-family: var(--mono); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
+.weak { background: var(--panel); border: 1px solid var(--rule); padding: 22px 24px; }
+.weak ul { margin: 0; padding-left: 1.1em; display: grid; gap: 10px; font-size: 16.5px; }
+.tablewrap { overflow-x: auto; margin-top: 24px; grid-column: 1 / -1; }
+table { border-collapse: collapse; width: 100%; min-width: 640px; font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; }
+th, td { text-align: right; padding: 9px 10px; border-bottom: 1px solid var(--rule); }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--muted); font-weight: 400; letter-spacing: .06em; text-transform: uppercase; font-size: 11px; }
+td.total { color: var(--fg); font-weight: 600; }
+.note { font-family: var(--mono); font-size: 12px; color: var(--faint); margin-top: 10px; }
+
+/* series case files */
+.series { margin-top: 88px; scroll-margin-top: 24px; }
+.series-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; border-top: 3px solid var(--c); padding-top: 18px; }
+.series-head h2 { font-size: clamp(48px, 7vw, 84px); margin: 0; }
+.series-head .tag { font-family: var(--mono); font-size: 14px; color: var(--c); }
+.case { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 32px; margin-top: 22px; }
+video { width: 100%; max-width: 100%; aspect-ratio: 16 / 9; background: #000; display: block; border: 1px solid var(--rule); }
+.caption { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-top: 8px; }
+.dossier { display: grid; gap: 18px; align-content: start; min-width: 0; }
+.dossier p { margin: 0; }
+.label { font-family: var(--mono); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--c); margin-bottom: 6px; }
+.facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.facts li { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 12px; font-size: 16px; }
+.facts .n { font-family: var(--display); font-size: 30px; line-height: 1; color: var(--fg); font-variant-numeric: tabular-nums; }
+.facts a { color: var(--muted); }
+.eps { margin: 0; padding-left: 1.5em; font-size: 16px; color: var(--fg); columns: 1; }
+.eps li::marker { font-family: var(--mono); font-size: 13px; color: var(--faint); }
+.risk { font-size: 16px; color: var(--muted); border-left: 2px solid var(--c); padding-left: 14px; }
+
+footer { margin-top: 96px; border-top: 1px solid var(--rule); padding-top: 22px; font-family: var(--mono); font-size: 12.5px; color: var(--muted); display: grid; gap: 8px; }
+footer p { margin: 0; max-width: 90ch; }
+
+@media (max-width: 860px) {
+  .case, .rec { grid-template-columns: minmax(0, 1fr); }
+  .row { grid-template-columns: minmax(0, 1fr) auto; }
+  .row-layer { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Development slate · Five series · Five 60-second pilots · October 2026</div>
+    <h1>Five Pilots on the Machinery of Democracy</h1>
+    <p class="lede">Each series covers a different part of the machinery democracy runs on: where news comes from, who counts the votes, how people organize, who gets hunted for speaking, and who is watching where you go. Every pilot is sixty seconds and built on a cited statistic. <em>AI shots are labeled on screen.</em></p>
+    <div class="meta"><span><b>5</b> pilots × <b>60.0 s</b></span><span><b>15</b> AI shots (Higgsfield · Kling 3.0)</span><span><b>5</b> Blender data visualizations</span><span><b>117.5</b> Higgsfield credits spent</span></div>
+  </header>
+
+  <nav class="index" aria-label="Series index">
+    <a class="row" href="#brokered" style="--c:#ff3b30"><span class="row-layer">Privacy &amp; assembly</span><span><span class="row-name">Brokered</span><span class="chip">Flagship</span><span class="row-pitch">Your location is for sale, including the fact that you showed up to a protest.</span></span><span class="row-score"><b>24</b>/30</span></a>
+    <a class="row" href="#pink-slime" style="--c:#ff4fa3"><span class="row-layer">Information</span><span><span class="row-name">Pink Slime</span><span class="chip">Midterm run</span><span class="row-pitch">Fake local news sites now outnumber real daily newspapers.</span></span><span class="row-score"><b>23</b>/30</span></a>
+    <a class="row" href="#server-nation" style="--c:#588cff"><span class="row-layer">Participation</span><span><span class="row-name">Server Nation</span><span class="chip">Hold</span><span class="row-pitch">Gen Z toppled governments from group chats. Then it had to run them.</span></span><span class="row-score"><b>19</b>/30</span></a>
+    <a class="row" href="#long-arm" style="--c:#d62839"><span class="row-layer">Dissent &amp; exile</span><span><span class="row-name">The Long Arm</span><span class="chip">Grant-fund</span><span class="row-pitch">Governments hunting their critics across borders.</span></span><span class="row-score"><b>18</b>/30</span></a>
+    <a class="row" href="#the-count" style="--c:#e23b34"><span class="row-layer">Administration</span><span><span class="row-name">The Count</span><span class="chip">Hold for 2028</span><span class="row-pitch">The people who count your vote, and what it costs them.</span></span><span class="row-score"><b>17</b>/30</span></a>
+  </nav>
+
+  <section class="rec" aria-labelledby="rec-h">
+    <div>
+      <h2 id="rec-h">What to greenlight</h2>
+      <ol>
+        <li><strong>Brokered, flagship.</strong> Best reach for the cost: a personal hook, an evergreen subject, and a 3D city system that carries every episode. Get a lawyer's sign-off before buying any data, and turn down VPN sponsors, because they conflict with the investigation.</li>
+        <li><strong>Pink Slime, 3 episodes before Nov 3.</strong> Cheapest to report (domain records, FEC filings, ad libraries) and timely now. Attribute sites to funders only on documents, and give left- and right-funded networks equal scrutiny.</li>
+        <li><strong>The Long Arm, grant-funded.</strong> The most original and the most dangerous. Protect sources with consented, disclosed AI face-veils. Budget for security that ad revenue won't cover.</li>
+        <li><strong>Hold The Count and Server Nation.</strong> One needs election-office access that probably can't be negotiated in a month. The other needs international field work or licensed protest footage.</li>
+      </ol>
+    </div>
+    <div class="weak">
+      <div class="label" style="--c:var(--muted)">Where this slate is weak</div>
+      <ul>
+        <li><b>AI footage and trust.</b> Use AI shots only for illustration, reconstruction and anonymization, never as stand-in footage of real events.</li>
+        <li><b>Synthetic narrator.</b> Piper TTS is a free placeholder. A human host is the biggest single upgrade.</li>
+        <li><b>Ad limits.</b> Protest and election content can trigger limited ads, so plan around memberships and grants.</li>
+        <li><b>Untested demand.</b> Run a $50–100 cold-audience test per pilot and compare hold rate and average view duration before you commit a budget.</li>
+      </ul>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Series</th><th>Audience pull</th><th>Evergreen</th><th>Low cost</th><th>Low risk</th><th>Ad-friendly</th><th>Differentiation</th><th>Total</th></tr></thead>
+        <tbody>
+          <tr><td>Brokered</td><td>5</td><td>5</td><td>4</td><td>3</td><td>4</td><td>3</td><td class="total">24</td></tr>
+          <tr><td>Pink Slime</td><td>3</td><td>4</td><td>5</td><td>3</td><td>4</td><td>4</td><td class="total">23</td></tr>
+          <tr><td>Server Nation</td><td>4</td><td>3</td><td>2</td><td>3</td><td>3</td><td>4</td><td class="total">19</td></tr>
+          <tr><td>The Long Arm</td><td>4</td><td>4</td><td>1</td><td>1</td><td>3</td><td>5</td><td class="total">18</td></tr>
+          <tr><td>The Count</td><td>3</td><td>2</td><td>2</td><td>3</td><td>4</td><td>3</td><td class="total">17</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Scores are editorial judgment on a 1–5 scale where higher is better. Audience pull is the least certain column until it's tested.</p>
+    </div>
+  </section>
+
+  <section class="series" id="brokered" style="--c:#ff3b30">
+    <div class="series-head"><h2>Brokered</h2><span class="tag">Your location is for sale. So is your right to show up.</span></div>
+    <div class="case">
+      <div><video controls preload="metadata" playsinline poster="thumb_p5_brokered.jpg" src="p5_brokered.mp4"></video><div class="caption">Pilot · Episode 1: The Dot · 60 s</div></div>
+      <div class="dossier">
+        <p>A phone's location trail reveals where someone sleeps, prays, gets medical care and protests. Brokers buy that trail from apps and resell it. Each episode follows one use of the data: to a campaign, a police department, or a breach.</p>
+        <div><div class="label">Fact base</div><ul class="facts">
+          <li><span class="n">17B</span><span>location signals a day from ~1B phones (FTC allegation, Gravy Analytics/Venntel). <a href="https://therecord.media/ftc-location-data-brokers-gravy-venntel-mobilewalla">The Record</a></span></li>
+          <li><span class="n">2020</span><span>George Floyd protesters analyzed by race and home location (FTC allegation, Mobilewalla, Dec 2024). <a href="https://cyberscoop.com/ftc-data-broker-action-gravy-analytics-venntel-mobilewalla/">CyberScoop</a></span></li>
+        </ul></div>
+        <div><div class="label">Season 1</div><ol class="eps"><li>The Dot</li><li>We Bought Ourselves</li><li>The Geofence</li><li>Warrantless</li><li>The Breach</li><li>Off Switch</li></ol></div>
+        <p class="risk">Risk: buying data as a reporting method needs legal review first. Sponsorship conflicts with privacy-product brands.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="series" id="pink-slime" style="--c:#ff4fa3">
+    <div class="series-head"><h2>Pink Slime</h2><span class="tag">Who's writing your local news?</span></div>
+    <div class="case">
+      <div><video controls preload="metadata" playsinline poster="thumb_p1_pink_slime.jpg" src="p1_pink_slime.mp4"></video><div class="caption">Pilot · Episode 1: The Front Page Nobody Wrote · 60 s</div></div>
+      <div class="dossier">
+        <p>Partisan-funded websites dressed up as hometown papers, from the left and the right. Each episode takes one fake front page and traces who built it, who paid for it, and who it was built to fool.</p>
+        <div><div class="label">Fact base</div><ul class="facts">
+          <li><span class="n">1,265</span><span>pink-slime sites vs <b>1,213</b> daily newspapers, June 2024. <a href="https://www.newsguardtech.com/press/sad-milestone-fake-local-news-sites-now-outnumber-real-local-newspaper-sites-in-u-s/">NewsGuard</a></span></li>
+          <li><span class="n">2+</span><span>local newspapers close every week. Northwestern Medill, via <a href="https://www.newsguardtech.com/press/partisan-funded-websites-nearly-outnumber-daily-newspapers-in-us/">NewsGuard</a></span></li>
+        </ul></div>
+        <div><div class="label">Season 1</div><ol class="eps"><li>The Front Page Nobody Wrote</li><li>Both Sides of the Slime</li><li>The Robot Newsroom</li><li>Foreign Desk</li><li>The Last Reporter</li><li>How to Read a Front Page</li></ol></div>
+        <p class="risk">Risk: defamation if a site is misattributed. Attribute on documents only, and give both parties' networks equal rigor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="series" id="server-nation" style="--c:#588cff">
+    <div class="series-head"><h2>Server Nation</h2><span class="tag">When a generation logs off the old order.</span></div>
+    <div class="case">
+      <div><video controls preload="metadata" playsinline poster="thumb_p3_server_nation.jpg" src="p3_server_nation.mp4"></video><div class="caption">Pilot · Episode 1: The Discord Prime Minister · 60 s</div></div>
+      <div class="dossier">
+        <p>Youth-led uprisings in Sri Lanka, Bangladesh, Kenya, Nepal, Morocco and Madagascar were organized on the same apps they were protesting about. The series follows what happens after the hashtag, when a movement has to govern.</p>
+        <div><div class="label">Fact base</div><ul class="facts">
+          <li><span class="n">7,713</span><span>votes in a Discord poll. Karki led with 3,833 and was sworn in Sept 12, 2025. <a href="https://www.aljazeera.com/news/2025/9/15/more-egalitarian-how-nepals-gen-z-used-gaming-app-discord-to-pick-pm">Al Jazeera</a></span></li>
+          <li><span class="n">74</span><span>killed in Nepal's protests after a ban on 26 platforms. <a href="https://www.britannica.com/event/2025-Nepalese-Gen-Z-Protests">Britannica</a></span></li>
+          <li><span class="n">35</span><span>age of the former rapper elected prime minister in March 2026. <a href="https://www.cfr.org/articles/in-nepal-gen-z-gets-a-victory-and-the-country-may-too">CFR</a></span></li>
+        </ul></div>
+        <div><div class="label">Season 1</div><ol class="eps"><li>The Discord Prime Minister</li><li>Aragalaya (Sri Lanka)</li><li>July (Bangladesh)</li><li>The Finance Bill (Kenya)</li><li>GenZ 212 (Morocco)</li><li>Three Weeks (Madagascar)</li><li>After the Hashtag</li></ol></div>
+        <p class="risk">Risk: the safety of protesters on camera, plus the cost of international field production.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="series" id="long-arm" style="--c:#d62839">
+    <div class="series-head"><h2>The Long Arm</h2><span class="tag">Governments hunting their critics, across borders.</span></div>
+    <div class="case">
+      <div><video controls preload="metadata" playsinline poster="thumb_p4_long_arm.jpg" src="p4_long_arm.mp4"></video><div class="caption">Pilot · Episode 1: Nowhere Far Enough · 60 s</div></div>
+      <div class="dossier">
+        <p>A thriller structure built on documented cases: detentions, deportations, Interpol abuse, and threats delivered through family members back home. Sources are anonymized with consented, disclosed AI face-veils.</p>
+        <div><div class="label">Fact base</div><ul class="facts">
+          <li><span class="n">126</span><span>new physical incidents in 2025. China, Vietnam and Russia were the top perpetrators. <a href="https://freedomhouse.org/report/special-report/2026/collaboration-and-resistance-tracking-transnational-repression-2025">Freedom House</a></span></li>
+          <li><span class="n">54+</span><span>governments have targeted critics abroad since 2014. Detention and unlawful deportation were the leading tactics in 2025.</span></li>
+        </ul></div>
+        <div><div class="label">Season 1</div><ol class="eps"><li>Nowhere Far Enough</li><li>The Favor</li><li>Red Notice</li><li>Call Home</li><li>The Station</li><li>Fighting Back</li></ol></div>
+        <p class="risk">Risk: the highest on the slate. Source exposure can get people hurt. It needs security protocols and grant funding.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="series" id="the-count" style="--c:#e23b34">
+    <div class="series-head"><h2>The Count</h2><span class="tag">The people who count your vote, and what it costs them.</span></div>
+    <div class="case">
+      <div><video controls preload="metadata" playsinline poster="thumb_p2_the_count.jpg" src="p2_the_count.mp4"></video><div class="caption">Pilot · Episode 1: Night Shift · 60 s</div></div>
+      <div class="dossier">
+        <p>Verité inside one county election office through one election: the threats, the budget, the recount, the certification. A quiet procedural about the most contested job in American civic life.</p>
+        <div><div class="label">Fact base</div><ul class="facts">
+          <li><span class="n">38%</span><span>of local election officials threatened, harassed or abused because of their job (2025). <a href="https://www.brennancenter.org/our-work/analysis-opinion/survey-finds-election-officials-want-more-support-amid-federal-cutbacks">Brennan Center</a></span></li>
+          <li><span class="n">60%</span><span>concerned about federal cuts to election-security services.</span></li>
+        </ul></div>
+        <div><div class="label">Season 1</div><ol class="eps"><li>Night Shift</li><li>The Threat</li><li>The Recount</li><li>Who Wants This Job?</li><li>Certification</li><li>The Machines</li></ol></div>
+        <p class="risk">Risk: depends on embedded access. With the midterms a month away, target 2028 or a post-election certification story.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Pilots are concept proofs. Narration is a synthetic placeholder voice (Piper TTS). Shots labeled AI are generated illustrations, not footage of real events. Data visualizations were built in Blender from the cited sources, and FTC claims are allegations from settled complaints.</p>
+    <p>Tools: Higgsfield (Kling 3.0, Nano Banana) · Blender 4.2 Cycles · Natural Earth · Piper TTS · ffmpeg · procedural score. Fonts: Bebas Neue, IBM Plex Mono, Newsreader.</p>
+  </footer>
+</div>
