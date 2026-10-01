@@ -172,12 +172,20 @@ def stat_block(cv, x, y, big, label_lines, accent, alpha, big_size=200, big_colo
 
 
 def source_tag(cv, text, alpha=1.0):
-    put(cv, 'SOURCE  ' + text.upper(), 'mono', 20, GREY, (64, 112), alpha=alpha)
+    put(cv, 'SOURCE  ' + text.upper(), 'mono', 22, GREY, (64, 112), alpha=alpha)
+
+
+@lru_cache(maxsize=1)
+def left_scrim():
+    a = (np.clip(1 - np.linspace(0, 1, 1100) ** 1.4, 0, 1) * 185).astype(np.uint8)
+    im = np.zeros((H, 1100, 4), np.uint8); im[..., 3] = a[None, :]
+    return Image.fromarray(im, 'RGBA')
 
 
 def overlay_B(pid, cv, ts, frame, tr, accent):
     seg_dur = [s['dur'] for s in TL[pid]['segs'] if s['vis'].startswith('B')][0]
     a_all = fade(ts, 0, seg_dur, 0.4, 0.3)
+
     if pid == 'p1_pink_slime':
         def landed(n, first=14, rate=2): return max(0, min(n, (frame - first) // rate + 1))
         lw, lp = landed(121), landed(127)
@@ -185,7 +193,7 @@ def overlay_B(pid, cv, ts, frame, tr, accent):
             xy = track_xy(tr, frame, key)
             if xy and n > 0:
                 x, y = xy; y = max(150, y - 170)
-                put(cv, fmt(total * n / (121 if total == 1213 else 127)), 'bebas', 104, col, (x, y), 'c', a_all)
+                put(cv, fmt(total if n == (121 if total == 1213 else 127) else min(n * 10, total)), 'bebas', 104, col, (x, y), 'c', a_all)
                 put(cv, label, 'monob', 22, col, (x, y + 104), 'c', a_all)
         source_tag(cv, 'NewsGuard, June 2024  ·  1 slab = 10 outlets', a_all)
     elif pid == 'p2_the_count':
@@ -199,16 +207,16 @@ def overlay_B(pid, cv, ts, frame, tr, accent):
         source_tag(cv, 'Brennan Center for Justice, 2025 survey of local election officials', a_all)
     elif pid == 'p3_server_nation':
         a1 = fade(ts, 0.4, 8.7)
-        put(cv, 'DISCORD SERVER  ·  "YOUTH AGAINST CORRUPTION"', 'monob', 26, accent, (110, 250), alpha=a1)
-        stat_block(cv, 104, 290, '130,000+', ['MEMBERS'], WHITE, a1, 170)
+        put(cv, 'DISCORD SERVER  ·  "YOUTH AGAINST CORRUPTION"', 'monob', 26, accent, (110, 556), alpha=a1)
+        stat_block(cv, 104, 590, '130,000+', ['MEMBERS'], WHITE, a1, 170)
         a2 = fade(ts, 9.0, 15.8)
         n = 7713 * ease((ts - 9.0) / 2.6)
-        put(cv, 'POLL FOR INTERIM PRIME MINISTER', 'monob', 26, accent, (110, 250), alpha=a2)
-        stat_block(cv, 104, 290, fmt(n), ['VOTES CAST'], WHITE, a2, 190)
-        put(cv, 'TOP CHOICE: SUSHILA KARKI  ·  3,833 VOTES (50%)', 'mono', 28, WHITE, (110, 560), alpha=a2 * fade(ts, 11.6, 15.8))
+        put(cv, 'POLL FOR INTERIM PRIME MINISTER', 'monob', 26, accent, (110, 556), alpha=a2)
+        stat_block(cv, 104, 590, fmt(n), ['VOTES CAST'], WHITE, a2, 190)
+        put(cv, 'TOP CHOICE: SUSHILA KARKI  ·  3,833 VOTES (50%)', 'mono', 28, WHITE, (110, 836), alpha=a2 * fade(ts, 11.6, 15.8))
         a3 = fade(ts, 16.0, seg_dur, 0.4, 0.3)
-        put(cv, 'SEPTEMBER 12, 2025', 'monob', 26, accent, (110, 250), alpha=a3)
-        stat_block(cv, 104, 290, 'SWORN IN', ['FIRST WOMAN TO LEAD NEPAL\'S GOVERNMENT', 'FORMER CHIEF JUSTICE, AGE 73'], WHITE, a3, 170)
+        put(cv, 'SEPTEMBER 12, 2025', 'monob', 26, accent, (110, 556), alpha=a3)
+        stat_block(cv, 104, 590, 'SWORN IN', ['FIRST WOMAN TO LEAD NEPAL\'S GOVERNMENT', 'FORMER CHIEF JUSTICE, AGE 73'], WHITE, a3, 170)
         put(cv, 'VISUALIZATION  ·  275 SEATS = NEPAL HOUSE OF REPRESENTATIVES', 'mono', 20, GREY, (64, 146), alpha=a_all)
         source_tag(cv, 'Kathmandu Post · Al Jazeera · Outlook India', a_all)
     elif pid == 'p4_long_arm':
@@ -230,7 +238,11 @@ def overlay_B(pid, cv, ts, frame, tr, accent):
             if xy and ts >= t0:
                 k = int(len(label) * ease((ts - t0) / 0.9))
                 al = fade(ts, t0, 13.6, 0.2, 0.5)
-                put(cv, label[:k], 'monob', 24, (255, 90, 80), (xy[0] + 24, xy[1] - 44), alpha=al)
+                if k:
+                    w = font('monob', 30).getlength(label[:k])
+                    rect(cv, (xy[0] + 18, xy[1] - 58, xy[0] + 38 + w, xy[1] - 12), (8, 8, 10), 0.72 * al)
+                    rect(cv, (xy[0] + 18, xy[1] - 58, xy[0] + 22, xy[1] - 12), (255, 59, 48), al)
+                    put(cv, label[:k], 'monob', 30, (255, 236, 232), (xy[0] + 30, xy[1] - 56), alpha=al, shadow=False)
         a1 = fade(ts, 4.0, 12.6)
         put(cv, '17,000,000,000', 'bebas', 120, WHITE, (110, 600), alpha=a1)
         put(cv, 'LOCATION SIGNALS A DAY  ·  ~1 BILLION PHONES', 'mono', 26, WHITE, (116, 722), alpha=a1)
@@ -352,6 +364,8 @@ def compose(pid, preview=None):
                 cv = base.convert('RGBA')
                 if s.get('fade_in') or (i > 0 and segs[i - 1]['vis'] == 'HOOK' and ts < 0.5):
                     cv = Image.blend(Image.new('RGBA', (W, H), (0, 0, 0, 255)), cv, ts / 0.5)
+                if vis.startswith('B') and pid in ('p2_the_count', 'p3_server_nation', 'p4_long_arm'):
+                    cv.alpha_composite(left_scrim(), (0, 0))
                 put(cv, p['series'], 'bebas', 40, WHITE, (64, 52), alpha=0.85, track=3)
                 if vis.startswith('K'):
                     put(cv, 'AI-GENERATED ILLUSTRATION', 'monob', 22, WHITE, (W - 64, 56), 'r', 0.75)
@@ -370,6 +384,17 @@ def compose(pid, preview=None):
         enc.stdin.close(); enc.wait(); mix(pid, silent)
 
 
+def share_encode(src, dst, vbr='3400k'):
+    """two-pass 1080p copy that stays under a 30 MB upload limit for 60 s"""
+    log = dst + '.2pass'
+    base = ['ffmpeg', '-v', 'error', '-y', '-i', src, '-c:v', 'libx264', '-preset', 'slow', '-b:v', vbr, '-maxrate', '4500k',
+            '-bufsize', '9000k', '-pix_fmt', 'yuv420p', '-passlogfile', log]
+    subprocess.run(base + ['-pass', '1', '-an', '-f', 'null', '/dev/null'], check=True)
+    subprocess.run(base + ['-pass', '2', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', dst], check=True)
+    for f in os.listdir(os.path.dirname(dst)):
+        if f.startswith(os.path.basename(log)): os.remove(os.path.join(os.path.dirname(dst), f))
+
+
 def mix(pid, silent):
     vo = TL[pid]['vo']; final = f'{SCR}/out/{pid}.mp4'
     inputs = ['-i', silent, '-i', f'{SCR}/audio/{pid}_music.wav']
@@ -379,16 +404,25 @@ def mix(pid, silent):
         d = int(v['start'] * 1000)
         parts.append(f'[{k + 2}:a]aresample=48000,pan=stereo|c0=c0|c1=c0,adelay={d}|{d},volume=1.0[v{k}]')
     vo_labels = ''.join(f'[v{k}]' for k in range(len(vo)))
-    fc = ';'.join(parts) + f';{vo_labels}amix=inputs={len(vo)}:normalize=0,highpass=f=70,acompressor=threshold=-20dB:ratio=3:attack=5:release=120,' \
+    fc = ';'.join(parts) + f';{vo_labels}amix=inputs={len(vo)}:normalize=0,highpass=f=70,acompressor=threshold=-20dB:ratio=3:attack=5:release=120,apad=whole_dur={TL[pid]["total"]},' \
         f'asplit=2[vo][sc];' \
         f'[1:a]volume=0.9[mu];[mu][sc]sidechaincompress=threshold=0.03:ratio=8:attack=15:release=400[duck];' \
         f'[vo][duck]amix=inputs=2:normalize=0,loudnorm=I=-15:TP=-1.5:LRA=9[aout]'
     subprocess.run(['ffmpeg', '-v', 'error', '-y', *inputs, '-filter_complex', fc, '-map', '0:v', '-map', '[aout]',
                     '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', '-movflags', '+faststart', final], check=True)
     print('wrote', final)
+    # delivery copies: 1080p share version, 720p web version
+    share_encode(final, f'{SCR}/out/share/{pid}.mp4')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', final, '-vf', 'scale=1280:720:flags=lanczos', '-c:v', 'libx264', '-preset', 'slow',
+                    '-b:v', '1500k', '-maxrate', '2000k', '-bufsize', '3000k', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '128k',
+                    '-movflags', '+faststart', f'{SCR}/page/{pid}.mp4'], check=True)
+    print('delivery copies ok')
 
 
 if __name__ == '__main__':
+    os.makedirs(f'{SCR}/out/share', exist_ok=True); os.makedirs(f'{SCR}/page', exist_ok=True)
     pid = sys.argv[1]
+    if len(sys.argv) > 2 and sys.argv[2] == '--mix':
+        mix(pid, f'{SCR}/out/{pid}/video_silent.mp4'); sys.exit()
     pv = [float(x) for x in sys.argv[3:]] if len(sys.argv) > 2 and sys.argv[2] == '--preview' else None
     compose(pid, pv)

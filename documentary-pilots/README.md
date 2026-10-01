@@ -148,4 +148,13 @@ FTC claims are presented as allegations, because they come from complaints that 
 
 Total Higgsfield spend: 117.5 credits (15 × 7.5 + 5 × 1) of the 130 approved.
 
+**Outputs per pilot** (the videos are not committed, to keep binaries out of this repo):
+- A YouTube master (1080p, CRF 17, about 190 MB).
+- A share copy (1080p, two-pass at 3.4 Mbps, under 30 MB).
+- A web copy (720p at 1.5 Mbps, used on the pitch page).
+
+**Pitch page.** The source is `page/index.html`. It's published as a private artifact with all five pilots embedded.
+
+**Render notes.** This container has no GPU, so EEVEE ran through software OpenGL and was slower than Cycles. Cycles on 4 CPU cores managed about 4–7 s per frame. Rendering at 12 fps and motion-interpolating to 24 fps halved the render time.
+
 To rebuild: install `bpy==4.2.0`, `piper-tts`, `pillow`, `numpy`, `scipy` and ffmpeg. Then run, in order: `tts.py` → `timeline.py` → `music.py` → each `blender/b*.py anim` → `compose.py <pilot_id>`. The Higgsfield clips are not in the repo. Download them from the Higgsfield project "Documentary Pilots — Democracy Series Slate" into `hf/K1.mp4` … `K15.mp4` and `hf/A21.png` … `A25.png`.
