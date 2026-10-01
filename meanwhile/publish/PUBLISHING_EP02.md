@@ -179,7 +179,7 @@ Episode 2 (6 min): [YouTube link]
 
 **Reddit**
 
-The subreddits most likely to accept it are r/StopMotion, r/animation and r/artificial. Read each one's self-promotion rules first. Use this title and link to YouTube:
+The best fits are r/ClaudeAI and r/aivideo. Read each one's self-promotion rules first, and lead with how the show was made rather than posting a bare link. Skip r/StopMotion: the show only looks like stop-motion, and that community would likely see it as passing off AI work as handmade. Use this title and link to YouTube:
 
 ```
 I had an AI write a stop-motion comedy about what people ask it first [MEANWHILE Ep. 2]
