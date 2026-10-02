@@ -1,7 +1,7 @@
 # UNBUILT Hugo special: "Myths of the Unbuilt" (working title)
 
 **Status:** first draft for review, 2 Oct 2026. No shots planned or rendered, and no credits spent.
-**Runtime:** about 7:30. **Format:** 16:9, 720p (1080p upload master). **Host:** Hugo Ashby, on camera and in VO, voice Arthur. It also works as voice-over only, if Hugo is dropped on 31 Oct.
+**Runtime:** about 7:40. **Format:** 16:9, 720p (1080p upload master). **Host:** Hugo Ashby, on camera and in VO, voice Arthur. It also works as voice-over only, if Hugo is dropped on 31 Oct.
 **Release target (proposed):** November 2026, timed to Reflect Orbital's launch if it happens then. It goes ahead of the palaces special.
 
 **YouTube title (proposed):** *The Nazi "Sun Gun" Never Existed. The Space Mirror Does. (And 4 More Myths)*
@@ -118,7 +118,7 @@ Alternatives:
 
 ---
 
-## No. 2 · "THE STATUE OF LIBERTY WAS MADE FOR EGYPT" · Port Said, 1867 (4:10–5:25)
+## No. 2 · "THE STATUE OF LIBERTY WAS MADE FOR EGYPT" · Port Said, 1867 (4:10–5:35)
 
 **[L1] SYNC** · the deck of a New York harbour ferry, the Statue of Liberty behind Hugo
 > In 2015, a headline announced that the Statue of Liberty was originally a Muslim woman. Like most headlines, it's about half right.
@@ -132,8 +132,8 @@ Alternatives:
 **[L4] VO** · a sculptor's studio: terracotta models in a row, each one a little less like a peasant and a little more like a goddess
 > Bartholdi kept the idea: a robed woman, a light held high, guarding a harbour. Historians see her evolving, sketch by sketch, into a goddess. And she grew, to a hundred and fifty-one feet.
 
-**[L5] VO** · Bartholdi in his study in the 1880s, seen from behind, reading a newspaper
-> Bartholdi denied it. The only resemblance, he said, is that "both held a light aloft." (M)
+**[L5] VO** · the real 1886 newspaper column on screen (Springfield Republican, 15 Oct 1886; Library of Congress scan, public domain), a slow push-in to the highlighted line "does not at all resemble"
+> The rumour is nearly as old as the statue. In October 1886, the month she was unveiled, American papers were already printing it, and knocking it down. The Egyptian sketch, they wrote, "does not at all resemble" the statue on Bedloe's Island.
 
 **[L6] VO** · a modern phone screen showing a viral headline, blurred; then Bartholdi's watercolour again
 > And "Muslim"? No source says so. Bartholdi's drawings show a fellah, an Egyptian peasant woman. Her religion was added by a headline, in 2015.
@@ -143,7 +143,7 @@ Alternatives:
 
 ---
 
-## No. 1 · "THE NAZI SUN GUN" · 1929–1945, and now (5:25–7:00)
+## No. 1 · "THE NAZI SUN GUN" · 1929–1945, and now (5:35–7:10)
 
 **[S1] SYNC** · a hilltop at night under a sky full of stars, a small telescope beside Hugo
 > In July 1945, American readers learned that German scientists had planned a mirror in space, big enough to burn a city.
@@ -171,7 +171,7 @@ Alternatives:
 
 ---
 
-## OUTRO (7:00–7:20)
+## OUTRO (7:10–7:30)
 
 **[O1] SYNC** · the library reading room, Hugo returning the bound volume to its shelf
 > Five myths. Two false, one unprovable, one half true, and one about to launch. If a building sounds too good to be true, check who's telling the story, and when.
@@ -188,7 +188,7 @@ Alternatives:
 
 ### Script notes
 
-- **Word count:** about 1,010 spoken words. With the 1.5 s sting, five verdict cards and music beats, that is about 7:30.
+- **Word count:** about 1,050 spoken words. With the 1.5 s sting, five verdict cards and music beats, that is about 7:40.
 - **Quotes to check against scans before they go on screen:**
   - Tavernier, Ball/Crooke ed., Vol. I p. 91.
   - TIME, 9 Jul 1945, "Science: Sun Gun".
@@ -197,11 +197,10 @@ Alternatives:
   - The *La Vanguardia* of 27 Feb 1888, via El Nacional.
   - The *Protest against the Tower*, *Le Temps*, 14 Feb 1887.
   - Gueilburt, via Gaudí Club.
-  - Bartholdi's denial: trace the original newspaper (Moreno's *Statue of Liberty Encyclopedia*). Until then it stays (M).
+  - *Springfield Weekly Republican*, 15 Oct 1886, p. 2 (L5). The wording comes from the Library of Congress OCR text, so check it against the page image.
   - The NYT of 11 Jul 1934 (Tesla).
 - **Hedged on purpose, marked (M):**
   - The Gaudí height.
-  - Bartholdi's denial (secondary source).
   - Reflect Orbital "licensed this year": confirmed, FCC 9 Jul 2026. **Recheck whether it has launched before publishing**, and update S7.
 - **Myths avoided inside the myth-busting:**
   - "Muslim" as fact.
