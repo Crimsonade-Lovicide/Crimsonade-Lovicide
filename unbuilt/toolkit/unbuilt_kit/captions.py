@@ -24,12 +24,13 @@ def _ass_time(t):
 def srt_to_ass(srt_text, width, height, family, vertical=False):
     """Convert SRT to ASS on a canvas the size of the video, so font sizes are real pixels."""
     u = min(width, height) / 1080
-    size = round((64 if vertical else 50) * u)
-    outline = round((5 if vertical else 3.5) * u, 1)
+    size = round((60 if vertical else 46) * u)
+    pad = round((12 if vertical else 9) * u, 1)                # box padding around the text
     margin_v = round(height * (0.30 if vertical else 0.06))
     margin_h = round(width * (0.08 if vertical else 0.10))
-    style = (f"Style: House,{family},{size},{_ass_colour(PAPER)},{_ass_colour(PAPER)},{_ass_colour(INK)},"
-             f"{_ass_colour(INK, 0x60)},-1,0,0,0,100,100,0,0,1,{outline},{round(1.5 * u, 1)},2,"
+    # BorderStyle 3: an opaque box in OutlineColour behind each line - ink at ~80%, paper-white text
+    style = (f"Style: House,{family},{size},{_ass_colour(PAPER)},{_ass_colour(PAPER)},{_ass_colour(INK, 0x38)},"
+             f"{_ass_colour(INK, 0x38)},-1,0,0,0,100,100,0,0,3,{pad},0,2,"
              f"{margin_h},{margin_h},{margin_v},1")
     lines = ["[Script Info]", "ScriptType: v4.00+", f"PlayResX: {width}", f"PlayResY: {height}",
              "WrapStyle: 0", "ScaledBorderAndShadow: yes", "",
@@ -53,7 +54,7 @@ def srt_to_ass(srt_text, width, height, family, vertical=False):
 
 
 def captions_burn(video, srt, out, vertical=False):
-    """Burn `srt` into `video`: paper-white bold sans with an ink outline, readable on scans and on footage.
+    """Burn `srt` into `video`: paper-white bold sans on a translucent ink box, readable on scans and footage.
     vertical=True: bigger type, set about 30% up the frame, clear of the Shorts interface.
     No transcription here: bring an SRT (written or corrected by hand)."""
     bold = font_path("sans", "bold")

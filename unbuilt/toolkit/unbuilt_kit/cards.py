@@ -112,10 +112,10 @@ def quote_card(out, duration, quote, attribution, size=HD, bg="paper", fade_out=
     size = even(size)
     W, H = size
     u = unit(size)
-    qf = font("serif", (54 if W >= H else 58) * u, "italic")
-    af = font("sans", 26 * u)
+    qf = font("serif", (64 if W >= H else 60) * u, "italic")
+    af = font("sans", 28 * u)
     mark_f = font("serif", 150 * u, "bold")
-    lines = wrap(quote, qf, W * (0.70 if W >= H else 0.82))
+    lines = wrap(quote, qf, W * (0.68 if W >= H else 0.80))
     lh = qf.size * 1.32
     attr_text = "— " + attribution
     block = lh * len(lines) + 40 * u + af.size
@@ -131,7 +131,7 @@ def quote_card(out, duration, quote, attribution, size=HD, bg="paper", fade_out=
     attr, _ = text_sprite(attr_text, af, MUTED, tracking=0.03)
     mark, _ = text_sprite("\u201c", mark_f, ACCENT)
     mark_x = x_left - mark_f.getlength("\u201c") - 14 * u     # hangs in the left margin
-    per_line = min(1.4, (duration * 0.6) / max(1, len(lines)))
+    per_line = min(1.2, (duration * 0.42) / max(1, len(lines)))
     base = background(size, bg)
     with Writer(out, size, fps) as w:
         for t in frame_times(duration, fps):

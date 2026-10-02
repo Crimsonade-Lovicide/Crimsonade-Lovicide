@@ -138,30 +138,30 @@ def main(quick=False):
     news = p("newspaper_demo.jpg")
     box = make_newspaper(news)
 
-    kit.title_card(p("01_title.mp4"), 4.5, "The Tower at Wembley", "A toolkit demo · UNBUILT", size=size)
+    kit.title_card(p("01_title.mp4"), 4, "The Tower at Wembley", "A toolkit demo · UNBUILT", size=size)
     kit.kenburns(DESIGN, p("02_kenburns.mp4"), 6, start=(0.5, 0.45, 1.0), end=(0.55, 0.32, 1.9), size=size)
-    kit.annotate(DESIGN, p("03_annotate.mp4"), 6.5, size=size, marks=[
+    kit.annotate(DESIGN, p("03_annotate.mp4"), 6.5, size=size, start=(0.5, 0.36, 1.6), end=(0.5, 0.36, 1.68), marks=[
         {"type": "underline", "from": (0.42, 0.168), "to": (0.69, 0.168), "at": 0.6},
         {"type": "ellipse", "center": (0.32, 0.35), "radii": (0.15, 0.055), "at": 1.5},
-        {"type": "arrow", "from": (0.86, 0.36), "to": (0.60, 0.43), "at": 3.0},
-        {"type": "label", "text": "First prize, 1890", "pos": (0.72, 0.32), "anchor": "c", "at": 4.0},
+        {"type": "arrow", "from": (0.82, 0.37), "to": (0.60, 0.44), "at": 3.0},
+        {"type": "label", "text": "First prize, 1890", "pos": (0.66, 0.31), "size": 36, "at": 4.0},
     ])
     kit.highlight(news, p("04_highlight.mp4"), 5.5, box=box, size=size)
-    kit.scale_compare(p("05_scale.mp4"), 7, [
-        {"name": "Watkin's Tower (design)", "height_m": 358, "shape": "taper", "accent": True},
+    kit.scale_compare(p("05_scale.mp4"), 6.5, [
+        {"name": "Watkin's Tower (design)", "height_m": 366, "shape": "taper", "accent": True},
         {"name": "Eiffel Tower", "height_m": 330, "shape": "taper"},
         {"name": "The Shard", "height_m": 310, "shape": "taper"},
         {"name": "Big Ben", "height_m": 96},
         {"name": "Wembley arch", "height_m": 133, "shape": "arch"},
     ], size=size, title="Drawn to one scale")
-    kit.timeline(p("06_timeline.mp4"), 7, [
+    kit.timeline(p("06_timeline.mp4"), 6.5, [
         (1889, "Eiffel Tower"), (1890, "Competition"), (1896, "Opened to the public"), (1907, "Demolished"),
         (1923, "Empire Stadium"), (2007, "New Wembley"),
     ], size=size, title="Wembley, 1889 to 2007")
-    kit.quote_card(p("07_quote.mp4"), 5.5, "Sample quotation set in the house style. In an episode the words "
+    kit.quote_card(p("07_quote.mp4"), 5, "Sample quotation set in the house style. In an episode the words "
                    "come from the archive, and the source goes in the description.",
                    "Demo text, not a real quotation", size=size)
-    kit.end_card(p("08_end.mp4"), 4, size=size)
+    kit.end_card(p("08_end.mp4"), 3.5, size=size)
 
     # lower third laid over the Ken Burns shot
     kit.lower_third(p("lower_third.mov"), 4, "Design No. 37", "Stewart, MacLaren and Dunn, 1890", size=size)
@@ -183,7 +183,7 @@ def main(quick=False):
     kit.captions_burn(p("07_quote.mp4"), p("demo.srt"), p("quote_captioned.mp4"))
 
     for v in (1, 2, 3):
-        kit.thumbnail(p(f"thumb_{v}.png"), DESIGN if v != 2 else news, overlay_image=DESIGN,
+        kit.thumbnail(p(f"thumb_{v}.png"), news, overlay_image=DESIGN,
                       text=["NEVER FINISHED", "LONDON'S EIFFEL", "SOLD FOR SCRAP"][v - 1], variant=v)
 
     contact_sheet(p("demo_reel.mp4"), p("contact.png"))

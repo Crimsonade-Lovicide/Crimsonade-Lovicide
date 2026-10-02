@@ -75,10 +75,10 @@ def scale_compare(out, duration, items, unit="m", size=HD, title=None, bg="paper
     sky = (0.20 if title else 0.13) * H
     px_per_m = (ground - sky) / top_val
     col = (right - left) / n
-    name_f = font("sans", 26 * u)
+    name_f = font("sans", 28 * u)
     val_f = font("serif", 34 * u, "bold")
-    grid_f = font("sans", 20 * u)
-    title_f = font("serif", 46 * u, "bold")
+    grid_f = font("sans", 22 * u)
+    title_f = font("serif", 54 * u, "bold")
 
     base = background(size, bg)
     step = _nice_step(top_val)

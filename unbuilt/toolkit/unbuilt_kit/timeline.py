@@ -39,17 +39,17 @@ def timeline(out, duration, events, size=HD, title=None, spacing="auto", accent_
     x0, x1 = 0.08 * W, 0.92 * W
     ly = 0.55 * H
     xs = _positions([e[0] for e in events], x0, x1, (x1 - x0) / max(n, 1) * 0.6, spacing)
-    year_f = font("serif", 46 * u, "bold")
-    label_f = font("sans", 25 * u)
-    title_f = font("serif", 46 * u, "bold")
-    tick = 18 * u
+    year_f = font("serif", 58 * u, "bold")
+    label_f = font("sans", 30 * u)
+    title_f = font("serif", 54 * u, "bold")
+    tick = 22 * u
     line_w = max(2, 3 * u)
     max_label_w = min(0.30 * W, 2 * (x1 - x0) / max(n, 1) * 0.92)
 
     base = background(size, bg)
     if title:
         spr, _ = text_sprite(title, title_f, INK)
-        paste(base, spr, (W - spr.shape[1]) / 2, 0.12 * H)
+        paste(base, spr, (W - spr.shape[1]) / 2, 0.2 * H)
 
     sprites = []
     for i, (year, label) in enumerate(events):

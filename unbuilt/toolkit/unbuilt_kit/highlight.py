@@ -7,7 +7,7 @@ from .core import (ACCENT, FPS, HD, Writer, apply_affine, camera_matrix, even, f
 from .kenburns import plan_views, view_at
 
 
-def highlight(scan, out, duration, box, size=HD, bg="paper", fill=0.72, dim=0.45, marker=ACCENT,
+def highlight(scan, out, duration, box, size=HD, bg="paper", fill=0.6, dim=0.45, marker=ACCENT,
               marker_alpha=0.30, fps=FPS):
     """box: (x0, y0, x1, y1) as fractions of the scan.
 
@@ -29,7 +29,7 @@ def highlight(scan, out, duration, box, size=HD, bg="paper", fill=0.72, dim=0.45
     plate, v0, v1, rect = plan_views(img, size, (0.5, 0.5, 1.0), centre, bg)
     corners = np.array([[rect[0] + x0 * rect[2], rect[1] + y0 * rect[3]],
                         [rect[0] + x1 * rect[2], rect[1] + y1 * rect[3]]])
-    feather = 10 * unit(size)
+    feather = 6 * unit(size)
     pad = 6 * unit(size)
     times = frame_times(duration, fps)
     with Writer(out, size, fps) as w:
@@ -45,7 +45,8 @@ def highlight(scan, out, duration, box, size=HD, bg="paper", fill=0.72, dim=0.45
                 frame *= (1 - d * (1 - dim) * (1 - inside))[..., None]
             s = ramp(u, 0.5, 0.3)
             if s > 0:
-                mk = rect_mask(frame.shape, bx0 - pad, by0, bx0 - pad + (bx1 - bx0 + 2 * pad) * s, by1)
+                mk = rect_mask(frame.shape, bx0 - pad, by0 - pad, bx0 - pad + (bx1 - bx0 + 2 * pad) * s, by1 + pad)
+                mk = cv2.GaussianBlur(mk, (0, 0), 1.2 * unit(size) + 0.3)     # felt-tip edge, not a hard box
                 tint = 1 - marker_alpha * (1 - np.asarray(marker, np.float32))
                 frame *= 1 - mk[..., None] * (1 - tint)
             w.write(frame)
