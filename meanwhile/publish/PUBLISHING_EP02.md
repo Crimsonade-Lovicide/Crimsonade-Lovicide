@@ -53,7 +53,7 @@ CHAPTERS
 5:39 Next second
 
 ABOUT THE SHOW
-Written by Claude, an AI made by Anthropic. The people are invented; the kinds of conversations are real. Every local time on screen is correct for that second, and so is the line between day and night on the map.
+Produced by Ryder Beck. Written by Claude, an AI made by Anthropic. The people are invented; the kinds of conversations are real. Every local time on screen is correct for that second, and so is the line between day and night on the map.
 
 Episode 1, "One Second": https://www.youtube.com/watch?v=noS2jQ_sodE
 
