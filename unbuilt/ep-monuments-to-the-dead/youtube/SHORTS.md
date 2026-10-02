@@ -24,10 +24,12 @@ The special is https://youtu.be/SwJYHf9xcBw, and `<special>` in the descriptions
 | # | On YouTube | Goes public |
 |---|---|---|
 | 1 | Pyramid: https://youtu.be/gMbKseccqzA (uploaded 30 Sep, AI label set) | 2026-10-11 20:00 UTC |
-| 2 | Washington: not yet; the 30 Sep upload was throttled after four uploads, and a retry is scheduled | 2026-10-16 20:00 UTC |
-| 3 | Charles: not yet | 2026-10-21 20:00 UTC |
-| 4 | Evita: not yet | 2026-10-26 20:00 UTC |
-| 5 | Newton: not yet | 2026-10-31 20:00 UTC |
+| 2 | Washington: https://youtu.be/s49AmXe8LI8 (uploaded 2 Oct, AI label set) | 2026-10-16 20:00 UTC |
+| 3 | Charles: https://youtu.be/S_J7RxJpL3c (uploaded 2 Oct, AI label set) | 2026-10-21 20:00 UTC |
+| 4 | Evita: https://youtu.be/hSTFRklmmhg (uploaded 2 Oct, AI label set) | 2026-10-26 20:00 UTC |
+| 5 | Newton: https://youtu.be/5O31U9ywKCs (uploaded 2 Oct, AI label set) | 2026-10-31 20:00 UTC |
+
+All five are uploaded as private, with a scheduled publish time. The tags follow the Pyramid Short's pattern. Each one's **Related video** still has to be set to the special in Studio, once the special is public.
 
 The files are hosted on Higgsfield, at `https://d2ol7oe51mr4n9.cloudfront.net/user_3I5n0QfN95qPKAD4HMrPjkkqDkc/<id>.mp4`:
 
