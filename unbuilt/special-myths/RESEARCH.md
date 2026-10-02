@@ -64,6 +64,47 @@ Sources:
 
 ---
 
-## Eiffel Tower and Barcelona; Black Taj Mahal; Statue of Liberty and Egypt; Tesla's "death ray"
+## "Barcelona turned down the Eiffel Tower" (proposed No. 5). Verdict: FALSE, with a grain of truth
 
-*Fact-checks in progress (1 Oct 2026). These sections are added when they report.*
+| Claim | Finding | Conf. |
+|---|---|---|
+| Did Eiffel propose a tower for Barcelona? | **No evidence.** "No documentary evidence of an hypothetical proposal by Eiffel to erect his tower in Barcelona has been found anywhere" (El Nacional, 14 Apr 2024, drawing on Carme Grandas, *La Barcelona desestimada*, 2017). No drawing or letter exists. https://www.elnacional.cat/en/culture/reality-urban-legend-barcelona-three-eiffel-style-towers_1193573_102.html ; https://www.3cat.cat/3catinfo/la-barcelona-que-mai-va-ser-projectes-dedificis-que-haurien-transformat-la-ciutat/noticia/3164127/ | H |
+| Towers Barcelona did reject | Three, none of them Eiffel's. **Torre Lapierre:** 200 m, timber (1886), turned down over cost. **Torre Comtal:** about 200–210 m, by Pere Falqués (1888). **Torre Carbonell:** 350 m, iron, *La Vanguardia* 27 Feb 1888, pitched as "one-sixth higher than Eiffel's famous one in Paris", turned down for lack of time and money. | H |
+| The timeline rules the myth out | Paris opened its competition in May 1886. Work on the Eiffel Tower's foundations began 28 Jan 1887. Barcelona's own press called it "Eiffel's famous one in Paris." | H |
+| Origin of the legend | No 19th-century source can be traced. It appears in recent pop articles (e.g. Equinox, 2019) with no citations. | L (origin) |
+| Who designed the tower | Koechlin sketched the "300-metre-high pylon" on the evening of 6 June 1884 (official site; Wikipedia says May). Nouguier and Sauvestre followed. Patent filed 18 Sept 1884; Eiffel bought the rights. | H/M |
+| "It was meant to be temporary" | **Half-true.** Eiffel had a 20-year concession, after which the tower passed to the city in 1910 and demolition became an *option*. Radio saved it (Ferrié's military wireless), and the concession was extended by 70 years from 1 Jan 1910. | M / H |
+| The real rejection | Paris itself: the *Protest against the Tower* (*Le Temps*, 14 Feb 1887) called it "this useless and monstrous Eiffel Tower." | H |
+
+**Twist:** Barcelona never turned down the Eiffel Tower. It turned down a tower designed to beat it.
+
+**Avoid:**
+- "Barcelona called it ugly"
+- "The Arc de Triomf was built instead"
+- "Eiffel designed it alone"
+- "Scheduled to be torn down in 1909"
+- Any prop "rejection letter"
+
+## "Shah Jahan planned a Black Taj Mahal" (proposed No. 4). Verdict: FALSE
+
+| Claim | Finding | Conf. |
+|---|---|---|
+| Only source | Tavernier, *Travels in India* (1676), trans. Ball (1889), ed. Crooke (1925), Vol. I, p. 91: "Shah Jahan began to build his own tomb on the other side of the river, but the war with his sons interrupted his plan, and Aurangzeb, who reigns at present, is not disposed to complete it." **The word "black" does not appear.** https://franpritchett.com/00generallinks/tavernier/vol1_chapter07.html | H (primary) |
+| Tavernier as a witness | Hearsay. He claims to have "witnessed the commencement" of the Taj, but arrived after work began and wrote more than 10 years after his visit. | M |
+| Mehtab Bagh | A Smithsonian Sackler and Archaeological Survey of India project (Moynihan, ed., *The Moonlight Garden*, 2000) found a garden "matching the Taj gardens in width and alignment", with an octagonal pool for "contemplation of the Taj Mahal and its reflection", "de-bunking the myth that it was intended to house the black marble tomb of Shahjahan." https://archive.asia.si.edu/press/past/prmoonlightgarden.htm | H |
+| The "black stones" | Carlleyle (1871) recorded ruins "blackened by moss and lichen." Later accounts say they were discoloured white marble. | M / L–M |
+| Shah Jahan's end | Confined in Agra Fort by Aurangzeb from 1658; died 22 Jan 1666; buried beside Mumtaz. His cenotaph is off-centre, the one asymmetry in the Taj, which suggests he was not part of its plan. | H |
+| Ebba Koch | Treats Mahtab Bagh as part of the Taj's own garden scheme (*The Complete Taj Mahal*, 2006). Not read directly. | M |
+
+**Twist:** there *was* a black Taj. It was the white one, reflected in the dark water of the moonlight garden's pool.
+
+**Avoid:**
+- "Tavernier said black marble"
+- "Black foundations were found"
+- "A bridge between the tombs"
+- "Construction had started"
+- Using the off-centre cenotaph as *proof* of a second tomb
+
+## Statue of Liberty and Egypt; Tesla's "death ray"
+
+*Fact-check in progress (2 Oct 2026).*
