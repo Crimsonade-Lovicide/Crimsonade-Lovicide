@@ -98,3 +98,87 @@ The Hugo and Chiara figures rest on 28 and 16 views, so each could move by sever
    - Many impressions but a low click-through: the thumbnail or title is the problem.
 3. **The Wright special against the two Emmett Wright videos:** the same subject and audience, so the closest to a fair test.
 4. **Decision around 31 Oct**, once both Hugo specials have had 14 days. If they don't at least match Emmett's median on click-through, % watched and subscribers per 1,000 views, drop the on-camera host from specials. That saves about 480 of the roughly 810 credits a special costs.
+
+---
+
+## Follow-up: Friday 2 Oct 2026
+
+The data was pulled at about 17:00 UTC. YouTube Analytics now runs **three** days behind, so its last full day is **29 Sep (Pacific time)**. That gives Hugo's days 3 and 4, but not day 5 (30 Sep). View counts from the Data API are live.
+
+### Did Hugo's special get a browse wave on days 3–5?
+
+**A small one came, and the viewers didn't stay.**
+
+| Day (Pacific time) | Day of the video's life | Home-feed (browse) views | Suggested-video views | Total |
+|---|---|---|---|---|
+| 26 Sep | 1 | 0 | 4 | 7 |
+| 27 Sep | 2 | 3 | 17 | 21 |
+| 28 Sep | 3 | 0 | 7 | 10 |
+| 29 Sep | 4 | **22** | 7 | **30** |
+
+- The 22 home-feed viewers on 29 Sep watched **about 1 minute between them**, about 3 seconds each.
+- The suggested-video viewers on the same day watched about 4.7 minutes each.
+- For comparison, the Mile-High's home-feed wave was 468 + 190 views at about 20 s each, and Ellis Island's was 193 + 386 at about 13 s each.
+
+**Interpretation (a hypothesis, from small numbers):** YouTube did test the special on the home feed, but on a much smaller scale. Viewers who came cold left almost at once. On that evidence the problem is the packaging or the first few seconds, not what follows: people who arrive from a related video watch for nearly 5 minutes. Studio's impressions and click-through rate for 28–30 Sep would show which.
+
+### How Hugo compares with Emmett at the same age
+
+Views in the first four days, counting the Pacific publish day as day 1:
+
+| Video | Presenter | Days 1–4 |
+|---|---|---|
+| The Mile-High | Emmett | 645 |
+| Ellis Island | Emmett | 618 |
+| Stalin's cathedral | Emmett | 173 |
+| Watkin's Tower | Emmett | 135 |
+| Plan Voisin | Emmett | 91 |
+| **Magnificent Delusions** | **Hugo** | **68** |
+| Volkshalle | Emmett | 51 |
+| Sky City | Emmett | 41 |
+| Tatlin's Tower | Emmett | 23 |
+
+- The Emmett median is **113**, and Hugo is **below it**: 6th of 9.
+- At two days he was level (28 against 27.5).
+- **Unfair in Emmett's favour:** every Emmett video here had its days 3–4 between 18 and 25 Sep, when the whole channel's home feed brought 270–544 views a day. Hugo's days 3–4 were 28–29 Sep, when it brought 28–73 a day.
+- Against videos launched the same week, Hugo leads the Emmett ones. Live counts:
+
+| Video | Presenter | Live views |
+|---|---|---|
+| Magnificent Delusions | Hugo | 65 at about 6 days |
+| Da Vinci's bridge | Emmett | 12 at about 6 days |
+| The Mukaab | Emmett | 14 at about 3 days |
+| Walt Disney's city | Chiara | 17 at about 6 days |
+
+### Once people click, how long they stay (lifetime, to 29 Sep)
+
+| Video | Presenter | Views | Avg watched | % watched | Subscribers gained |
+|---|---|---|---|---|---|
+| Magnificent Delusions | Hugo | 68 | **2:58** | **39.2%** | 0 |
+| Walt Disney's city | Chiara | 17 | 3:50 | 41.6% | 0 |
+| Wardenclyffe | Chiara | 44 | 2:52 | 29.9% | 0 |
+| The Emmett long videos | Emmett | 35–909 each | 0:52–2:00 | 16.5–37.0% | 7 in all, across about 3,100 views |
+
+- Hugo's retention **rose** from 2:02 and 27% on Tuesday. He holds viewers longer than any Emmett video.
+- The subscriber numbers are too small to compare: the whole channel gains about one subscriber per 450 views.
+
+### Has the channel-wide drop after 25 Sep recovered?
+
+**Not up to 29 Sep.**
+
+| Whole channel, per day | Peak (19–25 Sep) | 26–29 Sep |
+|---|---|---|
+| Home feed (browse) | 270–544 | 75, 28, 28, 73 |
+| Shorts feed | 1,228–1,317 (22–23 Sep) | 83, 151, 93, **9** |
+| Search | 63–124 | 60–107 (steady) |
+
+**One thing to watch:** Chiara's Wardenclyffe episode (ZR6H4mVwAMs) shows **825 live views**, but only 44 in Analytics up to 29 Sep. About 780 views arrived between 30 Sep and 2 Oct, and Analytics doesn't yet show where from. It could be paid ads (as with The Line) or a real home-feed wave. Analytics should show the source by about Monday 5 Oct.
+
+### What this changes
+
+1. **The evidence is still mixed, not damning:**
+   - Against Hugo: fewer views than the Emmett median at the same age, and cold home-feed viewers bounced almost at once.
+   - For Hugo: by far the best retention of any Emmett-comparable video, and it leads its own launch week.
+   - The channel-wide slump means nobody, in any format, has had a fair test since 26 Sep.
+2. **The decision around 31 Oct still stands.** The fairest test remains the Wright special against the two Emmett Wright videos.
+3. **Read in Studio (the API can't):** impressions and click-through rate for Magnificent Delusions on 28–30 Sep, against the Mile-High's and Ellis Island's days 3–5. If impressions are low, YouTube barely tried the video. If impressions are fine but click-through is low, the thumbnail or title is losing the click. That would also explain the 3-second home-feed viewers.
