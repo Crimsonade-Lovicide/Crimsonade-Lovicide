@@ -1,5 +1,7 @@
 # UNBUILT: series format
 
+> **The 90-day test (5 Oct 2026 to 5 Jan 2027) is running.** Read `90_DAY_TEST.md` before planning or spending anything: plan credits only, no top-ups or ads, and one long video a week at most.
+
 Decided by the channel owner on 27 Sep 2026.
 
 UNBUILT runs two formats with two hosts. A host never crosses into the other format.

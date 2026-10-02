@@ -11,7 +11,7 @@
 | Views, all time | 7,892 |
 | Videos | 32 |
 | Watch time to 30 Sep | about 53 hours, Shorts included |
-| Subscribers gained, 17–20 Sep | 65, during the Mile-High and The Line wave and the ads |
+| Subscribers gained, 17–20 Sep | 65, during the Mile-High and The Line wave. The Line's 739 views were YouTube ad traffic that the owner didn't buy, and their source is not yet traced. |
 | Subscribers gained, 21–30 Sep | 8, about 1 a day |
 | Revenue | $0 (not in the Partner Programme) |
 | Higgsfield credits used, 29 Sep–1 Oct | about 3,100: the balance was about 563, plus a 2,000 reset grant and 1,100 bought, leaving 567. That is about $150 at top-up prices ($49 per 1,000 credits). Mostly the Wright special. |
@@ -49,7 +49,7 @@
 
 ## Recommendation: a 90-day capped test, 5 Oct 2026 to 5 Jan 2027
 
-1. **Budget cap:** the plan's monthly credits only. No top-ups, no paid ads.
+1. **Budget cap:** the plan's monthly credits only. No top-ups, no ads.
 2. **Fewer, better videos:**
    - One long video a week, with Shorts cut from it (they cost nothing).
    - Stop running sessions in parallel to publish several videos a day.
@@ -65,5 +65,5 @@
 ## What would change this assessment
 
 - **Earlier:** a video breaking 10,000 views organically.
-- **Against:** the Monday data showing Wardenclyffe's roughly 780 new views came from ads rather than the home feed.
+- **Against:** the Monday data showing Wardenclyffe's roughly 780 new views came from ad traffic rather than the home feed.
 - **Against, if the answer is yes:** whether your time has a better-paying use, which is a question only you can answer.

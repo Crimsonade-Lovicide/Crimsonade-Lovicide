@@ -17,7 +17,7 @@ The narrator of each video comes from its description.
 | Video | Presenter | First 2 days |
 |---|---|---|
 | Frank Lloyd Wright's mile-high tower | Emmett | 142 |
-| NEOM's The Line | Emmett | 91 (paid ads) |
+| NEOM's The Line | Emmett | 91 (ad traffic: see the note in section 2) |
 | Ellis Island | Emmett | 39 |
 | Volkshalle | Emmett | 35 |
 | Stalin's cathedral | Emmett | 33 |
@@ -29,7 +29,7 @@ The narrator of each video comes from its description.
 | Plan Voisin | Emmett | 6 |
 | Da Vinci's bridge | Emmett | 3 |
 
-The median for the Emmett videos of 16–22 Sep, without the paid one, is **27.5**. Hugo's special is right on it.
+The median for the Emmett videos of 16–22 Sep, without The Line (whose views were mostly ad traffic), is **27.5**. Hugo's special is right on it.
 
 Among the videos launched on 26–27 Sep, Hugo's is the best so far. Public view counts at about 3 days:
 
@@ -47,7 +47,7 @@ The Emmett long videos have 3,088 views in total. **77%** of them came from thre
 |---|---|---|
 | The Mile-High | 902 | A home-feed ("browse") wave on days 3–4. The viewers stayed about 20 s each. |
 | Ellis Island | 707 | A browse wave on days 3–4. The viewers stayed about 13 s each. |
-| The Line | 769 | Paid ads (739 views). |
+| The Line | 769 | YouTube ad traffic (739 views, 17–20 Sep: 632 "TrueView in-stream" and 107 "Homepage Video Ad"). **The owner says they bought no ads (2 Oct).** Check Google Ads and Studio's Promotions page for a campaign nobody meant to start. |
 
 The other six Emmett videos average about 118 views after 7–13 days.
 
@@ -172,7 +172,7 @@ Views in the first four days, counting the Pacific publish day as day 1:
 | Shorts feed | 1,228–1,317 (22–23 Sep) | 83, 151, 93, **9** |
 | Search | 63–124 | 60–107 (steady) |
 
-**One thing to watch:** Chiara's Wardenclyffe episode (ZR6H4mVwAMs) shows **825 live views**, but only 44 in Analytics up to 29 Sep. About 780 views arrived between 30 Sep and 2 Oct, and Analytics doesn't yet show where from. It could be paid ads (as with The Line) or a real home-feed wave. Analytics should show the source by about Monday 5 Oct.
+**One thing to watch:** Chiara's Wardenclyffe episode (ZR6H4mVwAMs) shows **825 live views**, but only 44 in Analytics up to 29 Sep. About 780 views arrived between 30 Sep and 2 Oct, and Analytics doesn't yet show where from. It could be ad traffic (as with The Line) or a real home-feed wave. Analytics should show the source by about Monday 5 Oct.
 
 ### What this changes
 
