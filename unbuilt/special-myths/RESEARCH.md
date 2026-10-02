@@ -105,6 +105,36 @@ Sources:
 - "Construction had started"
 - Using the off-centre cenotaph as *proof* of a second tomb
 
-## Statue of Liberty and Egypt; Tesla's "death ray"
+## "The Statue of Liberty was designed for Egypt" (proposed No. 2). Verdict: HALF-TRUE
 
-*Fact-check in progress (2 Oct 2026).*
+| Claim | Finding | Conf. |
+|---|---|---|
+| The Egypt design | Bartholdi first pitched it to Khedive Isma'il in **1867**, during Isma'il's Paris visit, and tried again in Egypt in 1869 around the canal opening. Title: "Egypt (or Progress) Carrying the Light to Asia." A working lighthouse at Port Said in the form of "an Egyptian fellah, a female serf" (NPS). https://www.nps.gov/stli/learn/historyculture/frédéric-auguste-bartholdi.htm ; https://archive.aramcoworld.com/issue/198605/the.new.colossus.htm | H (1869, concept), M (1867) |
+| Size | Statue 86 ft (26 m) on a 48 ft (15 m) pedestal (Barry Moreno, via Smithsonian). Liberty's copper figure is 151 ft. | H |
+| Models | Terracotta models and watercolours at the Musée Bartholdi, Colmar | M |
+| Why it died | Cost. De Lesseps warned Bartholdi that Isma'il "did not have the financial resources needed to carry it out." NPS: "a lack of funds stopped him." | H |
+| Built instead | The Port Said Lighthouse (1869, Coignet), 56 m, of concrete. "One of the earliest" concrete towers is safe; "the first" is L. A statue of de Lesseps followed in 1899 and was toppled after the 1956 Suez War. | H |
+| Bartholdi's denial | "…the only resemblance between the drawing that I submitted to the Khedive and the statue now in New York's beautiful harbor is that both held a light aloft. Now… how is a sculptor to make a statue which is to serve the purpose of a lighthouse without making it hold the light in the air?" (via Aramco World, 1986; the original newspaper is not yet traced) | M |
+| "Muslim" | **Not in any source.** The word comes from a 2015 Smithsonian.com headline ("The Statue of Liberty Was Originally a Muslim Woman"); the article body says "fellah, or Arab peasant." | H |
+| Scholar | Edward Berenson (NYU): "That's a serious oversimplification… There's a relationship… But that statue changed as it migrated to the United States." The figure "gradually evolved into a colossal goddess." | H |
+
+**Twist:** the Egyptian version would have been barely half Liberty's height. The man who said Egypt couldn't pay, de Lesseps, got a statue on the spot instead, and it came down in 1956.
+
+**Avoid:**
+- "Muslim woman" stated as fact
+- "Designed for Egypt, then given to America"
+- "Only in 1869"
+- "Liberty's face is Bartholdi's mother" (no basis)
+- "The first concrete building"
+
+## Tesla's "death ray" (stinger). Verdict: MOSTLY FALSE
+
+| Claim | Finding | Conf. |
+|---|---|---|
+| The announcement | NYT, 11 Jul 1934: "TESLA, AT 78, BARES NEW 'DEATH-BEAM'." It would "bring down a fleet of 10,000 enemy airplanes at a distance of 250 miles" and make "armies of millions… drop dead in their tracks." His own term was "death beam" or "teleforce." https://teslauniverse.com/nikola-tesla/articles/tesla-78-bares-new-death-beam | H |
+| Soviet money | Soviet documents posted by Tank Archives (no archive reference given) and Seifer's *Wizard*: $25,000 paid in 1935 via Amtorg. Nothing working was delivered. | M |
+| Death and seizure | Died 7 Jan 1943. The Office of Alien Property took his effects, even though he had been a US citizen since 1891. | H / M–H |
+| John G. Trump | MIT engineer for the NDRC. Memo of 30 Jan 1943: Tesla's work for the past 15 years was "primarily of a speculative, philosophical, and somewhat promotional character… but did not include new, sound, workable principles or methods for realizing such results." **Check the CIA or FBI scan before quoting; the wording varies between copies.** He was Donald Trump's uncle (brother of Fred Trump). | H |
+| The "weapon" box | Left at the Hotel Governor Clinton as security for his bill, valued by Tesla at $10,000, with a warning not to open it wrongly. Trump opened it and found a multidecade resistance box, a standard lab instrument. https://www.sciencehistory.org/stories/magazine/the-undying-appeal-of-nikola-teslas-death-ray/ | H (contents) |
+| Papers | Arrived in Yugoslavia **September 1951**. The Nikola Tesla Museum was founded 5 Dec 1952 and opened 1955. https://tesla-museum.org/en/about/history/ | H |
+| Overlap | Moderate overlap with the Wardenclyffe episode. Keep the stinger to 1934–43 and don't re-explain wireless power. | |
