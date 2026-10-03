@@ -27,8 +27,9 @@ SHOTS = {
     "E1": ("highlight", dict(image="A11", box=(0.09, 0.105, 0.92, 0.205))),   # "net takings... almost equal to its cost"
     "E2": ("kenburns", dict(image="A21", start=(0.5, 0.4, 1.0), end=(0.5, 0.3, 1.25),
                             lower_third=("Sir Edward Watkin", "Railway chairman, 1819 to 1901"))),
+    # Only the Channel crossing (Dover-Calais) is dashed: the railways either side existed; the tunnel didn't.
     "E3": ("maproute", dict(stops=[("Manchester", -2.24, 53.48), ("London", -0.13, 51.51), ("Dover", 1.31, 51.13),
-                                   ("Paris", 2.35, 48.86)], dashed=(2,), bbox=(-5.5, 47.6, 5.0, 54.6),
+                                   ("Calais", 1.86, 50.95), ("Paris", 2.35, 48.86)], dashed=(2,), bbox=(-5.5, 47.6, 5.0, 54.6),
                             title="Watkin's dream: Manchester to Paris")),
     "E4": ("kenburns", dict(image="A17", start=(0.5, 0.5, 1.0), end=(0.6, 0.45, 1.3))),
     "E5": ("kenburns", dict(image="A12", start=(0.5, 0.5, 1.0), end=(0.5, 0.42, 1.25))),   # The Graphic, 1894: Wembley tower beside Eiffel
