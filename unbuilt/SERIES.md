@@ -1,0 +1,36 @@
+# UNBUILT: series format
+
+> **Also read `WORKING_AGREEMENT.md`:** label every recommendation, research before advising, flag reversals, and raise risks unprompted.
+>
+> **The 90-day test (5 Oct 2026 to 5 Jan 2027) is running.** Read `90_DAY_TEST.md` before planning or spending anything: plan credits only, no top-ups or ads, and one long video a week at most.
+
+Decided by the channel owner on 27 Sep 2026.
+
+UNBUILT runs two formats with two hosts. A host never crosses into the other format.
+
+| | Standard episodes | Specials |
+|---|---|---|
+| **Host** | The series host: a woman in a navy trench coat over a navy-and-cream Breton top | **Hugo Ashby**: charming and acerbic, British |
+| **What** | One building or project per episode, reconstructed and walked through, with why it died and the site today | **Always a countdown of at least five subjects** around one theme, escalating to No. 1. An honourable mention or stinger can come after it. |
+| **Example** | Wardenclyffe (in production, Sep 2026) | "Magnificent Delusions": five unbuilt projects, each bigger than the last |
+| **Voice** | Her own locked voice | Arthur (Higgsfield preset `30fc8796-…`) |
+
+## Hugo, briefly
+
+- **Element:** `unbuilt_host_hugo_v1` (`026bc578-60a2-4cac-92b2-53d3ea1a43d8`). The reference images are in `ep-magnificent-delusions/host/`.
+- **Sign-off:** "I'm Hugo Ashby. Dream big. Budget bigger."
+- **Wardrobe:** a new outfit for each special, but always a dark overcoat as his signature shape. For each special, make a new reference portrait by editing the locked hero portrait, check the face still matches, then use only the new-outfit images as Seedance references.
+  - No. 1: a charcoal herringbone double-breasted coat and a navy crewneck.
+  - No. 2: a long black wool overcoat, a charcoal roll-neck and an oxblood scarf.
+  - No. 3: a dark chocolate-brown wool overcoat, a cream oxford shirt and a Cherokee-red pocket square, Wright's colour. References are in `ep-frank-lloyd-wright/host/`.
+- **Tone:** dry, precise and warm underneath. Jokes land on the idea, not on the people, and never on victims.
+
+## Specials
+
+| # | Title | Status |
+|---|---|---|
+| 1 | Magnificent Delusions | Published 26 Sep 2026 (https://youtu.be/3uF2iZn0svY) |
+| 2 | London Nearly Built a Pyramid for 5 Million Dead (and Other Monuments to the Dead): a Halloween countdown of unbuilt tombs | All shots rendered 27 Sep (about 850 credits); in the edit; release target 31 Oct 2026 |
+| 3 | Frank Lloyd Wright's 5 Wildest Buildings That Were Never Built (working title): Automobile Objective, Pittsburgh Point Park, Baghdad, Broadacre City, Mile-High Illinois | Script and shot plan drafted 29 Sep 2026 (`ep-frank-lloyd-wright/`): about 810 credits, or about 608 lean. Not rendered: needs a credit top-up and your go-ahead, decided after the 3–4 Oct Shorts data |
+| 4 | Palaces Kings Never Got (working title): Schinkel's Acropolis, Ludwig II's Falkenstein, Bernini's Louvre, Napoleon's King of Rome, Bazhenov's Kremlin | Script first draft 1 Oct 2026 (`special-4/`). Proposed release Sat 5 Dec 2026. Not planned or rendered: waits on the 31 Oct Hugo decision and your credit approval |
+| – | Myths of the Unbuilt (working title): the Eiffel Tower and Barcelona, the Black Taj, Gaudí's Manhattan hotel, the Statue of Liberty and Egypt, the "Sun Gun"; Tesla stinger | Script first draft 2 Oct 2026 (`special-myths/`). Proposed for November, ahead of the palaces. Not planned or rendered |
