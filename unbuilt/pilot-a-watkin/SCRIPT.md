@@ -81,10 +81,7 @@
 **[D8]** #5, Design 38: the Egyptian tower with a pyramid on top. A slow tilt up.
 > My favourite is number thirty-eight. Two thousand feet, Egyptian, with a scale model of the Great Pyramid on the top. The catalogue calls it "an aerial colony": gardens, a theatre, a museum, a temple, and mansions up in the clean air, renting, it says, at a price "proportionate to their Alpine altitude."
 
-**[D9] [YOUR CALL: the correction beat.]** #5 still on screen. GFX: our own Short's title, struck through in red pencil.
-> You might have heard this was a tower for vegetarians. This channel said so in a Short last month. That was wrong. The catalogue never mentions it. The man who entered the design, Arnold Hills, ran a shipyard, and he happened to be president of the London Vegetarian Society. That's where the story came from.
->
-> *Note: keep this if you want the channel's honesty to be part of the brand (my recommendation). Cut it if you'd rather fix the Short quietly. Either way, the Short needs fixing. See the note at the end of this file.*
+*[D9, the on-air correction of the "vegetarian" myth, was cut on 3 Oct at the owner's decision. The owner is fixing the Short directly.]*
 
 **[D10]** #3, the Design No. 37 plate, full height. GFX labels: "1,200 FT", "8 LEGS", "£352,222".
 > The winner was number thirty-seven, by a London firm: Stewart, MacLaren and Dunn. Twelve hundred feet, eight legs, with a great hall and a ninety-bedroom hotel two hundred feet up. Estimated cost: three hundred and fifty-two thousand pounds.

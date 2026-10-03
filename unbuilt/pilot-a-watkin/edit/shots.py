@@ -20,7 +20,9 @@ SHOTS = {
     "C2": ("annotate", dict(image="A14", marks=[{"type": "underline", "from": (0.985, 0.17), "to": (0.985, 0.93)},
                                              {"type": "label", "text": "155 FT", "pos": (0.72, 0.05), "anchor": "l", "size": 44}],
                             start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.06))),
-    "C3": ("kenburns", dict(image="W01", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.15), mode="cover")),
+    # Google Earth Studio renders (GOOGLE_EARTH.md) replace these stand-in photos as soon as they arrive.
+    "C3": ("footage", dict(source="GE1_cold_open",
+                           fallback=("kenburns", dict(image="W01", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.15), mode="cover")))),
     "C4": ("annotate", dict(image="A02", marks=SPEC_UNDERLINE, start=(*SPEC_VIEW, 1.7), end=(*SPEC_VIEW, 2.0))),
     "C5": ("title_card", dict(title="UNBUILT", subtitle="London's Eiffel Tower", fixed=2.5)),
     # ---- 1. Eiffel envy
@@ -47,7 +49,6 @@ SHOTS = {
     "D6": ("kenburns", dict(image="A09", start=(0.5, 0.7, 1.2), end=(0.5, 0.35, 1.5))),
     "D7": ("kenburns", dict(image="A39page", start=(0.5, 0.5, 1.0), end=(0.5, 0.4, 1.3))),
     "D8": ("kenburns", dict(image="A05", start=(0.5, 0.85, 1.5), end=(0.5, 0.2, 1.5))),
-    "D9": ("annotate", dict(image="A05", marks=[{"type": "label", "text": "Not in the 1890 catalogue", "pos": (0.55, 0.5), "anchor": "l", "size": 44}])),
     "D10": ("annotate", dict(image="A03", marks=[{"type": "label", "text": "1,200 FT", "pos": (0.66, 0.22), "anchor": "l", "size": 40},
                                                   {"type": "label", "text": "8 LEGS", "pos": (0.70, 0.50), "anchor": "l", "size": 40},
                                                   {"type": "label", "text": "£352,222", "pos": (0.70, 0.57), "anchor": "l", "size": 40}])),
@@ -79,10 +80,12 @@ SHOTS = {
     "S2": ("kenburns", dict(image="A27", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.15))),
     "S3": ("kenburns", dict(image="A29", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.2),
                             lower_third=("FA Cup Final, 28 April 1923", "Bolton Wanderers 2, West Ham United 0"))),
-    "S4": ("kenburns", dict(image="W02", start=(0.5, 0.5, 1.15), end=(0.5, 0.5, 1.0), mode="cover")),
-    "S5": ("kenburns", dict(image="W03", start=(0.5, 0.6, 1.0), end=(0.5, 0.4, 1.15), mode="cover",
-                            lower_third=("The Wembley arch: 133 m", None))),
+    "S4": ("footage", dict(source="GE2_topdown",
+                           fallback=("kenburns", dict(image="W02", start=(0.5, 0.5, 1.15), end=(0.5, 0.5, 1.0), mode="cover")))),
+    "S5": ("footage", dict(source="GE3_arch_orbit", lower_third=("The Wembley arch: 133 m", None),
+                           fallback=("kenburns", dict(image="W03", start=(0.5, 0.6, 1.0), end=(0.5, 0.4, 1.15), mode="cover")))),
     # ---- outro
-    "O1": ("annotate", dict(image="A02", marks=SPEC_UNDERLINE, start=(*SPEC_VIEW, 1.7), end=(*SPEC_VIEW, 1.2))),
+    "O1": ("footage", dict(source="GE4_dusk",
+                           fallback=("annotate", dict(image="A02", marks=SPEC_UNDERLINE, start=(*SPEC_VIEW, 1.7), end=(*SPEC_VIEW, 1.2))))),
     "O2": ("end_card", dict(text="Sources in the description")),
 }

@@ -1,5 +1,7 @@
 # Packaging: Pilot A, Watkin's Tower
 
+**Decided 3 Oct 2026 (owner):** the title is #1, *London Almost Built Its Own Eiffel Tower*, and the thumbnail is **T1** (`thumbs/T1_wembley_today.png`): Wembley today with the 1890 Design No. 37 cut out over it. The other two thumbnails are kept for YouTube's Test & Compare.
+
 **Everything in this file is OPINION or a BET.** It isn't evidence.
 
 Each line rests on facts labelled in `RESEARCH.md`, and every title claim is checked against them. The rival titles referred to are in `COMPETITION.md`.

@@ -10,9 +10,8 @@ This is your read, block by block, in the exact order the edit expects.
 4. **Read each block, then stay silent for about two seconds** before the next one. **This matters.** The edit finds the blocks by those pauses, so every block needs its pause, including the short ones.
 5. **Retakes:** if you fluff a block, pause, then read the **whole block** again. **Then tell me which blocks you retook** (for example "D4 twice"). I'll use the last take.
 6. **Pace:** slower than feels natural. Conversational, not announcer. Smile slightly on the lighter lines.
-7. **D9 (the vegetarian correction):** record it even if you might cut it, so the block count stays right. I can drop it in the edit.
-8. **O2:** say your name, or just "This was UNBUILT". Your choice.
-9. **One file or several:** one long file is easiest. If you split it, name the files in order (part1, part2, …).
+7. **O2:** say your name, or just "This was UNBUILT". Your choice.
+8. **One file or several:** one long file is easiest. If you split it, name the files in order (part1, part2, …).
 
 ## Getting the file to me
 
@@ -95,98 +94,94 @@ This is your read, block by block, in the exact order the edit expects.
 
  *(pause)*
 
-**18. [D9]**  You might have heard this was a tower for vegetarians. This channel said so in a Short last month. That was wrong. The catalogue never mentions it. The man who entered the design, Arnold Hills, ran a shipyard, and he happened to be president of the London Vegetarian Society. That's where the story came from.
-
- *(pause)*
-
-**19. [D10]**  The winner was number thirty-seven, by a London firm: Stewart, MacLaren and Dunn. Twelve hundred feet, eight legs, with a great hall and a ninety-bedroom hotel two hundred feet up. Estimated cost: three hundred and fifty-two thousand pounds.
+**18. [D10]**  The winner was number thirty-seven, by a London firm: Stewart, MacLaren and Dunn. Twelve hundred feet, eight legs, with a great hall and a ninety-bedroom hotel two hundred feet up. Estimated cost: three hundred and fifty-two thousand pounds.
 
  *(pause)*
 
 ## 3. Building it
 
-**20. [B1]**  To put that in today's terms: it would have been taller than the Eiffel Tower is now, and taller than the Shard.
+**19. [B1]**  To put that in today's terms: it would have been taller than the Eiffel Tower is now, and taller than the Shard.
 
  *(pause)*
 
-**21. [B2]**  Then came the savings. To cut costs, the eight legs became four. The tower that actually went up looked, as Brent's local historian puts it, "a lot like Monsieur Eiffel's."
+**20. [B2]**  Then came the savings. To cut costs, the eight legs became four. The tower that actually went up looked, as Brent's local historian puts it, "a lot like Monsieur Eiffel's."
 
  *(pause)*
 
-**22. [B3]**  Work started in 1892. The Engineer magazine covered it the following autumn. In May 1894 the pleasure grounds around it opened: a boating lake, sports fields, a station built to bring the crowds.
+**21. [B3]**  Work started in 1892. The Engineer magazine covered it the following autumn. In May 1894 the pleasure grounds around it opened: a boating lake, sports fields, a station built to bring the crowds.
 
  *(pause)*
 
-**23. [B4]**  That same spring, Watkin stepped down from the Metropolitan after a stroke.
+**22. [B4]**  That same spring, Watkin stepped down from the Metropolitan after a stroke.
 
  *(pause)*
 
-**24. [B5]**  And that same May, about two hundred miles north, Blackpool opened its own copy of the Eiffel Tower. Five hundred and eighteen feet, finished, open, paying its way. It's still there.
+**23. [B5]**  And that same May, about two hundred miles north, Blackpool opened its own copy of the Eiffel Tower. Five hundred and eighteen feet, finished, open, paying its way. It's still there.
 
  *(pause)*
 
-**25. [B6]**  Wembley's tower reached its first stage, a platform about a hundred and fifty-five feet up, around 1895. It opened to the public in May 1896. About an eighth of the way there.
+**24. [B6]**  Wembley's tower reached its first stage, a platform about a hundred and fifty-five feet up, around 1895. It opened to the public in May 1896. About an eighth of the way there.
 
  *(pause)*
 
 ## 4. Why it stopped
 
-**26. [W1]**  People did come. The local historian's figure is a hundred and twenty thousand visitors to the park in 1895.  But fewer than Watkin's company had hoped.
+**25. [W1]**  People did come. The local historian's figure is a hundred and twenty thousand visitors to the park in 1895.  But fewer than Watkin's company had hoped.
 
  *(pause)*
 
-**27. [W2]**  The money ran out. As the borough's historian puts it, even before Watkin died in 1901, "there was no money left to carry on."
+**26. [W2]**  The money ran out. As the borough's historian puts it, even before Watkin died in 1901, "there was no money left to carry on."
 
  *(pause)*
 
-**28. [W3]**  And then there was the ground. The tower's feet began to sink into the clay. Historians link it to that cost-saving change: four legs instead of eight, each carrying more weight.
+**27. [W3]**  And then there was the ground. The tower's feet began to sink into the clay. Historians link it to that cost-saving change: four legs instead of eight, each carrying more weight.
 
  *(pause)*
 
-**29. [W4]**  Assume the foundations are perfect.
+**28. [W4]**  Assume the foundations are perfect.
 
  *(pause)*
 
-**30. [W5]**  By 1902 the lifts were judged unsafe and the platform shut. By then it already had a nickname: Watkin's Folly.
+**29. [W5]**  By 1902 the lifts were judged unsafe and the platform shut. By then it already had a nickname: Watkin's Folly.
 
  *(pause)*
 
-**31. [W6]**  Taking it down started in 1904. In September 1907, they blew the foundations up with dynamite.
+**30. [W6]**  Taking it down started in 1904. In September 1907, they blew the foundations up with dynamite.
 
  *(pause)*
 
 ## 5. What's there now
 
-**32. [S1]**  Fifteen years later, builders came back to the same hilltop. In this aerial photo from 1922 you can see what they found: the craters where the tower's feet had been. Around them, a new stadium was taking shape.
+**31. [S1]**  Fifteen years later, builders came back to the same hilltop. In this aerial photo from 1922 you can see what they found: the craters where the tower's feet had been. Around them, a new stadium was taking shape.
 
  *(pause)*
 
-**33. [S2]**  It opened in 1923 as the Empire Stadium. You know it as Wembley.
+**32. [S2]**  It opened in 1923 as the Empire Stadium. You know it as Wembley.
 
  *(pause)*
 
-**34. [S3]**  The very first match played there was the 1923 FA Cup Final. One of the teams was West Ham United. They started out as the works team of Thames Iron Works, the shipyard run by Arnold Hills. Pyramid-on-top Hills. Number thirty-eight.
+**33. [S3]**  The very first match played there was the 1923 FA Cup Final. One of the teams was West Ham United. They started out as the works team of Thames Iron Works, the shipyard run by Arnold Hills. Pyramid-on-top Hills. Number thirty-eight.
 
  *(pause)*
 
-**35. [S4]**  The old stadium was demolished in 2002 and 2003. When the builders lowered the pitch for the new one, they reportedly hit old concrete. It was the foundations of Watkin's tower.
+**34. [S4]**  The old stadium was demolished in 2002 and 2003. When the builders lowered the pitch for the new one, they reportedly hit old concrete. It was the foundations of Watkin's tower.
 
  *(pause)*
 
-**36. [S5]**  Today the tallest thing at Wembley is the arch: a hundred and thirty-three metres, a little over a third of the tower Watkin wanted.
+**35. [S5]**  Today the tallest thing at Wembley is the arch: a hundred and thirty-three metres, a little over a third of the tower Watkin wanted.
 
  *(pause)*
 
 ## Outro
 
-**37. [O1]**  The brief told sixty-eight designers to assume the ground was perfect. It wasn't. The tower sank, the money ran out, and the spot where it failed became one of the most famous pitches in the world.
+**36. [O1]**  The brief told sixty-eight designers to assume the ground was perfect. It wasn't. The tower sank, the money ran out, and the spot where it failed became one of the most famous pitches in the world.
 
  *(pause)*
 
-**38. [O2]**  I'm , and this was UNBUILT. Every picture in this video is real, and the sources are in the description.
+**37. [O2]**  I'm , and this was UNBUILT. Every picture in this video is real, and the sources are in the description.
 
  *(pause)*
 
 ---
 
-That's 38 blocks. Thank you.
+That's 37 blocks. Thank you.

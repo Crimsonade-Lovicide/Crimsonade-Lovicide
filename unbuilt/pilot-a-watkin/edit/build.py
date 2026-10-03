@@ -27,6 +27,7 @@ CLIPS = os.path.join(BUILD, "clips")
 RAW = os.path.join(HERE, "..", "assets", "raw")
 DERIVED = os.path.join(HERE, "..", "assets", "derived")   # rotated/cropped copies (assets/derive.py)
 GEO = os.path.join(HERE, "..", "assets", "geo", "land.geojson")
+FOOTAGE = os.path.join(HERE, "..", "assets", "footage")   # Google Earth Studio renders (zips of JPEG frames)
 LEAD = 0.25          # picture changes this long before its block's first word
 TAIL = 1.0           # hold after the last word
 WPS = 2.5            # words per second for --estimate
@@ -71,10 +72,47 @@ def windows(timings):
     return dict(sorted(win.items(), key=lambda kv: kv[1][0]))
 
 
+def footage_frames(source):
+    """Frames for a Google Earth Studio render: unpack assets/footage/<source>.zip once, return sorted JPEGs."""
+    folder = os.path.join(FOOTAGE, source)
+    zipped = folder + ".zip"
+    if not os.path.isdir(folder) and os.path.exists(zipped):
+        import zipfile
+        zipfile.ZipFile(zipped).extractall(folder)
+    frames = sorted(glob.glob(os.path.join(folder, "**", "*.jp*g"), recursive=True))
+    return frames
+
+
+def footage(source, out, dur):
+    """Turn the frame sequence into a clip of exactly `dur` seconds at 24 fps, fitted to 1920x1080.
+    The whole camera move plays, re-timed to fit, when that changes its speed by no more than 1.5x either way.
+    Beyond that it plays at natural speed and is cut at the end (too long) or holds its last frame (too short)."""
+    frames = footage_frames(source)
+    natural = len(frames) / 24
+    factor = natural / dur
+    per_frame = dur / len(frames) if 1 / 1.5 <= factor <= 1.5 else 1 / 24
+    listfile = out + ".txt"
+    with open(listfile, "w") as f:
+        for fr in frames:
+            f.write(f"file '{fr}'\nduration {per_frame:.6f}\n")
+    kit.core.run_ffmpeg(["-f", "concat", "-safe", "0", "-i", listfile, "-vf",
+                         f"scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,"
+                         f"fps=24,tpad=stop_mode=clone:stop_duration={dur:.3f},trim=duration={dur:.3f},setpts=PTS-STARTPTS",
+                         "-an", "-r", "24", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", out])
+    os.remove(listfile)
+
+
 def render(name, dur):
     fn, kw = SHOTS[name]
     kw = dict(kw)
     lt = kw.pop("lower_third", None)
+    if fn == "footage":                          # use the Earth Studio render if it has arrived, else the stand-in
+        if footage_frames(kw["source"]):
+            kw = {"source": kw["source"], "n_frames": len(footage_frames(kw["source"]))}
+        else:
+            fn, kw = kw["fallback"]
+            kw = dict(kw)
+            lt = kw.pop("lower_third", lt)
     kw.pop("fixed", None)
     key = hashlib.sha1(json.dumps([fn, kw, lt, round(dur, 3)], sort_keys=True, default=str).encode()).hexdigest()[:10]
     out = os.path.join(CLIPS, f"{name}_{key}.mp4")
@@ -87,7 +125,9 @@ def render(name, dur):
     if "images" in kw:
         kw["images"] = [asset(r) for r in kw["images"]]
     base = out if not lt else out.replace(".mp4", "_base.mp4")
-    if fn in ("kenburns", "annotate", "highlight"):
+    if fn == "footage":
+        footage(kw["source"], base, dur)
+    elif fn in ("kenburns", "annotate", "highlight"):
         img = kw.pop("image")
         getattr(kit, fn)(img, base, dur, **kw)
     elif fn == "montage":
