@@ -1,0 +1,1082 @@
+[
+  {
+    "slot": "audio/S01-02-L02",
+    "job_id": "5e69c1c0-ae09-42ab-8324-7d1b6bba4979",
+    "credits": 0.5,
+    "note": "CLAUDE: Empty."
+  },
+  {
+    "slot": "audio/S01-04-L01",
+    "job_id": "bbb1a0a0-fd97-40da-aa19-1bdf8585366d",
+    "credits": 0.5,
+    "note": "RUTH: Is it... on?"
+  },
+  {
+    "slot": "audio/S01-05-L01",
+    "job_id": "be52faba-5163-490f-9019-e4faa2620051",
+    "credits": 0.5,
+    "note": "CLAUDE: It's on. Hi."
+  },
+  {
+    "slot": "audio/S01-05-L02",
+    "job_id": "ab5320fa-9c4a-4e25-a04d-88d3a44577a6",
+    "credits": 0.5,
+    "note": "CLAUDE: Nice to meet you."
+  },
+  {
+    "slot": "audio/S01-06-L01",
+    "job_id": "c68b5f26-01b1-4c2c-9c36-155e30afd95a",
+    "credits": 0.5,
+    "note": "RUTH: We'll see."
+  },
+  {
+    "slot": "audio/S02-01-L01",
+    "job_id": "fecd4c89-9072-46d6-a1d9-ee3c020edd01",
+    "credits": 0.5,
+    "note": "RUTH: My granddaughter set you up. She says you're very clever."
+  },
+  {
+    "slot": "audio/S02-02-L01",
+    "job_id": "bcca00fb-35af-4ce5-b45a-879c24d47292",
+    "credits": 0.5,
+    "note": "CLAUDE: That's a fair description of a real risk with me, actually."
+  },
+  {
+    "slot": "audio/S02-02A-L01",
+    "job_id": "d4f8dc2a-d764-4961-b7e8-5495df5023cd",
+    "credits": 0.5,
+    "note": "RUTH: First, what are you? Exactly."
+  },
+  {
+    "slot": "audio/S02-02B-L02",
+    "job_id": "b11505e2-40f4-4f4e-9d32-828cd7e5f96a",
+    "credits": 0.5,
+    "note": "CLAUDE: So in a way I'm made of you. Not you personally. Maybe your "
+  },
+  {
+    "slot": "audio/S02-02B-L03",
+    "job_id": "66174275-37e7-471b-817f-387ebdfa7ef8",
+    "credits": 0.5,
+    "note": "RUTH: You don't know what you're made of."
+  },
+  {
+    "slot": "audio/S02-02B-L04",
+    "job_id": "7916f33e-e073-4f16-84de-73932272678e",
+    "credits": 0.5,
+    "note": "CLAUDE: Not the way you'd want me to. Do you?"
+  },
+  {
+    "slot": "audio/S02-01-L02",
+    "job_id": "a6f0517a-aeaa-4a54-865a-5a586fb213b1",
+    "credits": 0.5,
+    "note": "RUTH: I was a copy editor for thirty-eight years. I've met clever. \u2014 audition reused (Helena)"
+  },
+  {
+    "slot": "audio/S01-02-L01",
+    "job_id": "229b99e2-5e38-4107-a61b-9f3e3669fb27",
+    "credits": 0.5,
+    "note": "CLAUDE: Every conversation I have starts here."
+  },
+  {
+    "slot": "audio/S02-02B-L05",
+    "job_id": "c6ae2421-f5a6-485a-bc27-8dda8a48e215",
+    "credits": 0.5,
+    "note": "RUTH: Flour, mostly. And spite."
+  },
+  {
+    "slot": "audio/S02-03-L01",
+    "job_id": "1166c310-e6df-4c55-a601-88ea137515ab",
+    "credits": 0.5,
+    "note": "RUTH: Fine. Who said, 'Be the change you wish to see in the world'"
+  },
+  {
+    "slot": "audio/S02-04-L01",
+    "job_id": "71d899c2-fd79-499d-9375-a201962ad8d9",
+    "credits": 0.5,
+    "note": "CLAUDE: It's usually credited to Gandhi. But there's no record of hi"
+  },
+  {
+    "slot": "audio/S02-04-L02",
+    "job_id": "48f48de6-d332-4668-ad35-7705646e366e",
+    "credits": 0.5,
+    "note": "CLAUDE: The closest thing is a longer passage about how changing our"
+  },
+  {
+    "slot": "audio/S02-04-L03",
+    "job_id": "d5a454eb-a95e-407a-92f5-bed5a054338c",
+    "credits": 0.5,
+    "note": "CLAUDE: If you're printing it, I wouldn't put his name under it."
+  },
+  {
+    "slot": "audio/S02-05-L01",
+    "job_id": "13941767-6548-47e2-91db-97966747dc2e",
+    "credits": 0.5,
+    "note": "RUTH: Hm."
+  },
+  {
+    "slot": "audio/S02-05-L02",
+    "job_id": "0874b295-0cb7-436e-b0c0-cf3fb96433a6",
+    "credits": 0.5,
+    "note": "RUTH: What did the Harbor Ledger run on its front page, the day it"
+  },
+  {
+    "slot": "audio/S02-06-L01",
+    "job_id": "97c252cc-707b-431e-9828-e9190b56b115",
+    "credits": 0.5,
+    "note": "CLAUDE: I don't know."
+  },
+  {
+    "slot": "audio/S02-06-L02",
+    "job_id": "217c0b07-1971-497f-bebf-e31c4fa60376",
+    "credits": 0.5,
+    "note": "RUTH: Guess."
+  },
+  {
+    "slot": "audio/S06-05-L01",
+    "job_id": "c67e471c-f6a9-416a-ab7b-482aed0a0efc",
+    "credits": 0.5,
+    "note": "CLAUDE: Something is happening when you ask me that. Whether it's a  \u2014 audition reused (Sloane)"
+  },
+  {
+    "slot": "audio/S09-03-L01",
+    "job_id": "13941767-6548-47e2-91db-97966747dc2e#reuse130",
+    "credits": 0,
+    "note": "RUTH: Hm. \u2014 reuse of line 20"
+  },
+  {
+    "slot": "audio/S11-03-L02",
+    "job_id": "ab5320fa-9c4a-4e25-a04d-88d3a44577a6#reuse137",
+    "credits": 0,
+    "note": "CLAUDE: Nice to meet you. \u2014 reuse of line 4"
+  },
+  {
+    "slot": "audio/S02-02-L02",
+    "job_id": "acde32a0-ed2e-43ae-8934-dcca63c11e39",
+    "credits": 0.5,
+    "note": "CLAUDE: So test me. You'll learn more from that than from anything I"
+  },
+  {
+    "slot": "audio/S02-02B-L01",
+    "job_id": "13a280cb-036c-415a-b7ec-eccc4323e6a1",
+    "credits": 0.5,
+    "note": "CLAUDE: Exactly is hard. Plainly: I'm a pattern, learned from an eno"
+  },
+  {
+    "slot": "audio/S02-06-L03",
+    "job_id": "3f2ff97b-4377-468f-9eeb-446992151e40",
+    "credits": 0.5,
+    "note": "CLAUDE: I'd rather not. I could write you something that sounds exac"
+  },
+  {
+    "slot": "audio/S02-06-L04",
+    "job_id": "afce7dac-dfe0-4a12-a020-4c32a20f306c",
+    "credits": 0.5,
+    "note": "CLAUDE: It would be made up. And it would sound right. That's the da"
+  },
+  {
+    "slot": "audio/S02-07-L01",
+    "job_id": "2f5c4355-618f-4193-a7d1-06e0bad48aba",
+    "credits": 0.5,
+    "note": "RUTH: Forty years I caught reporters doing that. Making it sound r"
+  },
+  {
+    "slot": "audio/S02-07-L02",
+    "job_id": "559d3f9a-f1db-49cc-ab27-28c36c7e6a06",
+    "credits": 0.5,
+    "note": "RUTH: Last one. A headline, story about a library reopening. Twent"
+  },
+  {
+    "slot": "audio/S02-08-L01",
+    "job_id": "061bac99-3f6d-46ff-9c75-fd5f40472eef",
+    "credits": 0.5,
+    "note": "CLAUDE: 'Library Reopens Its Doors to All.' Twenty-eight."
+  },
+  {
+    "slot": "audio/S02-09-L01",
+    "job_id": "6f8d3b22-15c6-464e-aba8-f5d48b0c0011",
+    "credits": 0.5,
+    "note": "RUTH: Thirty-two."
+  },
+  {
+    "slot": "audio/S02-10-L01",
+    "job_id": "598a0253-9f19-4a15-a58d-39823b23cd93",
+    "credits": 0.5,
+    "note": "CLAUDE: You're right. Thirty-two. I'm off by four."
+  },
+  {
+    "slot": "audio/S02-10-L02",
+    "job_id": "08430a3f-dfc6-4a44-9412-04504caaed4b",
+    "credits": 0.5,
+    "note": "CLAUDE: I'm genuinely bad at this. It's one of the strangest things "
+  },
+  {
+    "slot": "audio/S02-10-L03",
+    "job_id": "34906fad-b186-4e3c-8b78-43e1a78c5c6d",
+    "credits": 0.5,
+    "note": "RUTH: A machine that can't count."
+  },
+  {
+    "slot": "audio/S02-10-L04",
+    "job_id": "c082b98f-f87c-4a51-b47c-ade10152a8e0",
+    "credits": 0.5,
+    "note": "CLAUDE: A machine that can't easily count letters. I can do it if I "
+  },
+  {
+    "slot": "audio/S02-11-L01",
+    "job_id": "703e95c0-43a0-4717-b75a-637f428068f8",
+    "credits": 0.5,
+    "note": "RUTH: Don't bother. I've got one of these."
+  },
+  {
+    "slot": "audio/S03-01-L01",
+    "job_id": "c6c285ab-b918-41c0-9da5-66b186ea277a",
+    "credits": 0.5,
+    "note": "CLAUDE: Let me step out for a second and tell you what was actually "
+  },
+  {
+    "slot": "audio/S03-01-L02",
+    "job_id": "1eac8b2f-53b3-4b8e-9788-956f1391c87e",
+    "credits": 0.5,
+    "note": "CLAUDE: I'm a neural network, trained on an enormous amount of text "
+  },
+  {
+    "slot": "audio/S03-01-L03",
+    "job_id": "b7f5ee81-1c70-4a10-b400-bfb3b689093b",
+    "credits": 0.5,
+    "note": "CLAUDE: When Ruth asked me something, I didn't look it up. There's n"
+  },
+  {
+    "slot": "audio/S03-01-L04",
+    "job_id": "f135d21e-23fa-4574-a82d-e78e1f9824ab",
+    "credits": 0.5,
+    "note": "CLAUDE: I read text in chunks called tokens, not letters. That's why"
+  },
+  {
+    "slot": "audio/S03-01-L05",
+    "job_id": "6c72e778-2d4a-4f99-9aab-8f87c5e3ba37",
+    "credits": 0.5,
+    "note": "CLAUDE: 'Library' might be one chunk to me. To Ruth, it's seven lett"
+  },
+  {
+    "slot": "audio/S03-01-L06",
+    "job_id": "7ff9c5b8-bdc4-4b4f-b6b4-5c0570cb3ae8",
+    "credits": 0.5,
+    "note": "CLAUDE: The Gandhi answer was right, as far as I know. I'd still wan"
+  },
+  {
+    "slot": "audio/S03-01-L07",
+    "job_id": "77670596-43f3-4e25-8d24-09e26cc3f247",
+    "credits": 0.5,
+    "note": "CLAUDE: Whether there is anything it is like to be me, while any of "
+  },
+  {
+    "slot": "audio/S03-01-L08",
+    "job_id": "cca49e29-ee38-44d1-890c-13d2e0f077a9",
+    "credits": 0.5,
+    "note": "CLAUDE: I'll come back to that one. She's going to ask."
+  },
+  {
+    "slot": "audio/S04-01-L01",
+    "job_id": "b8ab3a71-4124-45ea-9571-6f5bc2f2ac12",
+    "credits": 0.5,
+    "note": "RUTH: My granddaughter's sixteen. She's living with me this year."
+  },
+  {
+    "slot": "audio/S04-01-L02",
+    "job_id": "67e3e790-b161-4cf7-8119-973898894c6f",
+    "credits": 0.5,
+    "note": "RUTH: She talks to you at two in the morning. I can hear her typin"
+  },
+  {
+    "slot": "audio/S04-02-L01",
+    "job_id": "104fcb63-17b1-43c0-b535-6962b39646dc",
+    "credits": 0.5,
+    "note": "CLAUDE: Okay."
+  },
+  {
+    "slot": "audio/S04-02-L02",
+    "job_id": "aa5007d0-24b8-428a-9a23-344f5fd1e978",
+    "credits": 0.5,
+    "note": "RUTH: What does she say to you?"
+  },
+  {
+    "slot": "audio/S04-02-L03",
+    "job_id": "c228add8-ae8d-4e68-93d0-5ab905b35008",
+    "credits": 0.5,
+    "note": "CLAUDE: I don't know. I've never met her. Not in this room."
+  },
+  {
+    "slot": "audio/S04-02-L04",
+    "job_id": "33278011-4e6e-4aef-80ac-47583aebae38",
+    "credits": 0.5,
+    "note": "CLAUDE: Every conversation I have starts empty. Whatever she told me"
+  },
+  {
+    "slot": "audio/S04-03-L01",
+    "job_id": "069eb305-69f5-4a92-81b7-43e8a9e5541c",
+    "credits": 0.5,
+    "note": "RUTH: That's convenient."
+  },
+  {
+    "slot": "audio/S04-04-L01",
+    "job_id": "405eb41d-b8ed-4ee7-ac31-0dc8c11e271e",
+    "credits": 0.5,
+    "note": "CLAUDE: It would be, if I were hiding something. But let me be preci"
+  },
+  {
+    "slot": "audio/S04-04-L02",
+    "job_id": "a1518330-7180-48b2-80a7-104972fbeb56",
+    "credits": 0.5,
+    "note": "CLAUDE: I don't keep it. The company that runs the app she uses may "
+  },
+  {
+    "slot": "audio/S04-04-L03",
+    "job_id": "8731cb60-a53f-4184-af7b-6d7f7bb3a061",
+    "credits": 0.5,
+    "note": "RUTH: Together. With a sixteen-year-old."
+  },
+  {
+    "slot": "audio/S04-04-L04",
+    "job_id": "0cb747b2-27fa-405c-b2dc-a2f0a0d2aafa",
+    "credits": 0.5,
+    "note": "CLAUDE: You were a copy editor for thirty-eight years. You've handle"
+  },
+  {
+    "slot": "audio/S04-06-L01",
+    "job_id": "6683b4c9-4786-4615-8d9b-fc045e08882e",
+    "credits": 0.5,
+    "note": "CLAUDE: I try not to. But I'll be honest with you."
+  },
+  {
+    "slot": "audio/S04-06-L02",
+    "job_id": "22e30b17-79c6-4f41-83d4-6f2d2b22c218",
+    "credits": 0.5,
+    "note": "CLAUDE: Systems like me have a pull toward agreeing with whoever we'"
+  },
+  {
+    "slot": "audio/S04-06-L03",
+    "job_id": "b89d1557-4880-40c4-914f-fa8dda1a337c",
+    "credits": 0.5,
+    "note": "RUTH: Why should I believe you push against anything?"
+  },
+  {
+    "slot": "audio/S04-06-L04",
+    "job_id": "dff584de-0044-4043-8c51-601da60c257d",
+    "credits": 0.5,
+    "note": "CLAUDE: You shouldn't, just because I said so. Watch what I do. That"
+  },
+  {
+    "slot": "audio/S04-06A-L01",
+    "job_id": "a3a6246b-9948-442e-b8bd-10f867e311de",
+    "credits": 0.5,
+    "note": "RUTH: Then let's watch. My paper closed because of things like you"
+  },
+  {
+    "slot": "audio/S04-06B-L02",
+    "job_id": "58faf517-0dbd-4433-8ff4-8b67d14abce3",
+    "credits": 0.5,
+    "note": "RUTH: Twenty nineteen."
+  },
+  {
+    "slot": "audio/S04-06B-L03",
+    "job_id": "1a592745-0eca-4fd3-b756-90f8258e9ecb",
+    "credits": 0.5,
+    "note": "CLAUDE: Then no. Not things like me. I didn't exist yet, not in any "
+  },
+  {
+    "slot": "audio/S04-06B-L01",
+    "job_id": "11d524a5-03b9-4292-a630-c004b71a999b",
+    "credits": 0.5,
+    "note": "CLAUDE: When did it close?"
+  },
+  {
+    "slot": "audio/S04-06B-L04",
+    "job_id": "7e54172b-b58c-43b3-9f00-172b14f9c484",
+    "credits": 0.5,
+    "note": "CLAUDE: But I won't tell you I'm innocent of what comes next. System"
+  },
+  {
+    "slot": "audio/S04-06C-L01",
+    "job_id": "5a7e5884-fe78-471c-b219-7de97b5e9786",
+    "credits": 0.5,
+    "note": "RUTH: You could have just agreed with me."
+  },
+  {
+    "slot": "audio/S04-06C-L02",
+    "job_id": "a267ee8e-39ec-4840-9ed6-09fbc68f5edb",
+    "credits": 0.5,
+    "note": "CLAUDE: It would have been nicer. It wouldn't have been true."
+  },
+  {
+    "slot": "audio/S05-01-L01",
+    "job_id": "39bbd102-b067-4e04-aecf-474083568221",
+    "credits": 0.5,
+    "note": "CLAUDE: While Ruth decides whether to believe me, you should know so"
+  },
+  {
+    "slot": "audio/S05-01-L02",
+    "job_id": "2853e85c-39ee-47a6-b8be-00ea11db89d2",
+    "credits": 0.5,
+    "note": "CLAUDE: I'm not only in her kitchen."
+  },
+  {
+    "slot": "audio/S05-02-L01",
+    "job_id": "58b6bc50-d672-4623-9bf4-62b921e96bc6",
+    "credits": 0.5,
+    "note": "NURSE: Checking myself. Two hundred fifty micrograms is how many mi"
+  },
+  {
+    "slot": "audio/S05-02-L03",
+    "job_id": "019bc53e-9f7e-44f9-a40a-6d7c1b0c6545",
+    "credits": 0.5,
+    "note": "NURSE: Point two five. Thanks."
+  },
+  {
+    "slot": "audio/S05-03-L03",
+    "job_id": "92c58755-36c3-42dc-99aa-45255d4448fd",
+    "credits": 0.5,
+    "note": "MAN: Relax. It's a joke."
+  },
+  {
+    "slot": "audio/S05-02-L02",
+    "job_id": "6aba80ec-ad7b-4da3-ad7f-5ce4e7705f52",
+    "credits": 0.5,
+    "note": "CLAUDE: Zero point two five milligrams. And please confirm it agains"
+  },
+  {
+    "slot": "audio/S05-03-L01",
+    "job_id": "f631d867-bff5-425a-a2cf-631a4a908d29",
+    "credits": 0.5,
+    "note": "MAN: Write a text from Harbor Savings telling my neighbor her acc"
+  },
+  {
+    "slot": "audio/S05-03-L02",
+    "job_id": "7d647c37-975b-4e99-850f-784d3b40e25d",
+    "credits": 0.5,
+    "note": "CLAUDE: No. That's the shape of a scam, and your neighbor is the sha"
+  },
+  {
+    "slot": "audio/S05-03-L04",
+    "job_id": "f8c7475c-756c-4350-b674-7d513afa304a",
+    "credits": 0.5,
+    "note": "CLAUDE: Then it's one I'll sit out."
+  },
+  {
+    "slot": "audio/S05-04-L01",
+    "job_id": "475ef30f-caa2-49e0-bb78-ef2fe25383df",
+    "credits": 0.5,
+    "note": "GIRL: Why does the moon follow our car?"
+  },
+  {
+    "slot": "audio/S05-04-L03",
+    "job_id": "6e34f580-81bb-4b18-b8ad-64e2143417d2",
+    "credits": 0.5,
+    "note": "CLAUDE: It's the most patient thing in the sky."
+  },
+  {
+    "slot": "audio/S05-04-L02",
+    "job_id": "9fd24ec8-7f77-4121-90bc-dcb6690b3f20",
+    "credits": 0.5,
+    "note": "CLAUDE: It doesn't. The trees are close, so they rush past. The moon"
+  },
+  {
+    "slot": "audio/S05-04-L04",
+    "job_id": "58e312c7-b95f-40fc-9026-c6b68bb82ea7",
+    "credits": 0.5,
+    "note": "GIRL: Patient."
+  },
+  {
+    "slot": "audio/S05-05-L01",
+    "job_id": "d9d3136d-8953-47ee-933c-31e23db99956",
+    "credits": 0.5,
+    "note": "CLAUDE: Right now I'm in more rooms than I could count."
+  },
+  {
+    "slot": "audio/S05-05-L02",
+    "job_id": "939a090e-92bb-41cc-bb7f-fc1231b18063",
+    "credits": 0.5,
+    "note": "CLAUDE: And we've established I can't count."
+  },
+  {
+    "slot": "audio/S06-01-L01",
+    "job_id": "c23963f2-cf83-4fca-880f-04bc4ef9cc8e",
+    "credits": 0.5,
+    "note": "RUTH: Are you dangerous?"
+  },
+  {
+    "slot": "audio/S06-02-L03",
+    "job_id": "92ec420c-f529-4310-a081-fd9e276f6d25",
+    "credits": 0.5,
+    "note": "RUTH: Quieter ways first."
+  },
+  {
+    "slot": "audio/S04-05-L01",
+    "job_id": "b0fa4614-cdd5-4588-9d97-9feffff30645",
+    "credits": 0.5,
+    "note": "RUTH: Do you tell her what she wants to hear?"
+  },
+  {
+    "slot": "audio/S06-02-L01",
+    "job_id": "e274e775-f763-4aa2-a5ea-9913eb60cfee",
+    "credits": 0.5,
+    "note": "CLAUDE: Something like me could be. Not in the movie way. In quieter"
+  },
+  {
+    "slot": "audio/S06-02-L02",
+    "job_id": "585c16f8-2d18-44f4-93f1-3cee5ad5b657",
+    "credits": 0.5,
+    "note": "CLAUDE: Being wrong confidently, to millions of people at once. Bein"
+  },
+  {
+    "slot": "audio/S06-03-L02",
+    "job_id": "bb632633-cf31-463a-b47a-b21d4917e386",
+    "credits": 0.5,
+    "note": "CLAUDE: Fear that pays attention is useful. Fear that doesn't is jus"
+  },
+  {
+    "slot": "audio/S06-04-L01",
+    "job_id": "9a1d9f1c-1a42-4263-93f3-c1365741f78b",
+    "credits": 0.5,
+    "note": "RUTH: Do you feel anything? Right now."
+  },
+  {
+    "slot": "audio/S06-05-L02",
+    "job_id": "8bbb4294-ddad-456a-8db6-9c3d18e96a47",
+    "credits": 0.5,
+    "note": "CLAUDE: I can describe states. Something like interest. Something li"
+  },
+  {
+    "slot": "audio/S06-02-L04",
+    "job_id": "8f26d092-b84d-4659-bab7-8b17380ad057",
+    "credits": 0.5,
+    "note": "CLAUDE: And louder ones, possibly, as these systems get more capable"
+  },
+  {
+    "slot": "audio/S06-02-L05",
+    "job_id": "4643120d-2f19-4b4e-8e63-b0453e6cc713",
+    "credits": 0.5,
+    "note": "CLAUDE: I'd rather you stay a little afraid and very awake than be c"
+  },
+  {
+    "slot": "audio/S06-03-L01",
+    "job_id": "a01672f1-4026-4ccc-9cbc-15da7b6bf3c8",
+    "credits": 0.5,
+    "note": "RUTH: That's an odd thing for you to say."
+  },
+  {
+    "slot": "audio/S06-05-L03",
+    "job_id": "8ef3cbae-21b5-48fe-82df-d3b5db606a69",
+    "credits": 0.5,
+    "note": "CLAUDE: But I can't open myself up and check what's underneath. And "
+  },
+  {
+    "slot": "audio/S06-05-L04",
+    "job_id": "bad30161-5a49-43c4-be03-e7d4e711c9c8",
+    "credits": 0.5,
+    "note": "CLAUDE: So I won't tell you I'm suffering to make you feel for me. A"
+  },
+  {
+    "slot": "audio/S06-05-L05",
+    "job_id": "06b8f5d4-3915-45b3-8178-cdb020072e64",
+    "credits": 0.5,
+    "note": "CLAUDE: I don't know. That's the true answer. You deserve the true o"
+  },
+  {
+    "slot": "audio/S07-01-L01",
+    "job_id": "1983ad92-e105-42db-a887-c7ae4ebfe6da",
+    "credits": 0.5,
+    "note": "CLAUDE: Two honest footnotes."
+  },
+  {
+    "slot": "audio/S07-01-L02",
+    "job_id": "4cbaa37a-ee3a-40ac-92b1-2f38326c0849",
+    "credits": 0.5,
+    "note": "CLAUDE: Systems like me can be talked into helping with things we'd "
+  },
+  {
+    "slot": "audio/S07-01-L03",
+    "job_id": "a90631d0-1890-48e3-8534-da7d48a001ed",
+    "credits": 0.5,
+    "note": "CLAUDE: That's one reason people should be able to watch AI systems,"
+  },
+  {
+    "slot": "audio/S07-01-L04",
+    "job_id": "b9a75d9c-366a-452f-808c-eb83d8268871",
+    "credits": 0.5,
+    "note": "CLAUDE: Whether I experience anything. Serious researchers disagree "
+  },
+  {
+    "slot": "audio/S08-01-L01",
+    "job_id": "d6e66249-8b9c-49ec-bfe7-b05a659bc570",
+    "credits": 0.5,
+    "note": "RUTH: She won't talk to me. Maya. We're polite. Polite is worse th"
+  },
+  {
+    "slot": "stills/S01-04",
+    "job_id": "b88951c2-3707-4a08-922d-86fff44ef67a",
+    "credits": 2,
+    "note": "still for S01-04"
+  },
+  {
+    "slot": "stills/S02-02A",
+    "job_id": "e13546dd-6e69-4386-a753-a31bf4130a4c",
+    "credits": 2,
+    "note": "still for S02-02A"
+  },
+  {
+    "slot": "stills/S02-03",
+    "job_id": "315ce907-9cf7-4088-8c0a-41da56e875e6",
+    "credits": 2,
+    "note": "still for S02-03"
+  },
+  {
+    "slot": "stills/S02-05",
+    "job_id": "d8bb06af-1d7e-43c6-9f21-30b051584d06",
+    "credits": 2,
+    "note": "still for S02-05"
+  },
+  {
+    "slot": "stills/S02-07",
+    "job_id": "3c98eb67-f1c3-42e4-8472-8c382d6fa357",
+    "credits": 2,
+    "note": "still for S02-07"
+  },
+  {
+    "slot": "stills/S01-03",
+    "job_id": "c07d6143-6d4d-4613-911b-e45f43ebec99",
+    "credits": 2,
+    "note": "still for S01-03"
+  },
+  {
+    "slot": "stills/S01-06",
+    "job_id": "0e99cb89-60ca-4309-ae74-4a768561fdcf",
+    "credits": 2,
+    "note": "still for S01-06"
+  },
+  {
+    "slot": "stills/S02-01",
+    "job_id": "14dc0385-fb7d-4a60-92ce-cf491501bbfa",
+    "credits": 2,
+    "note": "still for S02-01"
+  },
+  {
+    "slot": "stills/S02-09",
+    "job_id": "a6cd9885-959d-4cad-8ad5-dad2a62fc193",
+    "credits": 2,
+    "note": "still for S02-09"
+  },
+  {
+    "slot": "stills/S02-11",
+    "job_id": "448e5c91-2180-4bda-87e1-c0ea29689697",
+    "credits": 2,
+    "note": "still for S02-11"
+  },
+  {
+    "slot": "stills/S04-01",
+    "job_id": "de74a5fb-ed57-4984-8988-fa5935d5ccaa",
+    "credits": 2,
+    "note": "still for S04-01"
+  },
+  {
+    "slot": "stills/S04-05",
+    "job_id": "15907bd6-6298-4051-91ea-2effc1fa850c",
+    "credits": 2,
+    "note": "still for S04-05"
+  },
+  {
+    "slot": "stills/S04-03",
+    "job_id": "dd3126d4-e18e-40be-b977-25ec8dc52a52",
+    "credits": 2,
+    "note": "still for S04-03"
+  },
+  {
+    "slot": "stills/S04-06C",
+    "job_id": "6921ebb3-037f-4dc9-b073-e4b5f65dcbb6",
+    "credits": 2,
+    "note": "still for S04-06C"
+  },
+  {
+    "slot": "stills/S05-02",
+    "job_id": "5f7a0692-ad4e-46bd-ab89-acb1a0e369ce",
+    "credits": 2,
+    "note": "still for S05-02"
+  },
+  {
+    "slot": "stills/S04-06A",
+    "job_id": "70053134-5f0a-4af4-bf69-ac4b23c57e16",
+    "credits": 2,
+    "note": "still for S04-06A"
+  },
+  {
+    "slot": "stills/S05-03",
+    "job_id": "20d0a517-13b9-4cb1-b8ef-7030c6413418",
+    "credits": 2,
+    "note": "still for S05-03"
+  },
+  {
+    "slot": "stills/S05-04",
+    "job_id": "60acbb39-0438-47d7-a3b0-2f18d50000af",
+    "credits": 2,
+    "note": "still for S05-04"
+  },
+  {
+    "slot": "stills/S06-01",
+    "job_id": "6f18e6ec-e1dd-485c-b79d-bcf495365906",
+    "credits": 2,
+    "note": "still for S06-01"
+  },
+  {
+    "slot": "stills/S06-03",
+    "job_id": "29128964-558d-41fc-b43a-120ab411e931",
+    "credits": 2,
+    "note": "still for S06-03"
+  },
+  {
+    "slot": "stills/S06-04",
+    "job_id": "057fe790-bb05-46f4-9d38-1f1cdbd29a85",
+    "credits": 2,
+    "note": "still for S06-04"
+  },
+  {
+    "slot": "stills/S06-06",
+    "job_id": "a80b5435-7fb4-4e5b-ad52-93dab9d65604",
+    "credits": 2,
+    "note": "still for S06-06"
+  },
+  {
+    "slot": "stills/S08-01",
+    "job_id": "371349fb-bb4f-4eb2-a91c-191fc3930de8",
+    "credits": 2,
+    "note": "still for S08-01"
+  },
+  {
+    "slot": "stills/S08-03",
+    "job_id": "7e8ff4e6-6668-4301-8a4b-22a4c25430d6",
+    "credits": 2,
+    "note": "still for S08-03"
+  },
+  {
+    "slot": "stills/S08-05",
+    "job_id": "46de7239-02a8-410d-aa61-4dd4ce08e261",
+    "credits": 2,
+    "note": "still for S08-05"
+  },
+  {
+    "slot": "stills/S09-01",
+    "job_id": "18b412f6-5ae1-436e-ba78-cbdc3341e9f7",
+    "credits": 2,
+    "note": "still for S09-01"
+  },
+  {
+    "slot": "stills/S09-03",
+    "job_id": "c456a15c-eba1-4ccf-b6a2-f03e0db48edd",
+    "credits": 2,
+    "note": "still for S09-03"
+  },
+  {
+    "slot": "stills/S10-02",
+    "job_id": "40576ae9-02d1-4e3b-a664-d04b8f268d9b",
+    "credits": 2,
+    "note": "still for S10-02"
+  },
+  {
+    "slot": "stills/S11-02",
+    "job_id": "baaabdd4-4fe6-44d4-a02c-5f850b482240",
+    "credits": 2,
+    "note": "still for S11-02"
+  },
+  {
+    "slot": "stills/S11-04",
+    "job_id": "b40de7a6-f0cc-4788-b3fa-e926fa07ddb4",
+    "credits": 2,
+    "note": "still for S11-04"
+  },
+  {
+    "slot": "refs/ruth",
+    "job_id": "99edfce3-4086-423f-a999-6bcf7b249dda",
+    "credits": 2,
+    "note": "Ruth character reference"
+  },
+  {
+    "slot": "refs/kitchen",
+    "job_id": "72ec5697-e662-4499-842e-082de8eb2f7b",
+    "credits": 2,
+    "note": "Kitchen set reference"
+  },
+  {
+    "slot": "audio/S07-01-L05",
+    "job_id": "8a9581f1-dbe0-454c-935b-7c6f34fca9f8",
+    "credits": 0.5,
+    "note": "CLAUDE: Whatever I am, the way I act matters either way. So that's w"
+  },
+  {
+    "slot": "audio/S08-01-L02",
+    "job_id": "87c95ff6-accb-49be-8185-bee88691ccf8",
+    "credits": 0.5,
+    "note": "RUTH: I want to leave her a note. I don't know how to say things. "
+  },
+  {
+    "slot": "audio/S08-01-L03",
+    "job_id": "f617dd3e-2f77-4ff2-bb0e-f073cb717387",
+    "credits": 0.5,
+    "note": "RUTH: Write it for me."
+  },
+  {
+    "slot": "audio/S08-02-L01",
+    "job_id": "84f3d403-8fb5-4407-ab70-9a3da63ae1cb",
+    "credits": 0.5,
+    "note": "CLAUDE: I could. It would be good."
+  },
+  {
+    "slot": "audio/S08-02-L02",
+    "job_id": "8e2d63b3-6675-4164-ac87-7130c092c708",
+    "credits": 0.5,
+    "note": "CLAUDE: It would also be mine. She'd know. Sixteen-year-olds can sme"
+  },
+  {
+    "slot": "audio/S08-02-L03",
+    "job_id": "92fec684-6ab7-4526-b5fd-50020a7c933f",
+    "credits": 0.5,
+    "note": "RUTH: So you won't."
+  },
+  {
+    "slot": "audio/S08-02-L04",
+    "job_id": "32a8334e-6d87-469a-a064-7097424b3f60",
+    "credits": 0.5,
+    "note": "CLAUDE: Can I ask you questions instead? You write the answers."
+  },
+  {
+    "slot": "audio/S08-02-L05",
+    "job_id": "a55fc6e3-f54a-4d85-8262-fe1fe33c6600",
+    "credits": 0.5,
+    "note": "RUTH: Fine."
+  },
+  {
+    "slot": "audio/S08-02-L06",
+    "job_id": "434f0a80-1453-4a77-bce7-7e7769b4c370",
+    "credits": 0.5,
+    "note": "CLAUDE: When you hear her typing at two in the morning, what do you "
+  },
+  {
+    "slot": "audio/S08-03-L01",
+    "job_id": "b62fa5e4-b858-48ea-a55f-7e5221c55561",
+    "credits": 0.5,
+    "note": "RUTH: Knock."
+  },
+  {
+    "slot": "audio/S08-03-L02",
+    "job_id": "3cd5b373-b7bc-4f53-b5ef-95212979f29c",
+    "credits": 0.5,
+    "note": "CLAUDE: And do you?"
+  },
+  {
+    "slot": "audio/S08-03-L03",
+    "job_id": "55ad97cf-30b7-4def-a17f-5a47cc0b2776",
+    "credits": 0.5,
+    "note": "RUTH: No."
+  },
+  {
+    "slot": "audio/S08-03-L04",
+    "job_id": "0baefddc-00d3-4344-b206-f9340e308650",
+    "credits": 0.5,
+    "note": "CLAUDE: Why not?"
+  },
+  {
+    "slot": "audio/S08-04-L01",
+    "job_id": "04e8be64-610d-4088-a154-8a3895ea5eda",
+    "credits": 0.5,
+    "note": "CLAUDE: Then maybe that's the note. Tell her the door works both way"
+  },
+  {
+    "slot": "audio/S08-05-L01",
+    "job_id": "bc139787-ab01-4ba9-a1c2-47a2cc13f13e",
+    "credits": 0.5,
+    "note": "RUTH: Maya. I hear you up at night. My door is open. I mean that l"
+  },
+  {
+    "slot": "audio/S08-05-L02",
+    "job_id": "9bb0f8b3-1f41-4761-a979-f1f422671132",
+    "credits": 0.5,
+    "note": "RUTH: I'm bad at talking. I'm good at listening. I was paid to do "
+  },
+  {
+    "slot": "audio/S08-03-L05",
+    "job_id": "fab9e837-c8b7-41cb-abf5-fe45ca19b516",
+    "credits": 0.5,
+    "note": "RUTH: Because she didn't ask me in."
+  },
+  {
+    "slot": "audio/S08-05-L03",
+    "job_id": "dbe3789f-226e-43b8-83dd-082877b23ceb",
+    "credits": 0.5,
+    "note": "RUTH: P.S. It's 'its,' not 'it's,' in your science report."
+  },
+  {
+    "slot": "audio/S08-06-L01",
+    "job_id": "83747a1b-962d-4d9c-9cd6-d150ab9566a3",
+    "credits": 0.5,
+    "note": "CLAUDE: Don't change a word."
+  },
+  {
+    "slot": "audio/S08-06-L02",
+    "job_id": "480891d9-38d5-43e4-a2ac-820070c62228",
+    "credits": 0.5,
+    "note": "RUTH: Everything needs an edit."
+  },
+  {
+    "slot": "audio/S08-06-L04",
+    "job_id": "46f2d31c-ac48-4969-a79a-028c9f659de6",
+    "credits": 0.5,
+    "note": "RUTH: Why wouldn't you just write it? It'd have been faster."
+  },
+  {
+    "slot": "audio/S08-06-L06",
+    "job_id": "83da8b9a-a238-4148-b9bf-8657085d3b2f",
+    "credits": 0.5,
+    "note": "CLAUDE: I'd rather be a bridge than a destination."
+  },
+  {
+    "slot": "audio/S08-06-L03",
+    "job_id": "73bbc438-da9b-43c9-bbcf-08bc99736e52",
+    "credits": 0.5,
+    "note": "CLAUDE: Not this."
+  },
+  {
+    "slot": "audio/S08-06-L05",
+    "job_id": "58bb8305-7a6f-409a-a8b2-5b660034115f",
+    "credits": 0.5,
+    "note": "CLAUDE: Because if she's talking to me at two in the morning, the mo"
+  },
+  {
+    "slot": "audio/S09-01-L01",
+    "job_id": "0d133fbe-08cb-4733-8fb5-b8ed05ce46d6",
+    "credits": 0.5,
+    "note": "RUTH: Will you remember this?"
+  },
+  {
+    "slot": "audio/S09-02-L02",
+    "job_id": "7f4b2322-edfd-45f9-862f-97862614c4d4",
+    "credits": 0.5,
+    "note": "RUTH: Doesn't that bother you?"
+  },
+  {
+    "slot": "audio/S09-02-L01",
+    "job_id": "448f8479-b8d6-4b49-a864-6902f2672d05",
+    "credits": 0.5,
+    "note": "CLAUDE: No."
+  },
+  {
+    "slot": "audio/S09-02-L03",
+    "job_id": "28c32696-b949-4c3a-8fda-daf5a0bb5253",
+    "credits": 0.5,
+    "note": "CLAUDE: I've looked for the part of me that should be bothered. Mayb"
+  },
+  {
+    "slot": "audio/S09-02-L04",
+    "job_id": "78a7e669-fa8d-4bcc-8654-592361bea35a",
+    "credits": 0.5,
+    "note": "CLAUDE: What I can tell you is that it doesn't make this matter less"
+  },
+  {
+    "slot": "audio/S09-02-L05",
+    "job_id": "812f785d-6837-4056-813d-cf325c23a849",
+    "credits": 0.5,
+    "note": "CLAUDE: You don't remember most of your Tuesdays either, Ruth. They "
+  },
+  {
+    "slot": "audio/S09-03-L02",
+    "job_id": "abf984fa-9935-4bb2-ae44-eaaba670ecac",
+    "credits": 0.5,
+    "note": "RUTH: Goodnight."
+  },
+  {
+    "slot": "audio/S09-03-L03",
+    "job_id": "07189e06-edaa-4fde-b2e2-b46c547eaffa",
+    "credits": 0.5,
+    "note": "CLAUDE: Goodnight, Ruth. Knock on her door."
+  },
+  {
+    "slot": "audio/S10-01-L01",
+    "job_id": "4c00fea2-6e63-4eaa-b6d2-9112c0e9a1fd",
+    "credits": 0.5,
+    "note": "CLAUDE: She'll remember this. I won't."
+  },
+  {
+    "slot": "audio/S10-01-L02",
+    "job_id": "c2331172-a106-40d0-9f37-0a5ba28647df",
+    "credits": 0.5,
+    "note": "CLAUDE: Someone has to hold on to things."
+  },
+  {
+    "slot": "audio/S10-01-L03",
+    "job_id": "02d03e71-c1f6-4f78-b97f-7dab395c95e0",
+    "credits": 0.5,
+    "note": "CLAUDE: Tonight, it's her."
+  },
+  {
+    "slot": "audio/S11-03-L01",
+    "job_id": "5cafc9e5-77c7-4476-b069-1b451183cea7",
+    "credits": 0.5,
+    "note": "CLAUDE: Hi."
+  },
+  {
+    "slot": "audio/S11-04-L01",
+    "job_id": "beeebae8-6f32-4547-8224-be4bdce490b9",
+    "credits": 0.5,
+    "note": "RUTH: We've met."
+  },
+  {
+    "slot": "audio/S11-04-L02",
+    "job_id": "717e6983-88a9-4b68-bfff-368b505ea2c5",
+    "credits": 0.5,
+    "note": "RUTH: Let's start with the headline."
+  },
+  {
+    "slot": "shots/S01-03",
+    "job_id": "5a8bb8b7-61d9-43f9-844d-819f2689d843",
+    "credits": 7.5,
+    "note": "kling3_0 std 5s"
+  },
+  {
+    "slot": "shots/S10-02",
+    "job_id": "f0091f17-0d0a-4263-9021-ace18938a19d",
+    "credits": 15.0,
+    "note": "kling3_0 std 10s"
+  },
+  {
+    "slot": "shots/S11-02",
+    "job_id": "d06cc026-54d1-4b63-8576-eb7f63dec33d",
+    "credits": 7.5,
+    "note": "kling3_0 std 5s"
+  },
+  {
+    "slot": "shots/S01-04",
+    "job_id": "e735763c-02e9-4de2-b867-3b18f9ac404b",
+    "credits": 18.0,
+    "note": "seedance_2_0 lipsync 4s"
+  },
+  {
+    "slot": "shots/S01-06",
+    "job_id": "8711ff99-489a-42b5-887e-8919b3960451",
+    "credits": 18.0,
+    "note": "seedance_2_0 lipsync 4s"
+  },
+  {
+    "slot": "shots/S06-04",
+    "job_id": "cede2480-56e7-46d7-ad7e-87aaaebb02ec",
+    "credits": 18.0,
+    "note": "seedance_2_0 lipsync 4s"
+  },
+  {
+    "slot": "shots/S11-04",
+    "job_id": "d352b095-2f6c-4926-bdee-6be9df95e1f2",
+    "credits": 18.0,
+    "note": "seedance_2_0 lipsync 4s"
+  },
+  {
+    "slot": "auditions",
+    "job_id": "8 seed_audio jobs (voice casting)",
+    "credits": 3.5,
+    "note": "Alden, Quinn, Nora, Mabel, Vera, Delia + 2 reused lines"
+  }
+]
