@@ -17,7 +17,7 @@
 | Platform | Account | Status |
 |---|---|---|
 | Facebook | the "AI is OK" Page | Posted (video 971342832675763). Add Meta's "AI info" label in Meta Business Suite. |
-| YouTube | AI is OK (@aiisoktv) | Upload it in Studio. Zapier's free-plan YouTube limit, 5 uploads a day, refused the automatic upload. |
+| YouTube | AI is OK (@aiisoktv) | Posted 3 Oct: https://www.youtube.com/watch?v=D0zUYn4n8EM. It's public, in the "MEANWHILE: Season 1" playlist, with the custom thumbnail and altered content set to Yes. Still to do in Studio: captions (.srt), end screen, cards and the pinned comment. |
 | Instagram | no AI is OK account yet | See "Accounts to create". |
 | TikTok | no AI is OK account yet | See "Accounts to create". |
 
