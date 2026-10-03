@@ -125,7 +125,12 @@ This was written at the owner's request after the 90-day test started.
    - timelines, lower thirds and end cards.
 4. **Real footage.** What you shoot yourself; free stock (Pexels, Pixabay); public-domain film (NARA, Prelinger).
 5. **Optional hero shot later: an accurate 3D model made by hand from the drawings**, using your existing Blender-to-Unreal pipeline (`unbuilt-pipeline`). This is the Mustard/Hoog layer: the highest ceiling, but it needs real 3D skill or a freelancer. Phase 3 only.
-6. **Music:** Epidemic Sound, already licensed.
+6. **Music:** **Correction, 3 Oct 2026:** this originally said "Epidemic Sound, already licensed". That was wrong. The connected Epidemic Sound account can't download tracks ("no permission"), and the earlier episodes used "The Architect's Parade", a track the owner generated elsewhere. Options for the new format:
+   - a paid Epidemic Sound plan;
+   - the YouTube Audio Library (free and cleared for YouTube);
+   - public-domain recordings of public-domain music. **Content ID can wrongly claim these.**
+
+   If the old track was made with an AI music tool, it doesn't fit the "made by people" promise.
 
 **Rights rule:**
 - Mid-century drawings are still in copyright: Frank Lloyd Wright (Frank Lloyd Wright Foundation / MoMA–Avery), Tange, and LIFE and TIME magazine pages.
