@@ -144,7 +144,7 @@
 > It opened in 1923 as the Empire Stadium. You know it as Wembley.
 
 **[S3] [YOUR CALL: the West Ham loop. My suggestion as the closing twist; cut it if it feels like a stretch.]** #29, the 1924 aerial view. GFX lower third: "FA Cup Final, 28 April 1923: Bolton Wanderers 2, West Ham United 0".
-> The first FA Cup Final played there was in April 1923. One of the teams was West Ham United. They started out as the works team of Thames Iron Works, the shipyard run by Arnold Hills. Pyramid-on-top Hills. Number thirty-eight. [Score and date to be checked before recording.]
+> The very first match played there was the 1923 FA Cup Final. One of the teams was West Ham United. They started out as the works team of Thames Iron Works, the shipyard run by Arnold Hills. Pyramid-on-top Hills. Number thirty-eight. [Checked 3 Oct: 28 April 1923, Bolton 2, West Ham 0, the first event at the stadium. Sources: whufc.com and the National Football Museum.]
 
 **[S4]** GE: a top-down Wembley, slowly matched and dissolved into #24's framing.
 > The old stadium was demolished in 2002 and 2003. When the builders lowered the pitch for the new one, they reportedly hit old concrete. It was the foundations of Watkin's tower. [M: one reported source, so keep "reportedly".]
