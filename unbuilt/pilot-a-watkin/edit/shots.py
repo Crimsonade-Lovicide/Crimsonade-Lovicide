@@ -76,9 +76,13 @@ SHOTS = {
                                     (1902, "Lifts closed"), (1904, "Demolition starts"), (1907, "Foundations blown up")],
                             title="Watkin's Tower, 1889 to 1907")),
     # ---- 5. What's there now
-    "S1": ("annotate", dict(image="A24", marks=[{"type": "ellipse", "center": (0.5, 0.5), "radii": (0.12, 0.12)}])),
+    # The two deep pits sit at about (0.40, 0.61) and (0.49, 0.56), with fainter ones beside them. Circle the group,
+    # not a precise spot: the exact match to today's pitch is not established (RESEARCH.md section 7).
+    "S1": ("annotate", dict(image="A24", marks=[{"type": "ellipse", "center": (0.48, 0.585), "radii": (0.13, 0.065)}],
+                            start=(0.48, 0.60, 1.3), end=(0.48, 0.59, 1.7))),
     "S2": ("kenburns", dict(image="A27", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.15))),
-    "S3": ("kenburns", dict(image="A29", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.2),
+    "S3": ("kenburns", dict(image="A28",   # 1923 (NYT, 13 May 1923); A29 shows the 1924 final, so not here
+ start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.2),
                             lower_third=("FA Cup Final, 28 April 1923", "Bolton Wanderers 2, West Ham United 0"))),
     "S4": ("footage", dict(source="GE2_topdown",
                            fallback=("kenburns", dict(image="W02", start=(0.5, 0.5, 1.15), end=(0.5, 0.5, 1.0), mode="cover")))),
