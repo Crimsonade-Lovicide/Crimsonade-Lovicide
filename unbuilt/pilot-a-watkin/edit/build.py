@@ -25,6 +25,7 @@ from shots import SHOTS  # noqa: E402
 BUILD = os.path.join(HERE, "build")
 CLIPS = os.path.join(BUILD, "clips")
 RAW = os.path.join(HERE, "..", "assets", "raw")
+DERIVED = os.path.join(HERE, "..", "assets", "derived")   # rotated/cropped copies (assets/derive.py)
 GEO = os.path.join(HERE, "..", "assets", "geo", "land.geojson")
 LEAD = 0.25          # picture changes this long before its block's first word
 TAIL = 1.0           # hold after the last word
@@ -32,7 +33,11 @@ WPS = 2.5            # words per second for --estimate
 
 
 def asset(ref):
-    hits = sorted(glob.glob(os.path.join(RAW, ref + "_*")) + glob.glob(os.path.join(RAW, ref + ".*")))
+    hits = []
+    for d in (DERIVED, RAW):                 # a corrected copy wins over the raw download
+        hits = sorted(glob.glob(os.path.join(d, ref + "_*")) + glob.glob(os.path.join(d, ref + ".*")))
+        if hits:
+            break
     hits = [h for h in hits if h.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff"))]
     if not hits:
         raise FileNotFoundError(f"no asset file for {ref} in assets/raw/")
