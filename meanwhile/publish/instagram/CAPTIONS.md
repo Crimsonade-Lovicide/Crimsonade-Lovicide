@@ -1,12 +1,38 @@
-# Instagram Reels: captions, in posting order
+# Instagram Reels for @aiisoktv: posting checklist
 
-Post them in this order. Each caption is ready to copy and paste. Instagram allows 5 hashtags at most; each caption uses 3 or 4.
+This is the fallback for posting by hand, in case Meta won't link the AI is OK Page. You need 13 Reels: 6 Shorts from Episode 1 and 7 from Episode 2. All the files are already on your phone; I sent them in this chat. The captions below are ready to copy and paste.
 
-Turn on Meta's AI label on each one: Advanced settings > **Add AI label**.
+## Before the first post (one time only)
 
-Files: use the Short files you already have, the ones you uploaded to YouTube for Episode 1 and the ones I sent for Episode 2. In this repo they're in `build/shorts/post/` and `build/shorts_ep02/post/`.
+- [ ] The account is a **Business** account (Settings > Account type and tools).
+- [ ] Profile photo: `profile_photo_tight.jpg`.
+- [ ] Name: `AI is OK · MEANWHILE`.
+- [ ] Bio (from `PROFILE.md`).
+- [ ] Link: `youtube.com/@aiisoktv`.
 
-Pace: with a brand-new account, post 2 or 3 the first day and 1 or 2 a day after that. Once the Facebook link works, I'll post whatever is left automatically.
+## Every time you post a Reel
+
+1. Tap **+**, choose **Reel**, and pick the file.
+2. Skip filters and music. The Short already has its own sound.
+3. Paste the caption exactly as written below.
+4. Open **Advanced settings** and turn on **Add AI label**.
+5. Turn **off** "Share to Facebook". Otherwise Instagram may post it to your **personal** Facebook profile. The AI is OK Page already gets these Shorts on its own schedule.
+6. Share.
+
+## Schedule
+
+| Day | Reels | Files |
+|---|---|---|
+| Sat 3 Oct | 1, 2, 3 | manila (Ep 2), seoul (Ep 2), medium (Ep 1) |
+| Sun 4 Oct | 4, 5 | newyork (Ep 2), tokyo (Ep 1) |
+| Mon 5 Oct | 6, 7 | auckland (Ep 2), chicago (Ep 1) |
+| Tue 6 Oct | 8, 9 | nairobi (Ep 2), leeds (Ep 1) |
+| Wed 7 Oct | 10, 11 | mexico (Ep 2), saopaulo (Ep 1) |
+| Thu 8 Oct | 12, 13 | pune (Ep 1), firstq (Ep 2) |
+
+Space a day's posts a few hours apart. Skip any you've already posted. After day 1, **pin** Reels 1, 2 and 3 to the top of the profile: tap ⋯ on the Reel, then **Pin to your profile**.
+
+If the Facebook link starts working partway through, tell me which number you've reached and I'll post the rest automatically.
 
 ## 1. `meanwhile_short_manila.mp4` (Ep. 2)
 
