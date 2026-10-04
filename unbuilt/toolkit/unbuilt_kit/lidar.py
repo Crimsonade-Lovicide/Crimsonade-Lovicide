@@ -65,7 +65,8 @@ def _look(cam, target):
     return f, r, u
 
 
-def render(points, cam, target, size=HD, fov=50.0, haze=2600.0, center=None, radius=None, ss=1):
+def render(points, cam, target, size=HD, fov=50.0, haze=2600.0, center=None, radius=None, ss=1,
+           max_splat=16):
     """One frame: perspective projection, z-buffered point splats (bigger when close), distance haze,
     a fade towards the edge of the loaded data, and a small hole-fill so neighbouring points close up."""
     w, h = size[0] * ss, size[1] * ss          # ss=2 renders at double size and averages down (anti-aliasing)
@@ -90,15 +91,19 @@ def render(points, cam, target, size=HD, fov=50.0, haze=2600.0, center=None, rad
     tone = np.clip((alb - 0.18) / 0.72, 0, 1) ** 0.9                # stretch contrast
     col = dark + (light - dark) * tone[:, None]
     col = col * (1 - fog[:, None]) + paper * fog[:, None]
-    rad = np.clip(focal * 1.6 / zc, 1, 5).astype(np.int32)          # 1 m cells cover this many pixels
+    # 1 m cells cover focal/zc pixels; splats are 1.6x that so neighbours overlap. The cap must stay above
+    # the point spacing: at 5 px, close straight-down views left a lattice of 1-3 px holes that crawled as
+    # the camera moved (measured: 23% of pixels flickering on GE2_topdown).
+    rad = np.clip(np.ceil(focal * 1.6 / zc), 1, max_splat).astype(np.int32)
     order = np.argsort(-zc, kind="stable")                           # far first; near points overwrite
     xi, yi, col, rad = x[order].astype(np.int32), y[order].astype(np.int32), col[order], rad[order]
+    xi, yi = xi - (rad - 1) // 2, yi - (rad - 1) // 2                # centre each splat on its point
     img = np.empty((h, w, 3), np.float32)
     img[:] = paper * np.linspace(0.96, 1.0, h, dtype=np.float32)[:, None, None]
     hit = np.zeros(h * w, bool)
     flat = img.reshape(-1, 3)
-    for dx in range(5):
-        for dy in range(5):
+    for dx in range(int(rad.max()) if len(rad) else 0):
+        for dy in range(int(rad.max()) if len(rad) else 0):
             sel = (rad > max(dx, dy))
             if not sel.any():
                 continue
