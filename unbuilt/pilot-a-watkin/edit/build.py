@@ -108,7 +108,8 @@ def render(name, dur):
     lt = kw.pop("lower_third", None)
     if fn == "footage":                          # use the Earth Studio render if it has arrived, else the stand-in
         if footage_frames(kw["source"]):
-            kw = {"source": kw["source"], "n_frames": len(footage_frames(kw["source"]))}
+            frames = footage_frames(kw["source"])        # the newest frame time makes a re-render invalidate the cache
+            kw = {"source": kw["source"], "n_frames": len(frames), "mtime": int(max(map(os.path.getmtime, frames)))}
         else:
             fn, kw = kw["fallback"]
             kw = dict(kw)
