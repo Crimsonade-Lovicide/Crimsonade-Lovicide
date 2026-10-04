@@ -13,11 +13,13 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "..", "toolkit"))
 import unbuilt_kit as kit  # noqa: E402
+from unbuilt_kit.core import ffmpeg_exe  # noqa: E402
 
 from blocks import blocks  # noqa: E402
 from shots import SHOTS  # noqa: E402
@@ -102,6 +104,11 @@ def footage(source, out, dur):
     os.remove(listfile)
 
 
+def readable(path):
+    err = subprocess.run([ffmpeg_exe(), "-hide_banner", "-i", path], capture_output=True, text=True).stderr
+    return re.search(r"Duration: \d", err) is not None
+
+
 def render(name, dur):
     fn, kw = SHOTS[name]
     kw = dict(kw)
@@ -117,7 +124,7 @@ def render(name, dur):
     kw.pop("fixed", None)
     key = hashlib.sha1(json.dumps([fn, kw, lt, round(dur, 3)], sort_keys=True, default=str).encode()).hexdigest()[:10]
     out = os.path.join(CLIPS, f"{name}_{key}.mp4")
-    if os.path.exists(out):
+    if os.path.exists(out) and readable(out):   # a build killed mid-render leaves a truncated file behind
         return out
     for old in glob.glob(os.path.join(CLIPS, f"{name}_*.mp4")):
         os.remove(old)
