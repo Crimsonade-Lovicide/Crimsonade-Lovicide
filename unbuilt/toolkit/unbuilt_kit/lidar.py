@@ -65,10 +65,10 @@ def _look(cam, target):
     return f, r, u
 
 
-def render(points, cam, target, size=HD, fov=50.0, haze=2600.0, center=None, radius=None):
+def render(points, cam, target, size=HD, fov=50.0, haze=2600.0, center=None, radius=None, ss=1):
     """One frame: perspective projection, z-buffered point splats (bigger when close), distance haze,
     a fade towards the edge of the loaded data, and a small hole-fill so neighbouring points close up."""
-    w, h = size
+    w, h = size[0] * ss, size[1] * ss          # ss=2 renders at double size and averages down (anti-aliasing)
     f, r, u = _look(cam, target)
     rel = points[:, :3] - np.asarray(cam, np.float32)
     zc = rel @ f.astype(np.float32)
@@ -116,6 +116,8 @@ def render(points, cam, target, size=HD, fov=50.0, haze=2600.0, center=None, rad
             fill = ~hit & ha & hb
             img[fill] = (a[fill] + b[fill]) / 2
             hit = hit | fill
+    if ss > 1:
+        img = img.reshape(h // ss, ss, w // ss, ss, 3).mean((1, 3))
     return img
 
 
