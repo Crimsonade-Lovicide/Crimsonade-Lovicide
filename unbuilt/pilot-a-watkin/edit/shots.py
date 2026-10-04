@@ -85,7 +85,7 @@ SHOTS = {
  start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.2),
                             lower_third=("FA Cup Final, 28 April 1923", "Bolton Wanderers 2, West Ham United 0"))),
     "S4": ("footage", dict(source="GE2_topdown",
-                           fallback=("kenburns", dict(image="W02", start=(0.5, 0.5, 1.15), end=(0.5, 0.5, 1.0), mode="cover")))),
+                           fallback=("kenburns", dict(image="W01", start=(0.5, 0.45, 1.35), end=(0.5, 0.45, 1.1), mode="cover")))),
     "S5": ("footage", dict(source="GE3_arch_orbit", lower_third=("The Wembley arch: 133 m", None),
                            fallback=("kenburns", dict(image="W03", start=(0.5, 0.6, 1.0), end=(0.5, 0.4, 1.15), mode="cover")))),
     # ---- outro
