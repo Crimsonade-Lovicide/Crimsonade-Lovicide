@@ -7,6 +7,7 @@ Usage: python3 split_narration.py <recording> [--noise -38] [--min-gap 1.2] [--d
 Writes build/voice.wav (48 kHz mono, pauses tightened) and build/timings.json ({block: [start, end]}).
 If the number of speech stretches doesn't match the number of blocks, it prints every stretch and stops,
 so the mismatch can be fixed by hand (re-record a block, or edit build/segments.json and re-run with --segments).
+A segments.json entry can also be [start, end, "pickup.m4a", gain_dB]: a line re-recorded later, in the same folder.
 """
 import argparse
 import json
@@ -81,13 +82,18 @@ def main():
         print("Fix: adjust --noise/--min-gap, or edit build/segments.json and re-run with --segments.")
         sys.exit(1)
 
-    audio = load(a.recording)
+    sources = {None: load(a.recording)}
     out, timings, t, prev = [], {}, 0.0, None
     last = {}
     for name, span in zip(expected, spans):
         last[name] = span                 # a later take replaces an earlier one
     for name in names:
-        s, e = last[name]
+        # a span is [start, end], or [start, end, "pickup.m4a", gain_dB] for a line re-recorded separately
+        s, e = last[name][:2]
+        src = last[name][2] if len(last[name]) > 2 else None
+        if src not in sources:
+            sources[src] = load(os.path.join(os.path.dirname(os.path.abspath(a.recording)), src))
+        audio = sources[src] * (10 ** ((last[name][3] if len(last[name]) > 3 else 0) / 20))
         if name in a.drop:
             continue
         if prev is not None:
