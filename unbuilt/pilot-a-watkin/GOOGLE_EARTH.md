@@ -1,3 +1,5 @@
+> **No longer needed (4 Oct 2026).** The owner asked for this to be automated. The flyovers for C3, S4 and O1 are now rendered from open Environment Agency LiDAR by `edit/render_flyovers.py` (no Google account, no AI). The arch shot (S5) uses the CC-licensed photo of the arch. This guide is kept only in case real Earth Studio footage is wanted later.
+
 # Google Earth Studio shots for Pilot A
 
 You need four short flyovers of Wembley today. Each takes about 10 minutes to set up, and Google renders it in your browser.
