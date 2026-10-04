@@ -6,7 +6,9 @@ The strawberry Short is already public: https://youtube.com/shorts/N-KWu7R_NnI
 
 ## A. Three Shorts already uploaded as Private: schedule them
 
-In Studio, go to **Content** and then **Shorts**. For each Short below:
+**Done on 4 Oct via Make** (scenario "MEANWHILE · YouTube video settings (AI is OK)", us2.make.com/1521544/scenarios/6501250). YouTube reports all three as private, with the release times in the table below. Their Altered content flag was sent as Yes, but YouTube's read-back doesn't include it, so check one Short's Details in Studio.
+
+To do it by hand instead: in Studio, go to **Content** and then **Shorts**. For each Short below:
 
 1. Click **Visibility**, then **Schedule**.
 2. Set the date and time from the table.
