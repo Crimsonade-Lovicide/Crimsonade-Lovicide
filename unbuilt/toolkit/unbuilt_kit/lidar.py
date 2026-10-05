@@ -66,7 +66,7 @@ def _look(cam, target):
 
 
 def render(points, cam, target, size=HD, fov=50.0, haze=2600.0, center=None, radius=None, ss=1,
-           max_splat=16):
+           max_splat=16, spacing=1.0):
     """One frame: perspective projection, z-buffered point splats (bigger when close), distance haze,
     a fade towards the edge of the loaded data, and a small hole-fill so neighbouring points close up."""
     w, h = size[0] * ss, size[1] * ss          # ss=2 renders at double size and averages down (anti-aliasing)
@@ -94,7 +94,7 @@ def render(points, cam, target, size=HD, fov=50.0, haze=2600.0, center=None, rad
     # 1 m cells cover focal/zc pixels; splats are 1.6x that so neighbours overlap. The cap must stay above
     # the point spacing: at 5 px, close straight-down views left a lattice of 1-3 px holes that crawled as
     # the camera moved (measured: 23% of pixels flickering on GE2_topdown).
-    rad = np.clip(np.ceil(focal * 1.6 / zc), 1, max_splat).astype(np.int32)
+    rad = np.clip(np.ceil(focal * 1.6 * spacing / zc), 1, max_splat).astype(np.int32)   # spacing: metres between points
     order = np.argsort(-zc, kind="stable")                           # far first; near points overwrite
     xi, yi, col, rad = x[order].astype(np.int32), y[order].astype(np.int32), col[order], rad[order]
     xi, yi = xi - (rad - 1) // 2, yi - (rad - 1) // 2                # centre each splat on its point
