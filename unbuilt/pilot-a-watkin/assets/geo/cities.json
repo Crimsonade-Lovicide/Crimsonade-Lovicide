@@ -1,0 +1,63 @@
+{
+  "crs": "EPSG:4326 (WGS84 lon/lat)",
+  "source": "Rounded public coordinates (OpenStreetMap / Wikipedia city-centre points); tunnel headings approximate.",
+  "cities": {
+    "Manchester": {
+      "lat": 53.4808,
+      "lon": -2.2426,
+      "note": "city centre (Albert Square)"
+    },
+    "London": {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "note": "Charing Cross"
+    },
+    "London Baker Street": {
+      "lat": 51.5226,
+      "lon": -0.1571,
+      "note": "Metropolitan Railway terminus"
+    },
+    "Wembley Park (tower site)": {
+      "lat": 51.556,
+      "lon": -0.2796,
+      "note": "Wembley Stadium centre spot"
+    },
+    "Dover": {
+      "lat": 51.1279,
+      "lon": 1.3134,
+      "note": "town / harbour"
+    },
+    "Shakespeare Cliff (Watkin's 1880s tunnel heading)": {
+      "lat": 51.105,
+      "lon": 1.262,
+      "note": "approximate"
+    },
+    "Calais": {
+      "lat": 50.9513,
+      "lon": 1.8587,
+      "note": "town"
+    },
+    "Sangatte (French 1880s heading)": {
+      "lat": 50.945,
+      "lon": 1.75,
+      "note": "approximate"
+    },
+    "Paris": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "note": "Hotel de Ville"
+    },
+    "Eiffel Tower": {
+      "lat": 48.8584,
+      "lon": 2.2945,
+      "note": "for scale shots"
+    }
+  },
+  "route_order": [
+    "Manchester",
+    "London",
+    "Dover",
+    "Calais",
+    "Paris"
+  ]
+}
