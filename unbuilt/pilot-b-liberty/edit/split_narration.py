@@ -29,7 +29,7 @@ SR = 48000
 PAD = 0.12             # silence kept either side of each block's speech
 GAP = 0.45             # pause between blocks in the tight track
 SECTION_GAP = 0.9      # longer pause where a new script section starts
-TITLE_HOLD = 2.5       # room for the title card (C5) after C4
+TITLE_HOLD = 2.5       # room for the title card (C4) after C3
 
 
 def load(path):
@@ -97,7 +97,7 @@ def main():
         if name in a.drop:
             continue
         if prev is not None:
-            gap = TITLE_HOLD if prev == "C4" else SECTION_GAP if section(name) != section(prev) else GAP
+            gap = TITLE_HOLD if prev == "C3" else SECTION_GAP if section(name) != section(prev) else GAP
             out.append(np.zeros(int(gap * SR), np.float32))
             t += gap
         clip = audio[max(0, int((s - PAD) * SR)):int((e + PAD) * SR)]

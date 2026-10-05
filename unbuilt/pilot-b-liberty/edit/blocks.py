@@ -1,6 +1,6 @@
 """Narration blocks, read from ../SCRIPT.md in order: [(block_id, spoken_text), ...].
 
-Bracketed notes such as [M] or [YOUR CALL] are stripped. C5 (the title card) has no narration and is left out.
+Bracketed notes such as [M] or [YOUR CALL] are stripped. C4 (the title card) has no narration and is left out.
 """
 import os
 import re

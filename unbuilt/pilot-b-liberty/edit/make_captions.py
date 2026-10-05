@@ -16,24 +16,14 @@ from split_narration import BUILD
 
 # where the recorded delivery differs from SCRIPT.md, caption what was said
 SPOKEN = {
-    "D1": 'On the first of November 1889, Watkin\'s company published a brief. A tower of not less than 1,200 feet. '
-          '500 guineas for the best design. And clause one, quote: "The designer will assume that the foundations '
-          'are perfect." End quote.',
-    "W6": "Taking it down started in 1904. In September 1907, they blew up the foundations with dynamite.",
     "O2": "I'm Eric Hoffman, and this was UNBUILT. Every picture in this video is real, and the sources are in "
           "the description.",
 }
 # numbers are easier to read as figures
-FIGURES = [("twelve hundred", "1,200"), ("Five hundred guineas", "500 guineas"), ("Sixty-eight", "68"),
-           ("sixty-eight", "68"), ("Number eighteen", "Number 18"), ("Number twenty-nine", "Number 29"),
-           ("two thousand two hundred and ninety-six", "2,296"), ("two hundred thousand", "200,000"),
-           ("Number fifty", "Number 50"), ("number thirty-eight", "number 38"), ("Number thirty-eight", "Number 38"),
-           ("Two thousand feet", "2,000 feet"), ("number thirty-seven", "number 37"), ("Twelve hundred", "1,200"),
-           ("ninety-bedroom", "90-bedroom"), ("two hundred feet", "200 feet"),
-           ("three hundred and fifty-two thousand pounds", "£352,000"), ("two hundred miles", "200 miles"),
-           ("Five hundred and eighteen", "518"), ("a hundred and fifty-five", "155"),
-           ("a hundred and twenty thousand", "120,000"), ("a hundred and thirty-three", "133"),
-           ("twelve minutes", "12 minutes"), ("Fifteen years", "15 years"), ("first of November", "1st of November")]
+FIGURES = [("eighty-six feet", "86 feet"), ("forty-eight", "48"), ("fifty-six metres", "56 metres"),
+           ("a hundred and fifty-one feet", "151 feet"), ("twenty-eighth of October", "28th of October"),
+           ("fifty-six hundred miles", "5,600 miles"), ("at twenty-one", "at 21"), ("Fourteen years", "14 years"),
+           ("Seventeen years", "17 years")]
 MAX_LINE, MAX_CUE_S = 42, 6.0
 WEAK = {"the", "a", "an", "of", "for", "to", "in", "and", "by", "with", "at", "its", "his", "their", "that"}
 
