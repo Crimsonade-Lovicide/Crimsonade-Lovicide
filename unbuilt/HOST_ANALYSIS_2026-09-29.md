@@ -182,3 +182,24 @@ Views in the first four days, counting the Pacific publish day as day 1:
    - The channel-wide slump means nobody, in any format, has had a fair test since 26 Sep.
 2. **The decision around 31 Oct still stands.** The fairest test remains the Wright special against the two Emmett Wright videos.
 3. **Read in Studio (the API can't):** impressions and click-through rate for Magnificent Delusions on 28–30 Sep, against the Mile-High's and Ellis Island's days 3–5. If impressions are low, YouTube barely tried the video. If impressions are fine but click-through is low, the thumbnail or title is losing the click. That would also explain the 3-second home-feed viewers.
+
+## Monday 5 Oct 2026: check not run (no data access)
+
+The scheduled re-check fired at 17:00 UTC, but **no data could be pulled**:
+
+- **Zapier:** every YouTube Analytics and Data API request through the UNBUILT connection returned "Your Zapier account has reached its task limit for the current billing period". Nothing was read, and nothing was bought or upgraded.
+- **The public YouTube pages,** tried as a fallback for live view counts only, sent this machine to Google's bot check (HTTP 429).
+
+So every open question from Friday is still open:
+1. Hugo's day 5 (30 Sep) and later;
+2. where Wardenclyffe's roughly 780 views from 30 Sep to 2 Oct came from (ad traffic or a real home-feed wave);
+3. whether the channel-wide home-feed and Shorts-feed slump has recovered.
+
+**How to get it:**
+- **Free, once the Zapier tasks reset:** re-run this check. The billing date is on Zapier's billing page.
+- **Free, now, by the owner in YouTube Studio:**
+  - Wardenclyffe → Analytics → Reach → "Traffic source types" for 30 Sep to 5 Oct. If "YouTube advertising" is there, check Studio → Promotions and Google Ads, as for The Line.
+  - Magnificent Delusions → Reach → impressions and click-through rate for 28 Sep to 5 Oct.
+  - Channel → Reach → traffic sources for the last 28 days, for the home feed ("Browse features") and the Shorts feed.
+
+**The 2 Oct keep-or-quit assessment is unchanged,** because no new data has arrived. The 90-day test checkpoints (5 Nov, 5 Dec, 5 Jan) also read their data through Zapier, so they need the task allowance to have reset by then.
