@@ -85,11 +85,14 @@ def footage_frames(source):
     return frames
 
 
-def footage(source, out, dur):
+def footage(source, out, dur, tail=False):
     """Turn the frame sequence into a clip of exactly `dur` seconds at 24 fps, fitted to 1920x1080.
     The whole camera move plays, re-timed to fit, when that changes its speed by no more than 1.5x either way.
-    Beyond that it plays at natural speed and is cut at the end (too long) or holds its last frame (too short)."""
+    Beyond that it plays at natural speed and is cut at the end (too long) or holds its last frame (too short).
+    tail=True keeps the end of a move that is too long instead of its start (e.g. the close-up end of a push-in)."""
     frames = footage_frames(source)
+    if tail and len(frames) / 24 / dur > 1.5:
+        frames = frames[-(int(dur * 24) + 1):]
     natural = len(frames) / 24
     factor = natural / dur
     per_frame = dur / len(frames) if 1 / 1.5 <= factor <= 1.5 else 1 / 24
@@ -116,7 +119,8 @@ def render(name, dur):
     if fn == "footage":                          # use the Earth Studio render if it has arrived, else the stand-in
         if footage_frames(kw["source"]):
             frames = footage_frames(kw["source"])        # the newest frame time makes a re-render invalidate the cache
-            kw = {"source": kw["source"], "n_frames": len(frames), "mtime": int(max(map(os.path.getmtime, frames)))}
+            kw = {"source": kw["source"], "n_frames": len(frames), "mtime": int(max(map(os.path.getmtime, frames))),
+                  "tail": kw.get("tail", False)}
         else:
             fn, kw = kw["fallback"]
             kw = dict(kw)
@@ -134,7 +138,7 @@ def render(name, dur):
         kw["images"] = [asset(r) for r in kw["images"]]
     base = out if not lt else out.replace(".mp4", "_base.mp4")
     if fn == "footage":
-        footage(kw["source"], base, dur)
+        footage(kw["source"], base, dur, kw.get("tail", False))
     elif fn in ("kenburns", "annotate", "highlight"):
         img = kw.pop("image")
         getattr(kit, fn)(img, base, dur, **kw)

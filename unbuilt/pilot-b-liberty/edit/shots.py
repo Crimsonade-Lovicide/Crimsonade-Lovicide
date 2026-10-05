@@ -14,8 +14,8 @@ REBUTTAL = (0.350, 0.623, 0.506, 0.651)     # "It is a fact ... the one now on B
 
 SHOTS = {
     # ---- cold open
-    "C1": ("kenburns", dict(image="P01", start=(0.5, 0.62, 2.62), end=(0.53, 0.24, 2.62))),   # full width; pedestal up to the lamp
-    "C2": ("footage", dict(source="LIB1_push",
+    "C1": ("kenburns", dict(image="P01", start=(0.5, 0.62, 2.85), end=(0.53, 0.24, 2.85))),   # full width; pedestal up to the lamp
+    "C2": ("footage", dict(source="LIB1_push", tail=True,
                            fallback=("kenburns", dict(image="A14", start=(0.5, 0.5, 1.0), end=(0.5, 0.45, 1.3), mode="cover")))),
     "C3": ("kenburns", dict(image="C3_split", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.06))),
     "C4": ("title_card", dict(title="UNBUILT", subtitle="Liberty and Egypt", fixed=2.5)),
