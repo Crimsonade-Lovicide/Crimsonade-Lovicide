@@ -169,7 +169,7 @@ def main():
     ap.add_argument("--estimate", action="store_true")
     ap.add_argument("--music")
     ap.add_argument("--only", nargs="*")
-    ap.add_argument("--out", default=os.path.join(BUILD, "pilot_a.mp4"))
+    ap.add_argument("--out", default=os.path.join(BUILD, "pilot_b.mp4"))
     a = ap.parse_args()
     os.makedirs(CLIPS, exist_ok=True)
     tpath = os.path.join(BUILD, "timings.json")
