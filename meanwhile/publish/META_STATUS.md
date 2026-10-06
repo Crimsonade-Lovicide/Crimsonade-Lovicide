@@ -25,7 +25,7 @@ One-shot reminders bound to this session. Each fires once, posts one video and r
 | 2026-10-05T12:00Z | Ep1 Tokyo | trig_013UmdukjY8jF1ZSpFAki3md | 1669856807815821 (posted 2026-10-05) |
 | 2026-10-05T17:00Z | Ep2 Mexico City | trig_012bCbYhgrSCwssFjGLFTFrE | 3706212982868053 (posted 2026-10-05) |
 | 2026-10-06T12:00Z | Ep1 Chicago | trig_019cCZNtoZyv2iQ6ukEn3ZVs | 2067162744171831 (posted 2026-10-06) |
-| 2026-10-06T17:00Z | Ep2 First question | trig_01Bdex5BQj2vwhJcwjB8ARwA | pending |
+| 2026-10-06T17:00Z | Ep2 First question | trig_01Bdex5BQj2vwhJcwjB8ARwA | 1450357243960569 (posted 2026-10-06) |
 | 2026-10-07T12:00Z | Ep1 Leeds | trig_014FQndDAq9UGGniPVQ7oJFJ | pending |
 | 2026-10-08T12:00Z | Ep1 Sao Paulo | trig_01BaEcVHsBp5MpvAoeM8KhTv | pending |
 | 2026-10-09T12:00Z | Ep1 Pune | trig_013aUn7BtqpfNtNCPgf8Ug4v | pending |
