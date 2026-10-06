@@ -56,7 +56,7 @@ def build():
     sphere('bulb', 0.05, (0, 0.1, H - 1.05), mat_emit('bulb', LAMP, 30))
     spot('lamp', (0, 0.1, H - 1.07), (0, 0.1, 0.74), 900, angle=75, blend=0.6, size=0.05)
     light('POINT', (0, 0.1, H - 0.9), 25, LAMP, size=0.3)       # bounce off the shade interior
-    cam, tgt = camera((1.25, -1.62, 2.05), (-0.15, 0.35, 0.85), lens=22)
+    cam, tgt = camera((1.25, -1.62, 2.05), (-0.3, 0.6, 1.12), lens=22)
     key(cam, 'location', 1, Vector((1.25, -1.62, 2.05))); key(cam, 'location', end, Vector((0.95, -1.25, 1.85)))
     export_tracks('M3', {'clock': (cx, cy, cz), 'door': (0.75, D / 2, 1.9), 'table': (0, 0.1, 0.76)})
 
