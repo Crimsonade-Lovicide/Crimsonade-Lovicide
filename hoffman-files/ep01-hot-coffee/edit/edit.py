@@ -63,10 +63,11 @@ def time_map(e):
 
 
 # ---------------------------------------------------------------- plates
-def build_plates():
+def build_plates(only=None):
     os.makedirs(os.path.join(OUT, 'plates'), exist_ok=True)
     src_root = os.path.join(RENDERS, 'preview') if os.environ.get('PREVIEW') else RENDERS
     for sc in sorted({s['src'] for s in SEGMENTS if s['kind'] == 'blender'}):
+        if only and sc not in only: continue
         d = os.path.join(src_root, sc); files = sorted(f for f in os.listdir(d) if f.endswith('.png'))
         nums = [int(f[:4]) for f in files]
         step = 2 if len(nums) > 1 and nums[1] - nums[0] == 2 else 1
@@ -271,7 +272,7 @@ def lowerthirds():
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'timeline'
     tl = timeline()
-    if cmd == 'plates': build_plates()
+    if cmd == 'plates': build_plates(sys.argv[2:] or None)
     elif cmd == 'timeline':
         write_paperwork(tl)
         for e in tl:

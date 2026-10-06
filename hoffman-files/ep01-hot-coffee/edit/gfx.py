@@ -508,7 +508,7 @@ def ov_sales(cv, t, dur, frame, tr, cues):
 OVERLAYS = dict(car=ov_car, recon=ov_recon, recon_soak=ov_recon_soak, skin=ov_skin, folders=ov_folders, sales=ov_sales)
 # extra spoken cue phrases the overlays listen for (beyond each segment's `at` anchors)
 OVERLAY_CUES = dict(car=['a 1989 Ford Probe'], skin=['Third degree means', 'every layer', 'six percent', 'sixteen percent'],
-                    sales=['two days', '1.35 million', 'The jury awarded'])
+                    sales=['two days', '1.35 million', '2.7 million'])
 CARDS = dict(title=title, headline=headline, injuries=injuries, temperature=temperature, ledger=ledger, offer=offer,
              claims=claims, qa=qa, fault=fault, shrink=shrink, settled=settled, died=died, holding_title=holding_title,
              holding=holding, endcard=endcard)
