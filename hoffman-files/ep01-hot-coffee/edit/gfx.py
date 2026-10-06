@@ -288,7 +288,7 @@ def offer(t, dur, cues):
     cv = card(); bug(cv); a = fade(t, 0, dur, 0.01, 0.5)
     _ledger(cv, 99, [0, 0, 0, 0], a, dim=0.14)
     k = ramp(t, 0.35, 0.35)
-    rect(cv, (300, 140, 1620, 860), (8, 8, 10), 0.9 * a * k)
+    rect(cv, (300, 140, 1620, 860), (8, 8, 10), 0.97 * a * k)
     put(cv, "McDONALD'S OFFERED", 'monob', 40, WHITE, (W / 2, 430), 'c', a * k, track=6)
     put(cv, '$800', 'bebas', 300, AMBER, (W / 2, 470), 'c', a * k, scale=1.0 + 0.12 * (1 - k))
     return cv
