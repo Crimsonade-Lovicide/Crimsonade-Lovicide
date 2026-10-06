@@ -34,8 +34,8 @@ def build():
     box('day_line', (0.6, 0.47, 0.006), (0.9, 0, 0.8), clay('line', (0.85, 0.85, 0.82), 0.5))
     studio(key_pos=(-2, -4, 3), key_power=500, rim_pos=(2, 3, 3), rim_power=250, size=3)
     end = round(DUR * FPS)
-    cam, tgt = camera((0, -4.2, 1.05), (0, 0, 0.95), lens=40)
-    key(cam, 'location', 1, Vector((0.15, -4.4, 1.1))); key(cam, 'location', end, Vector((-0.1, -3.9, 1.0)))
+    cam, tgt = camera((0, -4.6, 1.1), (0, 0, 0.92), lens=36)
+    key(cam, 'location', 1, Vector((0.15, -4.9, 1.1))); key(cam, 'location', end, Vector((-0.1, -4.5, 1.05)))
     export_tracks('E9', {'bar_top': (0.9, 0, 1.6), 'day1': (0.9, 0, 0.8), 'dial': dial_c})
 
 

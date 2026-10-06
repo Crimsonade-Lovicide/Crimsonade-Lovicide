@@ -31,7 +31,7 @@ def build():
     cup = bpy.context.object; cup.data.materials.append(clay('paper', PAPER, 0.55)); bpy.ops.object.shade_smooth()
     lid = cyl('lid', 0.0415, 0.012, (0.04, 0.0, top + 0.111), clay('lidmat', (0.7, 0.69, 0.67), 0.4), verts=48)
     box('sip', (0.016, 0.006, 0.004), (0.04, -0.03, top + 0.118), clay('hole', (0.05, 0.05, 0.05)))
-    steam = glow_mat('steam', (1, 0.97, 0.94), 0.5, 0.8)
+    steam = glow_mat('steam', (1, 0.97, 0.94), 0.75, 0.7)
     for i in range(6):
         cu = bpy.data.curves.new(f'steam{i}', 'CURVE'); cu.dimensions = '3D'
         sp = cu.splines.new('NURBS'); n = 12; sp.points.add(n - 1); sp.order_u = 4; sp.use_endpoint_u = True; cu.resolution_u = 8
@@ -39,7 +39,7 @@ def build():
         for k in range(n):
             t = k / (n - 1)
             sp.points[k].co = (0.006 * math.sin(t * 4 + ph), 0.004 * math.cos(t * 3 + ph), t * 0.08, 1)
-        cu.bevel_depth = 0.0011; cu.materials.append(steam)
+        cu.bevel_depth = 0.0019; cu.materials.append(steam)
         o = bpy.data.objects.new(f'steam{i}', cu); bpy.context.collection.objects.link(o)
         base = Vector((0.04 + random.uniform(-0.012, 0.012), random.uniform(-0.01, 0.01), top + 0.118))
         f0 = 1 + i * 10

@@ -23,7 +23,7 @@ def extrude_profile(name, pts, width, mat, y=0.0):
 
 def build():
     setup('E2', DUR, samples=12, world=(0.012, 0.016, 0.03), glare=0.95)
-    fl = stage((0.03, 0.03, 0.033))
+    fl = stage((0.03, 0.03, 0.033), size=600)
     fl.data.materials[0].node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value = 0.8
     body = clay('body', (0.5, 0.5, 0.48), 0.45)
     glass = mat_principled('glass', (0.01, 0.012, 0.016), rough=0.06)
