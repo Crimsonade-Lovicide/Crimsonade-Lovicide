@@ -11,7 +11,7 @@ for s in SEGMENTS:
     dst = os.path.join(P, 'clips', f"{s['id']}_{what}.mp4")
     if not os.path.exists(dst):
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(OUT, 'segs', f"{s['id']}.mp4"), '-vf', 'hqdn3d=1.5:1.5:2:2',
-                        '-c:v', 'libx264', '-preset', 'slow', '-crf', '17', '-pix_fmt', 'yuv420p', dst], check=True)
+                        '-c:v', 'libx264', '-preset', 'medium', '-crf', '17', '-pix_fmt', 'yuv420p', dst], check=True)
     if s.get('vo'): shutil.copy(os.path.join(HERE, 'audio', f"{s['id']}.wav"), os.path.join(P, 'temp_vo', f"{s['id']}.wav"))
 for f in os.listdir(os.path.join(OUT, 'lowerthirds')): shutil.copy(os.path.join(OUT, 'lowerthirds', f), os.path.join(P, 'name_straps', f))
 for f in ('shotlist.csv', 'captions_temp.srt'): shutil.copy(os.path.join(OUT, f), os.path.join(P, 'paperwork', f))
