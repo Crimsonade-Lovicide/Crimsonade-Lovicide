@@ -163,7 +163,7 @@ def render_seg(e):
 SR = 48000
 
 
-def score(tl, total):
+def score(tl, total, music_dir=None):
     """A quiet procedural bed: low A-minor pad that breathes, lifts into the title and the holding, drops for
     Mrs. Liebeck's card, with soft hits on the two title cards. A placeholder for licensed music."""
     from scipy.signal import butter, sosfilt
@@ -185,25 +185,48 @@ def score(tl, total):
         m = int(2.5 * SR); tt = np.arange(m) / SR
         b = np.sin(2 * np.pi * np.cumsum(70 * np.exp(-tt * 1.6) + 28) / SR) * np.exp(-tt * 1.4)
         seg = b[:max(0, min(m, n - i))]; hits[i:i + len(seg)] += g * seg
-    mix = np.tanh((0.10 * pad + 0.55 * hits) * 1.2) * 0.8
-    st = np.stack([mix, np.roll(mix, int(.011 * SR))], 1)
+    if music_dir:                                     # licensed (or preview) tracks per act, crossfaded
+        bed = cue_bed(at, total, music_dir)
+        st = np.tanh(bed * 1.1 + 0.35 * hits[:, None] * 1.2) * 0.85
+    else:
+        mix = np.tanh((0.10 * pad + 0.55 * hits) * 1.2) * 0.8
+        st = np.stack([mix, np.roll(mix, int(.011 * SR))], 1)
     from scipy.io import wavfile
     path = os.path.join(OUT, 'score.wav'); wavfile.write(path, SR, (st * 32767 * 0.9).astype(np.int16))
     return path
 
 
-def reel(tl):
+def cue_bed(at, total, music_dir):
+    from music_cues import CUES, XFADE, TARGET_DB
+    n = int(total * SR); bed = np.zeros((n, 2))
+    for first, upto, stem, *_ in CUES:
+        t0 = at[first]['start']; t1 = at[upto]['start'] if upto else total
+        a0 = max(0.0, t0 - XFADE / 2); a1 = min(total, t1 + (XFADE / 2 if upto else 0))
+        raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', os.path.join(music_dir, stem + '.mp3'), '-ac', '2', '-ar', str(SR),
+                              '-f', 'f32le', '-'], capture_output=True, check=True).stdout
+        x = np.frombuffer(raw, np.float32).reshape(-1, 2).astype(np.float64)
+        need = int((a1 - a0) * SR); x = np.tile(x, (need // len(x) + 1, 1))[:need]
+        x *= 10 ** (TARGET_DB / 20) / (np.sqrt((x ** 2).mean()) + 1e-9)
+        env = np.ones(need); f = int(XFADE * SR)
+        env[:f] = np.linspace(0, 1, f) if first != 's01' else np.linspace(0, 1, f) ** 0.5
+        env[-f:] = np.minimum(env[-f:], np.linspace(1, 0, f) if upto else np.linspace(1, 0, f) ** 2)
+        i = int(a0 * SR); bed[i:i + need] += x * env[:, None]
+    return bed
+
+
+def reel(tl, music_dir=None, dst=None, label='STORY REEL  ·  TEMP SYNTHETIC VO'):
     total = tl[-1]['start'] + tl[-1]['dur']
     lst = os.path.join(OUT, 'segs', 'list.txt')
     with open(lst, 'w') as f:
         for e in tl: f.write(f"file '{e['seg']['id']}.mp4'\n")
     silent = os.path.join(OUT, 'reel_silent.mp4')
     # TEMP VO tag burned in on the reel only; the per-segment clips stay clean for the editor
+    if music_dir: silent = os.path.join(OUT, 'reel_silent_review.mp4')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-vf',
-                    f"drawtext=fontfile={gfx.FONT_DIR}/PlexMonoSemi.ttf:text='STORY REEL  ·  TEMP SYNTHETIC VO':x=w-tw-64:y=h-80:"
+                    f"drawtext=fontfile={gfx.FONT_DIR}/PlexMonoSemi.ttf:text='{label}':x=w-tw-64:y=h-80:"
                     "fontsize=20:fontcolor=white@0.45", '-c:v', 'libx264', '-crf', '18', '-preset', 'medium',
                     '-pix_fmt', 'yuv420p', silent], check=True)
-    mus = score(tl, total)
+    mus = score(tl, total, music_dir)
     vos = [e for e in tl if e['vo']]
     inputs = ['-i', silent, '-i', mus]
     for e in vos: inputs += ['-i', os.path.join(HERE, 'audio', f"{e['seg']['id']}.wav")]
@@ -216,7 +239,7 @@ def reel(tl):
          f'acompressor=threshold=-20dB:ratio=3:attack=5:release=120,apad=whole_dur={total:.3f},asplit=2[vo][sc];' \
          f'[1:a]volume=0.9[mu];[mu][sc]sidechaincompress=threshold=0.03:ratio=8:attack=15:release=400[duck];' \
          f'[vo][duck]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=9[aout]'
-    dst = os.path.join(OUT, 'hoffman_ep01_story_reel.mp4')
+    dst = dst or os.path.join(OUT, 'hoffman_ep01_story_reel.mp4')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', *inputs, '-filter_complex', fc, '-map', '0:v', '-map', '[aout]', '-c:v', 'copy',
                     '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', '-movflags', '+faststart', dst], check=True)
     print('wrote', dst, round(total, 1), 's')
@@ -293,5 +316,8 @@ if __name__ == '__main__':
                 render_seg(e); print('seg', e['seg']['id'], flush=True)
     elif cmd == 'reel':
         write_paperwork(tl); reel(tl)
+    elif cmd == 'reviewreel':                         # Epidemic Sound previews: for choosing music, never for publishing
+        reel(tl, os.path.join(HERE, 'music'), os.path.join(OUT, 'hoffman_ep01_review_es_previews.mp4'),
+             'REVIEW CUT  ·  TEMP VO  ·  MUSIC PREVIEWS, NOT LICENSED')
     elif cmd == 'lowerthirds':
         lowerthirds()
