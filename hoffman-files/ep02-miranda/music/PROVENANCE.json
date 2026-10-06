@@ -1,0 +1,90 @@
+{
+ "source_item": "https://archive.org/details/musopen-lossless-dvd-flac",
+ "source_item_license": "Public Domain Mark 1.0 (http://creativecommons.org/publicdomain/mark/1.0/)",
+ "publisher": "Musopen (musopen.org), Kickstarter recording project completed 2012; Musopen states the recordings were purchased and released to the public domain",
+ "composition_status": "All composers died before 1936; compositions are public domain in the US and in life+70 countries",
+ "downloaded": "2026-10-06",
+ "tracks": [
+  {
+   "file": "aase_death.flac",
+   "sha256": "fdbe745456f141f5feb060d31140bc6c4b647fda4a4c4cfb02fef8cf576efea4",
+   "seconds": 273.8,
+   "composer": "Edvard Grieg",
+   "performer": "Czech National Symphony Orchestra",
+   "title": "Peer Gynt Suite No. 1, Op. 46 - II. Aase's Death",
+   "album": "Musopen Kickstarter Project"
+  },
+  {
+   "file": "beethoven_malinconia.flac",
+   "sha256": "798c857aa17aec7f0d68e00d0079d24badb193f833f5443dbb767cb6778c0792",
+   "seconds": 492.5,
+   "composer": "Ludwig Van Beethoven",
+   "performer": "Musopen String Quartet",
+   "title": "String Quartet No. 6 in B Flat Major, Op. 18, No. 6 - IV. (Adagio) La Malinconia",
+   "album": "Musopen Kickstarter Project"
+  },
+  {
+   "file": "brahms3_poco_allegretto.flac",
+   "sha256": "4160ae05d67d3ad73aebd41cd774840cab65681e3eaa2c44c1098d7aa8853e7f",
+   "seconds": 370.1,
+   "composer": "Johannes Brahms",
+   "performer": "Czech National Symphony Orchestra",
+   "title": "Symphony No. 3 in F Major, Op. 90 - III. Poco allegretto",
+   "album": "Musopen Kickstarter Project"
+  },
+  {
+   "file": "dvorak_american_lento.flac",
+   "sha256": "b6cf5e3ad928596ddc5619598d51750b9afefb8ee6e4f1f9a3d00ce1e684dbad",
+   "seconds": 471.5,
+   "composer": "Antonin Dvorak",
+   "performer": "Musopen String Quartet",
+   "title": "String Quartet No. 12 in F Major, Op. 96, \"American\" - II. Lento",
+   "album": "Musopen Kickstarter Project"
+  },
+  {
+   "file": "egmont_overture.flac",
+   "sha256": "94164eed2dd5213237ac306d045c8c5dc00b180d3056c192961e3a4a1ccddf45",
+   "seconds": 540.9,
+   "composer": "Ludwig van Beethoven",
+   "performer": "Czech National Symphony Orchestra",
+   "title": null,
+   "album": "Musopen Kickstarter Project"
+  },
+  {
+   "file": "goldberg_aria.flac",
+   "sha256": "dcecc717337e2c0ea04565d9de57bfac721833289ee74a0c58977cce8648cb8f",
+   "seconds": 292.4,
+   "composer": "Johann Sebastian Bach",
+   "performer": "Shelley Katz",
+   "title": "Goldberg Variations, BWV 988 - Aria",
+   "album": "Musopen Kickstarter Project"
+  },
+  {
+   "file": "goldberg_var25.flac",
+   "sha256": "447cc7c0fd61376c081ece29a821830695e27dd4d0122d3462c4ba9c61ced89a",
+   "seconds": 410.5,
+   "composer": "Johann Sebastian Bach",
+   "performer": "Shelley Katz",
+   "title": "Goldberg Variations, BWV. 988 - Variation 25",
+   "album": "Musopen Kickstarter Project"
+  },
+  {
+   "file": "schubert_d959_andantino.flac",
+   "sha256": "4e253b76522163ba0da96c457bdad1aa5991af6a782054c72232533044c74d8c",
+   "seconds": 546.0,
+   "composer": "Franz Schubert",
+   "performer": "Paul Pitman",
+   "title": "Sonata in A Minor, D. 959 - II. Andantino",
+   "album": "Musopen Kickstarter Project"
+  },
+  {
+   "file": "suk_meditation.flac",
+   "sha256": "47ed9db0dd55f68aea960fded9510973bd3fa79187c684e6d77692ec828fd0d4",
+   "seconds": 405.5,
+   "composer": "Josef Suk",
+   "performer": "Musopen String Quartet",
+   "title": "Meditation",
+   "album": "Musopen Kickstarter Project"
+  }
+ ]
+}
