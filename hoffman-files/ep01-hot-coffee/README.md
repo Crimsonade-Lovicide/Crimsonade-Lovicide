@@ -44,7 +44,11 @@ python3 edit.py timeline         # timeline + shotlist.csv + captions_temp.srt
 python3 edit.py segs             # one clean 1080p clip per beat (no temp tags) -> edit/out/segs/
 python3 edit.py reel             # story reel with temp VO, score bed, hits -> edit/out/hoffman_ep01_story_reel.mp4
 python3 edit.py lowerthirds      # ProRes 4444 name straps with alpha
+python3 final_music.py           # story reel with the final music (theme + public domain acts), -14 LUFS
 ```
+
+Music: the series theme opens (its downbeat lands on the title card) and closes (its outro ends with the end card);
+public domain recordings carry the acts. Cue sheet in `edit/music_cues.py`; files and provenance in `../music/`.
 
 Fonts (all SIL Open Font License, free from Google Fonts or IBM) go in `fonts/`: `BebasNeue.ttf`, `PlexMono.ttf` (IBM Plex Mono Regular), `PlexMonoSemi.ttf` (IBM Plex Mono SemiBold) and `Inter.ttf` (variable). You can also point `FONT_DIR` at them.
 

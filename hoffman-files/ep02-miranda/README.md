@@ -2,8 +2,7 @@
 
 Production doc: the Episode 2 production doc in Claude Docs (fact base, script, visuals, music brief, guests, clearance).
 
-- `music/` — temp/fallback score: public domain Musopen recordings, provenance with checksums, and a fetch script.
-  The final score is original music by Eric Hoffman; see the spotting brief in the production doc.
+- Music lives in `../music/`: the series theme opens and closes; public domain Musopen recordings carry the acts.
 
 ## 3D (`blender/`)
 

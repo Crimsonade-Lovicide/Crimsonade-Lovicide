@@ -12,7 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '..', 'ep01-hot-coffee', 'edit'))   # ep. 1 graphics module
 import gfx
 W, H, FPS = gfx.W, gfx.H, gfx.FPS
-SONG = os.path.join(HERE, '..', 'music', 'measured_in_sunlight.mp3')   # Eric's theme (not committed)
+SONG = os.path.join(HERE, '..', '..', 'music', 'measured_in_sunlight.mp3')   # the series theme (not committed)
 HIT, CLOSE_IN, SONG_END = 56.70, 150.20, 175.70
 RENDERS = os.path.join(HERE, '..', 'renders'); OUT = os.path.join(HERE, 'out'); LEAD = 0.45
 VOICE = os.environ.get('PIPER_VOICE', 'en_US-ryan-high.onnx')

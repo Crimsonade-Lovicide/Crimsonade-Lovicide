@@ -180,7 +180,7 @@ def score(tl, total, music_dir=None):
     env_y = [0, .45, .8, 1.0, .5, .5, .15, .15, .5, .9, .55, .3, 0]
     pad *= np.interp(t, env_x, env_y)
     hits = np.zeros(n)
-    for sid, g in (('s03', 1.0), ('s29', 0.8), ('s14', 0.5)):
+    for sid, g in ((('s29', 0.8), ('s14', 0.5)) if music_dir else (('s03', 1.0), ('s29', 0.8), ('s14', 0.5))):
         i = int(at[sid]['start'] * SR) + (int(0.35 * SR) if sid == 's14' else 0)
         m = int(2.5 * SR); tt = np.arange(m) / SR
         b = np.sin(2 * np.pi * np.cumsum(70 * np.exp(-tt * 1.6) + 28) / SR) * np.exp(-tt * 1.4)
@@ -196,21 +196,45 @@ def score(tl, total, music_dir=None):
     return path
 
 
+def _load(path, filt, ss=0.0, dur=None):
+    cmd = ['ffmpeg', '-v', 'error', '-ss', f'{ss:.3f}'] + (['-t', f'{dur:.3f}'] if dur else []) + \
+          ['-i', path, '-af', filt, '-ac', '2', '-ar', str(SR), '-f', 'f32le', '-']
+    return np.frombuffer(subprocess.run(cmd, capture_output=True, check=True).stdout, np.float32).reshape(-1, 2).astype(np.float64)
+
+
+def _level(x, db):
+    return x * 10 ** (db / 20) / (np.sqrt((x ** 2).mean()) + 1e-9)
+
+
 def cue_bed(at, total, music_dir):
-    from music_cues import CUES, XFADE, TARGET_DB
-    n = int(total * SR); bed = np.zeros((n, 2))
-    for first, upto, stem, *_ in CUES:
-        t0 = at[first]['start']; t1 = at[upto]['start'] if upto else total
-        a0 = max(0.0, t0 - XFADE / 2); a1 = min(total, t1 + (XFADE / 2 if upto else 0))
-        raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', os.path.join(music_dir, stem + '.mp3'), '-ac', '2', '-ar', str(SR),
-                              '-f', 'f32le', '-'], capture_output=True, check=True).stdout
-        x = np.frombuffer(raw, np.float32).reshape(-1, 2).astype(np.float64)
-        need = int((a1 - a0) * SR); x = np.tile(x, (need // len(x) + 1, 1))[:need]
-        x *= 10 ** (TARGET_DB / 20) / (np.sqrt((x ** 2).mean()) + 1e-9)
-        env = np.ones(need); f = int(XFADE * SR)
-        env[:f] = np.linspace(0, 1, f) if first != 's01' else np.linspace(0, 1, f) ** 0.5
-        env[-f:] = np.minimum(env[-f:], np.linspace(1, 0, f) if upto else np.linspace(1, 0, f) ** 2)
-        i = int(a0 * SR); bed[i:i + need] += x * env[:, None]
+    """Theme at the open and close, act cues crossfaded in between (see music_cues.py)."""
+    from music_cues import CUES, THEME, XFADE, TARGET_DB, THEME_DB, ACT_FILTER, THEME_FILTER
+    n = int(total * SR); bed = np.zeros((n, 2)); f = int(XFADE * SR)
+    song = os.path.join(music_dir, THEME['file'])
+    # open: song time HIT lands at the title card; plays from video 0, fades out across the next segment
+    t_title = at[THEME['title_seg']]['start']; song_in = THEME['hit'] - t_title
+    fade_end = at[THEME['fade_seg']]['start'] + THEME['fade']
+    x = _load(song, THEME_FILTER, song_in, fade_end); m = min(len(x), n)
+    env = np.ones(m); k = int(THEME['fade'] * SR); env[m - k:m] = np.linspace(1, 0, k) ** 1.5
+    g = 10 ** (THEME_DB / 20) / (np.sqrt((x[int(t_title * SR):m] ** 2).mean()) + 1e-9)        # level set on the title section
+    bed[:m] += x[:m] * env[:, None] * g
+    # close: the outro runs to the song's end, finishing with the video
+    close_len = THEME['song_end'] - THEME['close_in']; close_at = total - close_len
+    y = _load(song, THEME_FILTER, THEME['close_in'], close_len); c0 = int(close_at * SR); m2 = min(len(y), n - c0)
+    gy = 10 ** (THEME_DB / 20) / (np.sqrt((y[:int(10 * SR)] ** 2).mean()) + 1e-9)            # level set on its first 10 s
+    envc = np.ones(m2); envc[:f] = np.linspace(0, 1, f)
+    bed[c0:c0 + m2] += y[:m2] * envc[:, None] * gy
+    # acts: each cue from its segment to the next cue (or to the theme close), crossfaded
+    for first, upto, fname, *_ in CUES:
+        t0 = at[first]['start'] + (THEME['fade'] * 0.5 if first == THEME['fade_seg'] else 0)
+        t1 = at[upto]['start'] if upto else close_at
+        a0 = max(0.0, t0 - XFADE / 2); a1 = min(total, t1 + XFADE / 2)
+        z = _load(os.path.join(music_dir, fname), ACT_FILTER)
+        mono = np.abs(z).mean(1); w = int(0.5 * SR)                                              # skip leading silence
+        rms = np.sqrt(np.convolve(mono ** 2, np.ones(w) / w, 'same')); start = int(np.argmax(rms > rms.max() * 10 ** (-30 / 20)))
+        z = z[start:]; need = int((a1 - a0) * SR); z = np.tile(z, (need // len(z) + 1, 1))[:need]
+        z = _level(z, TARGET_DB); env = np.ones(need); env[:f] = np.linspace(0, 1, f); env[-f:] = np.minimum(env[-f:], np.linspace(1, 0, f))
+        i0 = int(a0 * SR); bed[i0:i0 + need] += z * env[:, None]
     return bed
 
 
@@ -317,7 +341,7 @@ if __name__ == '__main__':
     elif cmd == 'reel':
         write_paperwork(tl); reel(tl)
     elif cmd == 'reviewreel':                         # Epidemic Sound previews: for choosing music, never for publishing
-        reel(tl, os.path.join(HERE, 'music'), os.path.join(OUT, 'hoffman_ep01_review_es_previews.mp4'),
+        reel(tl, os.path.join(HERE, 'music_es_previews'), os.path.join(OUT, 'hoffman_ep01_review_es_previews.mp4'),
              'REVIEW CUT  ·  TEMP VO  ·  MUSIC PREVIEWS, NOT LICENSED')
     elif cmd == 'lowerthirds':
         lowerthirds()

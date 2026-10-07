@@ -412,6 +412,8 @@ def endcard(t, dur, cues):
         'mono', 21, GREY, (W / 2, 792), 'c', a)
     put(cv, '3D sequences are reconstructions and diagrams built from the record, not footage. No AI-generated imagery.',
         'mono', 21, DIM, (W / 2, 850), 'c', a)
+    put(cv, 'Theme: "Measured in Sunlight." Score: public domain recordings from the Musopen project.',
+        'mono', 21, DIM, (W / 2, 882), 'c', a)
     return cv
 
 
