@@ -231,7 +231,7 @@ def ov_bench(cv, t, dur, frame, tr, cues):
     a = fade(t, 0, dur, 0.4, 0.4)
     tag(cv, 'ILLUSTRATION', 'AN ABSTRACT BENCH, NOT THE REAL COURTROOM', a)
     put(cv, 'JUNE 13, 1966', 'monob', 30, WHITE, (W - 64, 100), 'r', a * ramp(t, cue(cues, 0, 3.0), 0.5), track=3)
-    k = ramp(t, cue(cues, 1, 6.0), 0.6)
+    k = ramp(t, cue(cues, 1, 6.0) + 3.8, 0.6)                 # once the fifth chair is lit
     bottom_scrim(cv, 0.85 * k, 330)
     put(cv, '5–4', 'bebas', 170, AMBER, (W / 2, 830), 'c', a * k, track=6)
 

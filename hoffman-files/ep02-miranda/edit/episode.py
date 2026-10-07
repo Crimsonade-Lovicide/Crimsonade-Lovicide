@@ -51,8 +51,8 @@ SEGMENTS = [
                  'Why a firm takes a case like this for free, all the way up']),
 
     # ---------------------------------------------------------------- act 3: the decision
-    dict(id='s13', act='Act 3: The decision', kind='blender', src='M6', frames=(1, 176), overlay='bench', tail=3.0,
-         at=[('On June 13', 24), ('it ruled', 40)],
+    dict(id='s13', act='Act 3: The decision', kind='blender', src='M6', frames=(1, 190), overlay='bench', tail=5.0,
+         at=[('On June 13', 24), ('five to four', 46)],
          vo="The Supreme Court bundled Miranda with three other confession cases. On June 13, 1966, it ruled five to four."),
     dict(id='s14', act='Act 3: The decision', kind='aroll',
          vo="Chief Justice Earl Warren's point was simple. The interrogation room is built to work on you. It's private, "
