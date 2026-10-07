@@ -150,27 +150,44 @@ def retrial(t, dur, cues):
 
 
 def timeline_card(t, dur, cues):
-    """Evenly spaced, not to scale. 1966-2000 build on the VO; 2010 and 2022 wait, dim, for the next A-roll."""
+    """Evenly spaced, not to scale. 1966-1984 build on the VO; 2000 onward wait, dim, for the next beats."""
     cv = card(); bug(cv); a = fade(t, 0, dur, 0.3, 0.4)
-    put(cv, 'IS IT STILL STANDING?', 'monob', 26, GREY, (200, 200), alpha=a, track=4)
-    ev = [('1966', 'MIRANDA v. ARIZONA', '5–4'), ('1968', 'CONGRESS: 18 U.S.C. § 3501', 'A LAW TO GET AROUND IT'),
-          ('2000', 'DICKERSON v. UNITED STATES', '7–2  ·  MIRANDA STANDS'),
-          ('2010', 'BERGHUIS v. THOMPKINS', ''), ('2022', 'VEGA v. TEKOH', '')]
-    xs = [260 + i * 350 for i in range(5)]; y = 500
+    put(cv, 'IS IT STILL STANDING?', 'monob', 26, GREY, (180, 200), alpha=a, track=4)
+    ev = [('1966', 'MIRANDA v. ARIZONA', '5–4'), ('1968', 'CONGRESS: 18 U.S.C. § 3501', 'VOLUNTARY = ADMISSIBLE'),
+          ('1971', 'HARRIS v. NEW YORK', 'USED TO IMPEACH'), ('1984', 'NEW YORK v. QUARLES', 'PUBLIC SAFETY EXCEPTION'),
+          ('2000', 'DICKERSON v. U.S.', ''), ('2010', 'BERGHUIS v. THOMPKINS', ''), ('2022', 'VEGA v. TEKOH', '')]
+    n_live = 4; xs = [220 + i * 247 for i in range(len(ev))]; y = 500
     rect(cv, (xs[0], y, xs[0] + (xs[-1] - xs[0]) * ramp(t, 0.1, 1.2), y + 4), DIM, a)
     for i, (yr, name, sub) in enumerate(ev):
-        live = i < 3; c = cue(cues, i, 0.5 + 3 * i) if live else 1.0
-        k = ramp(t, c - 0.1, 0.5); x = xs[i]; cur = live and (i == 2 or t < cue(cues, i + 1, 99))
+        live = i < n_live; c = cue(cues, i, 0.5 + 3 * i) if live else 1.0
+        k = ramp(t, c - 0.1, 0.5); x = xs[i]; cur = live and (i == n_live - 1 or t < cue(cues, i + 1, 99))
         col = AMBER if cur else (WHITE if live else DIM)
         ov = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(ov)
         d.ellipse((x - 14, y - 12, x + 14, y + 16), fill=(*col, int(255 * a * k)))
         cv.alpha_composite(ov)
-        put(cv, yr, 'bebas', 96, col, (x, y - 130), 'c', a * k)
+        put(cv, yr, 'bebas', 88, col, (x, y - 124), 'c', a * k)
         ny = y + (60 if i % 2 == 0 else 150)
-        put(cv, name, 'monob', 24, WHITE if live else DIM, (x, ny), 'c', a * k, track=2)
-        put(cv, sub, 'mono', 22, GREY, (x, ny + 40), 'c', a * k)
-    k4 = ramp(t, cue(cues, 3, 12.0) - 0.1, 0.5)
-    put(cv, 'OPINION BY CHIEF JUSTICE REHNQUIST, A LONGTIME CRITIC', 'monob', 30, AMBER, (W / 2, 880), 'c', a * k4, track=3)
+        put(cv, name, 'monob', 22, WHITE if live else DIM, (x, ny), 'c', a * k, track=2)
+        put(cv, sub, 'mono', 20, GREY, (x, ny + 38), 'c', a * k)
+    k4 = ramp(t, cue(cues, 4, 18.0) - 0.1, 0.5)
+    put(cv, '1984 OPINION: JUSTICE WILLIAM REHNQUIST', 'monob', 30, AMBER, (W / 2, 880), 'c', a * k4, track=3)
+    return cv
+
+
+def dickerson(t, dur, cues):
+    cv = card(); bug(cv); a = fade(t, 0, dur, 0.3, 0.4)
+    c0, c1, c2 = cue(cues, 0, 1.0), cue(cues, 1, 7.0), cue(cues, 2, 11.0)
+    put(cv, '2000', 'bebas', 150, AMBER, (220, 150), alpha=a * ramp(t, 0.2, 0.5))
+    put(cv, 'DICKERSON v. UNITED STATES', 'bebas', 96, WHITE, (220, 300), alpha=a * ramp(t, c0 - 0.1, 0.5), track=2)
+    k1 = ramp(t, c1 - 0.1, 0.5)
+    put(cv, '7–2  ·  MIRANDA STANDS  ·  OPINION: CHIEF JUSTICE REHNQUIST', 'monob', 28, GREY, (224, 420), alpha=a * k1, track=3)
+    kq = ramp(t, c2 - 0.2, 0.7)
+    rect(cv, (220, 540, 228, 800), AMBER, a * kq)
+    for i, ln in enumerate(['"[Miranda] has become embedded in routine police practice',
+                            'to the point where the warnings have become part of',
+                            'our national culture."']):
+        put(cv, ln, 'inter', 50, WHITE, (262, 548 + i * 76), alpha=a * kq)
+    put(cv, 'DICKERSON v. UNITED STATES, 530 U.S. 428 (2000)', 'mono', 21, GREY, (262, 790), alpha=a * kq, track=1)
     return cv
 
 
@@ -204,6 +221,94 @@ def endcard(t, dur, cues):
 
 def black(t, dur, cues):
     return Image.new('RGBA', (W, H), (0, 0, 0, 255))
+
+
+def brown(t, dur, cues):
+    cv = card(); bug(cv); a = fade(t, 0, dur, 0.3, 0.4)
+    c0, c1, c2, c3 = cue(cues, 0, 1.0), cue(cues, 1, 6.0), cue(cues, 2, 10.0), cue(cues, 3, 16.0)
+    put(cv, '1936', 'bebas', 150, AMBER, (220, 150), alpha=a * ramp(t, 0.2, 0.5))
+    put(cv, 'BROWN v. MISSISSIPPI', 'bebas', 104, WHITE, (220, 300), alpha=a * ramp(t, c0 - 0.1, 0.5), track=2)
+    k1 = ramp(t, c1 - 0.3, 0.5)
+    put(cv, 'CONFESSIONS WHIPPED OUT OF THREE MEN  ·  THROWN OUT', 'monob', 28, GREY, (224, 426), alpha=a * k1, track=3)
+    k2 = ramp(t, c2 - 0.6, 0.5)
+    put(cv, 'THE TEST AFTER 1936: WAS IT VOLUNTARY?', 'monob', 30, WHITE, (224, 560), alpha=a * k2, track=3)
+    put(cv, 'HOW LONG  ·  HOW OLD  ·  HOW EDUCATED  ·  ANY THREATS', 'mono', 30, GREY, (224, 616), alpha=a * ramp(t, c2, 0.5))
+    k3 = ramp(t, c3 - 0.1, 0.5)
+    put(cv, 'MIRANDA, 1963: NO FORCE, NO THREATS, TWO HOURS  =  VOLUNTARY', 'bebas', 76, AMBER, (220, 740), alpha=a * k3, track=2)
+    source(cv, 'Brown v. Mississippi, 297 U.S. 278 (1936)', a)
+    return cv
+
+
+def precedents(t, dur, cues):
+    cv = card(); bug(cv); a = fade(t, 0, dur, 0.3, 0.4)
+    c0, c1, c2 = cue(cues, 0, 1.5), cue(cues, 1, 9.0), cue(cues, 2, 18.0)
+    put(cv, 'THE LAW AROUND HIM WAS MOVING', 'monob', 26, GREY, (220, 170), alpha=a, track=4)
+    rows = [(c0, 'MARCH 18, 1963', 'GIDEON v. WAINWRIGHT', 'Charged with a felony and can\'t afford a lawyer? The state provides one.'),
+            (c1, 'JUNE 22, 1964', 'ESCOBEDO v. ILLINOIS', 'He asked for his lawyer and was refused. The confession was thrown out.')]
+    for i, (c, date, name, sub) in enumerate(rows):
+        k = ramp(t, c - 0.1, 0.5); y = 250 + i * 250
+        put(cv, date, 'monob', 28, AMBER, (220, y), alpha=a * k, track=3)
+        put(cv, name, 'bebas', 100, WHITE, (220 + 30 * (1 - k), y + 40), alpha=a * k, track=2)
+        put(cv, sub, 'inter', 38, GREY, (224 + 30 * (1 - k), y + 150), alpha=a * k)
+    put(cv, 'FIVE DAYS AFTER MIRANDA\'S CONFESSION', 'mono', 22, DIM, (W - 220, 258), 'r', a * ramp(t, c0 + 0.6, 0.5), track=1)
+    k2 = ramp(t, c2 - 0.1, 0.5)
+    rect(cv, (220, 790, 228, 860), AMBER, a * k2)
+    put(cv, "THE OPEN QUESTION: WHAT ABOUT THE SUSPECT WHO DOESN'T KNOW TO ASK?", 'monob', 32, WHITE, (256, 806), alpha=a * k2, track=2)
+    return cv
+
+
+def manuals(t, dur, cues):
+    cv = card(); bug(cv); a = fade(t, 0, dur, 0.3, 0.4)
+    put(cv, 'FROM THE POLICE MANUALS THE COURT QUOTED', 'monob', 26, GREY, (240, 150), alpha=a, track=4)
+    rows = ['QUESTION HIM ALONE, ON YOUR GROUND', 'TREAT HIS GUILT AS SETTLED', 'OFFER AN EXCUSE THAT MAKES CONFESSING EASIER',
+            'FRIENDLY DETECTIVE, HOSTILE DETECTIVE']
+    kq = ramp(t, cue(cues, 4, 14.0) - 0.2, 0.6)
+    for i, txt in enumerate(rows):
+        c = cue(cues, i, 0.5 + 2 * i); k = ramp(t, c - 0.1, 0.45); y = 210 + i * 120
+        put(cv, f'0{i + 1}', 'monob', 28, AMBER, (240, y + 34), alpha=a * k * (1 - 0.5 * kq))
+        put(cv, txt, 'bebas', 84, WHITE, (330 + 40 * (1 - k), y), alpha=a * k * (1 - 0.5 * kq), track=2)
+    if kq > 0:
+        bottom_scrim(cv, 0.9 * kq, 400)
+        for i, ln in enumerate(['"...created for no purpose other than to subjugate', 'the individual to the will of his examiner."']):
+            put(cv, ln, 'inter', 48, WHITE, (W / 2, 750 + i * 70), 'c', a * kq)
+        put(cv, 'MIRANDA v. ARIZONA, 384 U.S. 436 (1966)  ·  QUOTE TO BE CHECKED AGAINST THE OPINION', 'mono', 21, GREY, (W / 2, 900), 'c', a * kq, track=1)
+    source(cv, 'Tactics paraphrased from the manuals quoted in the opinion', a * (1 - kq))
+    return cv
+
+
+def cost(t, dur, cues):
+    cv = card(); bug(cv); a = fade(t, 0, dur, 0.3, 0.4)
+    c0, c1, c2 = cue(cues, 0, 3.0), cue(cues, 1, 8.0), cue(cues, 2, 12.0)
+    put(cv, 'WHAT DOES MIRANDA COST?', 'monob', 26, GREY, (260, 170), alpha=a, track=4)
+    put(cv, 'ESTIMATED SHARE OF SERIOUS CASES WHERE A CONVICTION IS LOST', 'mono', 24, GREY, (260, 216), alpha=a, track=1)
+    x0, full = 260, 1300
+    for i, (c, who, pct, col) in enumerate(((c0, 'PAUL CASSELL, 1996', 3.8, AMBER), (c1, 'STEPHEN SCHULHOFER, 1996', 0.78, WHITE))):
+        k = ramp(t, c - 0.1, 0.9); y = 330 + i * 200
+        put(cv, who, 'monob', 28, col, (x0, y), alpha=a * ramp(t, c - 0.1, 0.4), track=3)
+        wv = full * pct / 4.0 * k
+        rect(cv, (x0, y + 50, x0 + max(2, wv), y + 120), col, a * ramp(t, c - 0.1, 0.3))
+        put(cv, f'{pct * k:.2f}%'.replace('.00', '') if pct < 1 else f'{pct * k:.1f}%', 'bebas', 96, WHITE,
+            (x0 + wv + 30, y + 34), alpha=a * ramp(t, c - 0.1, 0.4))
+    k2 = ramp(t, c2 - 0.1, 0.5)
+    put(cv, 'WHAT NOBODY DISPUTES: MOST SUSPECTS WAIVE AND TALK', 'bebas', 80, AMBER, (260, 790), alpha=a * k2, track=2)
+    source(cv, 'Cassell and Schulhofer, 90 Nw. U. L. Rev. (1996)  ·  estimates, contested', a)
+    return cv
+
+
+def say_it(t, dur, cues):
+    cv = card(); bug(cv); a = fade(t, 0, dur, 0.3, 0.4)
+    c0, c1, c2, c3 = cue(cues, 0, 2.0), cue(cues, 1, 8.0), cue(cues, 2, 10.0), cue(cues, 3, 14.0)
+    k0 = ramp(t, c0 - 0.1, 0.5); dim0 = 1 - 0.6 * ramp(t, c1 - 0.3, 0.4)
+    put(cv, 'NOT ENOUGH  ·  DAVIS v. UNITED STATES, 1994', 'monob', 26, GREY, (W / 2, 200), 'c', a * k0 * dim0, track=4)
+    put(cv, '"Maybe I should talk to a lawyer."', 'inter', 54, GREY, (W / 2, 250), 'c', a * k0 * dim0)
+    sw = text_w('"Maybe I should talk to a lawyer."', 'inter', 54)
+    rect(cv, (W / 2 - sw / 2, 290, W / 2 - sw / 2 + sw * ramp(t, c0 + 2.0, 0.5), 296), AMBER, a * k0 * dim0)
+    put(cv, 'CLEAR', 'monob', 26, AMBER, (W / 2, 420), 'c', a * ramp(t, c1 - 0.3, 0.4), track=8)
+    put(cv, "I'M GOING TO REMAIN SILENT.", 'bebas', 130, WHITE, (W / 2, 470), 'c', a * ramp(t, c1 - 0.1, 0.5), track=3)
+    put(cv, 'I WANT A LAWYER.', 'bebas', 130, WHITE, (W / 2, 610), 'c', a * ramp(t, c2 - 0.1, 0.5), track=3)
+    put(cv, 'THEN STOP TALKING.', 'monob', 32, AMBER, (W / 2, 790), 'c', a * ramp(t, c2 + 1.2, 0.5), track=6)
+    put(cv, 'GENERAL INFORMATION, NOT LEGAL ADVICE ABOUT YOUR CASE', 'mono', 21, DIM, (W / 2, H - 84), 'c', a * ramp(t, c3 - 0.1, 0.5), track=1)
+    return cv
 
 
 # ---------------------------------------------------------------- overlays on 3D plates
@@ -261,4 +366,5 @@ OVERLAY_CUES = dict(room=['into Interrogation Room'], room_hold=['And nobody tol
                     cards=['a dollar fifty'],
                     bar=["He's read his rights", 'He invokes them', "He's released", 'The man later charged'])
 CARDS = dict(title=title, phoenix=phoenix, form=form, docket=docket, warnings=warnings, split=split, retrial=retrial,
-             timeline=timeline_card, holding_title=_g.holding_title, holding=holding, endcard=endcard, black=black)
+             timeline=timeline_card, dickerson=dickerson, brown=brown, precedents=precedents, manuals=manuals, cost=cost,
+             say_it=say_it, holding_title=_g.holding_title, holding=holding, endcard=endcard, black=black)

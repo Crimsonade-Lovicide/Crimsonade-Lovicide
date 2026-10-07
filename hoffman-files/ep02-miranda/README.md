@@ -23,17 +23,23 @@ No people in any scene: rooms, objects and empty chairs carry it.
 
 Same assembler as ep. 1, with ep. 2's beats and graphics. The ep. 1 graphics module supplies the helpers and slates.
 
-- `episode.py` is the edit decision list: 31 beats, with Eric's line, the picture, and cue phrases that time graphics and 3D to the words. It adds a `hold` kind: two seconds of black and silence after the bar scene.
+- `episode.py` is the edit decision list: 38 beats, about 12 minutes with the planned interviews, with Eric's line, the picture, and cue phrases that time graphics and 3D to the words. It adds a `hold` kind: two seconds of black and silence after the bar scene.
 - `gfx2.py` holds the ep. 2 cards:
   - title card
   - Phoenix typed card
   - confession form, recreated as type with the certification line highlighted
+  - Brown v. Mississippi (1936) and the voluntariness test
   - docket line: Objection → Overruled → Convicted → Affirmed
+  - Gideon and Escobedo: the law moving around the case
+  - the police-manual tactics the Court quoted
   - the four warnings
   - the 5–4 split with White's dissent quote
   - retrial card
-  - 1966–2022 timeline
+  - 1966–2022 timeline, building through Harris (1971) and Quarles (1984)
+  - Dickerson's "national culture" line
+  - what Miranda costs: Cassell's and Schulhofer's estimates
   - the holding
+  - what to say: Davis (1994) and the two clear sentences
   - end card
 
   It also holds the labels and overlays on the 3D.
@@ -53,6 +59,8 @@ Accuracy rules baked into the graphics:
 
 - The confession form is recreated as type, not a scan. The highlighted line is the one quoted in the Supreme Court's opinion. Check the full form wording against the record (fact 4).
 - The four warnings are marked as a paraphrase. No single official wording exists.
-- White's dissent quote is marked "to be checked against the opinion" until it is.
+- White's dissent quote and the manuals line are marked "to be checked against the opinion" until they are.
+- The cost estimates are attributed by name and year and labeled contested.
+- The what-to-say card carries "general information, not legal advice".
 - The card sale is "reportedly", per fact 12.
 - No victim name, figure or reconstruction anywhere. No violence in the bar scene.
