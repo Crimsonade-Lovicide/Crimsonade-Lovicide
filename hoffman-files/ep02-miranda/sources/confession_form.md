@@ -24,4 +24,4 @@ The handwritten part of the statement describes the crime and is not shown or qu
 
 ## Open conflict
 
-The handwritten statement gives Miranda's age as 23. Secondary sources give his birth date as March 9, 1941, which would make him 22 on March 13, 1963. The script currently says 22.
+The signed statement gives Miranda's age as 23 ("I, Ernest A. Miranda, am 23 years of age and have completed the 8th grade in school"). Secondary sources give his birth date as March 9, 1941, which would make him 22 on March 13, 1963. The script currently says 22.
