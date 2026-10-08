@@ -40,7 +40,7 @@ SEGMENTS = [
     dict(id='s09a', act='Act 1: The room', kind='gfx', gfx='brown', tail=1.4,
          cues=['Brown v. Mississippi', 'threw those confessions out', 'case by case', 'By that test'],
          vo="That test came out of a 1936 case, Brown v. Mississippi. A deputy sheriff and others whipped three Black "
-            "tenant farmers until they confessed to a murder, and the Supreme Court threw those confessions out. After "
+            "men until they confessed to a murder, and the Supreme Court threw those confessions out. After "
             "that, the question was whether a confession was voluntary, judged case by case: how long, how old, how "
             "educated, whether anyone made threats. No beating, no threats, two hours. By that test, Miranda's "
             "confession was fine."),
@@ -129,11 +129,11 @@ SEGMENTS = [
          vo="But it isn't what it was. In 2010, the Court said staying silent isn't enough; you have to say you're "
             "invoking. And in 2022, it said a Miranda violation alone doesn't let you sue the officer."),
     dict(id='s25a', act='Act 6: Is it still standing?', kind='gfx', gfx='cost', tail=1.6,
-         cues=['Paul Cassell', 'Stephen Schulhofer', 'What nobody disputes'],
+         cues=['Paul Cassell', 'Stephen Schulhofer', 'What the studies agree'],
          vo="So what does it cost? Researchers have fought over that number for decades. In 1996, Paul Cassell estimated "
-            "that Miranda costs prosecutors a conviction in almost four percent of serious cases. Stephen Schulhofer went "
-            "through the same studies and got under one percent. What nobody disputes is that most suspects waive their "
-            "rights and talk anyway."),
+            "that Miranda costs prosecutors almost four percent of all criminal cases. Stephen Schulhofer went through the "
+            "same studies and got about one percent. What the studies agree on is that most suspects, about four in five, "
+            "waive their rights and talk anyway."),
     dict(id='s26', act='Act 6: Is it still standing?', kind='interview', guest='counter', beat=3, plan=60,
          topics=['What Miranda costs: lost confessions, guilty people who walk', 'Is it worth it?']),
 

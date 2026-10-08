@@ -133,7 +133,7 @@ def split(t, dur, cues):
         bottom_scrim(cv, 0.9 * kq, 420)
         for i, ln in enumerate(QUOTE):
             put(cv, ln, 'inter', 46, WHITE, (W / 2, 770 + i * 64), 'c', a * kq)
-        put(cv, 'JUSTICE WHITE, DISSENTING  ·  QUOTE TO BE CHECKED AGAINST THE OPINION', 'mono', 21, GREY, (W / 2, 990), 'c', a * kq, track=1)
+        put(cv, 'JUSTICE WHITE, DISSENTING  ·  MIRANDA v. ARIZONA, 384 U.S. 436 (1966)', 'mono', 21, GREY, (W / 2, 990), 'c', a * kq, track=1)
     return cv
 
 
@@ -183,7 +183,7 @@ def dickerson(t, dur, cues):
     put(cv, '7–2  ·  MIRANDA STANDS  ·  OPINION: CHIEF JUSTICE REHNQUIST', 'monob', 28, GREY, (224, 420), alpha=a * k1, track=3)
     kq = ramp(t, c2 - 0.2, 0.7)
     rect(cv, (220, 540, 228, 800), AMBER, a * kq)
-    for i, ln in enumerate(['"[Miranda] has become embedded in routine police practice',
+    for i, ln in enumerate(['"Miranda has become embedded in routine police practice',
                             'to the point where the warnings have become part of',
                             'our national culture."']):
         put(cv, ln, 'inter', 50, WHITE, (262, 548 + i * 76), alpha=a * kq)
@@ -271,7 +271,7 @@ def manuals(t, dur, cues):
         bottom_scrim(cv, 0.9 * kq, 400)
         for i, ln in enumerate(['"...created for no purpose other than to subjugate', 'the individual to the will of his examiner."']):
             put(cv, ln, 'inter', 48, WHITE, (W / 2, 750 + i * 70), 'c', a * kq)
-        put(cv, 'MIRANDA v. ARIZONA, 384 U.S. 436 (1966)  ·  QUOTE TO BE CHECKED AGAINST THE OPINION', 'mono', 21, GREY, (W / 2, 900), 'c', a * kq, track=1)
+        put(cv, 'MIRANDA v. ARIZONA, 384 U.S. 436 (1966)', 'mono', 21, GREY, (W / 2, 900), 'c', a * kq, track=1)
     source(cv, 'Tactics paraphrased from the manuals quoted in the opinion', a * (1 - kq))
     return cv
 
@@ -280,18 +280,18 @@ def cost(t, dur, cues):
     cv = card(); bug(cv); a = fade(t, 0, dur, 0.3, 0.4)
     c0, c1, c2 = cue(cues, 0, 3.0), cue(cues, 1, 8.0), cue(cues, 2, 12.0)
     put(cv, 'WHAT DOES MIRANDA COST?', 'monob', 26, GREY, (260, 170), alpha=a, track=4)
-    put(cv, 'ESTIMATED SHARE OF SERIOUS CASES WHERE A CONVICTION IS LOST', 'mono', 24, GREY, (260, 216), alpha=a, track=1)
+    put(cv, 'ESTIMATED SHARE OF ALL CRIMINAL CASES LOST', 'mono', 24, GREY, (260, 216), alpha=a, track=1)
     x0, full = 260, 1300
-    for i, (c, who, pct, col) in enumerate(((c0, 'PAUL CASSELL, 1996', 3.8, AMBER), (c1, 'STEPHEN SCHULHOFER, 1996', 0.78, WHITE))):
+    for i, (c, who, pct, col) in enumerate(((c0, 'PAUL CASSELL, 1996', 3.8, AMBER), (c1, 'STEPHEN SCHULHOFER, 1996', 1.1, WHITE))):
         k = ramp(t, c - 0.1, 0.9); y = 330 + i * 200
         put(cv, who, 'monob', 28, col, (x0, y), alpha=a * ramp(t, c - 0.1, 0.4), track=3)
         wv = full * pct / 4.0 * k
         rect(cv, (x0, y + 50, x0 + max(2, wv), y + 120), col, a * ramp(t, c - 0.1, 0.3))
-        put(cv, f'{pct * k:.2f}%'.replace('.00', '') if pct < 1 else f'{pct * k:.1f}%', 'bebas', 96, WHITE,
-            (x0 + wv + 30, y + 34), alpha=a * ramp(t, c - 0.1, 0.4))
+        lab = f'{pct * k:.1f}%' if i == 0 else f'0.78–{max(0.78, pct * k):.1f}%'
+        put(cv, lab, 'bebas', 96, WHITE, (x0 + wv + 30, y + 34), alpha=a * ramp(t, c - 0.1, 0.4))
     k2 = ramp(t, c2 - 0.1, 0.5)
-    put(cv, 'WHAT NOBODY DISPUTES: MOST SUSPECTS WAIVE AND TALK', 'bebas', 80, AMBER, (260, 790), alpha=a * k2, track=2)
-    source(cv, 'Cassell and Schulhofer, 90 Nw. U. L. Rev. (1996)  ·  estimates, contested', a)
+    put(cv, 'WHAT THE STUDIES AGREE ON: ABOUT 4 IN 5 SUSPECTS WAIVE', 'bebas', 80, AMBER, (260, 790), alpha=a * k2, track=2)
+    source(cv, 'Cassell; Schulhofer, 90 Nw. U. L. Rev. (1996); Leo (1996)  ·  estimates, contested', a)
     return cv
 
 

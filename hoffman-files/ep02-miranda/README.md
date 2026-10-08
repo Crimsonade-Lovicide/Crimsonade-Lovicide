@@ -59,8 +59,8 @@ Accuracy rules baked into the graphics:
 
 - The confession form is recreated as type, not a scan. The highlighted line is the one quoted in the Supreme Court's opinion. Check the full form wording against the record (fact 4).
 - The four warnings are marked as a paraphrase. No single official wording exists.
-- White's dissent quote and the manuals line are marked "to be checked against the opinion" until they are.
-- The cost estimates are attributed by name and year and labeled contested.
+- Every on-screen quote and date was checked against the opinion text on Oct 8 (White's dissent, the manuals line, Dickerson's "national culture" line, the case dates). The confession form's wording outside the highlighted line still needs the record copy.
+- The cost estimates use the authors' own figures (Cassell: about 3.8% of all criminal cases; Schulhofer: 0.78–1.1%) and are labeled contested.
 - The what-to-say card carries "general information, not legal advice".
 - The card sale is "reportedly", per fact 12.
 - No victim name, figure or reconstruction anywhere. No violence in the bar scene.
