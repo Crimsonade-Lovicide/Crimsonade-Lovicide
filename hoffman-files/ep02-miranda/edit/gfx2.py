@@ -31,7 +31,7 @@ def phoenix(t, dur, cues):
     k1 = ramp(t, cue(cues, 0, 2.5), 0.5)
     put(cv, 'A RELATIVE SPOTS A MATCHING CAR  ·  A PARTIAL PLATE', 'monob', 30, GREY, (224, 520), alpha=a * k1, track=3)
     k2 = ramp(t, cue(cues, 1, 6.0) - 0.2, 0.5)
-    put(cv, 'ERNESTO MIRANDA, 22', 'bebas', 120, AMBER, (220 + 24 * (1 - k2), 590), alpha=a * k2, track=3)
+    put(cv, 'ERNESTO MIRANDA', 'bebas', 120, AMBER, (220 + 24 * (1 - k2), 590), alpha=a * k2, track=3)
     return cv
 
 

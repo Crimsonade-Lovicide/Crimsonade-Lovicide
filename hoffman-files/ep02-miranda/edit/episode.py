@@ -23,7 +23,7 @@ SEGMENTS = [
             "and is abducted and raped on the way. We won't show her, and we won't use her name."),
     dict(id='s05', act='Act 1: The room', kind='gfx', gfx='phoenix', tail=1.0, cues=['a relative', 'Ernesto Miranda'],
          vo="About a week later, a relative spots a car that matches her description and gets part of the plate. "
-            "It leads police to a twenty-two-year-old named Ernesto Miranda."),
+            "It leads police to a man in his early twenties named Ernesto Miranda."),
     dict(id='s06', act='Act 1: The room', kind='blender', src='M3', frames=(1, 250), overlay='room', tail=0.6,
          at=[('Interrogation Room', 70), ('About two hours later', 200)],
          vo="March 13th. Detectives Carroll Cooley and Wilfred Young bring him in, put him in a lineup, then take him "
