@@ -347,7 +347,7 @@ def ov_cards(cv, t, dur, frame, tr, cues):
     put(cv, 'PAROLED 1972', 'monob', 30, WHITE, (W - 64, 100), 'r', a * ramp(t, 0.8, 0.5), track=3)
     k = ramp(t, cue(cues, 0, 7.0), 0.6)
     bottom_scrim(cv, 0.8 * k, 300)
-    put(cv, '$1.50 A CARD  ·  REPORTEDLY', 'bebas', 92, AMBER, (W / 2, 912), 'c', a * k, track=3)
+    put(cv, 'A DOLLAR OR TWO A CARD', 'bebas', 92, AMBER, (W / 2, 912), 'c', a * k, track=3)
 
 
 def ov_bar(cv, t, dur, frame, tr, cues):
@@ -364,7 +364,7 @@ def ov_bar(cv, t, dur, frame, tr, cues):
 
 OVERLAYS = dict(busstop=ov_busstop, room=ov_room, room_hold=ov_room_hold, bench=ov_bench, cards=ov_cards, bar=ov_bar)
 OVERLAY_CUES = dict(room=['into Interrogation Room'], room_hold=['And nobody told'], bench=['On June 13', 'five to four'],
-                    cards=['a dollar fifty'],
+                    cards=['a dollar or two'],
                     bar=['Police arrest', 'Prosecutors decline', 'The man accused of the stabbing', 'By the time he was charged'])
 CARDS = dict(title=title, phoenix=phoenix, form=form, docket=docket, warnings=warnings, split=split, retrial=retrial,
              timeline=timeline_card, dickerson=dickerson, brown=brown, precedents=precedents, manuals=manuals, cost=cost,

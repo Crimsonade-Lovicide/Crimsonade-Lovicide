@@ -103,9 +103,9 @@ SEGMENTS = [
 
     # ---------------------------------------------------------------- act 5: the cards
     dict(id='s21', act='Act 5: The cards', kind='blender', src='M9', frames=(1, 192), overlay='cards', tail=1.2,
-         at=[('he reportedly signed', 60), ('and sold them', 110)],
-         vo="He was paroled in 1972. Back in Phoenix, he reportedly signed the cards police carry to read the warnings, "
-            "and sold them for a dollar fifty."),
+         at=[('he signed the cards', 60), ('and sold them', 110)],
+         vo="He was paroled in 1972. Back in Phoenix, he signed the cards police carry to read the warnings, "
+            "and sold them for a dollar or two."),
     dict(id='s22', act='Act 5: The cards', kind='blender', src='M10', frames=(1, 192), overlay='bar', tail=0.7,
          vo="January 31, 1976. A fight in a Phoenix bar. Miranda is stabbed and dies. Police arrest a man they say handed "
             "the killer the knife. He's read his rights. Prosecutors decline to charge him. The man accused of the stabbing "

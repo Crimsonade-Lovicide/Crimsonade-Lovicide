@@ -63,5 +63,5 @@ Accuracy rules baked into the graphics:
 - Every on-screen quote and date was checked against the opinion text on Oct 8 (White's dissent, the manuals line, Dickerson's "national culture" line, the case dates). The confession form's wording outside the highlighted line still needs the record copy.
 - The cost estimates use the authors' own figures (Cassell: about 3.8% of all criminal cases; Schulhofer: 0.78–1.1%) and are labeled contested.
 - The what-to-say card carries "general information, not legal advice".
-- The card sale is "reportedly", per fact 12.
+- The card sale is stated as fact; the price is a range ("a dollar or two"), since accounts vary from $1 to $2 and $1.50 has no reliable source (fact 12).
 - No victim name, figure or reconstruction anywhere. No violence in the bar scene.
