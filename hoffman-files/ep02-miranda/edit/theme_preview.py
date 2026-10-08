@@ -19,7 +19,7 @@ VOICE = os.environ.get('PIPER_VOICE', 'en_US-ryan-high.onnx')
 LINES = {
     'open1': "You have the right to remain silent. You've heard it on every cop show for fifty years. Here's what you haven't "
              "heard. The man those words are named after was convicted anyway. Twice. And when he was killed in a bar fight "
-             "in 1976, the man police picked up for it invoked his Miranda rights, and walked out.",
+             "in 1976, the man accused of killing him was never tried. The reason wasn't Miranda.",
     'open2': "I'm Eric Hoffman. I'm a lawyer. This is the case every American can recite and almost nobody knows. Let's open the file.",
     'close1': "Ernesto Miranda was convicted twice and died in a bar fight. His name is on the most famous sentence in American "
               "law. And the right it stands for only works if you say it.",

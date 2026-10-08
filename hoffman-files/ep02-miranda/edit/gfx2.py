@@ -355,7 +355,8 @@ def ov_bar(cv, t, dur, frame, tr, cues):
     tag(cv, 'ILLUSTRATION', 'A GENERIC BUILDING, NOT THE ACTUAL BAR', a)
     put(cv, 'JANUARY 31, 1976  ·  PHOENIX', 'monob', 30, WHITE, (W - 64, 100), 'r', a * ramp(t, 0.6, 0.5), track=3)
     bottom_scrim(cv, 0.8, 360)
-    rows = ['SUSPECT READ HIS RIGHTS', 'HE INVOKES THEM', 'RELEASED', 'THE MAN LATER CHARGED: NEVER TRIED']
+    rows = ['ARRESTED: ACCUSED OF HANDING OVER THE KNIFE', 'READ HIS RIGHTS  ·  NOT CHARGED',
+            'ACCUSED KILLER: QUESTIONED, RELEASED', 'CHARGED AFTER HE FLED TO MEXICO  ·  NEVER TRIED']
     for i, txt in enumerate(rows):
         k = ramp(t, cue(cues, i, 6 + 2 * i) - 0.1, 0.4)
         put(cv, txt, 'monob', 28, AMBER if i == 3 else WHITE, (120, 800 + i * 50), alpha=a * k, track=3)
@@ -364,7 +365,7 @@ def ov_bar(cv, t, dur, frame, tr, cues):
 OVERLAYS = dict(busstop=ov_busstop, room=ov_room, room_hold=ov_room_hold, bench=ov_bench, cards=ov_cards, bar=ov_bar)
 OVERLAY_CUES = dict(room=['into Interrogation Room'], room_hold=['And nobody told'], bench=['On June 13', 'five to four'],
                     cards=['a dollar fifty'],
-                    bar=["He's read his rights", 'He invokes them', "He's released", 'The man later charged'])
+                    bar=['Police arrest', 'Prosecutors decline', 'The man accused of the stabbing', 'By the time he was charged'])
 CARDS = dict(title=title, phoenix=phoenix, form=form, docket=docket, warnings=warnings, split=split, retrial=retrial,
              timeline=timeline_card, dickerson=dickerson, brown=brown, precedents=precedents, manuals=manuals, cost=cost,
              say_it=say_it, holding_title=_g.holding_title, holding=holding, endcard=endcard, black=black)

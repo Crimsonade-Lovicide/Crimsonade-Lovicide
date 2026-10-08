@@ -11,7 +11,7 @@ SEGMENTS = [
     dict(id='s01', act='Cold open', kind='blender', src='M1', frames=(1, 192), tail=0.6,
          vo="You have the right to remain silent. You've heard it on every cop show for fifty years. Here's what you "
             "haven't heard. The man those words are named after was convicted anyway. Twice. And when he was killed in a "
-            "bar fight in 1976, the man police picked up for it invoked his Miranda rights, and walked out."),
+            "bar fight in 1976, the man accused of killing him was never tried. The reason wasn't Miranda."),
     dict(id='s02', act='Cold open', kind='aroll',
          vo="I'm Eric Hoffman. I'm a lawyer. This is the case every American can recite and almost nobody knows. "
             "Let's open the file."),
@@ -107,8 +107,9 @@ SEGMENTS = [
          vo="He was paroled in 1972. Back in Phoenix, he reportedly signed the cards police carry to read the warnings, "
             "and sold them for a dollar fifty."),
     dict(id='s22', act='Act 5: The cards', kind='blender', src='M10', frames=(1, 192), overlay='bar', tail=0.7,
-         vo="January 31, 1976. A fight in a Phoenix bar. Miranda is stabbed and dies. Police pick up a suspect. He's read "
-            "his rights. He invokes them. He's released. The man later charged fled to Mexico and was never tried."),
+         vo="January 31, 1976. A fight in a Phoenix bar. Miranda is stabbed and dies. Police arrest a man they say handed "
+            "the killer the knife. He's read his rights. Prosecutors decline to charge him. The man accused of the stabbing "
+            "was questioned and let go. By the time he was charged, he'd fled to Mexico. He was never tried."),
     dict(id='s23', act='Act 5: The cards', kind='hold', min=2.0),          # nothing on screen; the music stops dead
 
     # ---------------------------------------------------------------- act 6: is it still standing?
