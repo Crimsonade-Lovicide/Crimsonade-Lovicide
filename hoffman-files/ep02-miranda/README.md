@@ -47,10 +47,11 @@ Same assembler as ep. 1, with ep. 2's beats and graphics. The ep. 1 graphics mod
 - `theme_preview.py` is the earlier open/close placement test.
 
 ```bash
-python3 vo.py                    # temp VO (PIPER_VOICE=path/to/en_US-ryan-high.onnx)
+python3 vo.py                    # temp VO; re-reads only changed lines (PIPER_VOICE=path/to/en_US-ryan-high.onnx)
 python3 edit.py plates           # 3D frames -> 1080p/24 fps plates
 python3 edit.py timeline         # timeline + shotlist.csv + captions_temp.srt
 python3 edit.py segs             # one clean 1080p clip per beat -> edit/out/segs/
+python3 edit.py segs stale       # re-render only the clips whose length no longer matches the timeline
 python3 edit.py reel             # story reel: temp VO, theme + acts, -14 LUFS -> edit/out/hoffman_ep02_story_reel.mp4
 python3 edit.py lowerthirds      # ProRes 4444 name straps with alpha
 ```

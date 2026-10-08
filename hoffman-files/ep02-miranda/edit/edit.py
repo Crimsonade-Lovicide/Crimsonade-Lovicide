@@ -236,9 +236,26 @@ def cue_bed(at, total, music_dir):
     return bed
 
 
+def clip_dur(path):
+    return float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', path],
+                                capture_output=True, text=True).stdout or 0)
+
+
+def stale_segs(tl):
+    """Segments whose clip is missing or no longer matches the timeline (e.g. after a VO line was re-read)."""
+    out = []
+    for e in tl:
+        p = os.path.join(OUT, 'segs', f"{e['seg']['id']}.mp4")
+        if not os.path.exists(p) or abs(clip_dur(p) - e['dur']) > 0.5 / FPS: out.append(e)
+    return out
+
+
 def reel(tl, music_dir=MUSIC_DIR, label='STORY REEL  ·  TEMP SYNTHETIC VO'):
     """VO and music mixed with the music ducked under the voice, then one static gain to -14 LUFS (measured first),
-    so music-only passages and the silent hold keep their level instead of being pumped by a dynamic normalizer."""
+    so music-only passages and the silent hold keep their level instead of being pumped by a dynamic normalizer.
+    Refuses to build if any clip's length disagrees with the timeline, since picture would drift against the VO."""
+    bad = stale_segs(tl)
+    if bad: sys.exit('stale segment clips, run `edit.py segs stale` first: ' + ' '.join(e['seg']['id'] for e in bad))
     total = tl[-1]['start'] + tl[-1]['dur']
     lst = os.path.join(OUT, 'segs', 'list.txt')
     with open(lst, 'w') as f:
@@ -337,8 +354,9 @@ if __name__ == '__main__':
         os.makedirs(os.path.join(OUT, 'stills'), exist_ok=True)
         im = Image.fromarray(grade(frame_at(e, t, 0, plate, tr, tmap), 0))
         im.save(os.path.join(OUT, 'stills', f"{e['seg']['id']}_{t:.1f}.png")); print('ok')
-    elif cmd == 'segs':
+    elif cmd == 'segs':                               # segs [ids...] | segs stale
         ids = sys.argv[2:]
+        if ids == ['stale']: ids = [e['seg']['id'] for e in stale_segs(tl)] or ['-']
         for e in tl:
             if not ids or e['seg']['id'] in ids:
                 render_seg(e); print('seg', e['seg']['id'], flush=True)
