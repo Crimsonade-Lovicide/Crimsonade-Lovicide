@@ -35,7 +35,7 @@ def phoenix(t, dur, cues):
     return cv
 
 
-FORM = ['I, ____________________, do hereby swear that I make this',
+FORM = ['I, Ernest A. Miranda, do hereby swear that I make this',
         'statement voluntarily and of my own free will, with no',
         'threats, coercion, or promises of immunity, and']
 FORM_HI = ['with full knowledge of my legal rights, understanding',
@@ -66,7 +66,7 @@ def form(t, dur, cues):
     k3 = ramp(t, c2 - 0.1, 0.5)
     rect(cv, (x0 - 6, hy + 2 * 54 + 24, x1 + 6, y1 + 6), (9, 9, 11), 0.8 * a * k3)
     put(cv, 'NOBODY HAD TOLD HIM WHAT THOSE RIGHTS WERE', 'bebas', 84, WHITE, (W / 2, 690), 'c', a * k3, track=2)
-    put(cv, 'RECREATED AS TYPE, NOT A SCAN  ·  HIGHLIGHTED LINE AS QUOTED IN THE SUPREME COURT OPINION', 'mono', 20, GREY,
+    put(cv, 'RECREATED AS TYPE, NOT A SCAN  ·  TEXT AS QUOTED IN STATE v. MIRANDA, 98 ARIZ. 18 (1965)', 'mono', 20, GREY,
         (W / 2, 1036), 'c', a, track=1)
     return cv
 
