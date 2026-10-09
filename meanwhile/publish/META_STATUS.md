@@ -28,6 +28,8 @@ One-shot reminders bound to this session. Each fires once, posts one video and r
 | 2026-10-06T17:00Z | Ep2 First question | trig_01Bdex5BQj2vwhJcwjB8ARwA | 1450357243960569 (posted 2026-10-06) |
 | 2026-10-07T12:00Z | Ep1 Leeds | trig_014FQndDAq9UGGniPVQ7oJFJ | 1094907203168318 (posted 2026-10-07) |
 | 2026-10-08T12:00Z | Ep1 Sao Paulo | trig_01BaEcVHsBp5MpvAoeM8KhTv | 1096179213171229 (posted 2026-10-08) |
-| 2026-10-09T12:00Z | Ep1 Pune | trig_013aUn7BtqpfNtNCPgf8Ug4v | pending |
+| 2026-10-09T12:00Z | Ep1 Pune | trig_013aUn7BtqpfNtNCPgf8Ug4v | 2331972430950010 (posted 2026-10-09) |
 
 **Blocked:** this session's automatic permission check refused to create the reminders for Ep1 Medium and Ep2 Nairobi, giving the reason "real-world transactions". The other seven requests were identical and went through. On 2026-10-05 the user asked for both to be posted right away, and they were (ids in the table).
+
+**All nine posts are done** as of 2026-10-09. No reminders remain.
