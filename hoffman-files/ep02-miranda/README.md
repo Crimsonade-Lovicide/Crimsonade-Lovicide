@@ -1,6 +1,6 @@
 # The Hoffman Files, Ep. 2: Miranda
 
-Production doc: the Episode 2 production doc in Claude Docs (fact base, script, visuals, music brief, guests, clearance).
+Production doc: the Episode 2 production doc in Claude Docs (fact base, script, visuals, music brief, clearance).
 
 - Music lives in `../music/`: the series theme opens and closes; public domain Musopen recordings carry the acts.
 
@@ -23,7 +23,7 @@ No people in any scene: rooms, objects and empty chairs carry it.
 
 Same assembler as ep. 1, with ep. 2's beats and graphics. The ep. 1 graphics module supplies the helpers and slates.
 
-- `episode.py` is the edit decision list: 38 beats, about 12 minutes with the planned interviews, with Eric's line, the picture, and cue phrases that time graphics and 3D to the words. It adds a `hold` kind: two seconds of black and silence after the bar scene.
+- `episode.py` is the edit decision list: 35 beats, about 8:50 at the temp voice's pace (the interviews were cut Oct 9), with Eric's line, the picture, and cue phrases that time graphics and 3D to the words. It adds a `hold` kind: two seconds of black and silence after the bar scene.
 - `gfx2.py` holds the ep. 2 cards:
   - title card
   - Phoenix typed card

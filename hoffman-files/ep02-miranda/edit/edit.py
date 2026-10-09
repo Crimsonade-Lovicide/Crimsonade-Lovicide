@@ -304,7 +304,7 @@ def write_paperwork(tl):
         for e in tl:
             s = e['seg']
             pic = {'blender': f"3D {s.get('src')}", 'gfx': f"graphic: {s.get('gfx')}", 'aroll': 'ERIC ON CAMERA', 'hold': 'BLACK, SILENT',
-                   'interview': f"INTERVIEW {GUESTS[s.get('guest', 'defense')][0]} ({s.get('guest')}) beat {s.get('beat')} (~{s.get('plan')} s)"}[s['kind']]
+                   'interview': f"INTERVIEW {GUESTS.get(s.get('guest'), ('?',))[0]} ({s.get('guest')}) beat {s.get('beat')} (~{s.get('plan')} s)"}[s['kind']]
             w.writerow([s['id'], s['act'], tc(e['start']), f"{e['dur']:.2f}", s['kind'], pic,
                         s.get('vo', '; '.join(s.get('topics', [])))])
     with open(os.path.join(OUT, 'captions_temp.srt'), 'w') as f:

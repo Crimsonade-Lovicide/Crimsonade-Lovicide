@@ -60,9 +60,6 @@ SEGMENTS = [
             "year later came Escobedo v. Illinois. Police had refused to let a suspect see the lawyer he was asking for, "
             "and the Court threw out his confession. That left an obvious question. If the right to a lawyer matters at "
             "trial, and matters when you ask for one at the station, what about the person who doesn't know to ask?"),
-    dict(id='s12', act='Act 2: Convicted', kind='interview', guest='defense', beat=1, plan=60,
-         topics=['What a signed confession does to a defense case on day one',
-                 'Why a firm takes a case like this for free, all the way up']),
 
     # ---------------------------------------------------------------- act 3: the decision
     dict(id='s13', act='Act 3: The decision', kind='blender', src='M6', frames=(1, 190), overlay='bench', tail=5.0,
@@ -97,9 +94,6 @@ SEGMENTS = [
     dict(id='s19', act='Act 4: Convicted again', kind='aroll',
          vo="That's the part the TV version leaves out. Miranda doesn't make evidence disappear. It takes one thing off "
             "the table: what police get out of you in that room without the warning. Everything else is still in play."),
-    dict(id='s20', act='Act 4: Convicted again', kind='interview', guest='defense', beat=2, plan=75,
-         topics=['What a suppression hearing actually looks like',
-                 'How often a confession really gets thrown out']),
 
     # ---------------------------------------------------------------- act 5: the cards
     dict(id='s21', act='Act 5: The cards', kind='blender', src='M9', frames=(1, 192), overlay='cards', tail=1.2,
@@ -135,8 +129,6 @@ SEGMENTS = [
             "that Miranda costs prosecutors almost four percent of all criminal cases. Stephen Schulhofer went through the "
             "same studies and got about one percent. What the studies agree on is that most suspects, about four in five, "
             "waive their rights and talk anyway."),
-    dict(id='s26', act='Act 6: Is it still standing?', kind='interview', guest='counter', beat=3, plan=60,
-         topics=['What Miranda costs: lost confessions, guilty people who walk', 'Is it worth it?']),
 
     # ---------------------------------------------------------------- the holding + outro
     dict(id='s27', act='The holding', kind='gfx', gfx='holding_title', hit=True, tail=0.8,
@@ -158,10 +150,7 @@ SEGMENTS = [
     dict(id='s31', act='Outro', kind='gfx', gfx='endcard', min=9.0),
 ]
 
-GUESTS = {
-    'defense': ('GUEST NAME', 'CRIMINAL DEFENSE ATTORNEY'),
-    'counter': ('GUEST NAME', 'COUNTERPOINT  ·  MIRANDA CRITIC'),
-}
+GUESTS = {}                                     # Ep. 2 runs without interviews (cut Oct 9)
 HOST = ('ERIC HOFFMAN', 'ATTORNEY · HOST')
 
 INTERVIEW_SLATE = 7.0
