@@ -356,7 +356,7 @@ def ov_bar(cv, t, dur, frame, tr, cues):
     put(cv, 'JANUARY 31, 1976  ·  PHOENIX', 'monob', 30, WHITE, (W - 64, 100), 'r', a * ramp(t, 0.6, 0.5), track=3)
     bottom_scrim(cv, 0.8, 360)
     rows = ['ARRESTED: ACCUSED OF HANDING OVER THE KNIFE', 'READ HIS RIGHTS  ·  NOT CHARGED',
-            'ACCUSED KILLER: QUESTIONED, RELEASED', 'CHARGED AFTER HE FLED TO MEXICO  ·  NEVER TRIED']
+            'ACCUSED KILLER: QUESTIONED, RELEASED', 'CHARGED AFTER HE DISAPPEARED  ·  NEVER TRIED']
     for i, txt in enumerate(rows):
         k = ramp(t, cue(cues, i, 6 + 2 * i) - 0.1, 0.4)
         put(cv, txt, 'monob', 28, AMBER if i == 3 else WHITE, (120, 800 + i * 50), alpha=a * k, track=3)

@@ -109,7 +109,7 @@ SEGMENTS = [
     dict(id='s22', act='Act 5: The cards', kind='blender', src='M10', frames=(1, 192), overlay='bar', tail=0.7,
          vo="January 31, 1976. A fight in a Phoenix bar. Miranda is stabbed and dies. Police arrest a man they say handed "
             "the killer the knife. He's read his rights. Prosecutors decline to charge him. The man accused of the stabbing "
-            "was questioned and let go. By the time he was charged, he'd fled to Mexico. He was never tried."),
+            "was questioned and let go. By the time he was charged, he was gone. He was never tried."),
     dict(id='s23', act='Act 5: The cards', kind='hold', min=2.0),          # nothing on screen; the music stops dead
 
     # ---------------------------------------------------------------- act 6: is it still standing?

@@ -69,7 +69,7 @@ Miranda warnings."
 | Prosecutors decline to charge him | Yes (wire story) |
 | Accused killer questioned and let go | Yes (Republic Feb 5, wire story) |
 | Charged after he was gone | Yes: he was charged Feb 4, after checking out of his hotel the morning after the stabbing (Republic Feb 5) |
-| **Fled to Mexico** | **Not found in any 1976 source.** The Republic says police believed he "fled the city." "Mexico" comes from Wikipedia and later retellings. |
+| ~~Fled to Mexico~~ | Not found in any 1976 source. The Republic says police believed he "fled the city"; "Mexico" comes from Wikipedia and later retellings. **Removed Oct 9:** the narration now says "By the time he was charged, he was gone," and the on-screen line reads "Charged after he disappeared." |
 | Never tried | No later coverage of an arrest or trial was found. Grokipedia claims an acquittal, but cites no source and conflicts with every other account. |
 
 Age at death: the Republic says 34 and NBC says 35. The script does not state his age at
