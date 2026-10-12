@@ -17,7 +17,8 @@ All times are 16:00 UTC unless noted.
 | Sat 24 Oct | SP04 | GqeWYDcK9zY | Scheduled. Moved from its earlier date. |
 | Sat 31 Oct | Pilot A: Watkin's Tower | sceWaTQ20rY | Scheduled. First video in the new format. Captions still to be added by hand (see below). |
 | Sat 7 Nov | Pilot B: Statue of Liberty | Rv1KqxNFrKI | Scheduled, with thumbnail T1. The narration is synthetic, so "Altered or synthetic content" is set to Yes and the description says so. Captions still to be added by hand (`pilot-b-liberty/youtube/captions_en.srt`). |
-| From Sat 14 Nov | Backlog, one a week | see below | Held. The owner sets the order. |
+| Sat 14 Nov (target) | Pilot C: Kalkar, the reactor that became a theme park | not made | In research (`pilot-c-kalkar/`). The owner chose this on 12 Oct: new-format episodes come before the backlog. |
+| After that | New-format episodes first; backlog videos only in weeks with nothing new | see below | Held. The owner sets the order. |
 
 ## Shorts
 
