@@ -12,7 +12,7 @@ Tips: record each line as its own take and slate it with the ID, so takes drop s
 
 | ID | Act | Reel time | Length | Status | Line |
 |---|---|---|---|---|---|
-| s02 | Cold open | 0:20.8 | 9 s | Recorded | I'm Eric Hoffman, and I'm a lawyer. I've got a case that almost every American can recite, but almost nobody knows. Let's open the file. |
+| s02 | Cold open | 0:20.8 | 9 s | Recorded (take 2, Oct 12) | I'm Eric Hoffman, and I'm a lawyer. I've got a case that almost every American can recite, but almost nobody really knows. Let's open the file. |
 | s09 | Act 1: The room | 1:40.3 | 10 s |  | Was that legal in 1963? In Arizona, yes. The test was whether a confession was voluntary. Not whether you knew you could refuse. |
 | s11 | Act 2: Convicted | 2:34.9 | 11 s |  | That should have been the end. Instead, the ACLU found the case and brought in two Phoenix lawyers, John Frank and John Flynn, who took it for free, all the way to Washington. |
 | s14 | Act 3: The decision | 3:35.4 | 8 s |  | Chief Justice Earl Warren's point was simple. The interrogation room is built to work on you. It's private, it's long, and you're alone. |

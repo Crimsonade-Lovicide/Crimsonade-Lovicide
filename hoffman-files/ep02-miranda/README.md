@@ -45,7 +45,7 @@ Same assembler as ep. 1, with ep. 2's beats and graphics. The ep. 1 graphics mod
   It also holds the labels and overlays on the 3D.
 - `music_cues.py` is the cue sheet. The theme's downbeat lands on the title card and its outro ends with the end card. Public domain acts run in between. *Aase's Death* stops dead after "never tried".
 - `theme_preview.py` is the earlier open/close placement test.
-- `takes.py` brings in Eric's recorded takes. A beat with `take` and `cuts` in `episode.py` uses his footage and voice instead of the temp voice: `vo.py` builds the audio from the cut list (light cleanup, matched to the temp voice's loudness) and `edit.py` cuts the picture from the same list, with alternating punch-ins to hide the jump cuts. Cut points snap to the 24 fps grid and follow the file's own clock, so lip sync holds even when a phone starts its audio late. Raw takes go in `edit/takes/` and stay out of git; keep the originals. Recorded so far: s02, the on-camera intro (Oct 12).
+- `takes.py` brings in Eric's recorded takes. A beat with `take` and `cuts` in `episode.py` uses his footage and voice instead of the temp voice: `vo.py` builds the audio from the cut list (light cleanup, matched to the temp voice's loudness) and `edit.py` cuts the picture from the same list, with alternating punch-ins to hide the jump cuts. Cut points snap to the 24 fps grid and follow the file's own clock, so lip sync holds even when a phone starts its audio late. Raw takes go in `edit/takes/` and stay out of git; keep the originals. Recorded so far: s02, the on-camera intro (take 2 of Oct 12, recorded with the Mac's blue Background effect).
 
 ```bash
 python3 vo.py                    # VO: Eric's takes where recorded, temp voice elsewhere; redoes only changed lines

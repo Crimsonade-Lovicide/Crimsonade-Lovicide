@@ -12,10 +12,10 @@ SEGMENTS = [
          vo="You have the right to remain silent. You've heard it on every cop show for fifty years. Here's what you "
             "haven't heard. The man those words are named after was convicted anyway. Twice. And when he was killed in a "
             "bar fight in 1976, the man accused of killing him was never tried. The reason wasn't Miranda."),
-    dict(id='s02', act='Cold open', kind='aroll', take='s02.mov', lead=0.208, strap=(0.45, 3.8),
-         cuts=[(0.208, 2.167), (3.167, 6.833), (7.667, 9.417), (10.125, 11.333)], zooms=[1.0, 1.1, 1.0, 1.1], focus=(0.7, 0.0),
+    dict(id='s02', act='Cold open', kind='aroll', take='s02_take2.mov', lead=0.0, strap=(0.35, 3.6),
+         cuts=[(0.5, 8.25), (8.875, 10.083)], zooms=[1.0, 1.12], focus=(0.5, 0.25),
          vo="I'm Eric Hoffman, and I'm a lawyer. I've got a case that almost every American can recite, but almost "
-            "nobody knows. Let's open the file."),                      # as recorded Oct 12
+            "nobody really knows. Let's open the file."),               # take 2 of the Oct 12 blue-background takes
     dict(id='s03', act='Cold open', kind='gfx', gfx='title', min=5.0, hit=True),
 
     # ---------------------------------------------------------------- act 1: the room
