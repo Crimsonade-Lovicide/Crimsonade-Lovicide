@@ -1,6 +1,6 @@
 # YouTube upload: "Was the Statue of Liberty Built for Egypt?" (Pilot B)
 
-**Status (12 Oct 2026):** the owner approved the cut. It is due to be scheduled for **Sat 7 Nov 2026, 16:00 UTC** (`../../RELEASE_QUEUE.md`).
+**Status (12 Oct 2026):** uploaded as **Rv1KqxNFrKI**. It is private and scheduled for **Sat 7 Nov 2026, 16:00 UTC** (`../../RELEASE_QUEUE.md`), with thumbnail T1 set. Captions are still to be added by hand in Studio.
 
 - **Video:** `edit/build/pilot_b.mp4`, 1080p, 4:46, with the synthetic narration (Cillian). It is gitignored; rebuild it with `edit/build.py --music`.
 - **Captions:** `youtube/captions_en.srt`, from `edit/make_captions.py`.

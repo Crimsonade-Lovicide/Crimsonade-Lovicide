@@ -16,7 +16,7 @@ All times are 16:00 UTC unless noted.
 | Sat 17 Oct | Sant'Elia | pAWpH0V0YMs | Scheduled. Already finished, so kept. |
 | Sat 24 Oct | SP04 | GqeWYDcK9zY | Scheduled. Moved from its earlier date. |
 | Sat 31 Oct | Pilot A: Watkin's Tower | sceWaTQ20rY | Scheduled. First video in the new format. Captions still to be added by hand (see below). |
-| Sat 7 Nov | Pilot B: Statue of Liberty | not uploaded | Waiting for the owner to review the preview. The narration is synthetic, so the upload needs "Altered or synthetic content: Yes" and a disclosure line in the description. |
+| Sat 7 Nov | Pilot B: Statue of Liberty | Rv1KqxNFrKI | Scheduled, with thumbnail T1. The narration is synthetic, so "Altered or synthetic content" is set to Yes and the description says so. Captions still to be added by hand (`pilot-b-liberty/youtube/captions_en.srt`). |
 | From Sat 14 Nov | Backlog, one a week | see below | Held. The owner sets the order. |
 
 ## Shorts
@@ -75,4 +75,5 @@ Two private "upload test" videos with no date (4hFjz_d4ryQ, jTd8SGWufv8) are not
 
 YouTube Studio is needed for these steps, because the API connection lacks the `youtube.force-ssl` scope.
 - Pilot A: upload `pilot-a-watkin/youtube/captions_en.srt` under Subtitles. Optionally, set up Test & Compare with thumbnails T2 and T3.
+- Pilot B: upload `pilot-b-liberty/youtube/captions_en.srt` the same way. Test & Compare with T2 and T3 is optional.
 - Comments and pinned comments.
