@@ -1,0 +1,92 @@
+{
+ "video": "../edit/build/pilot_a_v1.mp4",
+ "captions": "captions_en.srt",
+ "out": "../edit/build/shorts",
+ "end_tag": [
+  "FULL STORY ON THE CHANNEL:",
+  "LONDON'S OWN EIFFEL TOWER"
+ ],
+ "shorts": {
+  "A1_designs": {
+   "cues": [
+    37,
+    46
+   ],
+   "title": [
+    "LONDON'S WILDEST",
+    "1890 TOWER DESIGNS"
+   ],
+   "youtube": {
+    "publishAt": "2026-11-02T16:00:00Z",
+    "title": "London's Wildest Rivals to the Eiffel Tower (1890) #Shorts",
+    "description": "In 1890, London held a competition to beat the Eiffel Tower. 68 designs came in. Some of them were wonderful.\n\nFull video: \"London Almost Built Its Own Eiffel Tower\" https://youtu.be/sceWaTQ20rY\n\nNarrated by Eric Hoffman. Every picture is real. Sources and full credits are in the full video's description.\nPictures: the 1890 competition catalogue (public domain), via the Internet Archive.\nMusic: Chopin, Nocturne Op. 62 No. 1, Musopen (CC0).\n\n#history #architecture #london #unbuilt",
+    "tags": [
+     "unbuilt",
+     "Watkin's Tower",
+     "Great Tower for London",
+     "Eiffel Tower",
+     "Victorian London",
+     "unbuilt architecture",
+     "architecture history",
+     "shorts"
+    ],
+    "containsSyntheticMedia": false,
+    "videoId": null
+   }
+  },
+  "A2_sank": {
+   "cues": [
+    73,
+    87
+   ],
+   "title": [
+    "LONDON'S EIFFEL TOWER",
+    "SANK INTO THE CLAY"
+   ],
+   "youtube": {
+    "publishAt": "2026-11-04T16:00:00Z",
+    "title": "London's Eiffel Tower Sank Into the Clay #Shorts",
+    "description": "The brief told the designers to assume the foundations were perfect. They weren't.\n\nFull video: \"London Almost Built Its Own Eiffel Tower\" https://youtu.be/sceWaTQ20rY\n\nNarrated by Eric Hoffman. Every picture is real. Sources and full credits are in the full video's description.\nFlyovers: contains Environment Agency information © Environment Agency and/or database right 2022–2023. LiDAR survey data licensed under the Open Government Licence v3.0.\nMusic: Chopin, Nocturne Op. 62 No. 1, Musopen (CC0).\n\n#history #architecture #london #wembley #unbuilt",
+    "tags": [
+     "unbuilt",
+     "Watkin's Tower",
+     "Wembley Tower",
+     "Watkin's Folly",
+     "Wembley Stadium history",
+     "Eiffel Tower",
+     "London history",
+     "shorts"
+    ],
+    "containsSyntheticMedia": false,
+    "videoId": null
+   }
+  },
+  "A3_pitch": {
+   "cues": [
+    93,
+    101
+   ],
+   "title": [
+    "WHAT'S UNDER",
+    "WEMBLEY'S PITCH?"
+   ],
+   "youtube": {
+    "publishAt": "2026-11-06T16:00:00Z",
+    "title": "What's Under Wembley's Pitch? #Shorts",
+    "description": "When the builders lowered the pitch for the new Wembley, they reportedly hit old concrete.\n\nFull video: \"London Almost Built Its Own Eiffel Tower\" https://youtu.be/sceWaTQ20rY\n\nNarrated by Eric Hoffman. Every picture is real. Sources and full credits are in the full video's description.\n\"Wembley arch (7826897124)\" by Ivan Bandura, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0), via Wikimedia Commons.\nFlyovers: contains Environment Agency information © Environment Agency and/or database right 2022–2023. LiDAR survey data licensed under the Open Government Licence v3.0.\nMusic: Chopin, Nocturne Op. 62 No. 1, Musopen (CC0).\n\n#history #wembley #london #unbuilt",
+    "tags": [
+     "unbuilt",
+     "Wembley Stadium",
+     "Wembley history",
+     "Watkin's Tower",
+     "Wembley arch",
+     "London history",
+     "football history",
+     "shorts"
+    ],
+    "containsSyntheticMedia": false,
+    "videoId": null
+   }
+  }
+ }
+}

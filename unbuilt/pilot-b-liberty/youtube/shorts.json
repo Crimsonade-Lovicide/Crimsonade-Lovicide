@@ -1,0 +1,92 @@
+{
+ "video": "../edit/build/pilot_b.mp4",
+ "captions": "captions_en.srt",
+ "out": "../edit/build/shorts",
+ "end_tag": [
+  "FULL STORY ON THE CHANNEL:",
+  "WAS LIBERTY BUILT FOR EGYPT?"
+ ],
+ "shorts": {
+  "B1_rumour": {
+   "cues": [
+    42,
+    52
+   ],
+   "title": [
+    "AN 1886 RUMOUR SAID",
+    "LIBERTY WAS FOR EGYPT"
+   ],
+   "youtube": {
+    "publishAt": "2026-11-11T16:00:00Z",
+    "title": "The 1886 Rumour That Liberty Was Built for Egypt #Shorts",
+    "description": "The month the Statue of Liberty was unveiled, American papers printed a rumour that she was first made for the Suez Canal. The same paragraph answered it.\n\nFull video: \"Was the Statue of Liberty Built for Egypt?\" https://youtu.be/Rv1KqxNFrKI\n\nEvery picture is real. The narration is an AI-generated (synthetic) voice. Sources and full credits are in the full video's description.\nNewspaper: Springfield Weekly Republican, 15 Oct 1886, p. 2. Library of Congress, Chronicling America.\nMusic: Chopin, Nocturne Op. 62 No. 1, Musopen (CC0).\n\n#history #statueofliberty #unbuilt",
+    "tags": [
+     "unbuilt",
+     "Statue of Liberty",
+     "Statue of Liberty Egypt",
+     "Bartholdi",
+     "1886",
+     "Suez Canal",
+     "history myths",
+     "shorts"
+    ],
+    "containsSyntheticMedia": true,
+    "videoId": null
+   }
+  },
+  "B2_pitch": {
+   "cues": [
+    16,
+    30
+   ],
+   "title": [
+    "THE STATUE BARTHOLDI",
+    "PITCHED TO EGYPT FIRST"
+   ],
+   "youtube": {
+    "publishAt": "2026-11-09T16:00:00Z",
+    "title": "The Statue Bartholdi Pitched to Egypt First #Shorts",
+    "description": "In 1869, the sculptor of the Statue of Liberty pitched Egypt a colossal lighthouse: \"Egypt Carrying the Light to Asia.\"\n\nFull video: \"Was the Statue of Liberty Built for Egypt?\" https://youtu.be/Rv1KqxNFrKI\n\nEvery picture is real. The narration is an AI-generated (synthetic) voice. Sources and full credits are in the full video's description.\nMusic: Chopin, Nocturne Op. 62 No. 1, Musopen (CC0).\n\n#history #statueofliberty #egypt #unbuilt",
+    "tags": [
+     "unbuilt",
+     "Statue of Liberty",
+     "Bartholdi",
+     "Egypt Carrying the Light to Asia",
+     "Suez Canal",
+     "Port Said",
+     "history",
+     "shorts"
+    ],
+    "containsSyntheticMedia": true,
+    "videoId": null
+   }
+  },
+  "B3_myth": {
+   "cues": [
+    53,
+    65
+   ],
+   "title": [
+    "WAS LIBERTY \"ORIGINALLY",
+    "A MUSLIM WOMAN\"?"
+   ],
+   "youtube": {
+    "publishAt": "2026-11-13T16:00:00Z",
+    "title": "Was the Statue of Liberty \"Originally a Muslim Woman\"? #Shorts",
+    "description": "Where that claim comes from, and what Bartholdi's Egypt statue actually looked like next to Liberty.\n\nFull video: \"Was the Statue of Liberty Built for Egypt?\" https://youtu.be/Rv1KqxNFrKI\n\nEvery picture is real. The narration is an AI-generated (synthetic) voice. Sources and full credits are in the full video's description.\nLidar: U.S. Geological Survey, 3D Elevation Program (public domain).\nMusic: Chopin, Nocturne Op. 62 No. 1, Musopen (CC0).\n\n#history #statueofliberty #myths #unbuilt",
+    "tags": [
+     "unbuilt",
+     "Statue of Liberty",
+     "Statue of Liberty myth",
+     "Statue of Liberty Muslim woman",
+     "Bartholdi",
+     "Egypt",
+     "history myths",
+     "shorts"
+    ],
+    "containsSyntheticMedia": true,
+    "videoId": null
+   }
+  }
+ }
+}
