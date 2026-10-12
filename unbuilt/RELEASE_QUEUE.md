@@ -34,8 +34,16 @@ All times are 16:00 UTC unless noted.
 | 28 Oct | SP04 | n5lq_JsXB7o |
 | 29 Oct | NAWAPA | onC24MejTzA |
 | 1 Nov | NAWAPA | chJaq7ODAjw |
+| 2 Nov | Pilot A: London's Wildest Rivals to the Eiffel Tower | _18hjDqGQJs |
+| 4 Nov | Pilot A: London's Eiffel Tower Sank Into the Clay | pqgeRSnib5M |
+| 6 Nov | Pilot A: What's Under Wembley's Pitch? | 2FSyX0Kp0Bo |
+| 9 Nov | Pilot B: The Statue Bartholdi Pitched to Egypt First | UEkRYH9Tq94 |
+| 11 Nov | Pilot B: The 1886 Rumour That Liberty Was Built for Egypt | SxZNwXOHz5w |
+| 13 Nov | Pilot B: Was the Statue of Liberty "Originally a Muslim Woman"? | iS77wQE9BCM |
 
 The SP04 Shorts moved with SP04, so all three now go out after it.
+
+The six pilot Shorts (uploaded 12 Oct, 16:00 UTC) are cut from the finished episodes with `toolkit/shorts_from_cut.py`. Their titles and descriptions are in each pilot's `youtube/shorts.json`. The Pilot B Shorts carry "Altered or synthetic content: Yes".
 
 ## Held
 
