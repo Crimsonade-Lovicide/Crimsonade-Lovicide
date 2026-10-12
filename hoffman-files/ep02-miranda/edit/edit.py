@@ -19,6 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import gfx2 as gfx
 from episode import SEGMENTS, GUESTS, HOST, INTERVIEW_SLATE
+import takes
 
 W, H, FPS = gfx.W, gfx.H, gfx.FPS
 RENDERS = os.environ.get('RENDERS', os.path.join(HERE, '..', 'renders'))
@@ -29,6 +30,11 @@ TIMING = json.load(open(os.path.join(HERE, 'audio', 'timing.json')))
 
 
 # ---------------------------------------------------------------- timing
+def lead(seg):
+    """Silence before a line starts. A recorded take sets its own (its audio starts where its picture does)."""
+    return seg.get('lead', LEAD)
+
+
 def phrase_time(seg, phrase):
     """Estimated time (s, from segment start) when `phrase` is spoken: character position, corrected for the
     fixed pause the voice puts between sentences."""
@@ -37,7 +43,7 @@ def phrase_time(seg, phrase):
     n_sent = sum(vo.count(p) for p in ('. ', '? ', ': ')); before = sum(vo[:i].count(p) for p in ('. ', '? ', ': '))
     speech = TIMING[seg['id']] - n_sent * SENT_GAP
     chars = len(vo) - n_sent * 2
-    return LEAD + speech * (i - before * 2) / chars + before * SENT_GAP
+    return lead(seg) + speech * (i - before * 2) / chars + before * SENT_GAP
 
 
 def timeline():
@@ -46,7 +52,7 @@ def timeline():
         vo = TIMING.get(s['id'], 0.0)
         if s['kind'] == 'interview': dur = INTERVIEW_SLATE
         elif s['kind'] == 'hold': dur = s['min']
-        elif vo: dur = max(s.get('min', 0), LEAD + vo + s.get('tail', TAIL if s['kind'] != 'aroll' else 0.5))
+        elif vo: dur = max(s.get('min', 0), lead(s) + vo + s.get('tail', TAIL if s['kind'] != 'aroll' else 0.5))
         else: dur = s.get('min', 4.0)
         dur = round(dur * FPS) / FPS
         cues = [phrase_time(s, p) for p in s.get('cues', [])]
@@ -147,6 +153,7 @@ def frame_at(e, t, k, plate=None, tr=None, tmap=None):
 def render_seg(e):
     s = e['seg']; os.makedirs(os.path.join(OUT, 'segs'), exist_ok=True)
     dst = os.path.join(OUT, 'segs', f"{s['id']}.mp4"); n = round(e['dur'] * FPS)
+    if s.get('take'): return render_take(e, dst, n)
     if s['kind'] in ('aroll', 'interview', 'hold'):                  # static slate: one frame, looped
         im = frame_at(e, 0, 0); im = np.asarray(im.convert('RGB')) if s['kind'] == 'hold' else grade(im, 0)
         png = dst[:-4] + '.png'; Image.fromarray(im).save(png)
@@ -164,6 +171,24 @@ def render_seg(e):
         enc.stdin.write(grade(frame_at(e, k / FPS, k, plate, tr, tmap), k).tobytes())
     enc.stdin.close(); enc.wait()
     if plate: plate.close()
+    return dst
+
+
+def render_take(e, dst, n):
+    """Eric's footage, cut to the same list as its audio, with the show bug and (on the first take) his name strap."""
+    s = e['seg']; dec = subprocess.Popen(takes.picture_cmd(s, lead(s), e['dur'], W, H), stdout=subprocess.PIPE)
+    enc = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS),
+                            '-i', '-', '-c:v', 'libx264', '-crf', '16', '-preset', 'fast', '-pix_fmt', 'yuv420p', dst],
+                           stdin=subprocess.PIPE)
+    strap = s.get('strap')
+    for k in range(n):
+        buf = dec.stdout.read(W * H * 3)
+        if len(buf) < W * H * 3: sys.exit(f"{s['id']}: take ran out of frames at {k}/{n}")
+        cv = Image.frombuffer('RGB', (W, H), buf).convert('RGBA'); t = k / FPS
+        gfx.bug(cv, 0.45)
+        if strap: gfx.lower_third(cv, *HOST, t, strap[0], out=strap[1])
+        enc.stdin.write(grade(cv, k).tobytes())
+    dec.stdout.close(); dec.wait(); enc.stdin.close(); enc.wait()
     return dst
 
 
@@ -250,10 +275,12 @@ def stale_segs(tl):
     return out
 
 
-def reel(tl, music_dir=MUSIC_DIR, label='STORY REEL  ·  TEMP SYNTHETIC VO'):
+def reel(tl, music_dir=MUSIC_DIR, label=None):
     """VO and music mixed with the music ducked under the voice, then one static gain to -14 LUFS (measured first),
     so music-only passages and the silent hold keep their level instead of being pumped by a dynamic normalizer.
     Refuses to build if any clip's length disagrees with the timeline, since picture would drift against the VO."""
+    if label is None:
+        label = 'STORY REEL  ·  TEMP SYNTHETIC VO' + ('  ·  EXCEPT ERIC ON CAMERA' if any(e['seg'].get('take') for e in tl) else '')
     bad = stale_segs(tl)
     if bad: sys.exit('stale segment clips, run `edit.py segs stale` first: ' + ' '.join(e['seg']['id'] for e in bad))
     total = tl[-1]['start'] + tl[-1]['dur']
@@ -272,7 +299,7 @@ def reel(tl, music_dir=MUSIC_DIR, label='STORY REEL  ·  TEMP SYNTHETIC VO'):
     for e in vos: inputs += ['-i', os.path.join(HERE, 'audio', f"{e['seg']['id']}.wav")]
     parts = []
     for k, e in enumerate(vos):
-        d = int((e['start'] + LEAD) * 1000)
+        d = int((e['start'] + lead(e['seg'])) * 1000)
         parts.append(f'[{k + 1}:a]aresample=48000,pan=stereo|c0=c0|c1=c0,adelay={d}|{d}[v{k}]')
     labels = ''.join(f'[v{k}]' for k in range(len(vos)))
     fc = ';'.join(parts) + f';{labels}amix=inputs={len(vos)}:normalize=0,highpass=f=70,' \
@@ -315,7 +342,7 @@ def write_paperwork(tl):
             for w_ in words:
                 if len(cur) + len(w_) > 42 and cur: chunks.append(cur); cur = w_
                 else: cur = (cur + ' ' + w_).strip()
-            chunks.append(cur); total = sum(len(c) for c in chunks); t0 = e['start'] + LEAD
+            chunks.append(cur); total = sum(len(c) for c in chunks); t0 = e['start'] + lead(e['seg'])
             for c in chunks:
                 d = e['vo'] * len(c) / total
                 st = lambda x: f'{int(x // 3600):02d}:{int(x // 60) % 60:02d}:{int(x) % 60:02d},{int(x * 1000) % 1000:03d}'
