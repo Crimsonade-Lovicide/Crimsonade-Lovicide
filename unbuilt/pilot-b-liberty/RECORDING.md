@@ -112,7 +112,7 @@ This is your read, block by block, in the exact order the edit expects.
 
  *(pause)*
 
-**21. [V2]**  And the version you might have heard, that Liberty was "originally a Muslim woman"? I couldn't find that in any source from the time. It comes from a 2015 headline. The article underneath it says "peasant".
+**21. [V2]**  And the version you might have heard, that Liberty was "originally a Muslim woman"? There's no trace of that in any source from the time. It comes from a 2015 headline. The article underneath it says "peasant".
 
  *(pause)*
 
@@ -136,7 +136,7 @@ This is your read, block by block, in the exact order the edit expects.
 
  *(pause)*
 
-**26. [O2]**  I'm Eric Hoffman, and this was UNBUILT. Every picture in this video is real, and the sources are in the description.
+**26. [O2]**  This was UNBUILT. Every picture in this video is real, and the sources are in the description.
 
  *(pause)*
 

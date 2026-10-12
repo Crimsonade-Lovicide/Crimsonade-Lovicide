@@ -103,7 +103,7 @@
 > Put them side by side. A robed woman, a light held high, a colossus at the mouth of a harbour. It's the same idea. But it's a different figure, a different costume and a different face. And the Egypt statue would have been only a little over half Liberty's height.
 
 **[V2]** GFX: the 2015 headline, with the word "peasant" highlighted in the article below it.
-> And the version you might have heard, that Liberty was "originally a Muslim woman"? I couldn't find that in any source from the time. It comes from a 2015 headline. The article underneath it says "peasant".
+> And the version you might have heard, that Liberty was "originally a Muslim woman"? There's no trace of that in any source from the time. It comes from a 2015 headline. The article underneath it says "peasant".
 
 **[V3]** GFX verdict card: HALF TRUE.
 > So was Liberty built for Egypt? No. But the idea Bartholdi took to Egypt didn't die there. It changed its clothes and crossed an ocean. [YOUR CALL]
@@ -126,7 +126,7 @@
 > So the statue they did put up at the canal came down. And the one they didn't is still holding her light up, fifty-six hundred miles away.
 
 **[O2]** GFX end card.
-> I'm Eric Hoffman, and this was UNBUILT. Every picture in this video is real, and the sources are in the description.
+> This was UNBUILT. Every picture in this video is real, and the sources are in the description.
 
 ---
 

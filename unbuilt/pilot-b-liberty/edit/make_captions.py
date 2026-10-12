@@ -16,7 +16,7 @@ from split_narration import BUILD
 
 # where the recorded delivery differs from SCRIPT.md, caption what was said
 SPOKEN = {
-    "O2": "I'm Eric Hoffman, and this was UNBUILT. Every picture in this video is real, and the sources are in "
+    "O2": "This was UNBUILT. Every picture in this video is real, and the sources are in "
           "the description.",
 }
 # numbers are easier to read as figures
