@@ -90,14 +90,29 @@ The owner chose this topic on 12 Oct 2026, from the "drama, then failure" shortl
 | Zwentendorf, Austria, was finished but never started. On 5 Nov 1978 Austrians voted against it, 50.5% No, on a turnout of about 64%. It is used today for training and filming. | H | en.wikipedia (referendum article); EVN |
 | Shoreham, Long Island: LILCO spent about $5–6 billion. The plant never ran commercially and was sold to the state for $1 plus its debts; the year is given as 1989 or 1992. | H ($1) / M (year, cost) | CLUI; Christian Science Monitor 1995 |
 
-## Open questions, to settle before the script is locked
+## 7. The farmer (settled 12 Oct 2026; the twist that ends the episode)
 
-1. The purchase year (1991 or 1995) and the price. Check the NRZ or Rheinische Post archive and any Daily Mail 2015 citation.
-2. The park's opening year (1995/96 or 2001).
-3. The German original of Farthmann's "hell fire" line, with its date and where it was said (KfK footnote 180).
-4. Josef Maas: whether he kept his farm, and whether it still stands beside the park. Commons has a category for Mühlenstr. 68, Hönnepel, linked to him. **Don't imply anything about him until it's sourced.**
-5. Whether anything nuclear ever reached the site, e.g. dummy fuel elements. Current reading: no plutonium was ever on site.
-6. Whether the sodium was drained after 1991, and when.
+| Claim | Conf. | Source |
+|---|---|---|
+| Josef Maas was born 19 Jan 1931 in Hönnepel and died 3 Jun 2008 in Blomberg (Lippe). He was buried in Hönnepel. | H | de.wikipedia "Josef Maas"; Grüne Kreis Kleve obituary (2008) |
+| He ran a 30-hectare family farm right beside the breeder site, as the tenth generation. He was a conservative Catholic and fattened pigs. | H (beside the site) / M (30 ha, tenth generation) | taz 5 Jan 1999; de.wikipedia |
+| He was the lead plaintiff from 1971/72, for about 13–14 years. To pay for the case he ran up debts of about **1.5 million DM**. | M/H | de.wikipedia; taz 1999 |
+| In 1985 he sold the farm to the reactor's builder, Kraftwerk Union (Siemens), for **4.3 million marks**. The offer was conditional on dropping his lawsuits, and KWU also paid for the move. | M (the price is in taz only) / H (the sale and the condition) | taz 1999; de.wikipedia (condition); Die Zeit 48/1985, "Bauer Maas gibt auf" (to read) |
+| He moved about 300 km east, to Gut Nassengrund near Blomberg. In 1999 he said he had never regretted it. | H | taz 1999 |
+| In 1999 he said the Dutch buyer got the ruin "für 'nen Appel und 'n Ei" (for next to nothing), **less than Maas got for his farm**. | H (that he said it) / M (that it's true) | taz 1999. The reported prices support it: 3–5 million DM or €2.5 million for the whole site, against 4.3 million DM for the farm. **In the script, attribute it to him:** "by his own account". |
+| His songs were released on records: "Bauer Maas – Lieder gegen Atomenergie" (1978 and 1982 LPs, 2009 CD). | H | de.wikipedia |
+
+## Settled 12 Oct 2026
+
+1. **Purchase:** November 1995, by Hennie van der Most (Rheinische Post, as cited on hoennepel.de; Kuladig; most sources). Guinness's "1991" is the year the project ended, not the sale. Price: "a few million"; see Maas above. **H** for 1995; **M** for the price.
+2. **Opening:** rides were added "since 1995" (Guinness), and the park was operating by 1996 (Kuladig, Travelbook). Slate's "2001" is probably the expanded park and hotel. **The script avoids a year:** "within a few years, it was open".
+3. **Farthmann:** the line comes from a Spiegel interview, No. 27/1985, pp. 48–51, titled "Dieses Höllenfeuer nicht entfachen" ("Don't kindle this hell fire"). It is cited in de.wikipedia "Josef Maas". **H** for the headline.
+4. **Maas:** see section 7.
+
+## Still open (not needed for the script)
+
+5. Whether anything nuclear ever reached the site. The plutonium fuel didn't: permit TG 7/6 was never issued. The script says only "never loaded".
+6. When the sodium was drained after 1991. The script doesn't mention it.
 
 ## Pictures
 
