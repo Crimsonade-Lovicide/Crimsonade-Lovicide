@@ -43,7 +43,7 @@ All times are 16:00 UTC unless noted.
 
 The SP04 Shorts moved with SP04, so all three now go out after it.
 
-The six pilot Shorts (uploaded 12 Oct, 16:00 UTC) are cut from the finished episodes with `toolkit/shorts_from_cut.py`. Their titles and descriptions are in each pilot's `youtube/shorts.json`. The Pilot B Shorts carry "Altered or synthetic content: Yes".
+The six pilot Shorts were uploaded on 12 Oct and each goes out at 16:00 UTC. They are cut from the finished episodes with `toolkit/shorts_from_cut.py`. Their titles and descriptions are in each pilot's `youtube/shorts.json`. The Pilot B Shorts carry "Altered or synthetic content: Yes".
 
 ## Held
 
