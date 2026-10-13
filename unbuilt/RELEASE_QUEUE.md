@@ -40,10 +40,13 @@ All times are 16:00 UTC unless noted.
 | 9 Nov | Pilot B: The Statue Bartholdi Pitched to Egypt First | UEkRYH9Tq94 |
 | 11 Nov | Pilot B: The 1886 Rumour That Liberty Was Built for Egypt | SxZNwXOHz5w |
 | 13 Nov | Pilot B: Was the Statue of Liberty "Originally a Muslim Woman"? | iS77wQE9BCM |
+| 16 Nov | Pilot C: This Swing Ride Is Inside a Nuclear Cooling Tower | woq_Ze2h43I |
+| 18 Nov | Pilot C: Finished, Kept Hot for Six Years, Never Switched On | olbg-A7ZiJg |
+| 20 Nov | Pilot C: The Farmer Who Fought a Nuclear Reactor | Not uploaded yet: the Make connection failed (13 Oct) |
 
 The SP04 Shorts moved with SP04, so all three now go out after it.
 
-The six pilot Shorts were uploaded on 12 Oct and each goes out at 16:00 UTC. They are cut from the finished episodes with `toolkit/shorts_from_cut.py`. Their titles and descriptions are in each pilot's `youtube/shorts.json`. The Pilot B Shorts carry "Altered or synthetic content: Yes".
+The six pilot Shorts were uploaded on 12 Oct and each goes out at 16:00 UTC. They are cut from the finished episodes with `toolkit/shorts_from_cut.py`. Their titles and descriptions are in each pilot's `youtube/shorts.json`. The Pilot B Shorts carry "Altered or synthetic content: Yes". The three Pilot C Shorts were cut on 13 Oct and carry the same flag. C1 and C2 are scheduled. C3 (`pilot-c-kalkar/edit/build/shorts/C3_farmer.mp4`) still has to be uploaded once the UNBUILT connection in Make is reauthorized. Its metadata is ready in `pilot-c-kalkar/youtube/shorts.json`.
 
 ## Held
 
