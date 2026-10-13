@@ -107,7 +107,7 @@
 > Letting the sodium freeze, or draining it, risked damaging the plant. So for six years, hot sodium was kept moving through a reactor that had never been switched on.
 
 **[W3]** GFX: a counter ticking up, "105 million marks a year".
-> That cost a hundred and five million marks a year.
+> From 1988, just keeping it ready cost a hundred and five million marks a year.
 
 **[W4]** GFX: 205 fuel elements, split 123 Hanau and 82 Belgium.
 > The fuel was waiting too. Two hundred and five plutonium fuel elements had been made for it. A hundred and twenty-three sat in a store at Hanau, and eighty-two in Belgium. Not one was ever loaded.

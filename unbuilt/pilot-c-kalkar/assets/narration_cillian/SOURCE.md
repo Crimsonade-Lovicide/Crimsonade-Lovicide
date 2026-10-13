@@ -10,3 +10,5 @@ There are 34 blocks, one file per script block, in SCRIPT.md order. C4, the sile
 Because the narration is AI-generated, upload with "Altered or synthetic content: Yes", and say so in the description.
 
 **Rebuild the voice track:** join the blocks with 2 s gaps into `edit/build/cillian_recording.wav`. That's 6:58 with the gaps, of which 5:52 is speech.
+
+**13 Oct 2026:** block 21 (W3) was re-recorded so the figure is exact: "From 1988, just keeping it ready cost a hundred and five million marks a year." That cost 0.30 credits; the balance is now 3,166.32.
