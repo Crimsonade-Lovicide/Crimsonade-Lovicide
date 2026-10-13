@@ -43,7 +43,7 @@ SHOTS = {
     "S3": ("quote_card", dict(quote="Dieses Höllenfeuer nicht entfachen.",
                               attribution="\"Don't kindle this hell fire.\" Der Spiegel 27/1985: interview with "
                                           "Friedhelm Farthmann (SPD)")),
-    "S4": ("title_card", dict(title="26 April 1986", subtitle="Chernobyl", bg="ink")),
+    "S4": ("title_card", dict(title="26 April 1986", subtitle="Chernobyl")),
     "S5": ("kenburns", dict(image="G06", start=(0.5, 0.5, 1.0), end=(0.5, 0.48, 1.05))),
     # ---- 5. Hot and waiting
     "W1": ("kenburns", dict(image="K07", mode="cover", start=(0.5, 0.5, 1.0), end=(0.55, 0.42, 1.25),
@@ -63,12 +63,12 @@ SHOTS = {
     # ---- 7. The twist
     "T1": ("kenburns", dict(image="K05", mode="cover", start=(0.5, 0.4, 1.0), end=(0.45, 0.3, 1.3),
                             lower_third=("\"Stop Kalkar\", 1977", "Photo: Bert Verhoeff, " + ANEFO))),
-    "T2": ("maproute", dict(stops=[("Kalkar", 6.29, 51.74), ("Blomberg", 9.09, 51.94)],
-                            bbox=(4.6, 50.6, 10.6, 53.1), title="1985: the Maas family moves")),
+    "T2": ("kenburns", dict(image="G11", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.08))),
     "T3": ("kenburns", dict(image="P03", mode="cover", start=(0.5, 0.5, 1.0), end=(0.45, 0.45, 1.2),
                             lower_third=("The site today", "Photo 2024: Rolfcosar, CC BY-SA 4.0"))),
     "T4": ("kenburns", dict(image="G10", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.04))),
-    "T5": ("montage", dict(images=["P02", "P06", "P08"], cols=3, rows=1)),
+    "T5": ("kenburns", dict(image="P02", mode="cover", start=(0.5, 0.6, 1.0), end=(0.5, 0.45, 1.25),
+                            lower_third=("Wunderland Kalkar", "The cooling tower as a climbing wall. Photo 2008: Koetjuh"))),
     # ---- 8. Coda
     "K1": ("kenburns", dict(image="Z01", mode="cover", start=(0.5, 0.5, 1.0), end=(0.55, 0.45, 1.2),
                             lower_third=("Zwentendorf, Austria", "Photo 2018: Simon Legner, CC BY-SA 4.0"))),

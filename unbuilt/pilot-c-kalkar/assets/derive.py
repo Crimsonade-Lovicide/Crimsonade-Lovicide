@@ -57,7 +57,16 @@ def lines(path):
 
 
 def map_kalkar():
-    lon0, lat0, lon1, lat1 = 2.4, 49.4, 9.6, 54.0
+    base_map("G02_map", "Kalkar, on the Lower Rhine", (2.4, 49.4, 9.6, 54.0), [("Kalkar", 6.29, 51.74)])
+
+
+def map_move():
+    base_map("G11_move", "1985: the Maas family moves away", (4.4, 50.2, 10.6, 53.4),
+             [("Kalkar", 6.29, 51.74), ("Blomberg", 9.09, 51.94)], route=True)
+
+
+def base_map(name, title, bbox, places, route=False):
+    lon0, lat0, lon1, lat1 = bbox
     k = math.cos(math.radians((lat0 + lat1) / 2))
     sx = (W * 0.9) / ((lon1 - lon0) * k)
     sy = (H * 0.86) / (lat1 - lat0)
@@ -84,20 +93,23 @@ def map_kalkar():
                 if (hash((round(a[0]), round(a[1]))) % 2) == 0:
                     d.line([a, b], fill=MUT8, width=3)
     cf = font("sans", 34, "bold")
-    for name, lon, lat in [("NETHERLANDS", 5.0, 52.65), ("BELGIUM", 4.2, 50.75), ("WEST GERMANY", 8.0, 51.0)]:
+    for country, lon, lat in [("NETHERLANDS", 5.0, 52.65), ("BELGIUM", 4.2, 50.75), ("WEST GERMANY", 8.0, 51.0)]:
         x, y = xy(lon, lat)
-        w = d.textlength(name, font=cf)
-        d.text((x - w / 2, y), name, font=cf, fill=MUT8)
-    x, y = xy(6.29, 51.74)                            # Kalkar
-    r = 14
-    d.ellipse([x - r, y - r, x + r, y + r], fill=ACC8, outline=INK8, width=3)
+        w = d.textlength(country, font=cf)
+        d.text((x - w / 2, y), country, font=cf, fill=MUT8)
+    pts = [xy(lon, lat) for _, lon, lat in places]
+    if route:
+        d.line(pts, fill=ACC8, width=8)
     lf = font("serif", 56, "bold")
-    d.text((x + 26, y - 40), "Kalkar", font=lf, fill=INK8)
+    for (label, _, _), (x, y) in zip(places, pts):
+        r = 14
+        d.ellipse([x - r, y - r, x + r, y + r], fill=ACC8, outline=INK8, width=3)
+        d.text((x + 26, y - 40), label, font=lf, fill=INK8)
     tf = font("serif", 50, "bold")
-    centred(d, 40, "Kalkar, on the Lower Rhine", tf, INK8)
+    centred(d, 40, title, tf, INK8)
     sf = font("sans", 26)
-    d.text((W - 620, H - 50), "Map: Natural Earth (public domain). Borders as today.", font=sf, fill=MUT8)
-    save(img, "G02_map")
+    d.text((W - 800, H - 50), "Map: Natural Earth (public domain). Borders as today.", font=sf, fill=MUT8)
+    save(img, name)
 
 
 # ---------------------------------------------------------------- the breeder (B2)
@@ -250,6 +262,7 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     breeder()
     map_kalkar()
+    map_move()
     total()
     card("G04_court", "Federal Constitutional Court", ["8 August 1978: the \"Kalkar decision\"",
                                                        "The breeder is legal under the Atomic Energy Act.",
