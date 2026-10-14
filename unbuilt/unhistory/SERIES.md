@@ -25,7 +25,7 @@ Most "what if" channels make the alternate world up. UNHISTORY builds it from th
    - real plans and documents, and photos of them;
    - charts and maps drawn by the toolkit, such as a dashed line splitting from the real one.
 
-   There are no AI images. The narration is the synthetic voice, as in Pilots B and C, so every upload sets "Altered or synthetic content: Yes".
+   There are no AI images, and no AI generations of any kind (the owner confirmed this on 14 Oct, after asking whether Higgsfield shots would help; see the reasoning in the episode 1 notes). The owner narrates in their own voice, so uploads can set "Altered or synthetic content: No".
 
 ## The look
 

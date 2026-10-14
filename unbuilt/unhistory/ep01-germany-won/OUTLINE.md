@@ -2,7 +2,7 @@
 
 **Length:** 8–10 minutes.
 **Facts:** all from `RESEARCH.md`, each tagged HAPPENED / LIKELY / GUESS on screen.
-**Narrator:** the synthetic voice, Cillian, as in Pilots B and C. This is a proposal; the owner decides.
+**Narrator:** the owner, in their own voice (decided 14 Oct). No AI voice and no AI pictures.
 
 ## Title options
 
@@ -47,14 +47,20 @@ The episode is sombre, which makes it a heavy start for the series. Later episod
 
 ## Proposed slot
 
-**Sat 21 Nov 2026**, the first free Saturday after Pilot C (14 Nov). This needs the owner's go-ahead, and then a line in `../../RELEASE_QUEUE.md`.
+The owner turned down 21 Nov and wants it out as soon as possible (14 Oct). Every Saturday up to 14 Nov is already taken, and the test allows one long video a week, so an earlier date means moving something.
+
+**Proposed: Sat 24 Oct.** It takes SP04's slot. SP04 and its three Shorts (25, 27 and 28 Oct) go back to held. This needs:
+- the owner's recording by about Tue 20 Oct;
+- the owner's go-ahead to move SP04.
+
+Nothing changes in `../../RELEASE_QUEUE.md` until the owner agrees.
 
 ## Cost
 
 | Item | Cost |
 |---|---|
 | Research, script, graphics, edit | 0 credits |
-| Narration (about 1,200 words of Cillian) | about 20 credits, based on Pilot C's 17.40 for about 900 words |
+| Narration | 0 credits: the owner records it |
 | Images | Commons imports through Higgsfield cost nothing |
 
 Nothing is spent until the owner approves the script.
@@ -73,4 +79,4 @@ Compare against the median of Pilots A–C over each video's first 7 days:
 - **Failure:** both are below 70% of the median. UNHISTORY pauses, and we review the packaging before any second episode.
 - **In between:** one more episode, with different packaging, before deciding.
 
-Pilot A goes out on 31 Oct, so only some of the pilot data will be in by 21 Nov. Use whatever exists on 28 Nov.
+If UNHISTORY 01 goes out before the pilots, compare it against the pilots' first 7 days once they're in. That means deciding in mid-November.

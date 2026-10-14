@@ -83,7 +83,7 @@ These rows are LIKELY or GUESS by definition. Keep them short.
 
 ## Not yet checked (do before the script is final)
 
-- The Dalton diary wording ("choking in his own blood").
-- The exact CAB 65 reference for the 25–28 May minutes.
-- The 180,000 figure for the Great Hall, against Speer's own figure.
-- The licence of every image.
+- ~~The Dalton diary wording~~: checked 14 Oct. Dalton recorded two versions, and the "choking in his own blood" version is in a marginal note that Churchill may later have revised (International Churchill Society, *Finest Hour*). **The script doesn't use the quote.** It uses only "they cheered", from the same diary, which is M (one witness).
+- The exact CAB 65 reference for the 25–28 May minutes. The confidential annexes are in CAB 65/13; the item numbers are still to find. Not needed for the script.
+- ~~The 180,000 figure~~: checked 14 Oct. Speer's memoirs give 180,000 listeners, though some sources say 150,000. The script says "about 180,000, by its architect's own count".
+- The licence of every image: to do during the asset pull.
