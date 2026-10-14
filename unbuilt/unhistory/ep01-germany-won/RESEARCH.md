@@ -67,6 +67,11 @@ These rows are LIKELY or GUESS by definition. Keep them short.
 | **Berlin:** Welthauptstadt Germania. Hitler meant it to be finished by 1950. The Great Hall would hold about 180,000 people. Building stopped in spring 1943. | H (the plan, the date, the stop) / M (180,000; repeated widely, check against Speer) | GHDI image 2335 (the Bundesarchiv model photo); en.wikipedia "Germania (city)" |
 | **What still stands:** the *Schwerbelastungskörper* in Tempelhof. It is a concrete cylinder of about 12,650 tonnes, built in 1941 to test whether the marshy ground could carry the triumphal arch. It sank about 18 cm; the limit was 6 cm. It is a protected monument and can be visited. | H (built in 1941, the purpose, still there) / M (12,650 t; 18 cm) | Structurae; Berlin.de; en.wikipedia "Germania (city)" |
 
+**The wording of the 2 May 1941 minutes (checked 14 Oct):**
+- German, as Alex J. Kay quotes it (*Freitag*, "Der sichere Tod"): "Hierbei werden zweifellos zig Millionen Menschen verhungern, wenn von uns das für uns Notwendige aus dem Lande herausgeholt wird."
+- The 1945 Nuremberg translation of 2718-PS (Harvard Law School Nuremberg Project) gives "many millions". Some English summaries give "x million".
+- Our card shows the German and our own translation ("tens of millions"), credited as ours.
+
 ## 5. The stop line
 
 **1950.** That's the year the regime set for its own capital. After it, the narrator says "from here, nobody knows."

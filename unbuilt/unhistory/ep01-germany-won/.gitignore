@@ -1,0 +1,10 @@
+edit/build/
+edit/__pycache__/
+# Original asset downloads can be large; rebuild with: python3 assets/fetch_assets.py
+assets/raw/
+assets/derived/
+assets/music/*.flac
+assets/music/*.mp3
+assets/footage/
+# The owner's raw recordings stay out of git (large; the final mix is what ships)
+assets/narration/
