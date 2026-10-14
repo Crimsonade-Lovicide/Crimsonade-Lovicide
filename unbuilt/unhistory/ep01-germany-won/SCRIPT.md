@@ -54,19 +54,19 @@
 
 ## 2. THE DOOR: MAY 1940
 
-**[D1]** IWM or COMMONS: Lord Halifax. **[HAPPENED]**
+**[D1]** H01: Lord Halifax, 1941 (cropped from a photo with Gen. Sikorski). **[HAPPENED]**
 > And there was one moment when Britain nearly got out. May 1940.
 
-**[D2]** IWM or COMMONS: Chamberlain at Downing Street. **[HAPPENED]**
+**[D2]** H02: Chamberlain at Heston, 1938 ("peace for our time"). Lower third: "Neville Chamberlain, 1938". **[HAPPENED]**
 > On the ninth of May, Neville Chamberlain was about to resign as prime minister. The man he wanted to replace him wasn't Winston Churchill. It was his foreign secretary, Lord Halifax. The King wanted Halifax too.
 
-**[D3]** IWM: Churchill, May 1940. **[HAPPENED]**
+**[D3]** H03: Churchill in the Cabinet Room, 1940 (Cecil Beaton). **[HAPPENED]**
 > Halifax said no. He sat in the House of Lords, and he didn't believe he could lead a war from there. So the next day, the job went to Churchill.
 
-**[D4]** IWM: troops on the beach at Dunkirk. **[HAPPENED]**
+**[D4]** H04: troops awaiting evacuation at Bray Dunes, near Dunkirk, May 1940. **[HAPPENED]**
 > Two weeks later, the British army was trapped on the beaches at Dunkirk. And in the War Cabinet, Halifax argued that Britain should at least find out what peace terms it could get, with Mussolini as the go-between.
 
-**[D5]** IWM or COMMONS: the Cabinet Room. **[HAPPENED]**
+**[D5]** H03: a slow push across the Cabinet Room, part of the same photo. **[HAPPENED]**
 > For three days they argued. On the twenty-eighth of May, the rest of the War Cabinet sided with Churchill. One minister who was there wrote in his diary that when Churchill told the wider cabinet Britain would fight on, they cheered.
 
 **[D6]** GFX: the timeline splits, the real line solid and a dashed line branching off at 9 May. **[GUESS]**
@@ -82,7 +82,7 @@
 **[P1]** GFX map: Western Europe, with no front. **[LIKELY]**
 > With Britain out, Germany has no war in the west. No bombers overhead. Nothing holding troops back.
 
-**[P2]** BA: German troops in the east, June 1941. **[LIKELY]**
+**[P2]** E01: a German motorised column, Soviet Union, June 1941. **[LIKELY]**
 > And Hitler had always meant to go east. In the real war, he invaded the Soviet Union in June 1941. In this one, he does it with everything he has.
 
 **[P3]** GFX map: the Atlantic. **[GUESS]**
@@ -95,7 +95,7 @@
 
 ## 4. THE PLANS
 
-**[H1]** DOC: the minutes of 2 May 1941, with the key line highlighted. **[HAPPENED]**
+**[H1]** U15: the key line of the 2 May 1941 minutes, typed card with the German and the translation. No scan of the minutes is on Commons. **[HAPPENED]**
 > Seven weeks before the invasion, on the second of May 1941, senior German officials met to plan how the army would be fed in the east. Their minutes say that if Germany took what it needed from the country, "tens of millions" of people would "undoubtedly" starve.
 
 **[H2]** DOC: hold on the highlighted line. **[HAPPENED]**
@@ -104,16 +104,16 @@
 **[G1]** GFX map: the plan's territory, with the figures. **[HAPPENED]**
 > Then there was the plan for the land itself. They called it the General Plan for the East. One version counted about forty-five million people living there, and called for around thirty-one million of them to be removed, sent east into Siberia over thirty years, to make room for German settlers.
 
-**[W1]** COMMONS: the villa at Wannsee, then DOC: the protocol's list. **[HAPPENED]**
+**[W1]** D03: the villa at Wannsee, then D04: the protocol's page 6, the list. **[HAPPENED]**
 > In January 1942, at a villa by a lake outside Berlin, senior officials met to coordinate the murder of Europe's Jews. The record of that meeting has a list, country by country. The total is over eleven million.
 
-**[W2]** DOC: close on the two lines. **[HAPPENED]**
+**[W2]** D04: close on "England" and "Irland" with their figures. **[HAPPENED]**
 > The list includes countries Germany never controlled. England: three hundred and thirty thousand. Ireland: four thousand.
 
 **[W3]** GFX: plain text, black. **[HAPPENED]**
 > In the real war, about six million Jews were murdered. The list shows who was meant to be next.
 
-**[B1]** DOC: the IWM's copy of the Black Book. **[HAPPENED]**
+**[B1]** D05: Black Book pages 32–33, push in on entry 49, "Churchill, Winston Spencer, Ministerpräsident". **[HAPPENED]**
 > Britain had a list of its own. In 1940, the SS drew up a handbook for the invasion of Britain. At the back are about two thousand eight hundred names of people to be arrested. Churchill is on it.
 
 **[B2]** DOC: hold. **[GUESS]**
@@ -133,16 +133,16 @@
 
 ## 6. WHAT HAPPENED
 
-**[R1]** BA: Berlin in ruins, 1945. **[HAPPENED]**
+**[R1]** R01: a destroyed street off Unter den Linden, 1945. **[HAPPENED]**
 > In the real world, the war turned. Work on Germania stopped in 1943. The dome was never built.
 
-**[R2]** COMMONS: the Schwerbelastungskörper today. **[HAPPENED]**
+**[R2]** R02: the Schwerbelastungskörper today. **[HAPPENED]**
 > But one piece of it is still there. In 1941, engineers poured a block of concrete weighing about twelve and a half thousand tonnes into the Berlin soil, to test whether the ground could carry the triumphal arch.
 
 **[R3]** GFX: a depth gauge, 18 cm against a limit of 6 cm. **[HAPPENED]**
 > It sank about eighteen centimetres. The limit was six. The ground couldn't take it.
 
-**[R4]** COMMONS: a wide shot of it in the street. **[HAPPENED]**
+**[R4]** R02b: a wide shot of it in the street. **[HAPPENED]**
 > It's still standing, on an ordinary street in Berlin.
 
 ---
