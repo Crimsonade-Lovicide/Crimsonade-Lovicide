@@ -25,13 +25,23 @@ Most "what if" channels make the alternate world up. UNHISTORY builds it from th
    - real plans and documents, and photos of them;
    - charts and maps drawn by the toolkit, such as a dashed line splitting from the real one.
 
-   There are no AI images, and no AI generations of any kind (the owner confirmed this on 14 Oct, after asking whether Higgsfield shots would help; see the reasoning in the episode 1 notes). The owner narrates in their own voice, so uploads can set "Altered or synthetic content: No".
+   There are no AI images. On 14 Oct the owner asked whether Higgsfield generations would help. Claude advised against them, for the reasons below, and the owner has the final say. The owner narrates in their own voice, so uploads can set "Altered or synthetic content: No".
 
 ## The look
 
 - The same toolkit and paper palette as UNBUILT, with one addition: the HAPPENED / LIKELY / GUESS tag in the lower-left corner whenever a claim is on screen.
 - The title card reads "UNHISTORY", with "an UNBUILT series" under it.
 - Titles start with "What If…", because that's what people search for. Each title also carries the episode's own angle, so it doesn't copy the many "what if" videos already out there.
+
+## Why no Higgsfield generations (Claude's advice, 14 Oct; opinion, confidence M–H)
+
+1. **The angle is "their own plans".** AI pictures of a Nazi-won world are exactly what other "what if" videos do, so they would erase what sets this show apart.
+2. **Made-up WWII photos spread as fakes.** A generated "1950 Germania" frame clipped out of context becomes misinformation with our name on it. That is a real harm, not just a brand risk.
+3. **Platform and model risk.** Generated Nazi imagery is the content most likely to be age-restricted or flagged. Generators also often refuse it or distort it.
+4. **The channel moved away from AI on purpose.** The owner judged the AI format to have no future (`../FORMAT_REPORT_2026-10.md`), and the AI backlash is a recorded risk.
+5. **Credits:** the owner wants to spend none.
+
+**What would change this:** if the pilots' retention shows real-photo episodes losing viewers early. Even then, test it first on a light subject (Hindenburg, Chicago 1871), never on Nazi or Holocaust material.
 
 ## Subjects about war, genocide or disaster
 
