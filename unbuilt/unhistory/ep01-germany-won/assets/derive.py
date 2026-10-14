@@ -334,6 +334,21 @@ def minutes():
     save(img, "U15_minutes")
 
 
+def prep_photos():
+    """Edit-only copies of three photos (the originals in raw/ stay untouched)."""
+    from PIL import ImageOps
+    raw = os.path.join(HERE, "raw")
+    im = ImageOps.exif_transpose(Image.open(os.path.join(raw, "R03_test_block_close_2022.jpg")))
+    im.save(os.path.join(OUT, "R03_upright.jpg"), quality=92)
+    im = Image.open(os.path.join(raw, "H04_dunkirk_bray_dunes_1940.jpg"))
+    w, h = im.size
+    im.crop((0, 0, int(w * 0.92), int(h * 0.92))).save(os.path.join(OUT, "H04_no_watermark.jpg"), quality=92)
+    im = Image.open(os.path.join(raw, "H01_halifax_sikorski_1941.jpg"))
+    w, h = im.size
+    im.crop((int(w * 0.40), 0, int(w * 0.95), int(h * 0.80))).save(os.path.join(OUT, "H01_halifax.jpg"), quality=92)
+    print("wrote photo prep")
+
+
 def tags():
     """The on-screen claim tags, as RGBA overlays for the lower-left corner."""
     for word, colour in [("HAPPENED", INK8), ("LIKELY", MUT8), ("GUESS", ACC8)]:
@@ -351,6 +366,7 @@ def tags():
 def main():
     os.makedirs(OUT, exist_ok=True)
     tags()
+    prep_photos()
     card("U01_question", "Could they have won at all?", title_size=84)
     odds()
     ratio()
