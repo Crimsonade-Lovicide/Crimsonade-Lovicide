@@ -204,12 +204,18 @@ def main():
     if a.only:
         return
     voice = os.path.join(BUILD, "voice.wav")
-    if a.estimate:                          # no recording yet: a silent track of the programme's length
-        voice = os.path.join(BUILD, "silence.wav")
-        total = list(win.values())[-1][1]
-        kit.core.run_ffmpeg(["-y", "-f", "lavfi", "-i", "anullsrc=r=48000:cl=mono", "-t", f"{total:.3f}", voice])
     json.dump(shotlist, open(os.path.join(BUILD, "shotlist.json"), "w"), indent=1)
-    kit.assemble(shotlist, voice, a.music, a.out, crossfade=0.4)
+    if a.estimate:                          # no recording yet: picture only, with a silent track
+        from unbuilt_kit.assemble import _picture, load_shotlist   # (loudness-normalising silence is undefined)
+        shots = load_shotlist(shotlist, 0.4)
+        total = shots[-1][1] + shots[-1][2]
+        pic = os.path.join(BUILD, "picture.mp4")
+        _picture(shots, pic, kit.core.HD, 0.4, total)
+        kit.core.run_ffmpeg(["-y", "-i", pic, "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v",
+                             "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-t", f"{total:.3f}", a.out])
+        os.remove(pic)
+    else:
+        kit.assemble(shotlist, voice, a.music, a.out, crossfade=0.4)
     print("wrote", a.out)
 
 

@@ -246,8 +246,9 @@ def ratio():
         d.text((x + (colw - d.textlength(lab, font=lf)) / 2, top - 70), lab, font=lf, fill=INK8)
         yf = font("sans", 40, "bold")
         d.text((x + (colw - d.textlength(yr, font=yf)) / 2, ybase + 18), yr, font=yf, fill=INK8)
-    d.text((x0 + 3 * (colw + gap) - 100, 420), "US output by 1944:", font=font("sans", 34), fill=MUT8)
-    d.text((x0 + 3 * (colw + gap) - 100, 465), "nearly double 1938", font=font("serif", 46, "bold"), fill=ACC8)
+    d.text((x0 + 3 * (colw + gap) - 70, 420), "US output by 1944:", font=font("sans", 34), fill=MUT8)
+    d.text((x0 + 3 * (colw + gap) - 70, 465), "nearly double", font=font("serif", 46, "bold"), fill=ACC8)
+    d.text((x0 + 3 * (colw + gap) - 70, 520), "its 1938 level", font=font("serif", 46, "bold"), fill=ACC8)
     foot(d, "1941 was the Allied low point. Mark Harrison, The Economics of World War II (1998), ch. 1")
     save(img, "U03_ratio")
 

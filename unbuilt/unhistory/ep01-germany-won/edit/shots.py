@@ -22,7 +22,7 @@ SHOTS = {
     # ---- 1. the odds
     "O1": ("kenburns", dict(image="U02", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.04))),
     "O2": ("kenburns", dict(image="U03", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.04))),
-    "O3": ("kenburns", dict(image="U04", start=(0.5, 0.5, 1.0), end=(0.6, 0.45, 1.12))),
+    "O3": ("kenburns", dict(image="U04", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.04))),
     "O4": ("kenburns", dict(image="U05", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.04))),
     # ---- 2. the door: May 1940
     "D1": ("kenburns", dict(image="H01", start=(0.5, 0.4, 1.0), end=(0.5, 0.32, 1.15),
@@ -44,16 +44,16 @@ SHOTS = {
     "P4": ("kenburns", dict(image="U10", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.04))),
     # ---- 4. the plans
     "H1": ("kenburns", dict(image="U15", start=(0.5, 0.5, 1.0), end=(0.45, 0.42, 1.08))),
-    "H2": ("kenburns", dict(image="U15", start=(0.45, 0.42, 1.08), end=(0.45, 0.5, 1.4))),
-    "G1": ("kenburns", dict(image="U11", start=(0.5, 0.5, 1.0), end=(0.55, 0.45, 1.06))),
+    "H2": ("highlight", dict(image="U15", box=(0.07, 0.43, 0.86, 0.58))),
+    "G1": ("kenburns", dict(image="U11", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.04))),
     "W1": ("kenburns", dict(image="D03", mode="cover", start=(0.5, 0.5, 1.0), end=(0.5, 0.45, 1.15),
                             lower_third=("The villa at Wannsee, Berlin", "Photo 2015: Franek Vetulani, CC BY-SA 4.0"))),
-    "W2": ("highlight", dict(image="D04", box=(0.26, 0.545, 0.88, 0.6))),
+    "W2": ("highlight", dict(image="D04", box=(0.26, 0.553, 0.88, 0.597))),
     "W3": ("kenburns", dict(image="U12", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.03))),
-    "B1": ("highlight", dict(image="D05", box=(0.06, 0.74, 0.455, 0.775))),
-    "B2": ("kenburns", dict(image="D05", start=(0.3, 0.7, 1.6), end=(0.5, 0.5, 1.0),
-                            lower_third=("Sonderfahndungsliste G.B., 1940, pages 32-33",
-                                         "The Imperial War Museum's copy. Entry 49: Churchill"))),
+    "B1": ("highlight", dict(image="D05", box=(0.06, 0.74, 0.455, 0.775),
+                             lower_third=("Sonderfahndungsliste G.B., 1940, page 32",
+                                          "The Imperial War Museum's copy. Entry 49: Churchill"))),
+    "B2": ("kenburns", dict(image="U08", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.05))),
     "G2": ("kenburns", dict(image="G01", start=(0.5, 0.5, 1.0), end=(0.5, 0.55, 1.12))),
     # ---- 5. the stop line
     "X1": ("kenburns", dict(image="U13", start=(0.5, 0.5, 1.0), end=(0.5, 0.5, 1.05))),
