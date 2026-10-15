@@ -74,7 +74,7 @@ def countries():
     return COUNTRIES
 
 
-def projector(bbox, top=110, bottom=90):
+def projector(bbox, top=150, bottom=90):
     lon0, lat0, lon1, lat1 = bbox
     k = math.cos(math.radians((lat0 + lat1) / 2))
     s = min((W * 0.94) / ((lon1 - lon0) * k), (H - top - bottom) / (lat1 - lat0))
@@ -111,8 +111,8 @@ def draw_map(bbox, fills, title, labels=(), credit="Map: Natural Earth (public d
         lf = font("sans", size, "bold")
         w = d.textlength(text, font=lf)
         d.text((x - w / 2, y - size / 2), text, font=lf, fill=colour)
-    d.rectangle([0, 0, W, 100], fill=PAP8)
-    centred(d, 24, title, font("serif", 54, "bold"), INK8)
+    d.rectangle([0, 0, W, 140], fill=PAP8)
+    centred(d, 58, title, font("serif", 52, "bold"), INK8)
     d.text((W - 760, H - 46), credit, font=font("sans", 24), fill=MUT8)
     return img, d, xy
 
@@ -434,7 +434,7 @@ def plan_bar():
 def map_channel():
     """B2: Britain across the Channel from a continent run from Berlin (our timeline)."""
     img, d, xy = draw_map((-9, 46.5, 13, 57), {"United Kingdom": TINT8, "Germany": DARK8},
-                          "Our timeline, 1950: Britain at peace, next to a continent run from Berlin",
+                          "Our timeline, 1950: a continent run from Berlin",
                           [("BRITAIN", -2.0, 53.0, 40, INK8), ("BERLIN", 13.4, 52.5, 1, INK8)])
     x, y = xy(13.4, 52.52)
     d.ellipse([x - 12, y - 12, x + 12, y + 12], fill=ACC8)
