@@ -1,0 +1,1451 @@
+{
+  "episode": "UNBUILT - Magnificent Delusions",
+  "host_element": "026bc578-60a2-4cac-92b2-53d3ea1a43d8",
+  "host_refs": [
+    "7af5b679-6105-40a6-bfbd-c1576bf5f064",
+    "58601a7b-306f-4517-8840-c3589998e0d2"
+  ],
+  "voice": {
+    "model": "seed_audio",
+    "voice_type": "preset",
+    "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+    "name": "Arthur"
+  },
+  "prices": {
+    "still": 2.0,
+    "tts_line": 0.5,
+    "sync_per_s": 3.0,
+    "broll_per_s": 1.75
+  },
+  "budget": {
+    "sync_video": 234.0,
+    "broll_video": 192.5,
+    "stills_and_frames": 92.0,
+    "tts": 45.0,
+    "retakes_15pct_of_video": 64.0,
+    "total": 627.5,
+    "picture_seconds": 413,
+    "counts": {
+      "SYNC": 14,
+      "BROLL_VIDEO": 20,
+      "STILL": 26,
+      "CARD": 7,
+      "REUSE": 1
+    }
+  },
+  "shots": [
+    {
+      "id": "CO1",
+      "segment": "Cold open",
+      "kind": "SYNC",
+      "duration_s": 5,
+      "status": "RENDERED",
+      "line": "Most buildings that never got built… deserved it. These five didn't.",
+      "job_id": "c375df58-893c-45e8-ac9b-0ea82d1bf36b",
+      "note": "Proof shot. Re-render if you want to fix the duplicated July Column in the background."
+    },
+    {
+      "id": "CO2",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo": "A monument that became a rat hotel.",
+      "duration_s": 4,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. A colossal elephant statue about 15 metres tall standing on a tall round pedestal in a large open Paris square, a small ornate tower on its back, the Place de la Bastille, early 19th century. The elephant is a full-size PLASTER model over a timber frame, dirty grey, cracked and patched, one tusk broken, stained by rain, a rough wooden fence around the pedestal, weeds. 1830s, rain, grey dusk, a few people hurrying past under umbrellas."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Rain falls steadily; a figure hurries past the fence; the camera drifts slowly left. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "CO3",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo": "A subway powered by a giant fan.",
+      "duration_s": 4,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. 1870 New York: inside a round whitewashed brick tunnel lit by gas lamps, a single cylindrical wooden passenger car with brass fittings and upholstered benches, passengers in Victorian dress."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The car glides slowly forward through the tunnel toward camera; lamplight flickers. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "CO4",
+      "segment": "Cold open",
+      "kind": "STILL",
+      "vo": "A cathedral wider than St Peter's.",
+      "duration_s": 3,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Aerial view of Liverpool at dusk with an immense classical cathedral that never existed dominating the skyline beside the River Mersey: a vast pale granite and brick body, a colossal ribbed dome wider than St Peter's in Rome, the real Liver Building small by comparison."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "CO5",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo": "A glass lid over Midtown Manhattan.",
+      "duration_s": 4,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Aerial view of Midtown Manhattan covered by an immense transparent geodesic dome two miles across, spanning from the Hudson to the East River, its triangular lattice catching the late sun, the Empire State Building standing inside it."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow helicopter drift toward the dome; sunlight glints across the facets. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "CO6",
+      "segment": "Cold open",
+      "kind": "BROLL_VIDEO",
+      "vo": "And a man who looked at the Mediterranean Sea and thought… that could come down a bit.",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. A colossal concrete dam across the Strait of Gibraltar seen from high above, the Atlantic on the left brimming at the top, the Mediterranean on the right lying about a hundred metres lower, pale newly exposed seabed along its shores, the Rock of Gibraltar in the background."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial push along the dam crest; spray drifts from spillways. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "CO7",
+      "segment": "Cold open",
+      "kind": "SYNC",
+      "line": "I'm Hugo Ashby. Let's go and look at some holes in the ground.",
+      "duration_s": 6,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "I'm Hugo Ashby. Let's go and look at some holes in the ground."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. He stands in the Place de la Bastille in Paris at blue hour, a single dark green bronze column with a small gilded figure on top behind him (only one column), and at the end he turns and walks off out of frame.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "CO8",
+      "segment": "Cold open",
+      "kind": "CARD",
+      "text": "UNBUILT · Magnificent Delusions",
+      "duration_s": 4,
+      "post": "Pillow-rendered title over the next shot (no generation cost)"
+    },
+    {
+      "id": "E0",
+      "segment": "No.5 Elephant",
+      "kind": "CARD",
+      "text": "No. 5 · The Elephant of the Bastille · Paris, 1808",
+      "duration_s": 3,
+      "post": "Pillow-rendered title over the next shot (no generation cost)"
+    },
+    {
+      "id": "E1",
+      "segment": "No.5 Elephant",
+      "kind": "SYNC",
+      "line": "In 1808, Napoleon decided this square needed a fountain. Being Napoleon… he meant an elephant.",
+      "duration_s": 7,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "In 1808, Napoleon decided this square needed a fountain. Being Napoleon… he meant an elephant."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 7,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. Daytime, walking slowly across the Place de la Bastille in Paris with traffic around, the single tall dark green bronze July Column behind him, camera walking backwards in front of him.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "E2",
+      "segment": "No.5 Elephant",
+      "kind": "STILL",
+      "vo": "Twenty-four metres, tower and all. To be cast in bronze from cannon captured at the Battle of Friedland. A staircase up one leg, a lookout on its back, and water from the trunk.",
+      "duration_s": 10,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original architect's presentation drawing of the period, ink and watercolour wash on aged cream paper, fine linework, subtle foxing. No readable lettering. Side elevation of a monumental bronze elephant fountain for a Paris square, 1810: the elephant on a tall circular pedestal with water spouting from its trunk into a round basin, an ornate tower (howdah) on its back, a tiny human figure for scale."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "E3",
+      "segment": "No.5 Elephant",
+      "kind": "BROLL_VIDEO",
+      "vo": "First, a full-size model in plaster, to see how it looked. That was 1814. The following year was Waterloo.",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. A colossal elephant statue about 15 metres tall standing on a tall round pedestal in a large open Paris square, a small ornate tower on its back, the Place de la Bastille, early 19th century. 1814: workmen on timber scaffolding finish a full-size white PLASTER model of the elephant, buckets of plaster, ropes and ladders, overcast morning."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Workmen smooth plaster and climb the ladders; the camera cranes slowly up. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "E4",
+      "segment": "No.5 Elephant",
+      "kind": "BROLL_VIDEO",
+      "vo": "The bronze never came. The plaster stayed, for thirty years. It cracked, it sagged,",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. A colossal elephant statue about 15 metres tall standing on a tall round pedestal in a large open Paris square, a small ornate tower on its back, the Place de la Bastille, early 19th century. The elephant is a full-size PLASTER model over a timber frame, dirty grey, cracked and patched, one tusk broken, stained by rain, a rough wooden fence around the pedestal, weeds. About 1830, steady rain."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Rain streams down the cracked plaster; slow push-in. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "E4b",
+      "segment": "No.5 Elephant",
+      "kind": "STILL",
+      "vo": "and by the late 1820s the neighbours were petitioning to have it removed. Because of the rats.",
+      "duration_s": 6,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. Close-up: a brown rat sitting on the cracked grey plaster foot of a colossal elephant statue, rain, night, a lantern glow."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "E5",
+      "segment": "No.5 Elephant",
+      "kind": "STILL",
+      "vo": "A watchman is said to have lived in one of its legs. Which is not a career they mention at school.",
+      "duration_s": 7,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. A small wooden door set into the massive cracked plaster leg of a colossal elephant statue, ajar, warm lamplight inside, a worn coat hanging on a nail, dusk."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "E6",
+      "segment": "No.5 Elephant",
+      "kind": "BROLL_VIDEO",
+      "vo": "Then Victor Hugo moved a tenant in. In Les Misérables, the street boy Gavroche sleeps inside the elephant.",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. A colossal elephant statue about 15 metres tall standing on a tall round pedestal in a large open Paris square, a small ornate tower on its back, the Place de la Bastille, early 19th century. The elephant is a full-size PLASTER model over a timber frame, dirty grey, cracked and patched, one tusk broken, stained by rain, a rough wooden fence around the pedestal, weeds. Night, 1832: a thin ragged boy of about eleven squeezes up through a gap in the plaster under the elephant's belly, faint candle glow inside."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The boy climbs up and disappears inside; candlelight flickers in the gap. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "E6b",
+      "segment": "No.5 Elephant",
+      "kind": "STILL",
+      "vo": "\"Ugly in the eyes of the bourgeois,\" Hugo wrote. \"Melancholy in the eyes of the thinker.\"",
+      "duration_s": 7,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A 19th-century wood engraving book illustration, fine cross-hatching, black ink on aged paper. Interior of a hollow plaster elephant at night: a ragged boy and two small children curled under a blanket on planks, a candle stub, rats in the shadows of the ribs."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "E7v",
+      "segment": "No.5 Elephant",
+      "kind": "STILL",
+      "vo": "They knocked it down in 1846 and put up that. The July Column.",
+      "duration_s": 5,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. The July Column in the Place de la Bastille, Paris, by day: a single tall dark green bronze column with a small gilded winged figure on top, on a round white stone base, traffic around it."
+      },
+      "post": "ffmpeg zoompan: slow tilt up, subtle grain, no generation cost"
+    },
+    {
+      "id": "E7",
+      "segment": "No.5 Elephant",
+      "kind": "SYNC",
+      "line": "Tasteful. Correct. Nobody's ever written a novel about it.",
+      "duration_s": 5,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Tasteful. Correct. Nobody's ever written a novel about it."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. Medium close-up in the Place de la Bastille by day, the single tall July Column behind him; on 'that' he gestures over his shoulder with his thumb.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "B0",
+      "segment": "No.4 Beach",
+      "kind": "CARD",
+      "text": "No. 4 · Beach Pneumatic Transit · New York, 1870",
+      "duration_s": 3,
+      "post": "Pillow-rendered title over the next shot (no generation cost)"
+    },
+    {
+      "id": "B1",
+      "segment": "No.4 Beach",
+      "kind": "BROLL_VIDEO",
+      "vo": "New York, 1869. Broadway is so jammed with horses and omnibuses that walking is faster.",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic hand-tinted albumen photograph of the period, soft focus at the edges, faded colour, fine grain and small scratches. No readable text. Broadway, New York, 1869: the street jammed solid with horse-drawn omnibuses, carts and carriages, crowds on the sidewalks, cast-iron storefronts."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Carriages inch forward, horses toss their heads, pedestrians weave between them. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "B2v",
+      "segment": "No.4 Beach",
+      "kind": "STILL",
+      "vo": "Alfred Ely Beach, publisher of Scientific American, had permission to build a little tube for the mail.",
+      "duration_s": 6,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. 1869: a cluttered Victorian magazine office in New York, engravings of machines pinned up, a brass pneumatic tube model on the desk, a bearded man in a frock coat seen from behind at the window."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "B2",
+      "segment": "No.4 Beach",
+      "kind": "SYNC",
+      "line": "So, naturally… he built a train.",
+      "duration_s": 4,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "So, naturally… he built a train."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. Standing on Broadway at Warren Street in Lower Manhattan today, yellow cabs and buses passing, cast-iron buildings behind.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "B3",
+      "segment": "No.4 Beach",
+      "kind": "BROLL_VIDEO",
+      "vo": "Working out of the basement of a clothing shop, his men dug under Broadway for fifty-eight nights.",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. 1869, night: under a New York street, a round iron tunnelling shield lit by oil lamps, workmen with picks and shovels passing buckets of earth back through a brick-lined bore."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Workmen dig and pass buckets; lamps swing; dust hangs in the air. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "B4",
+      "segment": "No.4 Beach",
+      "kind": "BROLL_VIDEO",
+      "vo": "February 1870. One car, twenty-two seats, blown down the tunnel",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. 1870: a single cylindrical passenger car, painted and upholstered, sitting in a round whitewashed brick tunnel about eight feet across, lit by bright lamps, Victorian passengers seated."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The car slides smoothly away down the tunnel; passengers' hats and coats sway slightly. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "B4b",
+      "segment": "No.4 Beach",
+      "kind": "STILL",
+      "vo": "by a fan the size of a locomotive… and then sucked back again.",
+      "duration_s": 4,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. An enormous 1870 industrial rotary blower in a brick basement engine room: huge iron casing, belts and a steam engine, men in waistcoats dwarfed beside it."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "B5",
+      "segment": "No.4 Beach",
+      "kind": "BROLL_VIDEO",
+      "vo": "The waiting room had frescoes, a grand piano and a fountain full of goldfish. Frankly, nicer than most stations in New York today.",
+      "duration_s": 6,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. 1870: an elegant underground waiting room: frescoed walls, a grand piano, easy chairs, a fountain with a basin of goldfish, bright lamps, ladies and gentlemen in Victorian dress."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow tracking shot past the fountain; goldfish move; a woman sits at the piano. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "B6",
+      "segment": "No.4 Beach",
+      "kind": "STILL",
+      "vo": "A ride cost a quarter, and the money went to an orphans' charity. Four hundred thousand people rode it in the first year.",
+      "duration_s": 8,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic hand-tinted albumen photograph of the period, soft focus at the edges, faded colour, fine grain and small scratches. No readable text. 1870: a queue of Victorian New Yorkers at a small ticket window at the top of a stair leading underground, excited faces, top hats and bonnets."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "B7",
+      "segment": "No.4 Beach",
+      "kind": "STILL",
+      "vo": "To go any further, Beach needed the state's permission. Unfortunately, the state belonged to Boss Tweed. And Tweed's governor, John T. Hoffman, vetoed the bill. Twice.",
+      "duration_s": 9,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. 1871: a heavy mahogany desk in a state governor's office in Albany, a quill pen, an official bill pushed aside, a fat cigar smoking in a brass ashtray, a gloved hand withdrawing. No faces."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "B8a",
+      "segment": "No.4 Beach",
+      "kind": "STILL",
+      "vo": "Then the crash of 1873 scared off every investor in America.",
+      "duration_s": 4,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic hand-tinted albumen photograph of the period, soft focus at the edges, faded colour, fine grain and small scratches. No readable text. September 1873, Wall Street: a panicked crowd of men in top hats pressing against the closed doors of a bank."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "B8",
+      "segment": "No.4 Beach",
+      "kind": "BROLL_VIDEO",
+      "vo": "The tunnel was sealed and forgotten, until 1912, when men digging a new subway line broke straight into it… and found Beach's car. Still waiting.",
+      "duration_s": 7,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. 1912: subway construction workers with lanterns break through a brick wall into a forgotten round tunnel and find the rotting wooden remains of an old passenger car in the dust."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 7,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "A lantern pushes through the hole; dust swirls; the light finds the old car. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "B9v",
+      "segment": "No.4 Beach",
+      "kind": "STILL",
+      "vo": "New York's first real subway opened in 1904. Beach beat it by thirty-four years.",
+      "duration_s": 5,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic hand-tinted albumen photograph of the period, soft focus at the edges, faded colour, fine grain and small scratches. No readable text. October 1904, New York: crowds in straw boaters and long skirts pouring down the tiled stairs of the brand-new subway, bunting."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "B9",
+      "segment": "No.4 Beach",
+      "kind": "SYNC",
+      "line": "The reward for being that early, it turns out… is being forgotten.",
+      "duration_s": 6,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "The reward for being that early, it turns out… is being forgotten."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. At the top of a New York subway entrance near City Hall, commuters passing, green railings.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "L0",
+      "segment": "No.3 Liverpool",
+      "kind": "CARD",
+      "text": "No. 3 · The Cathedral of Christ the King · Liverpool, 1933",
+      "duration_s": 3,
+      "post": "Pillow-rendered title over the next shot (no generation cost)"
+    },
+    {
+      "id": "L1v",
+      "segment": "No.3 Liverpool",
+      "kind": "STILL",
+      "vo": "This is Liverpool's Catholic cathedral. The locals call it Paddy's Wigwam.",
+      "duration_s": 5,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Liverpool Metropolitan Cathedral from the street: the circular 1960s concrete cathedral with its funnel-shaped lantern tower crowned by a ring of spiky pinnacles, wide steps, grey sky."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "L1",
+      "segment": "No.3 Liverpool",
+      "kind": "SYNC",
+      "line": "It isn't the one they meant to build. That one's… underneath it.",
+      "duration_s": 6,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "It isn't the one they meant to build. That one's… underneath it."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. Outside Liverpool Metropolitan Cathedral: the circular modern concrete cathedral with its funnel-shaped lantern tower crowned by spiky pinnacles, a wide flight of steps, grey sky.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "L2",
+      "segment": "No.3 Liverpool",
+      "kind": "STILL",
+      "vo": "In 1929, Sir Edwin Lutyens, fresh from designing New Delhi, was asked for a cathedral. He drew what was billed as the second-largest church in the world, with a dome a hundred and sixty-eight feet across. Wider than St Peter's in Rome.",
+      "duration_s": 15,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An original architect's presentation drawing of the period, ink and watercolour wash on aged cream paper, fine linework, subtle foxing. No readable lettering. 1930s front elevation of a colossal classical cathedral in brick and pale granite: a monumental arched west front and an immense ribbed dome on a drum, a small tram and people for scale."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "L3",
+      "segment": "No.3 Liverpool",
+      "kind": "BROLL_VIDEO",
+      "vo": "Lutyens reckoned it would take two hundred years to build. He was, if anything, optimistic.",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Liverpool at dusk from across the River Mersey: an immense classical cathedral with a colossal ribbed dome towering over the city, far larger than the real waterfront buildings beside it."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow aerial drift across the river toward the dome; ferries cross below. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "L4",
+      "segment": "No.3 Liverpool",
+      "kind": "STILL",
+      "vo": "The foundation stone went down in 1933. Then came the war. Then came the bill. Three million pounds had become twenty-seven million.",
+      "duration_s": 9,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic hand-tinted albumen photograph of the period, soft focus at the edges, faded colour, fine grain and small scratches. No readable text. Whit Monday 1933, Liverpool: an enormous crowd around a building site for a foundation stone ceremony, clergy in robes on a platform, cranes and scaffolding."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "L5",
+      "segment": "No.3 Liverpool",
+      "kind": "BROLL_VIDEO",
+      "vo": "In 1958 they finished the crypt… and stopped. Then built an entirely different cathedral on top.",
+      "duration_s": 6,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. A vast empty crypt with massive round brick vaults and granite piers, soft light from above, polished stone floor."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow dolly forward through the vaults. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "L6",
+      "segment": "No.3 Liverpool",
+      "kind": "SYNC",
+      "line": "So this is the basement of the biggest church never built. It's like buying the frame for a painting you can't afford.",
+      "duration_s": 10,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "So this is the basement of the biggest church never built. It's like buying the frame for a painting you can't afford."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 10,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. Inside a vast crypt of massive round brick vaults and granite piers, soft light, he stands between two piers.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "L7",
+      "segment": "No.3 Liverpool",
+      "kind": "BROLL_VIDEO",
+      "vo": "What survives is the model. Twelve feet tall, made in the thirties, and so intricate it took thirteen years to restore. The model.",
+      "duration_s": 7,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. A huge detailed wooden architectural model of a domed classical cathedral, about four metres tall, displayed in a darkened museum gallery under spotlights."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 7,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow orbit around the model; spotlights glint on the dome. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "D0",
+      "segment": "No.2 Dome",
+      "kind": "CARD",
+      "text": "No. 2 · Dome over Manhattan · New York, 1960",
+      "duration_s": 3,
+      "post": "Pillow-rendered title over the next shot (no generation cost)"
+    },
+    {
+      "id": "D1v",
+      "segment": "No.2 Dome",
+      "kind": "STILL",
+      "vo": "From a New Yorker who went under the city, to one who wanted to put a lid on it.",
+      "duration_s": 5,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. The Midtown Manhattan skyline at golden hour from a rooftop, the Empire State Building in the centre, water towers in the foreground."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "D1",
+      "segment": "No.2 Dome",
+      "kind": "SYNC",
+      "line": "In 1960, Buckminster Fuller proposed a dome over Midtown Manhattan.",
+      "duration_s": 5,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "In 1960, Buckminster Fuller proposed a dome over Midtown Manhattan."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. On a Midtown Manhattan rooftop in late afternoon, the Empire State Building behind him, wind in his hair.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "D2",
+      "segment": "No.2 Dome",
+      "kind": "BROLL_VIDEO",
+      "vo": "Two miles across. River to river, roughly Twenty-first Street to Sixty-fourth.",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. High aerial of Manhattan: an immense transparent geodesic dome two miles across covers Midtown from the Hudson to the East River, triangular lattice glinting."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow high aerial orbit. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "D3",
+      "segment": "No.2 Dome",
+      "kind": "STILL",
+      "vo": "Fuller and his partner Shoji Sadao reckoned sixteen big Sikorsky helicopters could fly the pieces into place in three months.",
+      "duration_s": 8,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. 1960: a drafting table covered in geodesic diagrams, a small white geodesic dome model, a slide rule and a pencil, two pairs of hands; a window onto Manhattan."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "D4",
+      "segment": "No.2 Dome",
+      "kind": "BROLL_VIDEO",
+      "vo": "And the clincher: the money New York saved on clearing snow would pay for the whole thing in ten years.",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic hand-tinted albumen photograph of the period, soft focus at the edges, faded colour, fine grain and small scratches. No readable text. Manhattan in a heavy 1960 snowstorm: Fifth Avenue buried, snowploughs and men with shovels, buses stuck."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Snow falls; a plough pushes through; people trudge past. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "D5",
+      "segment": "No.2 Dome",
+      "kind": "SYNC",
+      "line": "Which is the most engineer sentence ever spoken. \"Yes, I've put Midtown under glass. But think of the savings on grit.\"",
+      "duration_s": 9,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Which is the most engineer sentence ever spoken. \"Yes, I've put Midtown under glass. But think of the savings on grit.\""
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 9,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. Same Midtown rooftop, closer, deadpan.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "D6",
+      "segment": "No.2 Dome",
+      "kind": "STILL",
+      "vo": "Where the car exhaust would go was never quite resolved. Mostly because there was never a client, or a permit.",
+      "duration_s": 7,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Street level on a Midtown avenue under a colossal geodesic dome: the sky seen through a vast triangular lattice high above the skyscrapers, a faint haze trapped under it, yellow cabs."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "D7",
+      "segment": "No.2 Dome",
+      "kind": "BROLL_VIDEO",
+      "vo": "But a piece of the dream did get built: Fuller and Sadao's pavilion for Expo 67, in Montreal. Still standing. Rather smaller. Considerably less Manhattan.",
+      "duration_s": 7,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. The Montreal Biosphère today: a large transparent geodesic sphere of steel struts on an island park, autumn trees, the St Lawrence river."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 7,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Slow push toward the sphere; leaves drift. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "A0",
+      "segment": "No.1 Atlantropa",
+      "kind": "CARD",
+      "text": "No. 1 · Atlantropa · The Mediterranean, 1928",
+      "duration_s": 3,
+      "post": "Pillow-rendered title over the next shot (no generation cost)"
+    },
+    {
+      "id": "A1v",
+      "segment": "No.1 Atlantropa",
+      "kind": "STILL",
+      "vo": "And so, number one. In 1928, a Munich architect called Herman Sörgel looked at the Mediterranean Sea…",
+      "duration_s": 7,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Aerial of the Rock of Gibraltar and the Strait at golden hour, the mountains of Morocco across the water, ships in the strait."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "A1",
+      "segment": "No.1 Atlantropa",
+      "kind": "SYNC",
+      "line": "…and decided there was rather too much of it.",
+      "duration_s": 5,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "…and decided there was rather too much of it."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. On a clifftop on the Rock of Gibraltar, strong wind, the Strait and the coast of Africa behind him.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "A2",
+      "segment": "No.1 Atlantropa",
+      "kind": "STILL",
+      "vo": "His plan: a dam across the Strait of Gibraltar, thirty-five kilometres long. More dams at the Dardanelles, and between Sicily and Tunisia. Then let evaporation do the work.",
+      "duration_s": 10,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A 1930s German illustrated propaganda-style map, flat gouache colours, bold graphic style, no readable lettering. The Mediterranean basin with three enormous dams drawn across it — at Gibraltar, between Sicily and Tunisia, and at the Dardanelles — and the coastlines shown pushed outward with new land in ochre."
+      },
+      "post": "ffmpeg zoompan: slow pan left to right, subtle grain, no generation cost"
+    },
+    {
+      "id": "A3",
+      "segment": "No.1 Atlantropa",
+      "kind": "BROLL_VIDEO",
+      "vo": "The western Mediterranean would fall by a hundred metres, the eastern by two hundred.",
+      "duration_s": 5,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Low aerial along a colossal concrete dam with hydroelectric turbine halls across the Strait of Gibraltar, the Atlantic high on one side, the Mediterranean far lower on the other."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "Water thunders from spillways; slow aerial tracking along the dam. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "A3b",
+      "segment": "No.1 Atlantropa",
+      "kind": "STILL",
+      "vo": "Over half a million square kilometres of new land. Hydroelectric power for half of Europe.",
+      "duration_s": 6,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Former Mediterranean seabed turned into vast irrigated farmland under hard sun, an old rusted cargo ship stranded upright in the fields, the new shoreline far away."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "A4",
+      "segment": "No.1 Atlantropa",
+      "kind": "STILL",
+      "vo": "Venice would need a canal to reach the sea. Most other ports would simply be left high and dry.",
+      "duration_s": 7,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Aerial of Venice with its lagoon drained to dry cracked mud flats, gondolas lying on their sides, a long straight new canal cut across the mud to a sea on the horizon."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "A5",
+      "segment": "No.1 Atlantropa",
+      "kind": "STILL",
+      "vo": "And Africa? In Sörgel's plans, it was a blank space to be flooded, farmed and run for Europe. Nobody thought to ask the people who lived there.",
+      "duration_s": 9,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A 1930s European planning map of Africa, flat gouache colours, no readable lettering. Africa drawn as blank territory overlaid with arrows from Europe, railway lines and two huge artificial inland seas flooded in blue in the centre of the continent."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "A6",
+      "segment": "No.1 Atlantropa",
+      "kind": "BROLL_VIDEO",
+      "vo": "He sold it for a quarter of a century: lectures, films, exhibitions, even a symphony. He believed one great shared project would stop Europe going to war again. Europe went to war again.",
+      "duration_s": 10,
+      "start_frame": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. 1930s Munich lecture hall: a crowded audience in dark suits, a lantern-slide projection of a vast dam on the screen, the lecturer seen from behind at a lectern."
+      },
+      "video": {
+        "model": "kling3_0",
+        "mode": "pro",
+        "sound": "off",
+        "aspect_ratio": "16:9",
+        "duration": 10,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "<start_frame job_id>"
+          }
+        ],
+        "prompt": "The slide changes to a map; the audience murmurs; smoke curls in the projector beam. One continuous shot. Architecture stays rigid and exactly as it is. No morphing, no text appearing."
+      }
+    },
+    {
+      "id": "A7",
+      "segment": "No.1 Atlantropa",
+      "kind": "STILL",
+      "vo": "On Christmas Day 1952, cycling to give a lecture, Sörgel was hit by a car and killed. The Atlantropa Institute closed in 1960.",
+      "duration_s": 8,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a historical feature film, shot on 35mm film, photoreal, subtle film grain, period-accurate costume and architecture. No readable text, no logos. An empty snowy road on the edge of Munich at dusk, Christmas 1952, a bicycle lying on its side in the snow, a single street lamp."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "A8v",
+      "segment": "No.1 Atlantropa",
+      "kind": "STILL",
+      "vo": "The maddest idea on this list. And the only one that would have redrawn the map of the world.",
+      "duration_s": 6,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. The Mediterranean at sunset seen from high on the Rock of Gibraltar, a vast calm sea, a lone container ship."
+      },
+      "post": "ffmpeg zoompan: slow push-in, subtle grain, no generation cost"
+    },
+    {
+      "id": "A8",
+      "segment": "No.1 Atlantropa",
+      "kind": "SYNC",
+      "line": "Sörgel wanted to lower the sea. These days… we'd settle for holding it back.",
+      "duration_s": 6,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "Sörgel wanted to lower the sea. These days… we'd settle for holding it back."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. On the Rock of Gibraltar at sunset, the sea glowing behind him, wind.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "O1v",
+      "segment": "Outro",
+      "kind": "REUSE",
+      "duration_s": 9,
+      "vo": "Five buildings. None of them exist. And yet you can stand in the crypt in Liverpool, walk over Beach's tunnel on Broadway, and sit where the elephant stood.",
+      "post": "Montage re-using L5, B9v, E7v (no generation cost)"
+    },
+    {
+      "id": "O1",
+      "segment": "Outro",
+      "kind": "SYNC",
+      "line": "The unbuilt world isn't gone. It's just… awaiting planning permission.",
+      "duration_s": 5,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "The unbuilt world isn't gone. It's just… awaiting planning permission."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. Walking slowly toward camera across the Place de la Bastille at night, the single lit July Column behind him, wet cobbles reflecting lights.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "O2",
+      "segment": "Outro",
+      "kind": "SYNC",
+      "line": "I'm Hugo Ashby. Mind the gap.",
+      "duration_s": 4,
+      "tts": {
+        "model": "seed_audio",
+        "voice_type": "preset",
+        "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+        "name": "Arthur",
+        "prompt": "I'm Hugo Ashby. Mind the gap."
+      },
+      "video": {
+        "model": "seedance_2_0",
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "generate_audio": true,
+        "medias": [
+          {
+            "role": "image_references",
+            "value": "7af5b679-6105-40a6-bfbd-c1576bf5f064"
+          },
+          {
+            "role": "image_references",
+            "value": "58601a7b-306f-4517-8840-c3589998e0d2"
+          },
+          {
+            "role": "audio_references",
+            "value": "<TTS media_id>"
+          }
+        ],
+        "prompt": "Documentary presenter piece to camera. <<<026bc578-60a2-4cac-92b2-53d3ea1a43d8>>>, the presenter: exactly the same face, hair and stubble as the reference, wearing his charcoal herringbone double-breasted overcoat open over a navy crewneck with a white T-shirt neckline showing. Same place, he stops, close-up, a small wry smile.  He looks into the lens and speaks the exact words of the audio reference in that same voice, lips in precise sync, dry deadpan British delivery. Subtle handheld camera. A frame from a high-end streaming documentary series, shot on an ARRI Alexa, natural slightly desaturated grade, fine film grain, shallow depth of field. No text, no logos, no watermark. Quiet location ambience only, no music, no subtitles."
+      },
+      "post": "Replace the clip audio with the clean TTS take (timing matches); keep ambience bed separately."
+    },
+    {
+      "id": "END",
+      "segment": "Outro",
+      "kind": "CARD",
+      "text": "UNBUILT",
+      "duration_s": 3,
+      "post": "Pillow-rendered title over the next shot (no generation cost)"
+    },
+    {
+      "id": "X1",
+      "segment": "Stinger",
+      "kind": "STILL",
+      "vo": "Honourable mention. In 1922, Adolf Loos entered a skyscraper competition with a twenty-one-storey Doric column. Was it a joke? Scholars are still arguing. Which, if it was a joke, makes it the longest-running one in architecture.",
+      "duration_s": 13,
+      "image": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "16:9",
+        "prompt": "An authentic hand-tinted albumen photograph of the period, soft focus at the edges, faded colour, fine grain and small scratches. No readable text. Chicago, 1925: a 21-storey skyscraper in the form of a single colossal fluted Greek Doric column of polished black granite standing on a cubic block base, among 1920s Chicago buildings."
+      },
+      "post": "ffmpeg zoompan: slow tilt up, subtle grain, no generation cost"
+    }
+  ]
+}

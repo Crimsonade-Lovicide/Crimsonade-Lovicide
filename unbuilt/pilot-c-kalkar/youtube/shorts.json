@@ -1,0 +1,89 @@
+{
+  "video": "../edit/build/pilot_c.mp4",
+  "captions": "captions_en.srt",
+  "out": "../edit/build/shorts",
+  "end_tag": [
+    "FULL STORY ON THE CHANNEL:",
+    "GERMANY'S NUCLEAR THEME PARK"
+  ],
+  "shorts": {
+    "C1_swing": {
+      "cues": [
+        1,
+        8
+      ],
+      "title": [
+        "THIS SWING RIDE IS INSIDE",
+        "A NUCLEAR COOLING TOWER"
+      ],
+      "youtube": {
+        "publishAt": "2026-11-16T16:00:00Z",
+        "title": "This Swing Ride Is Inside a Nuclear Cooling Tower #Shorts",
+        "description": "West Germany spent around seven billion marks on the fast breeder reactor at Kalkar. It never made a single watt. Today its cooling tower has a swing ride inside.\n\nFull video: \"Germany Built a Nuclear Reactor. Now It's a Theme Park.\" https://youtu.be/f0sKU0_-qCw\n\nEvery picture is real. The narration is an AI-generated (synthetic) voice. Sources and full credits are in the full video's description.\nPhotos: Anefo, Nationaal Archief (CC0); \"Wunderland Kalkar, Kettenkarussell Vertical Swing\" by TVBuddha, CC BY-SA 4.0, via Wikimedia Commons.\nMusic: Chopin, Nocturne Op. 62 No. 1, Musopen (CC0).\n\n#history #nuclear #germany #unbuilt",
+        "tags": [
+          "unbuilt",
+          "Kalkar",
+          "Wunderland Kalkar",
+          "nuclear theme park",
+          "cooling tower",
+          "SNR-300",
+          "shorts"
+        ],
+        "containsSyntheticMedia": true,
+        "videoId": "woq_Ze2h43I"
+      }
+    },
+    "C2_waiting": {
+      "cues": [
+        51,
+        61
+      ],
+      "title": [
+        "FINISHED. KEPT HOT.",
+        "NEVER SWITCHED ON."
+      ],
+      "youtube": {
+        "publishAt": "2026-11-18T16:00:00Z",
+        "title": "Finished, Kept Hot for Six Years, Never Switched On #Shorts",
+        "description": "Kalkar's fast breeder was finished in 1985. Its liquid sodium was kept hot for six years while the last permits never came. 205 plutonium fuel elements were made for it. None was ever loaded.\n\nFull video: \"Germany Built a Nuclear Reactor. Now It's a Theme Park.\" https://youtu.be/f0sKU0_-qCw\n\nEvery picture is real. The narration is an AI-generated (synthetic) voice. Sources and full credits are in the full video's description.\nPhotos: Rob Bogaerts / Anefo, Nationaal Archief (CC0). Figures: KfK 5455 (1994); Bundestag Drucksache 12/887 (1991).\nMusic: Chopin, Nocturne Op. 62 No. 1, Musopen (CC0).\n\n#history #nuclear #germany #unbuilt",
+        "tags": [
+          "unbuilt",
+          "Kalkar",
+          "SNR-300",
+          "fast breeder reactor",
+          "nuclear power plant",
+          "Germany history",
+          "shorts"
+        ],
+        "containsSyntheticMedia": true,
+        "videoId": "olbg-A7ZiJg"
+      }
+    },
+    "C3_farmer": {
+      "cues": [
+        72,
+        85
+      ],
+      "title": [
+        "THE FARMER WHO",
+        "FOUGHT A REACTOR"
+      ],
+      "youtube": {
+        "publishAt": "2026-11-20T16:00:00Z",
+        "title": "The Farmer Who Fought a Nuclear Reactor #Shorts",
+        "description": "Josef Maas fought the Kalkar fast breeder in court for thirteen years. Then the farm, and the reactor, were both sold.\n\nFull video: \"Germany Built a Nuclear Reactor. Now It's a Theme Park.\" https://youtu.be/f0sKU0_-qCw\n\nEvery picture is real. The narration is an AI-generated (synthetic) voice. Sources and full credits are in the full video's description.\nPhotos: Bert Verhoeff / Anefo, Nationaal Archief (CC0); \"Wunderland Kalkar\" (2024) by Rolfcosar, CC BY-SA 4.0, via Wikimedia Commons. Map: Natural Earth (public domain). Source for the farm sale: taz, 5 January 1999.\nMusic: Chopin, Nocturne Op. 62 No. 1, Musopen (CC0).\n\n#history #nuclear #germany #unbuilt",
+        "tags": [
+          "unbuilt",
+          "Kalkar",
+          "Josef Maas",
+          "Bauer Maas",
+          "Kalkar decision",
+          "Wunderland Kalkar",
+          "shorts"
+        ],
+        "containsSyntheticMedia": true,
+        "videoId": "WnMZX4IzS4o"
+      }
+    }
+  }
+}

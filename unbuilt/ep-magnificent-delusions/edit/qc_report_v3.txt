@@ -1,0 +1,409 @@
+
+=== beat 00 CO1   [sync] 0:00.00-0:05.38  line CO1
+    script: most buildings that never got built deserved it these five didn't
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok
+    LIP SYNC   11/11 words matched, median +0 ms, mean |err| 5 ms, worst 'five' +20 ms
+    native (lips): most buildings that never got built deserved it these five didn't
+    clip 5.06s, voice ends 4.88s
+
+=== beat 01 CO2   [br] 0:05.38-0:08.00  line 0
+    script: a monument that became a rat hotel
+    raw TTS     WER   0%  ok   low-confidence: a@0.00(0.49)
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 02 CO3   [br] 0:08.00-0:10.96  line 1
+    script: a subway powered by a giant fan
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok   low-confidence: a@0.00(0.49)
+
+=== beat 03 CO4   [still] 0:10.96-0:13.46  line 2
+    script: a cathedral wider than st peter's
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 04 CO5   [br] 0:13.46-0:16.46  line 3
+    script: a glass lid over midtown manhattan
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 05 CO6   [br] 0:16.46-0:21.42  line 4
+    script: and a man who looked at the mediterranean sea and thought that could come down a bit
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 06 CO7   [sync] 0:21.42-0:25.58  line 5
+    script: i'm hugo ashby let's go and look at some holes in the ground
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok
+    LIP SYNC   13/13 words matched, median +0 ms, mean |err| 3 ms, worst 'ashby' -20 ms
+    native (lips): i'm hugo ashby let's go and look at some holes in the ground
+    clip 6.08s, voice ends 3.16s
+
+=== beat 08 E1    [sync] 0:29.58-0:38.62  line 6
+    script: in eighteen oh eight napoleon decided this square needed a fountain being napoleon he meant an elephant
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok
+    LIP SYNC   17/17 words matched, median +0 ms, mean |err| 5 ms, worst 'being' -40 ms
+    native (lips): in eighteen oh eight napoleon decided this square needed a fountain being napoleon he meant an elephant
+    clip 9.06s, voice ends 8.50s
+
+=== beat 09 E2    [still] 0:38.62-0:50.21  line 7
+    script: twenty four metres tower and all to be cast in bronze from cannon captured at the battle of friedland a staircase up one leg a lookout on its back and water from the trunk
+    raw TTS     WER   0%  ok   low-confidence: twenty@0.00(0.45) four@0.00(0.45)
+    tightened   WER   0%  ok   low-confidence: twenty@0.00(0.46) four@0.00(0.46)
+    FINAL       WER   0%  ok   low-confidence: twenty@0.00(0.47) four@0.00(0.47) metres@0.46(0.49)
+
+=== beat 10 E3    [br] 0:50.21-0:58.62  line 8
+    script: first a full size model in plaster to see how it looked that was eighteen fourteen the following year was waterloo
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok   low-confidence: first@0.00(0.25)
+    FINAL       WER   0%  ok   low-confidence: first@0.00(0.24)
+
+=== beat 11 E4    [br] 0:58.62-1:12.21  line 9
+    script: the bronze never came the plaster stayed for thirty years it cracked it sagged and by the late eighteen twenty s the neighbours were petitioning to have it removed because of the rats
+    raw TTS     WER   0%  ok   low-confidence: because@15.28(0.40)
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 12 E5    [still] 1:12.21-1:18.21  line 11
+    script: a watchman is said to have lived in one of its legs which is not a career they mention at school
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 13 E6    [br] 1:18.21-1:24.25  line 12
+    script: then victor hugo moved a tenant in in les mis rables the street boy gavroche sleeps inside the elephant
+    raw TTS     WER  11%  replace: 'mis rables' -> 'miserables'
+    tightened   WER  11%  replace: 'mis rables' -> 'miserables'
+    FINAL       WER  11%  replace: 'mis rables' -> 'miserables'
+
+=== beat 14 E6b   [still] 1:24.25-1:30.08  line 13
+    script: ugly in the eyes of the bourgeois hugo wrote melancholy in the eyes of the thinker
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 15 E7v   [still] 1:30.08-1:35.33  line 14
+    script: they knocked it down in eighteen forty six and put up that the july column
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 16 E7    [sync] 1:35.33-1:41.29  line 15
+    script: tasteful correct nobody's ever written a novel about it
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok
+    LIP SYNC   9/9 words matched, median +0 ms, mean |err| 4 ms, worst 'nobody's' -20 ms
+    native (lips): tasteful correct nobody's ever written a novel about it
+    clip 5.06s, voice ends 4.98s
+
+=== beat 17 B1    [br] 1:41.29-1:49.75  line 16
+    script: new york eighteen sixty nine broadway is so jammed with horses and omnibuses that walking is faster
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 18 B2v   [still] 1:49.75-1:56.50  line 17
+    script: alfred ely beach publisher of scientific american had permission to build a little tube for the mail
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 19 B2    [sync] 1:56.50-2:00.87  line 18
+    script: so naturally he built a train
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok
+    LIP SYNC   6/6 words matched, median +0 ms, mean |err| 7 ms, worst 'naturally' +20 ms
+    native (lips): so naturally he built a train
+    clip 4.06s, voice ends 3.72s
+
+=== beat 20 B3    [br] 2:00.87-2:07.21  line 19
+    script: working out of the basement of a clothing shop his men dug under broadway for fifty eight nights
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 21 B4    [br] 2:07.21-2:16.83  line 20
+    script: february eighteen seventy one car twenty two seats blown down the tunnel by a fan the size of a locomotive and then sucked back again
+    raw TTS     WER   0%  ok   low-confidence: twenty@3.52(0.46)
+    tightened   WER   0%  ok   low-confidence: twenty@2.82(0.45)
+    FINAL       WER   0%  ok   low-confidence: twenty@2.82(0.50)
+
+=== beat 22 B5    [br] 2:16.83-2:25.79  line 22
+    script: the waiting room had frescoes a grand piano and a fountain full of goldfish frankly nicer than most stations in new york today
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 23 B6    [still] 2:25.79-2:33.12  line 23
+    script: a ride cost a quarter and the money went to an orphans charity four hundred thousand people rode it in the first year
+    raw TTS     WER   9%  replace: 'orphans' -> 'orphan's'; replace: 'thousand' -> 'zero'
+    tightened   WER   9%  replace: 'orphans' -> 'orphan's'; replace: 'thousand' -> 'zero'
+    FINAL       WER   9%  replace: 'orphans' -> 'orphan's'; replace: 'thousand' -> 'zero'
+
+=== beat 24 B7    [still] 2:33.12-2:44.38  line 24
+    script: to go any further beach needed the state's permission unfortunately the state belonged to boss tweed and tweed's governor john t hoffman vetoed the bill twice
+    raw TTS     WER   0%  ok   low-confidence: beach@1.82(0.45) boss@5.84(0.44) governor@7.46(0.47)
+    tightened   WER   4%  replace: 'beach' -> 'beech'   low-confidence: boss@5.26(0.42) governor@6.98(0.44)
+    FINAL       WER   4%  replace: 'beach' -> 'beech'   low-confidence: boss@5.26(0.41) twice@9.86(0.19)
+
+=== beat 25 B8a   [still] 2:44.38-2:51.21  line 25
+    script: then the crash of eighteen seventy three scared off every investor in america
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 26 B8    [br] 2:51.21-3:00.75  line 26
+    script: the tunnel was sealed and forgotten until nineteen twelve when men digging a new subway line broke straight into it and found beach's car still waiting
+    raw TTS     WER   4%  replace: 'beach's' -> 'beech's'   low-confidence: still@9.92(0.07)
+    tightened   WER   4%  replace: 'beach's' -> 'beech's'
+    FINAL       WER   4%  replace: 'beach's' -> 'beech's'
+
+=== beat 27 B9v   [still] 3:00.75-3:06.96  line 27
+    script: new york's first real subway opened in nineteen oh four beach beat it by thirty four years
+    raw TTS     WER   0%  ok
+    tightened   WER   6%  replace: 'beach' -> 'beech'
+    FINAL       WER   6%  replace: 'beach' -> 'beech'
+
+=== beat 28 B9    [sync] 3:06.96-3:12.88  line 28
+    script: the reward for being that early it turns out is being forgotten
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok
+    LIP SYNC   12/12 words matched, median +0 ms, mean |err| 3 ms, worst 'is' -40 ms
+    native (lips): the reward for being that early it turns out is being forgotten
+    clip 6.08s, voice ends 4.76s
+
+=== beat 29 L1    [walkin] 3:12.88-3:18.38  line 29
+    script: this is liverpool's catholic cathedral the locals call it paddy's wigwam
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 30 L1    [sync] 3:18.38-3:23.79  line 30
+    script: it isn't the one they meant to build that one's underneath it
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok   low-confidence: that@2.42(0.14)
+    FINAL       WER   0%  ok   low-confidence: that@2.42(0.15)
+    LIP SYNC   12/12 words matched, median +0 ms, mean |err| 5 ms, worst 'the' -20 ms
+    native (lips): it isn't the one they meant to build that one's underneath it
+    clip 5.06s, voice ends 4.86s
+
+=== beat 31 L2    [still] 3:23.79-3:39.21  line 31
+    script: in nineteen twenty nine sir edwin lutyens fresh from designing new delhi was asked for a cathedral he drew what was billed as the second largest church in the world with a dome a hundred and sixty eight feet across wider than st peter's in rome
+    raw TTS     WER   7%  replace: 'lutyens' -> 'lutjens'; replace: 'a' -> 'one'; delete: 'and' -> ''
+    tightened   WER   7%  replace: 'lutyens' -> 'lutjens'; replace: 'a' -> 'one'; delete: 'and' -> ''
+    FINAL       WER   7%  replace: 'lutyens' -> 'lutjens'; replace: 'a' -> 'one'; delete: 'and' -> ''
+
+=== beat 32 L3    [br] 3:39.21-3:45.12  line 32
+    script: lutyens reckoned it would take two hundred years to build he was if anything optimistic
+    raw TTS     WER   7%  replace: 'lutyens' -> 'lutjens'
+    tightened   WER   7%  replace: 'lutyens' -> 'lutchenz'
+    FINAL       WER   7%  replace: 'lutyens' -> 'lutjens'
+
+=== beat 33 L4    [still] 3:45.12-3:55.12  line 33
+    script: the foundation stone went down in nineteen thirty three then came the war then came the bill three million pounds had become twenty seven million
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok   low-confidence: three@6.24(0.29)
+    FINAL       WER   0%  ok   low-confidence: three@6.24(0.26)
+
+=== beat 34 L6    [walkin] 3:55.12-4:03.46  line 34
+    script: in nineteen fifty eight they finished the crypt and stopped then built an entirely different cathedral on top
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 35 L6    [sync] 4:03.46-4:10.87  line 35
+    script: so this is the basement of the biggest church never built it's like buying the frame for a painting you can't afford
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok
+    LIP SYNC   22/22 words matched, median +0 ms, mean |err| 7 ms, worst 'the' -20 ms
+    native (lips): so this is the basement of the biggest church never built it's like buying the frame for a painting you can't afford
+    clip 7.07s, voice ends 6.84s
+
+=== beat 36 L7    [br] 4:10.87-4:20.00  line 36
+    script: what survives is the model twelve feet tall made in the thirties and so intricate it took thirteen years to restore the model
+    raw TTS     WER   9%  replace: 'thirties' -> 'thirty s'
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 37 D1    [walkin] 4:20.00-4:24.58  line 37
+    script: from a new yorker who went under the city to one who wanted to put a lid on it
+    raw TTS     WER   0%  ok   low-confidence: from@0.00(0.46)
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 38 D1    [sync] 4:24.58-4:30.88  line 38
+    script: in nineteen sixty buckminster fuller proposed a dome over midtown manhattan
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok
+    LIP SYNC   10/11 words matched, median +0 ms, mean |err| 18 ms, worst 'proposed' -100 ms
+    native (lips): in nineteen sixty buckminster flunward proposed a dome over midtown manhattan
+    clip 6.08s, voice ends 5.68s
+
+=== beat 39 D2    [br] 4:30.88-4:36.58  line 39
+    script: two miles across river to river roughly twenty first street to sixty fourth
+    raw TTS     WER  31%  replace: 'first' -> 'one st'; replace: 'fourth' -> 'four th'
+    tightened   WER  31%  replace: 'first' -> 'one st'; replace: 'fourth' -> 'four th'
+    FINAL       WER  31%  replace: 'first' -> 'one st'; replace: 'fourth' -> 'four th'
+
+=== beat 40 D3    [still] 4:36.58-4:45.88  line 40
+    script: fuller and his partner shoji sadao reckoned sixteen big sikorsky helicopters could fly the pieces into place in three months
+    raw TTS     WER   5%  replace: 'sadao' -> 'sadeo'
+    tightened   WER   5%  replace: 'sadao' -> 'sadeo'   low-confidence: reckoned@2.74(0.46)
+    FINAL       WER   5%  replace: 'sadao' -> 'sadeo'   low-confidence: reckoned@2.74(0.44)
+
+=== beat 41 D4    [br] 4:45.88-4:52.54  line 41
+    script: and the clincher the money new york saved on clearing snow would pay for the whole thing in ten years
+    raw TTS     WER   0%  ok   low-confidence: and@0.00(0.39)
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok   low-confidence: and@0.00(0.50)
+
+=== beat 42 D5    [sync] 4:52.54-5:01.58  line 42
+    script: which is the most engineer sentence ever spoken yes i've put midtown under glass but think of the savings on grit
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok   low-confidence: glass@5.58(0.43)
+    FINAL       WER   0%  ok   low-confidence: glass@5.58(0.40)
+    LIP SYNC   20/22 words matched, median +0 ms, mean |err| 20 ms, worst 'glass' -200 ms
+    native (lips): which is the most ingenious sentence ever spoken yes i've put midtown under a glass but think of the savings on grit
+    clip 9.06s, voice ends 8.40s
+
+=== beat 43 D6    [still] 5:01.58-5:08.54  line 43
+    script: where the car exhaust would go was never quite resolved mostly because there was never a client or a permit
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok   low-confidence: mostly@3.22(0.22)
+    FINAL       WER   0%  ok   low-confidence: where@0.00(0.13) mostly@3.22(0.37)
+
+=== beat 44 D7    [br] 5:08.54-5:19.58  line 44
+    script: but a piece of the dream did get built fuller and sadao's pavilion for expo sixty seven in montreal still standing rather smaller considerably less manhattan
+    raw TTS     WER   4%  replace: 'sadao's' -> 'sado's'
+    tightened   WER   4%  replace: 'sadao's' -> 'sado's'
+    FINAL       WER   4%  replace: 'sadao's' -> 'sado's'
+
+=== beat 45 A1    [walkin] 5:19.58-5:28.92  line 45
+    script: and so number one in nineteen twenty eight a munich architect called herman s rgel looked at the mediterranean sea
+    raw TTS     WER  30%  replace: 'herman s rgel' -> 'hermann sergall'; replace: 'sea' -> 'in union c'   low-confidence: in@9.76(0.05) union@9.80(0.35)
+    tightened   WER  15%  replace: 'herman s rgel' -> 'hermann sergel'   low-confidence: sergel@6.62(0.50)
+    FINAL       WER  15%  replace: 'herman s rgel' -> 'hermann sergel'
+
+=== beat 46 A1    [sync] 5:28.92-5:32.12  line 46
+    script: and decided there was rather too much of it
+    raw TTS     WER  11%  insert: '' -> 'court'   low-confidence: court@0.00(0.15)
+    tightened   WER  33%  insert: '' -> 'course tempted court'   low-confidence: course@0.00(0.24)
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok
+    LIP SYNC   9/9 words matched, median +5 ms, mean |err| 9 ms, worst 'and' -15 ms
+    native (lips): and decided there was rather too much of it
+    clip 2.90s, voice ends 2.68s
+
+=== beat 47 A2    [still] 5:32.12-5:44.04  line 47
+    script: his plan a dam across the strait of gibraltar thirty five kilometres long more dams at the dardanelles and between sicily and tunisia then let evaporation do the work
+    raw TTS     WER   3%  replace: 'kilometres' -> 'kilometers'   low-confidence: kilometers@4.60(0.37)
+    tightened   WER   3%  replace: 'kilometres' -> 'kilometers'   low-confidence: kilometers@4.16(0.33)
+    FINAL       WER   3%  replace: 'kilometres' -> 'kilometers'   low-confidence: kilometers@4.16(0.32)
+
+=== beat 48 A3    [br] 5:44.04-5:50.33  line 48
+    script: the western mediterranean would fall by a hundred metres the eastern by two hundred
+    raw TTS     WER   7%  replace: 'metres' -> 'meters'   low-confidence: western@0.46(0.36) two@5.38(0.48)
+    tightened   WER   7%  replace: 'metres' -> 'meters'
+    FINAL       WER   7%  replace: 'metres' -> 'meters'
+
+=== beat 49 A3b   [still] 5:50.33-5:56.75  line 49
+    script: over half a million square kilometres of new land hydroelectric power for half of europe
+    raw TTS     WER   7%  replace: 'kilometres' -> 'kilometers'   low-confidence: kilometers@1.82(0.46)
+    tightened   WER   7%  replace: 'kilometres' -> 'kilometers'
+    FINAL       WER   0%  ok   low-confidence: kilometres@1.64(0.39)
+
+=== beat 50 A4    [still] 5:56.75-6:03.13  line 50
+    script: venice would need a canal to reach the sea most other ports would simply be left high and dry
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 51 A5    [still] 6:03.13-6:13.13  line 51
+    script: and africa in s rgel's plans it was a blank space to be flooded farmed and run for europe nobody thought to ask the people who lived there
+    raw TTS     WER  11%  delete: 'and' -> ''; replace: 's rgel's' -> 'sergil's'   low-confidence: africa@0.00(0.43)
+    tightened   WER   7%  replace: 's rgel's' -> 'sergil's'
+    FINAL       WER   7%  replace: 's rgel's' -> 'sergil's'
+
+=== beat 52 A6    [br] 6:13.13-6:26.79  line 52
+    script: he sold it for a quarter of a century lectures films exhibitions even a symphony he believed one great shared project would stop europe going to war again europe went to war again
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok
+
+=== beat 53 A7    [still] 6:26.79-6:37.42  line 53
+    script: on christmas day nineteen fifty two cycling to give a lecture s rgel was hit by a car and killed the atlantropa institute closed in nineteen sixty
+    raw TTS     WER   7%  replace: 's rgel' -> 'sergil'
+    tightened   WER   7%  replace: 's rgel' -> 'sergil'
+    FINAL       WER   7%  replace: 's rgel' -> 'sergil'
+
+=== beat 54 A8    [walkin] 6:37.42-6:43.46  line 54
+    script: the maddest idea on this list and the only one that would have redrawn the map of the world
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    FINAL       WER   0%  ok   low-confidence: and@1.92(0.47)
+
+=== beat 55 A8    [sync] 6:43.46-6:49.42  line 55
+    script: s rgel wanted to lower the sea these days we'd settle for holding it back
+    raw TTS     WER  13%  replace: 's rgel' -> 'sergil'
+    tightened   WER  13%  replace: 's rgel' -> 'sergil'
+    sync voice  WER  13%  replace: 's rgel' -> 'sergio'
+    FINAL       WER  13%  replace: 's rgel' -> 'sergio'
+    LIP SYNC   14/14 words matched, median +0 ms, mean |err| 3 ms, worst 'days' +20 ms
+    native (lips): sergio wanted to lower the sea these days we'd settle for holding it back
+    clip 5.06s, voice ends 4.76s
+
+=== beat 56 L5    [br] 6:49.42-6:59.67  line 56
+    script: five buildings none of them exist and yet you can stand in the crypt in liverpool walk over beach's tunnel on broadway and sit where the elephant stood
+    raw TTS     WER   4%  replace: 'beach's' -> 'beaches'   low-confidence: and@9.00(0.33)
+    tightened   WER   4%  replace: 'beach's' -> 'beech's'   low-confidence: five@0.00(0.47)
+    FINAL       WER   4%  replace: 'beach's' -> 'beaches'   low-confidence: five@0.00(0.44)
+
+=== beat 57 O1    [sync] 6:59.67-7:07.00  line 57
+    script: the unbuilt world isn't gone it's just awaiting planning permission
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok
+    LIP SYNC   10/10 words matched, median +0 ms, mean |err| 2 ms, worst 'awaiting' +20 ms
+    native (lips): the unbuilt world isn't gone it's just awaiting planning permission
+    clip 7.07s, voice ends 6.68s
+
+=== beat 58 O2    [sync] 7:07.00-7:12.29  line 58
+    script: i'm hugo ashby dream big budget bigger
+    raw TTS     WER   0%  ok
+    tightened   WER   0%  ok
+    sync voice  WER   0%  ok
+    FINAL       WER   0%  ok   low-confidence: big@2.38(0.29)
+    LIP SYNC   7/7 words matched, median +0 ms, mean |err| 9 ms, worst 'hugo' +20 ms
+    native (lips): i'm hugo ashby dream big budget bigger
+    clip 5.06s, voice ends 4.42s
+
+=== beat 61 X1    [still] 7:16.88-7:33.71  line 59
+    script: honourable mention in nineteen twenty two adolf loos entered a skyscraper competition with a twenty one storey doric column was it a joke scholars are still arguing which if it was a joke makes it the longest running one in architecture
+    raw TTS     WER   5%  replace: 'honourable' -> 'honorable'; replace: 'loos' -> 'luce'
+    tightened   WER   2%  replace: 'loos' -> 'luce'
+    FINAL       WER   2%  replace: 'loos' -> 'luce'
