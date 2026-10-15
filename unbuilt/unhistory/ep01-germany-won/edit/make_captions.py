@@ -21,8 +21,7 @@ FIGURES = [("a hundred and eighty thousand", "180,000"), ("forty-five million", 
            ("thirty-one million", "31 million"), ("thirty years", "30 years"), ("eleven million", "11 million"),
            ("three hundred and thirty thousand", "330,000"), ("four thousand", "4,000"),
            ("six million", "6 million"), ("two thousand eight hundred", "2,800"),
-           ("twelve and a half thousand tonnes", "12,500 tonnes"), ("eighteen centimetres", "18 centimetres"),
-           ("The limit was six.", "The limit was 6."), ("ninth of May", "9th of May"),
+           ("twelve and a half thousand tonnes", "12,500 tonnes"), ("six centimetres", "6 centimetres"), ("ninth of May", "9th of May"),
            ("twenty-eighth of May", "28th of May"), ("second of May 1941", "2nd of May 1941")]
 MAX_LINE, MAX_CUE_S = 42, 6.0
 WEAK = {"the", "a", "an", "of", "for", "to", "in", "and", "by", "with", "at", "its", "his", "their", "that"}

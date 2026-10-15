@@ -302,13 +302,14 @@ def gauge():
     d = ImageDraw.Draw(img)
     centred(d, 90, "How far the test block sank", font("serif", 58, "bold"), INK8)
     top, px_cm = 260, 34
-    for x, cm, label, colour in [(560, 6, "allowed", INK8), (1160, 18, "actual", ACC8)]:
+    for x, cm, label, colour in [(560, 6, "allowed", INK8), (1160, 19, "actual", ACC8)]:
         d.rectangle([x, top, x + 200, top + 20 * px_cm], outline=MUT8, width=4)
         d.rectangle([x, top, x + 200, top + cm * px_cm], fill=colour)
-        d.text((x + 230, top + cm * px_cm - 40), f"{cm} cm", font=font("serif", 60, "bold"), fill=colour)
+        lab = "6 cm" if cm == 6 else "18-19.5 cm"
+        d.text((x + 230, top + cm * px_cm - 40), lab, font=font("serif", 60, "bold"), fill=colour)
         lf = font("sans", 40, "bold")
         d.text((x + (200 - d.textlength(label, font=lf)) / 2, top - 60), label, font=lf, fill=INK8)
-    foot(d, "About 18 cm in the testing years, against a 6 cm limit (Structurae; berlin.de)")
+    foot(d, "About three times the limit. Sources differ: 18 cm (Wikipedia, \"Germania\") and 19.5 cm (ingenieur.de, 2025)")
     save(img, "U14_gauge")
 
 
@@ -351,8 +352,8 @@ def prep_photos():
 
 
 def tags():
-    """The on-screen claim tags, as RGBA overlays for the lower-left corner."""
-    for word, colour in [("HAPPENED", INK8), ("LIKELY", MUT8), ("GUESS", ACC8)]:
+    """The on-screen tags (RGBA, top left) and the dashed red border that marks every UNHISTORY shot."""
+    for word, colour in [("HISTORY", INK8), ("UNHISTORY", ACC8)]:
         f = font("sans", 34, "bold")
         tmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
         tw = tmp.textlength(word, font=f)
@@ -362,27 +363,124 @@ def tags():
         dd.text((32, 12), word, font=f, fill=(250, 248, 244, 255))
         im.save(os.path.join(OUT, f"tag_{word}.png"))
         print("wrote tag", word)
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    dd = ImageDraw.Draw(im)
+    inset, seg, wid = 22, 46, 7
+    for y in (inset, H - inset):
+        x = inset
+        while x < W - inset:
+            dd.line([x, y, min(x + seg, W - inset), y], fill=ACC8 + (255,), width=wid)
+            x += seg * 2
+    for x in (inset, W - inset):
+        y = inset
+        while y < H - inset:
+            dd.line([x, y, x, min(y + seg, H - inset)], fill=ACC8 + (255,), width=wid)
+            y += seg * 2
+    im.save(os.path.join(OUT, "frame_UNHISTORY.png"))
+    print("wrote frame_UNHISTORY")
+
+
+def dashes(d, x0, x1, y, colour, width=8, seg=34):
+    x = x0
+    while x < x1:
+        d.line([x, y, min(x + seg, x1), y], fill=colour, width=width)
+        x += seg * 2
+
+
+def logo(name, sub="an UNBUILT series", sub2=None):
+    """Logo option C (owner's choice, 15 Oct): red UN, ink HISTORY, a timeline splitting into a dashed red branch."""
+    img = canvas()
+    d = ImageDraw.Draw(img)
+    f = font("serif", 150, "bold")
+    wa, wb = d.textlength("UN", font=f), d.textlength("HISTORY", font=f)
+    x0 = (W - wa - wb) / 2
+    x1 = x0 + wa + wb
+    d.text((x0, 330), "UN", font=f, fill=ACC8)
+    d.text((x0 + wa, 330), "HISTORY", font=f, fill=INK8)
+    y = 600
+    mid = x0 + (x1 - x0) * 0.32
+    d.line([x0, y, x1, y], fill=INK8, width=8)
+    d.line([mid, y, mid + 120, y - 70], fill=ACC8, width=8)
+    dashes(d, mid + 120, x1, y - 70, ACC8)
+    d.ellipse([mid - 12, y - 12, mid + 12, y + 12], fill=ACC8)
+    centred(d, 670, sub, font("sans", 40), MUT8)
+    if sub2:
+        centred(d, 740, sub2, font("sans", 34), MUT8)
+    save(img, name)
+
+
+def plan_bar():
+    """G2: the General Plan's thirty years, with 1950 marked."""
+    img = canvas()
+    d = ImageDraw.Draw(img)
+    centred(d, 150, "The General Plan for the East: a thirty-year schedule", font("serif", 56, "bold"), INK8)
+    x0, x1, y = 220, W - 220, 540
+    d.rectangle([x0, y - 40, x1, y + 40], outline=INK8, width=5)
+    f = (1950 - 1941) / 30
+    d.rectangle([x0, y - 40, x0 + (x1 - x0) * f, y + 40], fill=ACC8)
+    for yr, lab in [(1941, "1941"), (1971, "about 1971")]:
+        xx = x0 + (x1 - x0) * (yr - 1941) / 30
+        lf = font("sans", 36, "bold")
+        d.text((xx - d.textlength(lab, font=lf) / 2, y + 60), lab, font=lf, fill=INK8)
+    xm = x0 + (x1 - x0) * f
+    d.line([xm, y - 90, xm, y + 40], fill=ACC8, width=6)
+    d.text((xm - 70, y - 160), "1950", font=font("serif", 60, "bold"), fill=ACC8)
+    centred(d, 760, "In our timeline: less than ten years in. Everything it was written to do is still ahead.",
+            font("sans", 38), INK8)
+    foot(d, "The RSHA version planned resettlement over thirty years (Wetzel memo, 27 April 1942)")
+    save(img, "U16_plan_bar")
+
+
+def map_channel():
+    """B2: Britain across the Channel from a continent run from Berlin (our timeline)."""
+    img, d, xy = draw_map((-9, 46.5, 13, 57), {"United Kingdom": TINT8, "Germany": DARK8},
+                          "Our timeline, 1950: Britain at peace, next to a continent run from Berlin",
+                          [("BRITAIN", -2.0, 53.0, 40, INK8), ("BERLIN", 13.4, 52.5, 1, INK8)])
+    x, y = xy(13.4, 52.52)
+    d.ellipse([x - 12, y - 12, x + 12, y + 12], fill=ACC8)
+    d.text((x - 150, y + 20), "Berlin", font=font("sans", 36, "bold"), fill=(250, 248, 244))
+    a, b = xy(1.3, 51.12), xy(1.85, 50.95)
+    d.line([a, b], fill=ACC8, width=6)
+    d.text((b[0] + 16, b[1] + 6), "about 20 miles", font=font("sans", 32, "bold"), fill=ACC8)
+    save(img, "U18_channel")
+
+
+def our_their():
+    """M1: Our 1950 / their 1950."""
+    img = canvas()
+    d = ImageDraw.Draw(img)
+    for x, title, colour in [(W / 4, "Our 1950", INK8), (3 * W / 4, "Their 1950", ACC8)]:
+        tf = font("serif", 90, "bold")
+        d.text((x - d.textlength(title, font=tf) / 2, 420), title, font=tf, fill=colour)
+    d.line([W / 2, 300, W / 2, 780], fill=MUT8, width=4)
+    dashes(d, 3 * W / 4 - 200, 3 * W / 4 + 200, 560, ACC8)
+    d.line([W / 4 - 200, 560, W / 4 + 200, 560], fill=INK8, width=8)
+    save(img, "U19_our_their")
 
 
 def main():
     os.makedirs(OUT, exist_ok=True)
     tags()
     prep_photos()
+    logo("U00_logo")
+    logo("U99_end", "This was UNHISTORY, from UNBUILT.", "Every picture is real. Sources in the description.")
     card("U01_question", "Could they have won at all?", title_size=84)
-    odds()
     ratio()
     map_east()
-    three()
     split("U06_split", 0.34)
     split("U07_split_on", 1.0)
     map_west()
     map_atlantic()
-    card("U10_east_unknown", "Does Germany win in the east?", ["Historians disagree.",
-                                                                "It was close even in the real war."],
-         accent_line=0)
+    card("U10_east_unknown", "Does Germany win in the east?", ["Historians disagree.", "In our timeline, it does."],
+         accent_line=1)
     map_gpo()
-    card("U12_six_million", "About six million Jews were murdered.", ["The list shows who was meant to be next."],
+    plan_bar()
+    card("U12_six_million", "About six million Jews were murdered.", ["The killing stopped because Germany lost."],
          bg=INK8, fg=(242, 237, 228), title_size=66)
+    card("U17_no_liberation", "In our timeline, Germany doesn't lose.", ["There is no liberation in 1945."],
+         bg=INK8, fg=(242, 237, 228), title_size=66)
+    map_channel()
+    our_their()
     card("U13_1950", "1950", ["Their own deadline.", "After this, nobody knows."], title_size=200)
     gauge()
     minutes()

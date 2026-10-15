@@ -72,6 +72,18 @@ These rows are LIKELY or GUESS by definition. Keep them short.
 - The 1945 Nuremberg translation of 2718-PS (Harvard Law School Nuremberg Project) gives "many millions". Some English summaries give "x million".
 - Our card shows the German and our own translation ("tens of millions"), credited as ours.
 
+## 4b. Draft 2 additions (checked 15 Oct)
+
+| Claim | Conf. | Source |
+|---|---|---|
+| The Einstein–Szilárd letter to Roosevelt is dated 2 August 1939 and warns that Germany might build an atomic bomb. It led to the Advisory Committee on Uranium (first met 21 October 1939) and, in time, to the Manhattan Project. | H | Atomic Heritage Foundation / National Museum of Nuclear Science & History; Library of Congress blog (Aug 2020) |
+| Speer's triumphal arch was planned at 117 m tall and 170 m wide. | H (117 m in the historical sources; some popular sources say 120 m) | ingenieur.de (2025); Slate.fr |
+| The test block sank 18 cm (en.wikipedia "Germania") or 19.5 cm (ingenieur.de, 2025) against a 6 cm limit. | M on the exact figure. **The script says "about three times", which holds for both.** | as listed |
+| The UN Charter was signed in San Francisco on 26 June 1945. The Berlin Airlift ran from June 1948 to May 1949. West Germany's Basic Law dates from 23 May 1949. | H (standard dates) | to be cited per photo |
+| The Strait of Dover is about 33 km (about 20 miles) wide. | H | standard |
+| The Holocaust's killing ended with Germany's military defeat and the liberation of the camps. | H | standard |
+| In our timeline: the plan's thirty years mean that by 1950 it is less than ten years in. | UNHISTORY (arithmetic on the plan's own schedule, with an outcome stated as unknown) | Wetzel memo |
+
 ## 5. The stop line
 
 **1950.** That's the year the regime set for its own capital. After it, the narrator says "from here, nobody knows."

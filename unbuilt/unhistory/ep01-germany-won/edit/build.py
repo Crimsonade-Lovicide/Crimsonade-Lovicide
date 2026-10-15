@@ -113,18 +113,39 @@ def readable(path):
     return re.search(r"Duration: \d", err) is not None
 
 
-def add_tag(src, tag, out):
-    """Overlay the HAPPENED / LIKELY / GUESS tag, top left, for the whole shot."""
+def add_tag(src, tag, mode, out):
+    """mode "persist": UNHISTORY tag plus the dashed red border for the whole shot.
+    mode "brief": HISTORY tag for about 3 seconds (shown when we come back to the real world)."""
     png = os.path.join(TAGS, f"tag_{tag}.png")
-    kit.core.run_ffmpeg(["-y", "-i", src, "-loop", "1", "-i", png, "-filter_complex",
-                         "[1:v]format=rgba,fade=t=in:st=0.3:d=0.4:alpha=1[t];[0:v][t]overlay=48:44:shortest=1",
-                         "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", out])
+    if mode == "persist":
+        frame = os.path.join(TAGS, "frame_UNHISTORY.png")
+        args = ["-y", "-i", src, "-loop", "1", "-i", png, "-loop", "1", "-i", frame, "-filter_complex",
+                "[1:v]format=rgba[t];[2:v]format=rgba[f];[0:v][f]overlay=0:0:shortest=1[b];[b][t]overlay=48:44:shortest=1"]
+    else:
+        args = ["-y", "-i", src, "-loop", "1", "-i", png, "-filter_complex",
+                "[1:v]format=rgba,fade=t=in:st=0.3:d=0.4:alpha=1,fade=t=out:st=3.0:d=0.5:alpha=1[t];"
+                "[0:v][t]overlay=48:44:shortest=1"]
+    kit.core.run_ffmpeg(args + ["-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", out])
 
 
-def render(name, dur):
+def tag_modes(names):
+    """UNHISTORY: always, with the border. HISTORY: only on the first shot and on each return from UNHISTORY."""
+    tags, modes, prev = claim_tags(), {}, None
+    for n in names:
+        t = tags.get(n)
+        if t == "UNHISTORY":
+            modes[n] = (t, "persist")
+        elif t == "HISTORY" and prev != "HISTORY":
+            modes[n] = (t, "brief")
+        if t:
+            prev = t
+    return modes
+
+
+def render(name, dur, tagmode=None):
     fn, kw = SHOTS[name]
     kw = dict(kw)
-    tag = claim_tags().get(name)
+    tag = tagmode
     lt = kw.pop("lower_third", None)
     if fn == "footage":                          # use the Earth Studio render if it has arrived, else the stand-in
         if footage_frames(kw["source"]):
@@ -178,7 +199,7 @@ def render(name, dur):
         os.remove(mov)
         base = lt_out
     if tag:
-        add_tag(base, tag, out)
+        add_tag(base, tag[0], tag[1], out)
         os.remove(base)
     return out
 
@@ -194,11 +215,12 @@ def main():
     tpath = os.path.join(BUILD, "timings.json")
     timings = estimated_timings() if a.estimate else json.load(open(tpath))
     win = windows(timings)
+    modes = tag_modes(list(win))
     shotlist = []
     for name, (s, e) in win.items():
         if a.only and name not in a.only:
             continue
-        clip = render(name, e - s)
+        clip = render(name, e - s, modes.get(name))
         print(f"{name:4} {s:7.2f}-{e:7.2f}  {os.path.basename(clip)}", flush=True)
         shotlist.append({"clip": clip, "start": s})
     if a.only:

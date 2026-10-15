@@ -16,10 +16,11 @@ Most "what if" channels make the alternate world up. UNHISTORY builds it from th
 ## The four rules
 
 1. **Change as little as possible.** Pick one turning point that really could have gone the other way, with a documented reason. Historians call this the "minimal rewrite rule". Examples: a meeting that ended differently, or a decision that was argued over at the time.
-2. **Label every claim on screen** with one of three tags:
-   - **HAPPENED**: real and sourced. It is rated H in the episode's RESEARCH.md.
-   - **LIKELY**: what historians mostly expect would follow. It has a source, and the script hedges it.
-   - **GUESS**: our reasoning, with no source that settles it. The script says it's a guess.
+2. **Label every stretch on screen** with one of two tags (set by the owner on 15 Oct):
+   - **HISTORY**: what really happened, rated H or M in the episode's RESEARCH.md. The tag shows for about 3 seconds each time we come back to the real world, not on every shot.
+   - **UNHISTORY**: our timeline. The tag stays up for the whole stretch, and the picture gets a dashed red border.
+   - Every UNHISTORY beat is built on a real document, date or figure, shown first as HISTORY. Where the evidence runs out, the narration says so.
+   - Aim for about 40% of the running time in UNHISTORY. The title promises a "what if", so the episode has to spend real time there.
 3. **Admit where it stops.** Confidence falls fast with time. Each episode sets an end year, and past it the narrator says "from here, nobody knows."
 4. **Real pictures only.** The real timeline gets archival photos. The alternate world appears only through:
    - real plans and documents, and photos of them;
@@ -29,8 +30,8 @@ Most "what if" channels make the alternate world up. UNHISTORY builds it from th
 
 ## The look
 
-- The same toolkit and paper palette as UNBUILT, with one addition: the HAPPENED / LIKELY / GUESS tag in the lower-left corner whenever a claim is on screen.
-- The title card reads "UNHISTORY", with "an UNBUILT series" under it.
+- The same toolkit and paper palette as UNBUILT, with one addition: the HISTORY / UNHISTORY tag, top left, and the dashed red border on UNHISTORY shots.
+- **Logo (option C, chosen by the owner on 15 Oct):** a red "UN" and ink "HISTORY" in the UNBUILT serif, over a timeline that splits into a dashed red branch. "an UNBUILT series" sits under it. Same typeface and paper as UNBUILT for the family link, but its own mark.
 - Titles start with "What If…", because that's what people search for. Each title also carries the episode's own angle, so it doesn't copy the many "what if" videos already out there.
 
 ## Why no Higgsfield generations (Claude's advice, 14 Oct; opinion, confidence M–H)

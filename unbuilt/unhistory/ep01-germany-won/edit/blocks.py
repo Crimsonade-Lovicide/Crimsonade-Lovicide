@@ -23,10 +23,10 @@ def blocks():
 
 
 def claim_tags():
-    """{block: "HAPPENED" | "LIKELY" | "GUESS"} from the bold block lines of SCRIPT.md."""
+    """{block: "HISTORY" | "UNHISTORY"} from the bold block lines of SCRIPT.md."""
     out = {}
     for line in open(SCRIPT):
-        m = re.match(r"\*\*\[([A-Z]\d+)\]\*\*.*\*\*\[(HAPPENED|LIKELY|GUESS)\]\*\*", line)
+        m = re.match(r"\*\*\[([A-Z]\d+)\]\*\*.*\*\*\[(HISTORY|UNHISTORY)\]\*\*", line)
         if m:
             out[m.group(1)] = m.group(2)
     return out
