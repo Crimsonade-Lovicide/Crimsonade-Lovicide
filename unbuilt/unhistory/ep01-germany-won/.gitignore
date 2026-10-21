@@ -10,3 +10,4 @@ assets/footage/
 # The owner's raw recordings stay out of git (large; the final mix is what ships)
 assets/narration/
 build_estimate.log
+edit/build_final.log
