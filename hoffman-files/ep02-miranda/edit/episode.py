@@ -41,8 +41,9 @@ SEGMENTS = [
          vo="Here's the detail I love as a lawyer. He wrote it on a form, and at the top, already typed, was a line "
             "certifying the statement was made 'with full knowledge of my legal rights.' Nobody had told him what those "
             "rights were."),
-    dict(id='s09', act='Act 1: The room', kind='aroll',
-         vo="Was that legal in 1963? In Arizona, yes. The test was whether a confession was voluntary. Not whether you "
+    dict(id='s09', take='oc_1021_a.mov', lead=0.3, cuts=[(12.1, 22.0)], focus=(0.45, 0.2),
+          act='Act 1: The room', kind='aroll',
+         vo="Was that legal in 1963? In Arizona, yes. The test was whether a confession was voluntary, not whether you "
             "knew you could refuse."),
     dict(id='s09a', take='vo_1020.m4a', cuts=[(155.750, 160.708), (161.167, 169.917), (170.208, 189.792)],
           act='Act 1: The room', kind='gfx', gfx='brown', tail=1.4,
@@ -59,7 +60,8 @@ SEGMENTS = [
          cues=['objected', 'The judge overruled', 'Convicted', 'The Arizona Supreme Court'],
          vo="His court-appointed lawyer, Alvin Moore, objected to the confession. The judge overruled him. Convicted. "
             "Twenty to thirty years. The Arizona Supreme Court affirmed."),
-    dict(id='s11', act='Act 2: Convicted', kind='aroll',
+    dict(id='s11', take='oc_1021_a.mov', lead=0.3, cuts=[(27.9, 40.5)], focus=(0.45, 0.2),
+          act='Act 2: Convicted', kind='aroll',
          vo="That should have been the end. Instead, the ACLU found the case and brought in two Phoenix lawyers, John "
             "Frank and John Flynn, who took it for free, all the way to Washington."),
     dict(id='s11a', take='vo_1020.m4a', cuts=[(250.708, 266.542), (266.792, 273.750), (273.958, 287.083)],
@@ -76,7 +78,8 @@ SEGMENTS = [
           act='Act 3: The decision', kind='blender', src='M6', frames=(1, 190), overlay='bench', tail=5.0,
          at=[('On June 13', 24), ('five to four', 46)],
          vo="The Supreme Court bundled Miranda with three other confession cases. On June 13, 1966, it ruled five to four."),
-    dict(id='s14', act='Act 3: The decision', kind='aroll',
+    dict(id='s14', take='oc_1021_b.mov', lead=0.0, cuts=[(0.208, 9.95)], focus=(0.45, 0.2),
+          act='Act 3: The decision', kind='aroll',
          vo="Chief Justice Earl Warren's point was simple. The interrogation room is built to work on you. It's private, "
             "it's long, and you're alone."),
     dict(id='s14a', take='vo_1020.m4a', cuts=[(304.292, 307.750), (308.208, 310.917), (311.708, 321.417), (322.000, 325.125), (325.625, 333.250)],
@@ -86,8 +89,9 @@ SEGMENTS = [
             "ground, not his. Treat his guilt as already settled. Offer him an excuse that makes confessing easier. Play a "
             "friendly detective against a hostile one. The opinion called it a setting created for no purpose other than "
             "to subjugate the individual to the will of his examiner."),
-    dict(id='s14b', act='Act 3: The decision', kind='aroll',
-         vo="So before police question someone in custody, they have to tell him four things."),
+    dict(id='s14b', take='oc_1021_b.mov', lead=0.3, cuts=[(19.6, 24.6)], focus=(0.45, 0.2),
+          act='Act 3: The decision', kind='aroll',
+         vo="So before police question somebody in custody, they have to tell them four things."),
     dict(id='s15', take='vo_1020.m4a', cuts=[(337.833, 339.417), (339.583, 343.792), (344.167, 346.667), (346.833, 351.500)],
           act='Act 3: The decision', kind='gfx', gfx='warnings', tail=1.6,
          cues=['You can stay silent', 'What you say', 'You can have a lawyer', "And if you can't", 'Skip the warnings'],
@@ -97,7 +101,8 @@ SEGMENTS = [
           act='Act 3: The decision', kind='gfx', gfx='split', tail=1.6, cues=['The four dissenters', 'White wrote'],
          vo="The four dissenters said it would put guilty men back on the street. Justice White wrote that 'in some "
             "unknown number of cases the Court's rule will return a killer, a rapist or other criminal to the streets.'"),
-    dict(id='s17', act='Act 3: The decision', kind='aroll',
+    dict(id='s17', take='oc_1021_b.mov', lead=0.3, cuts=[(31.7, 36.1)], focus=(0.45, 0.2),
+          act='Act 3: The decision', kind='aroll',
          vo="So did it? Let's follow Ernesto Miranda."),
 
     # ---------------------------------------------------------------- act 4: convicted again
@@ -106,7 +111,8 @@ SEGMENTS = [
          cues=['The prosecution called', 'Convicted again'],
          vo="Arizona retried him in 1967, this time without the confession. The prosecution called his former common-law "
             "wife. She testified that during a jail visit he told her what he'd done. Convicted again. Twenty to thirty years."),
-    dict(id='s19', act='Act 4: Convicted again', kind='aroll',
+    dict(id='s19', take='oc_1021_b.mov', lead=0.3, cuts=[(56.15, 68.3), (69.05, 71.7)], zooms=[1.0, 1.1], focus=(0.45, 0.2),
+          act='Act 4: Convicted again', kind='aroll',
          vo="That's the part the TV version leaves out. Miranda doesn't make evidence disappear. It takes one thing off "
             "the table: what police get out of you in that room without the warning. Everything else is still in play."),
 
@@ -139,8 +145,9 @@ SEGMENTS = [
             "expected him to finish Miranda off. Instead he wrote the opinion saving it, seven to two. Miranda, he wrote, "
             "'has become embedded in routine police practice to the point where the warnings have become part of our "
             "national culture.'"),
-    dict(id='s25', act='Act 6: Is it still standing?', kind='aroll',
-         vo="But it isn't what it was. In 2010, the Court said staying silent isn't enough; you have to say you're "
+    dict(id='s25', take='oc_1021_b.mov', lead=0.3, cuts=[(80.7, 97.3)], focus=(0.45, 0.2),
+          act='Act 6: Is it still standing?', kind='aroll',
+         vo="But it isn't what it was. In 2010, the Court said staying silent is not enough. You have to say you're "
             "invoking. And in 2022, it said a Miranda violation alone doesn't let you sue the officer."),
     dict(id='s25a', take='vo_1020.m4a', cuts=[(541.625, 546.458), (546.583, 556.000), (556.167, 561.208), (561.625, 569.500)],
           act='Act 6: Is it still standing?', kind='gfx', gfx='cost', tail=1.6,
@@ -165,10 +172,12 @@ SEGMENTS = [
             "talk to a lawyer' was not clear enough to stop the questioning. So be clear. 'I'm going to remain silent. "
             "I want a lawyer.' Then stop talking. That's general information, not advice about your case. If you're ever "
             "in that room, that's exactly when you call one."),
-    dict(id='s29', act='The holding', kind='aroll',
+    dict(id='s29', take='oc_1021_b.mov', lead=0.3, cuts=[(105.05, 119.6)], focus=(0.45, 0.2),
+          act='The holding', kind='aroll',
          vo="Ernesto Miranda was convicted twice and died in a bar fight. His name is on the most famous sentence in "
             "American law. And the right it stands for only works if you say it."),
-    dict(id='s30', act='Outro', kind='aroll',
+    dict(id='s30', take='oc_1021_b.mov', lead=0.3, cuts=[(125.9, 132.9)], focus=(0.45, 0.2),
+          act='Outro', kind='aroll',
          vo="Next time: the next case. I'm Eric Hoffman, and these are The Hoffman Files."),
     dict(id='s31', act='Outro', kind='gfx', gfx='endcard', min=9.0),
 ]

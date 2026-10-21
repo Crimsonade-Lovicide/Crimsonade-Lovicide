@@ -284,7 +284,9 @@ def reel(tl, music_dir=MUSIC_DIR, label=None):
     so music-only passages and the silent hold keep their level instead of being pumped by a dynamic normalizer.
     Refuses to build if any clip's length disagrees with the timeline, since picture would drift against the VO."""
     if label is None:
-        label = 'STORY REEL  ·  TEMP SYNTHETIC VO' + ('  ·  EXCEPT ERIC ON CAMERA' if any(e['seg'].get('take') for e in tl) else '')
+        spoken = [e for e in tl if e['vo']]
+        if all(e['seg'].get('take') for e in spoken): label = 'ROUGH CUT'
+        else: label = 'STORY REEL  ·  TEMP SYNTHETIC VO' + ('  ·  PART RECORDED' if any(e['seg'].get('take') for e in spoken) else '')
     bad = stale_segs(tl)
     if bad: sys.exit('stale segment clips, run `edit.py segs stale` first: ' + ' '.join(e['seg']['id'] for e in bad))
     total = tl[-1]['start'] + tl[-1]['dur']
