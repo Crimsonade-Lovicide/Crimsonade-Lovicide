@@ -365,7 +365,7 @@ def ov_bar(cv, t, dur, frame, tr, cues):
 OVERLAYS = dict(busstop=ov_busstop, room=ov_room, room_hold=ov_room_hold, bench=ov_bench, cards=ov_cards, bar=ov_bar)
 OVERLAY_CUES = dict(room=['into Interrogation Room'], room_hold=['And nobody told'], bench=['On June 13', 'five to four'],
                     cards=['a dollar or two'],
-                    bar=['Police arrest', 'Prosecutors decline', 'The man accused of the stabbing', 'By the time he was charged'])
+                    bar=['Police arrest', 'Prosecutors', 'The man accused of the stabbing', 'By the time he was charged'])
 CARDS = dict(title=title, phoenix=phoenix, form=form, docket=docket, warnings=warnings, split=split, retrial=retrial,
              timeline=timeline_card, dickerson=dickerson, brown=brown, precedents=precedents, manuals=manuals, cost=cost,
              say_it=say_it, holding_title=_g.holding_title, holding=holding, endcard=endcard, black=black)

@@ -26,6 +26,7 @@ NOTES = {   # delivery notes; keep them short
     's27': "Turn the page. This is the payoff.",
     's28a': "Straight to the viewer. Don’t rush the “general information” line.",
 }
+PICKUP = {}  # recorded lines that need a re-read, filled from episode.py
 SAY = {     # pronunciations; only ones we are sure of, plus names to check
     's11a': "Gideon: GID-ee-un · Escobedo: ess-koh-BAY-doh",
     's14a': "subjugate: SUB-juh-gate",
@@ -51,8 +52,9 @@ def blocks():
     out = []
     for e in edit.timeline():
         s = e['seg']
-        if s['kind'] in ('gfx', 'blender') and s.get('vo') and not s.get('take'):
+        if s['kind'] in ('gfx', 'blender') and s.get('vo') and (not s.get('take') or s.get('pickup')):
             out.append((s['id'], s['act'], e['vo'], sentences(s['vo'])))
+            if s.get('pickup'): PICKUP[s['id']] = s['pickup']
     return out
 
 
@@ -85,7 +87,7 @@ def page(bs):
         return (w + (' ' + tail if tail else ''))
     h = [f'<!doctype html><meta charset="utf-8"><title>Booth sheet</title><style>{css}</style>',
          '<h1>Booth sheet · Ep. 2 Miranda</h1>',
-         f'<div class="sub">VOICE-OVER · {len(bs)} LINES · {words:,} WORDS · ABOUT {round(words / 150)} MINUTES READ · PLAN 30–45 MINUTES</div>',
+         f'<div class="sub">VOICE-OVER · {len(bs)} LINE{"S" if len(bs) != 1 else ""} · {words:,} WORDS · ABOUT {round(words / 150)} MINUTES READ · PLAN 30–45 MINUTES</div>',
          '<ol class="how">',
          '<li><b>Mic:</b> the same one as intro take 2. In QuickTime: File → New Audio Recording, click the arrow next to the '
          'record button, pick that mic and set Quality to Maximum.</li>',
@@ -102,6 +104,7 @@ def page(bs):
                  '<span class="box"></span></div>'
                  f'<div class="slate">SAY: “{spoken(sid)}”</div>')
         h += [f'<p>{html.escape(s)}</p>' for s in sents]
+        if sid in PICKUP: h.append(f'<div class="say">Pickup: {html.escape(PICKUP[sid])}</div>')
         if sid in NOTES: h.append(f'<div class="note">{html.escape(NOTES[sid])}</div>')
         if sid in SAY: h.append(f'<div class="say">Say it: {html.escape(SAY[sid])}</div>')
         h.append('</div>')

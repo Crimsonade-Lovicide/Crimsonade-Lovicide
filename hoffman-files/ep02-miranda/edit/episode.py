@@ -8,7 +8,8 @@ No people in the 3D. The victim is never named, shown or reconstructed.
 
 SEGMENTS = [
     # ---------------------------------------------------------------- cold open
-    dict(id='s01', act='Cold open', kind='blender', src='M1', frames=(1, 192), tail=0.6,
+    dict(id='s01', take='vo_1020.m4a', cuts=[(11.875, 14.042), (14.292, 25.583), (26.125, 33.292), (33.708, 36.333)],
+          act='Cold open', kind='blender', src='M1', frames=(1, 192), tail=0.6,
          vo="You have the right to remain silent. You've heard it on every cop show for fifty years. Here's what you "
             "haven't heard. The man those words are named after was convicted anyway. Twice. And when he was killed in a "
             "bar fight in 1976, the man accused of killing him was never tried. The reason wasn't Miranda."),
@@ -19,26 +20,32 @@ SEGMENTS = [
     dict(id='s03', act='Cold open', kind='gfx', gfx='title', min=5.0, hit=True),
 
     # ---------------------------------------------------------------- act 1: the room
-    dict(id='s04', act='Act 1: The room', kind='blender', src='M2', frames=(1, 192), overlay='busstop', tail=1.0,
+    dict(id='s04', take='vo_1020.m4a', cuts=[(58.292, 72.958)],
+          act='Act 1: The room', kind='blender', src='M2', frames=(1, 192), overlay='busstop', tail=1.0,
          vo="March 1963. Phoenix. An eighteen-year-old woman finishes her shift at a movie theater, takes the bus home, "
             "and is abducted and raped on the way. We won't show her, and we won't use her name."),
-    dict(id='s05', act='Act 1: The room', kind='gfx', gfx='phoenix', tail=1.0, cues=['a relative', 'Ernesto Miranda'],
+    dict(id='s05', take='vo_1020.m4a', cuts=[(77.792, 84.875), (85.042, 90.125)],
+          act='Act 1: The room', kind='gfx', gfx='phoenix', tail=1.0, cues=['a relative', 'Ernesto Miranda'],
          vo="About a week later, a relative spots a car that matches her description and gets part of the plate. "
             "It leads police to a man in his early twenties named Ernesto Miranda."),
-    dict(id='s06', act='Act 1: The room', kind='blender', src='M3', frames=(1, 250), overlay='room', tail=0.6,
+    dict(id='s06', take='vo_1020.m4a', cuts=[(95.208, 106.042), (106.250, 110.292)],
+          act='Act 1: The room', kind='blender', src='M3', frames=(1, 250), overlay='room', tail=0.6,
          at=[('Interrogation Room', 70), ('About two hours later', 200)],
          vo="March 13th. Detectives Carroll Cooley and Wilfred Young bring him in, put him in a lineup, then take him "
             "into Interrogation Room Number 2. About two hours later, they walk out with a signed confession."),
-    dict(id='s07', act='Act 1: The room', kind='blender', src='M3', frames=(250, 288), overlay='room_hold', tail=1.4,
+    dict(id='s07', take='vo_1020.m4a', cuts=[(115.500, 118.333), (118.542, 122.750)],
+          act='Act 1: The room', kind='blender', src='M3', frames=(250, 288), overlay='room_hold', tail=1.4,
          vo="Nobody hit him. Nobody threatened him. And nobody told him he could stay silent, or ask for a lawyer."),
-    dict(id='s08', act='Act 1: The room', kind='gfx', gfx='form', tail=1.4, cues=['already typed', 'with full knowledge', 'Nobody had told'],
+    dict(id='s08', take='vo_1020.m4a', cuts=[(129.208, 132.292), (132.542, 145.792), (145.958, 149.292)],
+          act='Act 1: The room', kind='gfx', gfx='form', tail=1.4, cues=['already typed', 'with full knowledge', 'Nobody had told'],
          vo="Here's the detail I love as a lawyer. He wrote it on a form, and at the top, already typed, was a line "
             "certifying the statement was made 'with full knowledge of my legal rights.' Nobody had told him what those "
             "rights were."),
     dict(id='s09', act='Act 1: The room', kind='aroll',
          vo="Was that legal in 1963? In Arizona, yes. The test was whether a confession was voluntary. Not whether you "
             "knew you could refuse."),
-    dict(id='s09a', act='Act 1: The room', kind='gfx', gfx='brown', tail=1.4,
+    dict(id='s09a', take='vo_1020.m4a', cuts=[(155.750, 160.708), (161.167, 169.917), (170.208, 189.792)],
+          act='Act 1: The room', kind='gfx', gfx='brown', tail=1.4,
          cues=['Brown v. Mississippi', 'threw those confessions out', 'case by case', 'By that test'],
          vo="That test came out of a 1936 case, Brown v. Mississippi. A deputy sheriff and others whipped three Black "
             "men until they confessed to a murder, and the Supreme Court threw those confessions out. After "
@@ -47,29 +54,33 @@ SEGMENTS = [
             "confession was fine."),
 
     # ---------------------------------------------------------------- act 2: convicted
-    dict(id='s10', act='Act 2: Convicted', kind='gfx', gfx='docket', tail=1.2,
+    dict(id='s10', take='vo_1020.m4a', cuts=[(194.292, 199.958), (200.125, 207.375)],
+          act='Act 2: Convicted', kind='gfx', gfx='docket', tail=1.2,
          cues=['objected', 'The judge overruled', 'Convicted', 'The Arizona Supreme Court'],
          vo="His court-appointed lawyer, Alvin Moore, objected to the confession. The judge overruled him. Convicted. "
             "Twenty to thirty years. The Arizona Supreme Court affirmed."),
     dict(id='s11', act='Act 2: Convicted', kind='aroll',
          vo="That should have been the end. Instead, the ACLU found the case and brought in two Phoenix lawyers, John "
             "Frank and John Flynn, who took it for free, all the way to Washington."),
-    dict(id='s11a', act='Act 2: Convicted', kind='gfx', gfx='precedents', tail=1.6,
+    dict(id='s11a', take='vo_1020.m4a', cuts=[(250.708, 266.542), (266.792, 273.750), (273.958, 287.083)],
+          act='Act 2: Convicted', kind='gfx', gfx='precedents', tail=1.6,
          cues=['Gideon v. Wainwright', 'Escobedo v. Illinois', 'what about the person'],
          vo="They had an opening. Five days after Miranda signed that confession, the Supreme Court decided Gideon v. "
             "Wainwright: if you're charged with a felony and can't afford a lawyer, the state has to give you one. A "
             "year later came Escobedo v. Illinois. Police had refused to let a suspect see the lawyer he was asking for, "
             "and the Court threw out his confession. That left an obvious question. If the right to a lawyer matters at "
-            "trial, and matters when you ask for one at the station, what about the person who doesn't know to ask?"),
+            "trial, and matters when you ask for one at the station, what about the person who doesn't even know to ask?"),
 
     # ---------------------------------------------------------------- act 3: the decision
-    dict(id='s13', act='Act 3: The decision', kind='blender', src='M6', frames=(1, 190), overlay='bench', tail=5.0,
+    dict(id='s13', take='vo_1020.m4a', cuts=[(291.375, 300.917)],
+          act='Act 3: The decision', kind='blender', src='M6', frames=(1, 190), overlay='bench', tail=5.0,
          at=[('On June 13', 24), ('five to four', 46)],
          vo="The Supreme Court bundled Miranda with three other confession cases. On June 13, 1966, it ruled five to four."),
     dict(id='s14', act='Act 3: The decision', kind='aroll',
          vo="Chief Justice Earl Warren's point was simple. The interrogation room is built to work on you. It's private, "
             "it's long, and you're alone."),
-    dict(id='s14a', act='Act 3: The decision', kind='gfx', gfx='manuals', tail=1.6,
+    dict(id='s14a', take='vo_1020.m4a', cuts=[(304.292, 307.750), (308.208, 310.917), (311.708, 321.417), (322.000, 325.125), (325.625, 333.250)],
+          act='Act 3: The decision', kind='gfx', gfx='manuals', tail=1.6,
          cues=['Question him alone', 'Treat his guilt', 'Offer him', 'Play a friendly', 'The opinion called it'],
          vo="To prove it, he did something unusual. He quoted the police training manuals. Question him alone, on your "
             "ground, not his. Treat his guilt as already settled. Offer him an excuse that makes confessing easier. Play a "
@@ -77,18 +88,21 @@ SEGMENTS = [
             "to subjugate the individual to the will of his examiner."),
     dict(id='s14b', act='Act 3: The decision', kind='aroll',
          vo="So before police question someone in custody, they have to tell him four things."),
-    dict(id='s15', act='Act 3: The decision', kind='gfx', gfx='warnings', tail=1.6,
+    dict(id='s15', take='vo_1020.m4a', cuts=[(337.833, 339.417), (339.583, 343.792), (344.167, 346.667), (346.833, 351.500)],
+          act='Act 3: The decision', kind='gfx', gfx='warnings', tail=1.6,
          cues=['You can stay silent', 'What you say', 'You can have a lawyer', "And if you can't", 'Skip the warnings'],
          vo="You can stay silent. What you say can be used against you. You can have a lawyer. And if you can't afford "
             "one, you'll get one. Skip the warnings, and what he says can't be used to prove the case."),
-    dict(id='s16', act='Act 3: The decision', kind='gfx', gfx='split', tail=1.6, cues=['The four dissenters', 'Justice White wrote'],
+    dict(id='s16', pickup="Recorded Oct 20 as 'Judge White'. Re-record with 'Justice White'.", take='vo_1020.m4a', cuts=[(356.125, 360.083), (360.500, 369.708)],
+          act='Act 3: The decision', kind='gfx', gfx='split', tail=1.6, cues=['The four dissenters', 'White wrote'],
          vo="The four dissenters said it would put guilty men back on the street. Justice White wrote that 'in some "
             "unknown number of cases the Court's rule will return a killer, a rapist or other criminal to the streets.'"),
     dict(id='s17', act='Act 3: The decision', kind='aroll',
          vo="So did it? Let's follow Ernesto Miranda."),
 
     # ---------------------------------------------------------------- act 4: convicted again
-    dict(id='s18', act='Act 4: Convicted again', kind='gfx', gfx='retrial', tail=1.2,
+    dict(id='s18', take='vo_1020.m4a', cuts=[(396.083, 401.000), (401.333, 408.958), (409.375, 412.875)],
+          act='Act 4: Convicted again', kind='gfx', gfx='retrial', tail=1.2,
          cues=['The prosecution called', 'Convicted again'],
          vo="Arizona retried him in 1967, this time without the confession. The prosecution called his former common-law "
             "wife. She testified that during a jail visit he told her what he'd done. Convicted again. Twenty to thirty years."),
@@ -97,25 +111,29 @@ SEGMENTS = [
             "the table: what police get out of you in that room without the warning. Everything else is still in play."),
 
     # ---------------------------------------------------------------- act 5: the cards
-    dict(id='s21', act='Act 5: The cards', kind='blender', src='M9', frames=(1, 192), overlay='cards', tail=1.2,
+    dict(id='s21', take='vo_1020.m4a', cuts=[(417.208, 419.500), (419.958, 427.417)],
+          act='Act 5: The cards', kind='blender', src='M9', frames=(1, 192), overlay='cards', tail=1.2,
          at=[('he signed the cards', 60), ('and sold them', 110)],
          vo="He was paroled in 1972. Back in Phoenix, he signed the cards police carry to read the warnings, "
             "and sold them for a dollar or two."),
-    dict(id='s22', act='Act 5: The cards', kind='blender', src='M10', frames=(1, 192), overlay='bar', tail=0.7,
+    dict(id='s22', take='vo_1020.m4a', cuts=[(434.750, 445.833), (446.000, 453.708), (454.250, 458.292)],
+          act='Act 5: The cards', kind='blender', src='M10', frames=(1, 192), overlay='bar', tail=0.7,
          vo="January 31, 1976. A fight in a Phoenix bar. Miranda is stabbed and dies. Police arrest a man they say handed "
-            "the killer the knife. He's read his rights. Prosecutors decline to charge him. The man accused of the stabbing "
+            "the killer the knife. He's read his rights. Prosecutors declined to charge him. The man accused of the stabbing "
             "was questioned and let go. By the time he was charged, he was gone. He was never tried."),
     dict(id='s23', act='Act 5: The cards', kind='hold', min=2.0),          # nothing on screen; the music stops dead
 
     # ---------------------------------------------------------------- act 6: is it still standing?
-    dict(id='s24', act='Act 6: Is it still standing?', kind='gfx', gfx='timeline', tail=1.4,
+    dict(id='s24', take='vo_1020.m4a', cuts=[(462.583, 473.417), (473.792, 485.500), (485.958, 496.250), (496.625, 499.417)],
+          act='Act 6: Is it still standing?', kind='gfx', gfx='timeline', tail=1.4,
          cues=['since the day', 'In 1968', 'In 1971', 'In 1984', 'William Rehnquist'],
          vo="Miranda has been under attack since the day it came down. In 1968, Congress passed a law to get around it: "
             "a confession was admissible as long as it was voluntary. Then the Court itself started trimming. In 1971, it "
             "said a statement taken without the warnings can still be used against you if you take the stand and tell a "
             "different story. In 1984, it carved out a public safety exception: if an officer asks where the gun is "
             "before reading the warnings, the answer comes in. That opinion was written by William Rehnquist."),
-    dict(id='s24a', act='Act 6: Is it still standing?', kind='gfx', gfx='dickerson', tail=2.0,
+    dict(id='s24a', take='vo_1020.m4a', cuts=[(504.708, 507.625), (507.875, 511.875), (512.250, 521.333), (521.542, 528.375)],
+          act='Act 6: Is it still standing?', kind='gfx', gfx='dickerson', tail=2.0,
          cues=['Dickerson', 'Instead he wrote', 'has become embedded'],
          vo="By 2000 he was Chief Justice, and the 1968 law finally reached the Court in Dickerson. Plenty of people "
             "expected him to finish Miranda off. Instead he wrote the opinion saving it, seven to two. Miranda, he wrote, "
@@ -124,23 +142,27 @@ SEGMENTS = [
     dict(id='s25', act='Act 6: Is it still standing?', kind='aroll',
          vo="But it isn't what it was. In 2010, the Court said staying silent isn't enough; you have to say you're "
             "invoking. And in 2022, it said a Miranda violation alone doesn't let you sue the officer."),
-    dict(id='s25a', act='Act 6: Is it still standing?', kind='gfx', gfx='cost', tail=1.6,
+    dict(id='s25a', take='vo_1020.m4a', cuts=[(541.625, 546.458), (546.583, 556.000), (556.167, 561.208), (561.625, 569.500)],
+          act='Act 6: Is it still standing?', kind='gfx', gfx='cost', tail=1.6,
          cues=['Paul Cassell', 'Stephen Schulhofer', 'What the studies agree'],
-         vo="So what does it cost? Researchers have fought over that number for decades. In 1996, Paul Cassell estimated "
+         vo="So what does it cost? Researchers have fought over the number for decades. In 1996, Paul Cassell estimated "
             "that Miranda costs prosecutors almost four percent of all criminal cases. Stephen Schulhofer went through the "
             "same studies and got about one percent. What the studies agree on is that most suspects, about four in five, "
             "waive their rights and talk anyway."),
 
     # ---------------------------------------------------------------- the holding + outro
-    dict(id='s27', act='The holding', kind='gfx', gfx='holding_title', hit=True, tail=0.8,
+    dict(id='s27', take='vo_1020.m4a', cuts=[(574.792, 578.125), (578.417, 579.708)],
+          act='The holding', kind='gfx', gfx='holding_title', hit=True, tail=0.8,
          vo="So what does Miranda actually stand for? Three things."),
-    dict(id='s28', act='The holding', kind='gfx', gfx='holding', tail=1.4, cues=['One:', 'Two:', 'Three:'],
+    dict(id='s28', take='vo_1020.m4a', cuts=[(584.292, 591.042), (591.292, 596.833), (597.375, 602.708)],
+          act='The holding', kind='gfx', gfx='holding', tail=1.4, cues=['One:', 'Two:', 'Three:'],
          vo="One: the warning isn't required at arrest. It's required before custodial interrogation. Two: the remedy "
             "is losing the statement, not losing the case. Three: the right is real, but you have to use it. Out loud."),
-    dict(id='s28a', act='The holding', kind='gfx', gfx='say_it', tail=1.6,
+    dict(id='s28a', take='vo_1020.m4a', cuts=[(607.833, 631.208), (631.375, 639.625)],
+          act='The holding', kind='gfx', gfx='say_it', tail=1.6,
          cues=['Maybe I should', "I'm going to remain silent", 'I want a lawyer', "That's general information"],
          vo="If you take one practical thing from this, the words matter. In 1994, the Court held that 'Maybe I should "
-            "talk to a lawyer' wasn't clear enough to stop the questioning. So be clear. 'I'm going to remain silent. "
+            "talk to a lawyer' was not clear enough to stop the questioning. So be clear. 'I'm going to remain silent. "
             "I want a lawyer.' Then stop talking. That's general information, not advice about your case. If you're ever "
             "in that room, that's exactly when you call one."),
     dict(id='s29', act='The holding', kind='aroll',

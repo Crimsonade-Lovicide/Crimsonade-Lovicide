@@ -38,6 +38,10 @@ def lead(seg):
 def phrase_time(seg, phrase):
     """Estimated time (s, from segment start) when `phrase` is spoken: character position, corrected for the
     fixed pause the voice puts between sentences."""
+    if seg.get('take'):                                 # Eric's read: time the cue to his actual words
+        t = takes.phrase_at(seg, phrase)
+        if t is not None: return lead(seg) + t
+        print(f"warning: {seg['id']}: cue {phrase!r} not found in the take; estimating", file=sys.stderr)
     vo = seg['vo']; i = vo.find(phrase)
     if i < 0: raise ValueError(f'{seg["id"]}: cue phrase not in VO: {phrase!r}')
     n_sent = sum(vo.count(p) for p in ('. ', '? ', ': ')); before = sum(vo[:i].count(p) for p in ('. ', '? ', ': '))
@@ -153,7 +157,7 @@ def frame_at(e, t, k, plate=None, tr=None, tmap=None):
 def render_seg(e):
     s = e['seg']; os.makedirs(os.path.join(OUT, 'segs'), exist_ok=True)
     dst = os.path.join(OUT, 'segs', f"{s['id']}.mp4"); n = round(e['dur'] * FPS)
-    if s.get('take'): return render_take(e, dst, n)
+    if s.get('take') and s['kind'] == 'aroll': return render_take(e, dst, n)     # on camera: his footage
     if s['kind'] in ('aroll', 'interview', 'hold'):                  # static slate: one frame, looped
         im = frame_at(e, 0, 0); im = np.asarray(im.convert('RGB')) if s['kind'] == 'hold' else grade(im, 0)
         png = dst[:-4] + '.png'; Image.fromarray(im).save(png)

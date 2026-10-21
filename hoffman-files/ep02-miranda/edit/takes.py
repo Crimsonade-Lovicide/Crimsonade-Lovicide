@@ -64,3 +64,54 @@ def picture_cmd(seg, lead, dur, w, h):
     n = round(dur * FPS)
     return ['ffmpeg', '-v', 'error', '-i', path(seg), '-filter_complex', chain, '-map', '[v]', '-frames:v', str(n),
             '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-']
+
+
+# ---------------------------------------------------------------- word timings (cues follow Eric's actual delivery)
+def transcript_path(seg):
+    return path(seg) + '.words.json'
+
+
+def words(seg):
+    """Words of the built line with their start times (s from its first sample). Prefers audio/<id>.words.json, a
+    transcript of the built audio itself (words_qc.py writes it); else maps takes/<take>.words.json, a transcript of
+    the whole take on its own clock ([{"w", "s", "e"}, ...]), through the cuts."""
+    import json
+    own = os.path.join(HERE, 'audio', seg['id'] + '.words.json')     # per-line transcript of the built audio
+    if os.path.exists(own): return [tuple(x) for x in json.load(open(own))]
+    tp = transcript_path(seg)
+    if not os.path.exists(tp): return None
+    allw = json.load(open(tp)); out, base = [], 0.0
+    for a, b in cuts(seg):
+        for w in allw:
+            mid = (w['s'] + w['e']) / 2
+            if a <= mid < b: out.append((w['w'], base + max(0.0, w['s'] - a)))
+        base += b - a
+    return out
+
+
+NUM = dict(zip('0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 30'.split(),
+               'zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen '
+               'seventeen eighteen nineteen twenty thirty'.split()))
+
+
+def norm(t):
+    import re
+    w = re.sub(r"[^a-z0-9']", '', t.lower().replace('’', "'"))
+    w = SAME.get(w, w)
+    return NUM.get(w, w)                                         # '5' and 'five' match
+
+
+SAME = {'steven': 'stephen'}                                     # same sound, either spelling
+
+
+def phrase_at(seg, phrase):
+    """Time (s from the start of the built audio) where `phrase` starts in the take, or None if not found."""
+    ws = words(seg)
+    if not ws: return None
+    toks = [norm(w) for w, _ in ws]; want = [norm(p) for p in phrase.split() if norm(p)]
+    for i in range(len(toks) - len(want) + 1):
+        if toks[i:i + len(want)] == want: return ws[i][1]
+    for i in range(len(toks)):                                  # looser: first two words
+        if toks[i:i + 2] == want[:2]: return ws[i][1]
+    if toks.count(want[0]) == 1: return ws[toks.index(want[0])][1]  # loosest: a first word heard only once
+    return None
