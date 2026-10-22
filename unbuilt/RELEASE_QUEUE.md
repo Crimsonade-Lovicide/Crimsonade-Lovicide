@@ -16,9 +16,9 @@ All times are 16:00 UTC unless noted.
 | Sat 17 Oct | Sant'Elia | pAWpH0V0YMs | Scheduled. Already finished, so kept. |
 | Thu 22 Oct, 13:00 UTC | **UNHISTORY 01: What If Germany Won WWII? Their Own Plans Tell Us** | MlVCM0_2xaY | Scheduled 22 Oct, the owner's choice ("tomorrow morning"; 9 am US Eastern assumed). Owner's voice, no AI, "Altered or synthetic content: No". Thumbnail T1. Captions uploaded through the API on 22 Oct. |
 | Sat 24 Oct | Japan (i2ZS_x1B4RM) | i2ZS_x1B4RM | **Scheduled by another session, not this one** (found 21 Oct). SP04 (GqeWYDcK9zY) was found already public, and Vienna (b16WzmwL_BU) is scheduled for Wed 28 Oct. The owner has not yet said whether the one-a-week rule still applies. |
-| Sat 31 Oct | Pilot A: Watkin's Tower | sceWaTQ20rY | Scheduled. First video in the new format. Captions still to be added by hand (see below). |
-| Sat 7 Nov | Pilot B: Statue of Liberty | Rv1KqxNFrKI | Scheduled, with thumbnail T1. The narration is synthetic, so "Altered or synthetic content" is set to Yes and the description says so. Captions still to be added by hand (`pilot-b-liberty/youtube/captions_en.srt`). |
-| Sat 14 Nov | Pilot C: Germany Built a Nuclear Reactor. Now It's a Theme Park. (Kalkar) | f0sKU0_-qCw | Scheduled, with thumbnail T2 ("7 Billion Marks"). The narration is synthetic, so "Altered or synthetic content" is set to Yes. Captions still to be added by hand (`pilot-c-kalkar/youtube/captions_en.srt`). |
+| Sat 31 Oct | Pilot A: Watkin's Tower | sceWaTQ20rY | Scheduled. First video in the new format. Captions uploaded. |
+| Sat 7 Nov | Pilot B: Statue of Liberty | Rv1KqxNFrKI | Scheduled, with thumbnail T1. The narration is synthetic, so "Altered or synthetic content" is set to Yes and the description says so. Captions uploaded. |
+| Sat 14 Nov | Pilot C: Germany Built a Nuclear Reactor. Now It's a Theme Park. (Kalkar) | f0sKU0_-qCw | Scheduled, with thumbnail T2 ("7 Billion Marks"). The narration is synthetic, so "Altered or synthetic content" is set to Yes. Captions uploaded. |
 | After that | New-format episodes first; backlog videos only in weeks with nothing new | see below | Held. The owner sets the order. |
 
 ## Shorts
@@ -87,7 +87,7 @@ Two private "upload test" videos with no date (4hFjz_d4ryQ, jTd8SGWufv8) are not
 
 ## Still to do by hand
 
-Correction (22 Oct): the Make connection can upload captions (POST `/../upload/youtube/v3/captions?uploadType=resumable&part=snippet`, then PUT the .srt), so these no longer need Studio. Status on 22 Oct: Pilot A and Pilot B have only YouTube's automatic captions; Pilot C already has a standard English track (added 18 Oct).
+Correction (22 Oct): the Make connection can upload captions (POST `/../upload/youtube/v3/captions?uploadType=resumable&part=snippet`, then PUT the .srt), so these no longer need Studio. Status on 22 Oct: captions uploaded through the API for Pilot A (sceWaTQ20rY) and Pilot B (Rv1KqxNFrKI); Pilot C already had a standard English track (added 18 Oct). All three pilots and UNHISTORY 01 now have checked English captions.
 - Pilot A: upload `pilot-a-watkin/youtube/captions_en.srt` under Subtitles. Optionally, set up Test & Compare with thumbnails T2 and T3.
 - Pilot B: upload `pilot-b-liberty/youtube/captions_en.srt` the same way. Test & Compare with T2 and T3 is optional.
 - Pilot C: upload `pilot-c-kalkar/youtube/captions_en.srt` the same way. T1 and T3 are spare thumbnails for Test & Compare.
