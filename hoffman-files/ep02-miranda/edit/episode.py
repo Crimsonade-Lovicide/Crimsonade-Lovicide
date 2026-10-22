@@ -97,7 +97,7 @@ SEGMENTS = [
          cues=['You can stay silent', 'What you say', 'You can have a lawyer', "And if you can't", 'Skip the warnings'],
          vo="You can stay silent. What you say can be used against you. You can have a lawyer. And if you can't afford "
             "one, you'll get one. Skip the warnings, and what he says can't be used to prove the case."),
-    dict(id='s16', pickup="Recorded Oct 20 as 'Judge White'. Re-record with 'Justice White'.", take='vo_1020.m4a', cuts=[(356.125, 360.083), (360.500, 369.708)],
+    dict(id='s16', take='vo_s16_1022.m4a', cuts=[(28.5, 32.4), (33.2, 43.55)],
           act='Act 3: The decision', kind='gfx', gfx='split', tail=1.6, cues=['The four dissenters', 'White wrote'],
          vo="The four dissenters said it would put guilty men back on the street. Justice White wrote that 'in some "
             "unknown number of cases the Court's rule will return a killer, a rapist or other criminal to the streets.'"),
