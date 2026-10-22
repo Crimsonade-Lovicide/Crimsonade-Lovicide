@@ -14,7 +14,8 @@ All times are 16:00 UTC unless noted.
 |---|---|---|---|
 | Wed 14 Oct | Habakkuk | 9AkOkantka8 | Scheduled. Already finished, so kept. |
 | Sat 17 Oct | Sant'Elia | pAWpH0V0YMs | Scheduled. Already finished, so kept. |
-| Sat 24 Oct | **UNHISTORY 01: What If Germany Won WWII? Their Own Plans Tell Us** | not uploaded yet | The owner moved it here on 14 Oct (`unhistory/ep01-germany-won/`). It needs the owner's recording by about Tue 20 Oct. No AI voice or pictures, so "Altered or synthetic content" is No. SP04 (GqeWYDcK9zY) goes back to Held. **Its schedule still has to be removed. The API connection failed on 14 Oct, so this is pending.** |
+| Thu 22 Oct, 13:00 UTC | **UNHISTORY 01: What If Germany Won WWII? Their Own Plans Tell Us** | MlVCM0_2xaY | Scheduled 22 Oct, the owner's choice ("tomorrow morning"; 9 am US Eastern assumed). Owner's voice, no AI, "Altered or synthetic content: No". Thumbnail T1. Captions still to be added by hand (`unhistory/ep01-germany-won/youtube/captions_en.srt`). |
+| Sat 24 Oct | Japan (i2ZS_x1B4RM) | i2ZS_x1B4RM | **Scheduled by another session, not this one** (found 21 Oct). SP04 (GqeWYDcK9zY) was found already public, and Vienna (b16WzmwL_BU) is scheduled for Wed 28 Oct. The owner has not yet said whether the one-a-week rule still applies. |
 | Sat 31 Oct | Pilot A: Watkin's Tower | sceWaTQ20rY | Scheduled. First video in the new format. Captions still to be added by hand (see below). |
 | Sat 7 Nov | Pilot B: Statue of Liberty | Rv1KqxNFrKI | Scheduled, with thumbnail T1. The narration is synthetic, so "Altered or synthetic content" is set to Yes and the description says so. Captions still to be added by hand (`pilot-b-liberty/youtube/captions_en.srt`). |
 | Sat 14 Nov | Pilot C: Germany Built a Nuclear Reactor. Now It's a Theme Park. (Kalkar) | f0sKU0_-qCw | Scheduled, with thumbnail T2 ("7 Billion Marks"). The narration is synthetic, so "Altered or synthetic content" is set to Yes. Captions still to be added by hand (`pilot-c-kalkar/youtube/captions_en.srt`). |
@@ -28,10 +29,10 @@ All times are 16:00 UTC unless noted.
 | 15 Oct | Grand Canyon | KYYjSbe9TqI |
 | 16 Oct | Orion | IMgPTxJ-g4g |
 | 19 Oct | Grand Canyon | _vgBl0e8cls |
-| 25 Oct | SP04 | l7gwGVPgSmg (moving to Held with SP04: remove its schedule) |
+| 25 Oct | SP04 | l7gwGVPgSmg (SP04 is public; kept) |
 | 26 Oct | NAWAPA | sxhncbXeO9E |
-| 27 Oct | SP04 | 1kGNutqb-bg (moving to Held with SP04: remove its schedule) |
-| 28 Oct | SP04 | n5lq_JsXB7o (moving to Held with SP04: remove its schedule) |
+| 27 Oct | SP04 | 1kGNutqb-bg (SP04 is public; kept) |
+| 28 Oct | SP04 | n5lq_JsXB7o (SP04 is public; kept) |
 | 29 Oct | NAWAPA | onC24MejTzA |
 | 1 Nov | NAWAPA | chJaq7ODAjw |
 | 2 Nov | Pilot A: London's Wildest Rivals to the Eiffel Tower | _18hjDqGQJs |
@@ -44,7 +45,7 @@ All times are 16:00 UTC unless noted.
 | 18 Nov | Pilot C: Finished, Kept Hot for Six Years, Never Switched On | olbg-A7ZiJg |
 | 20 Nov | Pilot C: The Farmer Who Fought a Nuclear Reactor | WnMZX4IzS4o |
 
-On 14 Oct the owner moved SP04 out of 24 Oct to make room for UNHISTORY 01. SP04 and its three Shorts go back to Held, and their schedules must be removed (still pending).
+On 14 Oct the owner moved SP04 out of 24 Oct to make room for UNHISTORY 01. By 21 Oct, SP04 had been published by another session, and its three Shorts kept their dates (25, 27 and 28 Oct). This queue no longer reflects everything scheduled on the channel; check YouTube itself.
 
 The six pilot Shorts were uploaded on 12 Oct and each goes out at 16:00 UTC. They are cut from the finished episodes with `toolkit/shorts_from_cut.py`. Their titles and descriptions are in each pilot's `youtube/shorts.json`. The Pilot B Shorts carry "Altered or synthetic content: Yes". The three Pilot C Shorts were cut on 13 Oct and carry the same flag. All three are scheduled. C3 went up after the UNBUILT connection was reauthorized.
 
