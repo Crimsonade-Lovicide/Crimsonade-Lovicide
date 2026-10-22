@@ -41,13 +41,16 @@ All times are 16:00 UTC unless noted.
 | 9 Nov | Pilot B: The Statue Bartholdi Pitched to Egypt First | UEkRYH9Tq94 |
 | 11 Nov | Pilot B: The 1886 Rumour That Liberty Was Built for Egypt | SxZNwXOHz5w |
 | 13 Nov | Pilot B: Was the Statue of Liberty "Originally a Muslim Woman"? | iS77wQE9BCM |
+| 23 Oct | UNHISTORY 01: In 1940, the King Wanted Halifax as Prime Minister, Not Churchill | DYajaToCbV0 |
+| 30 Oct | UNHISTORY 01: The SS Arrest List for Britain Had Churchill on It | _uRg2A5TR_0 |
+| 3 Nov | UNHISTORY 01: Hitler's Arch Was Tested on This Concrete Block. The Ground Failed. | 3Ofca0VXm1o |
 | 16 Nov | Pilot C: This Swing Ride Is Inside a Nuclear Cooling Tower | woq_Ze2h43I |
 | 18 Nov | Pilot C: Finished, Kept Hot for Six Years, Never Switched On | olbg-A7ZiJg |
 | 20 Nov | Pilot C: The Farmer Who Fought a Nuclear Reactor | WnMZX4IzS4o |
 
 On 14 Oct the owner moved SP04 out of 24 Oct to make room for UNHISTORY 01. By 21 Oct, SP04 had been published by another session, and its three Shorts kept their dates (25, 27 and 28 Oct). This queue no longer reflects everything scheduled on the channel; check YouTube itself.
 
-The six pilot Shorts were uploaded on 12 Oct and each goes out at 16:00 UTC. They are cut from the finished episodes with `toolkit/shorts_from_cut.py`. Their titles and descriptions are in each pilot's `youtube/shorts.json`. The Pilot B Shorts carry "Altered or synthetic content: Yes". The three Pilot C Shorts were cut on 13 Oct and carry the same flag. All three are scheduled. C3 went up after the UNBUILT connection was reauthorized.
+The six pilot Shorts were uploaded on 12 Oct and each goes out at 16:00 UTC. They are cut from the finished episodes with `toolkit/shorts_from_cut.py`. Their titles and descriptions are in each pilot's `youtube/shorts.json`. The Pilot B Shorts carry "Altered or synthetic content: Yes". The three Pilot C Shorts were cut on 13 Oct and carry the same flag. All three are scheduled. C3 went up after the UNBUILT connection was reauthorized. The three UNHISTORY 01 Shorts were cut on 22 Oct with no AI and the owner's voice ("Altered or synthetic content: No"), on days kept free of other Shorts. The Wannsee passage was kept out of the Shorts on purpose.
 
 ## Held
 

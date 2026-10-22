@@ -1,0 +1,96 @@
+{
+  "video": "../edit/build/unhistory_01.mp4",
+  "captions": "captions_en.srt",
+  "out": "../edit/build/shorts",
+  "end_tag": [
+    "FULL EPISODE ON THE CHANNEL:",
+    "WHAT IF GERMANY WON WWII?"
+  ],
+  "shorts": {
+    "U1_halifax": {
+      "cues": [
+        19,
+        34
+      ],
+      "title": [
+        "BRITAIN NEARLY MADE",
+        "PEACE WITH HITLER"
+      ],
+      "youtube": {
+        "publishAt": "2026-10-23T16:00:00Z",
+        "title": "In 1940, the King Wanted Halifax as Prime Minister, Not Churchill #Shorts",
+        "description": "On 9 May 1940, Chamberlain and the King both wanted Lord Halifax to be prime minister. Halifax said no. Two weeks later, at Dunkirk, he argued for finding out what peace terms Britain could get. The War Cabinet sided with Churchill. UNHISTORY asks: what if Halifax had said yes?\n\nPhotos: Narodowe Archiwum Cyfrowe (public domain); Cecil Beaton / IWM MH 26392 and IWM HU 1137 (Crown copyright expired).\n\nFull episode: https://youtu.be/MlVCM0_2xaY\n\nEvery picture is a real photograph or document, and the narration is my own voice. No AI. Sources and full credits are in the full episode's description.\nMusic: Chopin, recordings by Musopen (CC0).\n\n#history #ww2 #whatif #unhistory #unbuilt",
+        "tags": [
+          "unhistory",
+          "unbuilt",
+          "Halifax",
+          "Churchill",
+          "May 1940",
+          "Dunkirk",
+          "what if",
+          "WW2",
+          "shorts"
+        ],
+        "containsSyntheticMedia": false,
+        "videoId": "DYajaToCbV0",
+        "bytes": 13466619
+      }
+    },
+    "U2_black_book": {
+      "cues": [
+        79,
+        86
+      ],
+      "title": [
+        "THE SS LIST WITH",
+        "CHURCHILL ON IT"
+      ],
+      "youtube": {
+        "publishAt": "2026-10-30T16:00:00Z",
+        "title": "The SS Arrest List for Britain Had Churchill on It #Shorts",
+        "description": "In 1940 the SS drew up a handbook for the invasion of Britain. At the back, the Sonderfahndungsliste G.B.: about 2,800 people to be arrested. Entry 49 is Winston Churchill. This is page 32 of the Imperial War Museum's copy.\n\nDocument photo: Black Book pages 32-33, IWM copy (public domain). Map: Natural Earth (public domain).\n\nFull episode: https://youtu.be/MlVCM0_2xaY\n\nEvery picture is a real photograph or document, and the narration is my own voice. No AI. Sources and full credits are in the full episode's description.\nMusic: Chopin, recordings by Musopen (CC0).\n\n#history #ww2 #whatif #unhistory #unbuilt",
+        "tags": [
+          "unhistory",
+          "unbuilt",
+          "Black Book",
+          "Sonderfahndungsliste",
+          "Churchill",
+          "Operation Sea Lion",
+          "WW2",
+          "shorts"
+        ],
+        "containsSyntheticMedia": false,
+        "videoId": "_uRg2A5TR_0",
+        "bytes": 5742233
+      }
+    },
+    "U3_test_block": {
+      "cues": [
+        94,
+        105
+      ],
+      "title": [
+        "THEY TESTED HITLER'S ARCH.",
+        "THE GROUND FAILED."
+      ],
+      "youtube": {
+        "publishAt": "2026-11-03T16:00:00Z",
+        "title": "Hitler's Arch Was Tested on This Concrete Block. The Ground Failed. #Shorts",
+        "description": "Hitler wanted Berlin rebuilt as Germania by 1950, with a triumphal arch more than 100 metres tall. In 1941 engineers poured a block of about 12,500 tonnes of concrete to test the ground. It sank about three times the 6 cm limit. It is still standing in Berlin.\n\nPhotos: Bundesarchiv, Bild 146III-373 (CC BY-SA 3.0 DE); Elgaard (2016, CC BY-SA 4.0).\n\nFull episode: https://youtu.be/MlVCM0_2xaY\n\nEvery picture is a real photograph or document, and the narration is my own voice. No AI. Sources and full credits are in the full episode's description.\nMusic: Chopin, recordings by Musopen (CC0).\n\n#history #ww2 #whatif #unhistory #unbuilt",
+        "tags": [
+          "unhistory",
+          "unbuilt",
+          "Germania",
+          "Schwerbelastungskörper",
+          "Albert Speer",
+          "Berlin",
+          "WW2",
+          "shorts"
+        ],
+        "containsSyntheticMedia": false,
+        "videoId": "3Ofca0VXm1o",
+        "bytes": 15229574
+      }
+    }
+  }
+}
