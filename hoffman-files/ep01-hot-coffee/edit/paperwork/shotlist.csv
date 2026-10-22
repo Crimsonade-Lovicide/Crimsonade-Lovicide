@@ -1,0 +1,34 @@
+id,act,timecode_in,duration_s,kind,picture,eric_line_or_note
+s01,Cold open,00:00:00:00,12.00,blender,3D E1,A woman spills McDonald's coffee on herself and sues. A jury gives her nearly three million dollars. You've heard this one. It's been a punchline for thirty years.
+s02,Cold open,00:00:12:00,11.04,aroll,ERIC ON CAMERA,"I'm Eric Hoffman. I'm a lawyer, and almost everything you think you know about this case is wrong. Not because of spin. Because of the trial record. Let's open the file."
+s03,Cold open,00:00:23:01,5.00,gfx,graphic: title,
+s04,Act 1: The joke,00:00:28:01,11.67,gfx,graphic: headline,"Here's the version most of us got. Careless customer. Of course coffee is hot, it's coffee. Greedy lawsuit, runaway jury, lottery ticket."
+s05,Act 1: The joke,00:00:39:17,11.79,aroll,ERIC ON CAMERA,"It showed up on late-night TV, in a Seinfeld episode, and for years in arguments about lawsuit abuse. What almost never came with it was the facts. So here they are."
+s06,Act 2: The spill,00:00:51:12,16.25,blender,3D E2,"February 27, 1992. Albuquerque, New Mexico. Stella Liebeck is 79. She's in the passenger seat of her grandson's car, a 1989 Ford Probe. No cup holders."
+s07,Act 2: The spill,00:01:07:18,13.50,blender,3D E3,"They've just bought breakfast at a drive-through, and he's parked so she can add cream and sugar. She puts the cup between her knees and pulls the lid toward her. The whole cup goes into her lap."
+s08,Act 2: The spill,00:01:21:06,6.83,blender,3D E3,She was wearing cotton sweatpants. They soaked up the coffee and held it against her skin.
+s09,Act 3: The injuries,00:01:28:02,13.54,blender,3D E4,"This is where the joke falls apart. Third-degree burns on six percent of her skin, and lesser burns over sixteen percent. Third degree means full thickness: the burn goes through every layer."
+s10,Act 3: The injuries,00:01:41:15,9.04,gfx,graphic: injuries,"Eight days in the hospital. Skin grafts. She lost about twenty pounds, down to eighty-three. Two years of treatment."
+s11,Act 3: The injuries,00:01:50:16,20.08,gfx,graphic: temperature,"Why so bad? Temperature. McDonald's own standard was to hold its coffee at 180 to 190 degrees. An expert testified that at 190, liquid can cause a third-degree burn in about three seconds. At 180, about twelve to fifteen."
+s12,Act 3: The injuries,00:02:10:18,4.67,aroll,ERIC ON CAMERA,Coffee tested elsewhere in town was at least twenty degrees cooler.
+s13,Act 4: The $800,00:02:15:10,14.92,gfx,graphic: ledger,"Here's the part nobody tells you. She didn't start by suing. She asked McDonald's to cover her costs: her medical bills, some future care, and the income her daughter lost caring for her. About twenty thousand dollars."
+s14,Act 4: The $800,00:02:30:08,4.75,gfx,graphic: offer,McDonald's offered eight hundred.
+s15,Act 4: The $800,00:02:35:02,7.00,interview,INTERVIEW S. REED MORGAN beat 1 (~60 s),"How the case reached him; Why take a case whose client had asked for $20,000"
+s16,Act 4: The $800,00:02:42:02,12.08,aroll,ERIC ON CAMERA,That's when she hired a lawyer. He offered to settle for three hundred thousand. A mediator suggested two hundred twenty-five thousand. McDonald's said no. So it went to a jury.
+s17,Act 5: The trial,00:02:54:04,17.79,blender,3D E7,"August 1994. The trial runs about a week and a half, and the jury learns something that changes the case. Between 1982 and 1992, McDonald's received more than seven hundred reports of people burned by its coffee."
+s18,Act 5: The trial,00:03:11:23,6.33,gfx,graphic: claims,The company had already paid more than half a million dollars settling burn claims.
+s19,Act 5: The trial,00:03:18:07,11.12,gfx,graphic: qa,"Its quality-assurance manager testified. In substance, his position was that seven hundred reports weren't enough to make the company change how it served coffee."
+s20,Act 5: The trial,00:03:29:10,14.00,aroll,ERIC ON CAMERA,"Put yourself in the jury box. The question isn't whether coffee should be hot. It's whether this company knew its coffee was hot enough to do this, kept serving it that way, and decided that was an acceptable cost."
+s21,Act 5: The trial,00:03:43:10,14.58,gfx,graphic: fault,"The jury said yes. But they didn't find her blameless. They put twenty percent of the fault on her. So her compensatory damages, two hundred thousand, were cut by twenty percent, to one hundred sixty thousand."
+s22,Act 5: The trial,00:03:58:00,7.00,interview,INTERVIEW S. REED MORGAN beat 2 (~75 s),"What the jury reacted to most; How he arrived at ""two days of coffee sales"""
+s23,Act 5: The trial,00:04:05:00,15.62,blender,3D E9,"Then punitive damages. Her lawyer suggested a number tied to the company's own sales: two days of McDonald's coffee revenue, about 1.35 million dollars a day. The jury awarded 2.7 million."
+s24,Act 6: After the verdict,00:04:20:15,5.71,aroll,ERIC ON CAMERA,"That's the number that made the news. Here's what happened next, which almost never did."
+s25,Act 6: After the verdict,00:04:26:08,11.38,gfx,graphic: shrink,"The judge cut the punitive damages to four hundred eighty thousand, three times the compensatory award. Total: six hundred forty thousand dollars."
+s26,Act 6: After the verdict,00:04:37:17,11.00,gfx,graphic: settled,"Both sides were headed for appeal. Instead they settled, confidentially. Nobody outside knows the final number, and anyone who tells you they do is guessing."
+s27,Act 6: After the verdict,00:04:48:17,11.92,gfx,graphic: died,"Stella Liebeck died in 2004. She was ninety-one. Her daughter said the settlement paid for a live-in nurse. By then, the story had a life of its own."
+s28,Act 6: After the verdict,00:05:00:15,7.00,interview,INTERVIEW GUEST NAME beat 3 (~45 s),The strongest argument McDonald's had; Was $2.7 million in punitive damages defensible?
+s29,The holding,00:05:07:15,7.71,gfx,graphic: holding_title,So what does this case actually stand for? Not 'you can get rich spilling coffee.' Three things.
+s30,The holding,00:05:15:08,20.96,gfx,graphic: holding,"One: comparative fault. The jury put twenty percent of the blame on her, and her award shrank to match. Two: punitive damages are about what a company knew and did. Seven hundred prior reports were the case. Three: the system has brakes. A judge cut the punitive award by more than eighty percent."
+s31,The holding,00:05:36:07,12.42,aroll,ERIC ON CAMERA,"The headline was a spilled cup of coffee. The record was a 79-year-old woman with full-thickness burns, a company that had heard it seven hundred times, and an eight-hundred-dollar offer."
+s32,Outro,00:05:48:17,9.83,aroll,ERIC ON CAMERA,"Next time: a case every cop show quotes and almost nobody knows. Miranda. I'm Eric Hoffman, and these are The Hoffman Files."
+s33,Outro,00:05:58:13,8.00,gfx,graphic: endcard,

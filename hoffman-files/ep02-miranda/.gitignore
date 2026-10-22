@@ -1,0 +1,7 @@
+renders/
+out/
+*.blend*
+__pycache__/
+edit/out/
+edit/audio/
+edit/takes/

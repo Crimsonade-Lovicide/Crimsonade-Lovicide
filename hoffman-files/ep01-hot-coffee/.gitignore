@@ -1,0 +1,9 @@
+renders/
+out/
+*.blend*
+__pycache__/
+fonts/
+voices/
+edit/out/
+edit/audio/
+music/

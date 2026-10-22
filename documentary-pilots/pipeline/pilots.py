@@ -1,0 +1,86 @@
+# Pilot scripts. Each line: (visual_id, narration). Visual ids:
+#   K<n>  = Higgsfield Kling shot n      B<x> = Blender shot      T = title card
+# Fact sources noted per pilot in SOURCES.
+
+PILOTS = {
+ "p1_pink_slime": {
+  "series": "PINK SLIME",
+  "tagline": "Who's writing your local news?",
+  "episode": "Episode 1: The Front Page Nobody Wrote",
+  "accent": (255, 79, 163),
+  "keyart": "21",
+  "lines": [
+   ("K1", "Every week in America, more than two local newspapers close."),
+   ("K2", "The presses go quiet. The reporters leave. And something moves into the silence."),
+   ("B1", "In June twenty twenty-four, NewsGuard counted twelve hundred and sixty-five partisan-funded websites dressed up as local news."),
+   ("B1", "That was more than the twelve hundred and thirteen daily newspapers still left in the country."),
+   ("K3", "They look like your hometown paper. They are paid for by political operators, on the left and the right, and most of them don't make that obvious."),
+   ("T",  "Each episode, Pink Slime follows the money behind one fake front page: who built it, who paid for it, and who it was built to fool."),
+  ],
+  "sources": "NewsGuard (June 2024) · Northwestern Medill Local News Initiative",
+ },
+ "p2_the_count": {
+  "series": "THE COUNT",
+  "tagline": "The people who count your vote, and what it costs them.",
+  "episode": "Episode 1: Night Shift",
+  "accent": (226, 59, 52),
+  "keyart": "22",
+  "lines": [
+   ("K6", "In most of America, the person who counts your vote works in a building like this one."),
+   ("K4", "Usually a county clerk. A small staff, a tight budget, and a lot of locked boxes."),
+   ("B2", "In a twenty twenty-five Brennan Center survey, thirty-eight percent of local election officials said they had been threatened, harassed, or abused because of their job."),
+   ("B2", "Picture a room of one hundred of them. Thirty-eight seats."),
+   ("K5", "Sixty percent said they were worried about federal cuts to election security. Then they went back to work, and sealed the boxes anyway."),
+   ("T",  "The Count. One county, one clerk, one election, from the inside."),
+  ],
+  "sources": "Brennan Center for Justice, Local Election Officials Survey (2025)",
+ },
+ "p3_server_nation": {
+  "series": "SERVER NATION",
+  "tagline": "When a generation logs off the old order.",
+  "episode": "Episode 1: The Discord Prime Minister",
+  "accent": (88, 140, 255),
+  "keyart": "23",
+  "lines": [
+   ("K7", "September twenty twenty-five. Nepal's government bans twenty-six social media platforms."),
+   ("K8", "Within days, youth-led protests leave dozens dead, and the prime minister resigns."),
+   ("B3", "Then something stranger happened. On a Discord server with more than a hundred thousand members, the protesters held a poll on who should lead the country."),
+   ("B3", "Seven thousand, seven hundred and thirteen votes. The front-runner, former chief justice Sushila Karki, was sworn in as interim prime minister on September twelfth."),
+   ("K9", "Six months later, Nepal held an election, and chose a thirty-five-year-old former rapper as prime minister."),
+   ("T",  "Sri Lanka. Bangladesh. Nepal. Server Nation asks what happens when a generation logs off the old order, and has to run a country."),
+  ],
+  "sources": "Kathmandu Post · Al Jazeera · Outlook India · CFR (2025 to 2026)",
+ },
+ "p4_long_arm": {
+  "series": "THE LONG ARM",
+  "tagline": "Governments hunting their critics, across borders.",
+  "episode": "Episode 1: Nowhere Far Enough",
+  "accent": (214, 40, 57),
+  "keyart": "24",
+  "lines": [
+   ("K10", "You fled. You crossed a border. You thought distance meant safety."),
+   ("B4",  "In twenty twenty-five, Freedom House recorded one hundred and twenty-six new cases of physical transnational repression: governments detaining, deporting, or attacking their critics on foreign soil."),
+   ("B4",  "At least fifty-four governments have done it. China, Vietnam and Russia led last year."),
+   ("K11", "More and more, they don't act alone. Host countries detain and deport dissidents as a favor to their neighbors."),
+   ("K12", "And behind every recorded case are threats no one counts: the call to your family back home, reminding you they know where everyone lives."),
+   ("T",   "The Long Arm. Governments hunting their critics, across borders."),
+  ],
+  "sources": "Freedom House, Collaboration and Resistance: Tracking Transnational Repression in 2025",
+ },
+ "p5_brokered": {
+  "series": "BROKERED",
+  "tagline": "Your location is for sale. So is your right to show up.",
+  "episode": "Episode 1: The Dot",
+  "accent": (255, 59, 48),
+  "keyart": "25",
+  "lines": [
+   ("K13", "Your phone knows where you sleep."),
+   ("K14", "It knows where you pray, which clinic you visited, and whether you went to the protest."),
+   ("B5",  "Data brokers buy that trail from the apps on your phone, and resell it. One broker, federal regulators alleged, collected seventeen billion location signals a day, from about a billion phones."),
+   ("B5",  "Another, the FTC alleged, analyzed people at the George Floyd protests by race, and by where they lived."),
+   ("K15", "In America this market is largely unregulated. Campaigns, police, and anyone else with a budget can buy in."),
+   ("T",   "Brokered. Your location is for sale. So is your right to show up."),
+  ],
+  "sources": "U.S. Federal Trade Commission actions vs. Gravy Analytics/Venntel and Mobilewalla (Dec 2024)",
+ },
+}

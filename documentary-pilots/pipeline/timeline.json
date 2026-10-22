@@ -1,0 +1,297 @@
+{
+ "p1_pink_slime": {
+  "segs": [
+   {
+    "vis": "HOOK",
+    "dur": 3.0
+   },
+   {
+    "vis": "K1",
+    "dur": 6.571
+   },
+   {
+    "vis": "K2",
+    "dur": 5.965
+   },
+   {
+    "vis": "B1",
+    "dur": 17.622
+   },
+   {
+    "vis": "K3",
+    "dur": 9.042
+   },
+   {
+    "vis": "T",
+    "dur": 12.3
+   },
+   {
+    "vis": "END",
+    "dur": 5.5
+   }
+  ],
+  "vo": [
+   {
+    "wav": "audio/p1_pink_slime_0.wav",
+    "start": 4.0
+   },
+   {
+    "wav": "audio/p1_pink_slime_1.wav",
+    "start": 10.571
+   },
+   {
+    "wav": "audio/p1_pink_slime_2.wav",
+    "start": 16.536
+   },
+   {
+    "wav": "audio/p1_pink_slime_3.wav",
+    "start": 26.205
+   },
+   {
+    "wav": "audio/p1_pink_slime_4.wav",
+    "start": 34.158
+   },
+   {
+    "wav": "audio/p1_pink_slime_5.wav",
+    "start": 43.2
+   }
+  ],
+  "total": 60.0
+ },
+ "p2_the_count": {
+  "segs": [
+   {
+    "vis": "HOOK",
+    "dur": 3.0
+   },
+   {
+    "vis": "K6",
+    "dur": 6.884
+   },
+   {
+    "vis": "K4",
+    "dur": 6.894
+   },
+   {
+    "vis": "B2",
+    "dur": 18.284
+   },
+   {
+    "vis": "K5",
+    "dur": 9.239
+   },
+   {
+    "vis": "T",
+    "dur": 10.199
+   },
+   {
+    "vis": "END",
+    "dur": 5.5
+   }
+  ],
+  "vo": [
+   {
+    "wav": "audio/p2_the_count_0.wav",
+    "start": 4.0
+   },
+   {
+    "wav": "audio/p2_the_count_1.wav",
+    "start": 10.884
+   },
+   {
+    "wav": "audio/p2_the_count_2.wav",
+    "start": 17.778
+   },
+   {
+    "wav": "audio/p2_the_count_3.wav",
+    "start": 29.92
+   },
+   {
+    "wav": "audio/p2_the_count_4.wav",
+    "start": 36.062
+   },
+   {
+    "wav": "audio/p2_the_count_5.wav",
+    "start": 45.301
+   }
+  ],
+  "total": 60.0
+ },
+ "p3_server_nation": {
+  "segs": [
+   {
+    "vis": "HOOK",
+    "dur": 3.0
+   },
+   {
+    "vis": "K7",
+    "dur": 7.234
+   },
+   {
+    "vis": "K8",
+    "dur": 6.21
+   },
+   {
+    "vis": "B3",
+    "dur": 21.607
+   },
+   {
+    "vis": "K9",
+    "dur": 7.615
+   },
+   {
+    "vis": "T",
+    "dur": 8.834
+   },
+   {
+    "vis": "END",
+    "dur": 5.5
+   }
+  ],
+  "vo": [
+   {
+    "wav": "audio/p3_server_nation_0.wav",
+    "start": 4.0
+   },
+   {
+    "wav": "audio/p3_server_nation_1.wav",
+    "start": 11.234
+   },
+   {
+    "wav": "audio/p3_server_nation_2.wav",
+    "start": 17.444
+   },
+   {
+    "wav": "audio/p3_server_nation_3.wav",
+    "start": 26.406
+   },
+   {
+    "wav": "audio/p3_server_nation_4.wav",
+    "start": 39.051
+   },
+   {
+    "wav": "audio/p3_server_nation_5.wav",
+    "start": 46.666
+   }
+  ],
+  "total": 60.0
+ },
+ "p4_long_arm": {
+  "segs": [
+   {
+    "vis": "HOOK",
+    "dur": 3.0
+   },
+   {
+    "vis": "K10",
+    "dur": 6.095
+   },
+   {
+    "vis": "B4",
+    "dur": 21.801
+   },
+   {
+    "vis": "K11",
+    "dur": 8.206
+   },
+   {
+    "vis": "K12",
+    "dur": 8.926
+   },
+   {
+    "vis": "T",
+    "dur": 6.472
+   },
+   {
+    "vis": "END",
+    "dur": 5.5
+   }
+  ],
+  "vo": [
+   {
+    "wav": "audio/p4_long_arm_0.wav",
+    "start": 4.0
+   },
+   {
+    "wav": "audio/p4_long_arm_1.wav",
+    "start": 10.095
+   },
+   {
+    "wav": "audio/p4_long_arm_2.wav",
+    "start": 23.746
+   },
+   {
+    "wav": "audio/p4_long_arm_3.wav",
+    "start": 31.896
+   },
+   {
+    "wav": "audio/p4_long_arm_4.wav",
+    "start": 40.102
+   },
+   {
+    "wav": "audio/p4_long_arm_5.wav",
+    "start": 49.028
+   }
+  ],
+  "total": 60.0
+ },
+ "p5_brokered": {
+  "segs": [
+   {
+    "vis": "HOOK",
+    "dur": 3.0
+   },
+   {
+    "vis": "K13",
+    "dur": 4.249
+   },
+   {
+    "vis": "K14",
+    "dur": 6.081
+   },
+   {
+    "vis": "B5",
+    "dur": 23.961
+   },
+   {
+    "vis": "K15",
+    "dur": 8.554
+   },
+   {
+    "vis": "T",
+    "dur": 8.655
+   },
+   {
+    "vis": "END",
+    "dur": 5.5
+   }
+  ],
+  "vo": [
+   {
+    "wav": "audio/p5_brokered_0.wav",
+    "start": 4.0
+   },
+   {
+    "wav": "audio/p5_brokered_1.wav",
+    "start": 8.249
+   },
+   {
+    "wav": "audio/p5_brokered_2.wav",
+    "start": 14.33
+   },
+   {
+    "wav": "audio/p5_brokered_3.wav",
+    "start": 28.155
+   },
+   {
+    "wav": "audio/p5_brokered_4.wav",
+    "start": 38.291
+   },
+   {
+    "wav": "audio/p5_brokered_5.wav",
+    "start": 46.845
+   }
+  ],
+  "total": 60.0
+ }
+}
