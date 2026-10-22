@@ -10,6 +10,6 @@
 | **Altered or synthetic content** | No. The owner's own voice; real photos and documents; graphics drawn by the toolkit. |
 | **Master** | `edit/build/unhistory_01.mp4`: 8:11, 1080p24, -14 LUFS (gitignored) |
 
-**Still to do by hand in YouTube Studio:**
-- Upload `captions_en.srt` under Subtitles. The API connection lacks the caption scope.
-- Optional: pin a comment that explains the HISTORY / UNHISTORY tags.
+**Captions:** `captions_en.srt` uploaded through the API on 22 Oct 2026 (English, standard track, serving). Caption ID AUieDaY_cdL2e4g4UhO-x4c_ituLSS6MCzhKatKWSKDSDT3kmpB-eWLa.
+
+**Optional, by hand:** pin a comment that explains the HISTORY / UNHISTORY tags.
