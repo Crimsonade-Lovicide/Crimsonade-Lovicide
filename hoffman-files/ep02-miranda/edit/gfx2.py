@@ -207,15 +207,15 @@ def holding(t, dur, cues):
 
 def endcard(t, dur, cues):
     cv = card(); a = fade(t, 0.1, dur, 0.6, 1.2)
-    put(cv, 'THE HOFFMAN FILES', 'bebas', 170, WHITE, (W / 2, 250), 'c', a, track=6)
-    put(cv, 'LAW BY LAWYERS', 'monob', 30, AMBER, (W / 2, 450), 'c', a, track=10)
-    put(cv, 'NEXT:  [NEXT CASE]', 'monob', 40, WHITE, (W / 2, 560), 'c', a * ramp(t, 0.8, 0.6), track=6)
+    # the middle of the frame stays clear for YouTube's end-screen elements (a video and the subscribe button)
+    put(cv, 'THE HOFFMAN FILES', 'bebas', 150, WHITE, (W / 2, 150), 'c', a, track=6)
+    put(cv, 'LAW BY LAWYERS', 'monob', 30, AMBER, (W / 2, 318), 'c', a, track=10)
     put(cv, 'Sources: Miranda v. Arizona, 384 U.S. 436 (1966); Dickerson v. United States, 530 U.S. 428 (2000);',
-        'mono', 21, GREY, (W / 2, 760), 'c', a)
+        'mono', 21, GREY, (W / 2, 900), 'c', a)
     put(cv, 'Berghuis v. Thompkins, 560 U.S. 370 (2010); Vega v. Tekoh, 597 U.S. 134 (2022). Full list in the description.',
-        'mono', 21, GREY, (W / 2, 792), 'c', a)
-    put(cv, '3D sequences are illustrations and reconstructions, not footage. No AI-generated imagery.', 'mono', 21, DIM, (W / 2, 850), 'c', a)
-    put(cv, 'Theme: "Measured in Sunlight." Score: public domain recordings from the Musopen project.', 'mono', 21, DIM, (W / 2, 882), 'c', a)
+        'mono', 21, GREY, (W / 2, 932), 'c', a)
+    put(cv, '3D sequences are illustrations and reconstructions, not footage. No AI-generated imagery.', 'mono', 21, DIM, (W / 2, 980), 'c', a)
+    put(cv, 'Theme: "Measured in Sunlight." Score: public domain recordings from the Musopen project.', 'mono', 21, DIM, (W / 2, 1012), 'c', a)
     return cv
 
 
