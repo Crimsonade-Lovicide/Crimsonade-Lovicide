@@ -66,3 +66,6 @@ Accuracy rules baked into the graphics:
 - The what-to-say card carries "general information, not legal advice".
 - The card sale is stated as fact; the price is a range ("a dollar or two"), since accounts vary from $1 to $2 and $1.50 has no reliable source (fact 12).
 - No victim name, figure or reconstruction anywhere. No violence in the bar scene.
+
+- `captions.py` writes `../captions.srt`: the script text of every spoken line, timed word by word to Eric's delivery through the transcripts in `audio/<id>.words.json` (the on-camera lines are transcribed with `../../transcribe.py` the same way). Cues are two lines of 42 characters at most, broken at sentence ends, then commas and pauses, 1 to 7 s each. The file for YouTube is `captions.srt` (Oct 25, 141 cues).
+- `thumb.py` builds `../thumbnail.jpg` (1280x720): the Room No. 2 render with Eric keyed off the blue backdrop and “MIRANDA / CONVICTED ANYWAY” in the house type.
