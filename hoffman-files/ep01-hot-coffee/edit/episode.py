@@ -15,8 +15,8 @@ SEGMENTS = [
          vo="A woman spills McDonald's coffee on herself and sues. A jury gives her nearly three million dollars. "
             "You've heard this one. It's been a punchline for thirty years."),
     dict(id='s02', act='Cold open', kind='aroll',
-         vo="I'm Eric Hoffman. I'm a lawyer, and almost everything you think you know about this case is wrong. "
-            "Not because of spin. Because of the trial record. Let's open the file."),
+         vo="I'm Eric Hoffman. I'm a lawyer, and almost everything you think you know about this case is only half the story. "
+            "The other half is in the trial record. Let's open the file."),
     dict(id='s03', act='Cold open', kind='gfx', gfx='title', min=5.0, hit=True),
 
     # ---------------------------------------------------------------- act 1: the joke

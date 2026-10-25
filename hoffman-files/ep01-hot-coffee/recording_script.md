@@ -2,7 +2,7 @@
 
 Lines still on the synthetic temp voice are the ones without a status. Generated from `edit/episode.py` (`python3 edit/recording_script.py`), so it matches the reel line for line. The episode has no interviews (cut Oct 25, as in ep. 2). Same setup as ep. 2: the blue Background effect for the on-camera pieces, the same mic for the voice-over, one slated session.
 
-- **On camera:** 8 pieces, 209 words (0 recorded)
+- **On camera:** 8 pieces, 211 words (0 recorded)
 - **Voice-over:** 20 lines, 547 words (0 recorded, 0 pickup)
 - **Running time:** 5:45.5 at the temp voice's pace. Each shot is timed to its line, so the cut retimes itself to your takes.
 
@@ -10,7 +10,7 @@ Lines still on the synthetic temp voice are the ones without a status. Generated
 
 | ID | Act | Reel time | Length | Status | Line |
 |---|---|---|---|---|---|
-| s02 | Cold open | 0:12.0 | 10 s |  | I'm Eric Hoffman. I'm a lawyer, and almost everything you think you know about this case is wrong. Not because of spin. Because of the trial record. Let's open the file. |
+| s02 | Cold open | 0:12.0 | 10 s |  | I'm Eric Hoffman. I'm a lawyer, and almost everything you think you know about this case is only half the story. The other half is in the trial record. Let's open the file. |
 | s05 | Act 1: The joke | 0:39.7 | 11 s |  | It showed up on late-night TV, in a Seinfeld episode, and for years in arguments about lawsuit abuse. What almost never came with it was the facts. So here they are. |
 | s12 | Act 3: The injuries | 2:10.8 | 4 s |  | Coffee tested elsewhere in town was at least twenty degrees cooler. |
 | s16 | Act 4: The $800 | 2:35.1 | 11 s |  | That's when she hired a lawyer. He offered to settle for three hundred thousand. A mediator suggested two hundred twenty-five thousand. McDonald's said no. So it went to a jury. |
