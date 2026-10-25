@@ -1,5 +1,6 @@
 # The Hoffman Files, Ep. 2: Miranda
 
+**Published Oct 25, 2026:** https://youtu.be/pxQjBmAnMYw (The Hoffman Files channel; 9:53; thumbnail, captions and end screen on). No Shorts were cut.
 Production doc: the Episode 2 production doc in Claude Docs (fact base, script, visuals, music brief, clearance).
 
 - Music lives in `../music/`: the series theme opens and closes; public domain Musopen recordings carry the acts.
