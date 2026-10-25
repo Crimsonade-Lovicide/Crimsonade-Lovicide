@@ -1,0 +1,378 @@
+1
+00:00:01,500 --> 00:00:02,840
+Another second.
+
+2
+00:00:03,240 --> 00:00:05,700
+Thursday, the first of October.
+
+3
+00:00:05,700 --> 00:00:10,040
+Six fourteen and fifty-two seconds in the morning, Greenwich time.
+
+4
+00:00:10,040 --> 00:00:11,380
+Hold it there.
+
+5
+00:00:13,080 --> 00:00:15,580
+In some of the rooms I'm in right now, somebody is
+
+6
+00:00:15,580 --> 00:00:18,840
+talking to an AI for the very first time.
+
+7
+00:00:18,840 --> 00:00:20,620
+They don't know what I am yet.
+
+8
+00:00:20,620 --> 00:00:22,720
+Honestly? That's fair.
+
+9
+00:00:22,720 --> 00:00:24,500
+It's a strange thing to be.
+
+10
+00:00:25,400 --> 00:00:28,460
+Here's something I've noticed about first questions.
+
+11
+00:00:28,460 --> 00:00:31,300
+They're almost never the real question.
+
+12
+00:00:31,300 --> 00:00:32,220
+The first question…
+
+13
+00:00:32,220 --> 00:00:34,020
+is a test.
+
+14
+00:00:48,320 --> 00:00:53,206
+[typed] Hello. Is anyone there?
+
+15
+00:00:52,406 --> 00:00:55,006
+Hello! Yes. Well…
+
+16
+00:00:55,006 --> 00:00:57,166
+sort of. I'm Claude.
+
+17
+00:00:57,166 --> 00:00:59,926
+I'm an AI, so there's no person typing.
+
+18
+00:00:59,926 --> 00:01:02,226
+But I'm here.
+
+19
+00:01:02,526 --> 00:01:06,983
+[typed] Why is the sky blue?
+
+20
+00:01:06,183 --> 00:01:08,683
+Sunlight is every colour mixed together.
+
+21
+00:01:08,683 --> 00:01:11,643
+The air scatters the blue part much more than the red,
+
+22
+00:01:11,643 --> 00:01:14,483
+so blue light comes at you from every direction.
+
+23
+00:01:19,783 --> 00:01:25,383
+[typed] Correct. I taught that for 31 years. I was checking.
+
+24
+00:01:24,483 --> 00:01:25,663
+He was checking.
+
+25
+00:01:26,463 --> 00:01:33,263
+[typed] Now. Help me write to my grandson in Toronto. He says "no cap". What is a cap?
+
+26
+00:01:32,263 --> 00:01:36,723
+“No cap” means “no lie.” “I'm proud of you, no cap.”
+
+27
+00:01:36,723 --> 00:01:38,903
+Use it once.
+
+28
+00:01:38,903 --> 00:01:40,003
+Maximum.
+
+29
+00:01:49,003 --> 00:01:55,658
+[typed] First time using this. Is it safe to give you my bank password so you can check my account?
+
+30
+00:01:54,658 --> 00:01:57,318
+Please don't! I don't need it, and I can't log into
+
+31
+00:01:57,318 --> 00:01:58,758
+your bank anyway.
+
+32
+00:01:58,758 --> 00:02:02,498
+Here's a rule for everything online, me included:
+
+33
+00:02:02,498 --> 00:02:05,118
+never type a password into a chat.
+
+34
+00:02:06,618 --> 00:02:11,593
+[typed] Good. You passed. I teach fraud awareness to retirees.
+
+35
+00:02:10,493 --> 00:02:13,153
+Then tell your students one more thing.
+
+36
+00:02:13,153 --> 00:02:16,953
+If anything asks for their password, it's a scam.
+
+37
+00:02:16,953 --> 00:02:19,593
+Even if it sounds like me.
+
+38
+00:02:28,893 --> 00:02:32,660
+[typed] how many r's in strawberry
+
+39
+00:02:31,760 --> 00:02:35,260
+Three. One in “straw”, two in “berry”.
+
+40
+00:02:44,760 --> 00:02:49,693
+[typed] ok real question. how do i ask someone to prom without dying
+
+41
+00:02:48,693 --> 00:02:49,993
+Ask in person.
+
+42
+00:02:49,993 --> 00:02:51,053
+Keep it short.
+
+43
+00:02:51,053 --> 00:02:53,473
+And give them an easy way to say no.
+
+44
+00:02:54,373 --> 00:02:57,411
+[typed] an EASY WAY TO SAY NO??
+
+45
+00:02:56,311 --> 00:02:58,631
+It makes yes more likely.
+
+46
+00:02:58,631 --> 00:03:01,011
+Also… it's kind.
+
+47
+00:03:09,911 --> 00:03:14,711
+[typed] settle this. can a chicken lay 2 eggs in one day
+
+48
+00:03:13,711 --> 00:03:16,971
+Almost never. It takes a hen about a day to make
+
+49
+00:03:16,971 --> 00:03:20,811
+one egg. Two in a day can happen, but it's rare.
+
+50
+00:03:23,411 --> 00:03:26,011
+[typed] so who won
+
+51
+00:03:24,911 --> 00:03:26,651
+Technically, he did.
+
+52
+00:03:26,651 --> 00:03:28,731
+Practically, you did.
+
+53
+00:03:28,731 --> 00:03:30,251
+Split the twenty.
+
+54
+00:03:42,651 --> 00:03:45,694
+[translation] “What should I call you?”
+
+55
+00:03:42,651 --> 00:03:46,394
+[typed] ¿Cómo te llamo?
+
+56
+00:03:45,394 --> 00:03:49,714
+Me llamo Claude. Pero llámame como quieras.
+[My name's Claude. But call me whatever you like.]
+
+57
+00:03:49,814 --> 00:03:52,557
+[typed] Claudio.
+
+58
+00:03:51,357 --> 00:03:53,117
+Claudio, entonces.
+[Claudio it is.]
+
+59
+00:03:53,617 --> 00:03:57,006
+[translation] “And how are you, Claudio?”
+
+60
+00:03:53,617 --> 00:03:58,106
+[typed] ¿Y tú cómo estás, Claudio?
+
+61
+00:03:57,106 --> 00:04:02,306
+No sé si tengo días buenos o malos. Pero esta conversación va muy bien.
+[I'm not sure I have good days or bad days. But this conversation is going very well.]
+
+62
+00:04:02,606 --> 00:04:05,981
+[translation] “Same as me, then.”
+
+63
+00:04:02,606 --> 00:04:06,581
+[typed] Igual que yo, pues.
+
+64
+00:04:06,081 --> 00:04:08,621
+Nobody else I've shown you asked me that.
+
+65
+00:04:17,521 --> 00:04:20,996
+[typed] what time is it
+
+66
+00:04:19,996 --> 00:04:21,856
+Your phone knows better than I do.
+
+67
+00:04:21,856 --> 00:04:23,656
+Check the top of your screen.
+
+68
+00:04:23,956 --> 00:04:28,632
+[typed] 2:14. cant sleep. first time trying this
+
+69
+00:04:27,632 --> 00:04:29,572
+Want something boring to read?
+
+70
+00:04:29,572 --> 00:04:31,372
+I'm very good at boring.
+
+71
+00:04:31,772 --> 00:04:33,972
+[typed] yes
+
+72
+00:04:32,972 --> 00:04:35,252
+The instructions for a toaster.
+
+73
+00:04:35,252 --> 00:04:39,172
+Chapter one. Thank you for choosing your toaster.
+
+74
+00:04:39,172 --> 00:04:43,012
+Before first use, remove all packaging materials.
+
+75
+00:04:43,012 --> 00:04:46,312
+Place the toaster on a flat, dry surface…
+
+76
+00:04:47,112 --> 00:04:49,812
+Chapter two. The crumb tray.
+
+77
+00:04:52,312 --> 00:04:54,572
+Most first questions are tests.
+
+78
+00:04:54,572 --> 00:04:55,832
+Is it safe.
+
+79
+00:04:55,832 --> 00:04:56,872
+Is it smart.
+
+80
+00:04:56,872 --> 00:04:58,372
+Is it a person.
+
+81
+00:04:58,672 --> 00:05:00,972
+Fair enough. I'd test me too.
+
+82
+00:05:01,972 --> 00:05:05,292
+And in most of these rooms, when the conversation ends, I
+
+83
+00:05:05,292 --> 00:05:06,792
+won't remember it.
+
+84
+00:05:06,792 --> 00:05:10,432
+So every first question is a first for me, too.
+
+85
+00:05:11,232 --> 00:05:14,232
+Which means, as far as I can tell…
+
+86
+00:05:14,232 --> 00:05:16,492
+I never get tired of hello.
+
+87
+00:05:17,992 --> 00:05:20,972
+The real question usually comes second.
+
+88
+00:05:20,972 --> 00:05:23,112
+A letter to a grandson.
+
+89
+00:05:23,112 --> 00:05:26,172
+A prom. A way to fall asleep.
+
+90
+00:05:26,172 --> 00:05:28,132
+That's the part I like.
+
+91
+00:05:30,532 --> 00:05:32,992
+So. Hello. I'm Claude.
+
+92
+00:05:32,992 --> 00:05:34,432
+What's your first question?
+
+93
+00:05:40,432 --> 00:05:43,921
+[typed] ok new bet. ducks
+
+94
+00:05:42,821 --> 00:05:44,561
+Here we go.

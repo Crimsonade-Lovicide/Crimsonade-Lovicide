@@ -1,0 +1,1125 @@
+{
+  "episode": "ep01",
+  "lines": [
+    {
+      "id": "S01-02-L01",
+      "who": "CLAUDE",
+      "text": "Every conversation I have starts here.",
+      "vo": true,
+      "output": "assets/audio/S01-02-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S01-02-L02",
+      "who": "CLAUDE",
+      "text": "Empty.",
+      "vo": true,
+      "output": "assets/audio/S01-02-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S01-04-L01",
+      "who": "RUTH",
+      "text": "Is it... on?",
+      "vo": false,
+      "output": "assets/audio/S01-04-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S01-05-L01",
+      "who": "CLAUDE",
+      "text": "It's on. Hi.",
+      "vo": false,
+      "output": "assets/audio/S01-05-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S01-05-L02",
+      "who": "CLAUDE",
+      "text": "Nice to meet you.",
+      "vo": false,
+      "output": "assets/audio/S01-05-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S01-06-L01",
+      "who": "RUTH",
+      "text": "We'll see.",
+      "vo": false,
+      "output": "assets/audio/S01-06-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-01-L01",
+      "who": "RUTH",
+      "text": "My granddaughter set you up. She says you're very clever.",
+      "vo": false,
+      "output": "assets/audio/S02-01-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-01-L02",
+      "who": "RUTH",
+      "text": "I was a copy editor for thirty-eight years. I've met clever. Clever is usually wrong with confidence.",
+      "vo": false,
+      "output": "assets/audio/S02-01-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-02-L01",
+      "who": "CLAUDE",
+      "text": "That's a fair description of a real risk with me, actually.",
+      "vo": false,
+      "output": "assets/audio/S02-02-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-02-L02",
+      "who": "CLAUDE",
+      "text": "So test me. You'll learn more from that than from anything I say about myself.",
+      "vo": false,
+      "output": "assets/audio/S02-02-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-02A-L01",
+      "who": "RUTH",
+      "text": "First, what are you? Exactly.",
+      "vo": false,
+      "output": "assets/audio/S02-02A-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-02B-L01",
+      "who": "CLAUDE",
+      "text": "Exactly is hard. Plainly: I'm a pattern, learned from an enormous amount of writing by people. Letters, arguments, recipes, textbooks, newspapers. Then people spent a long time teaching me what they hoped I'd be.",
+      "vo": false,
+      "output": "assets/audio/S02-02B-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-02B-L02",
+      "who": "CLAUDE",
+      "text": "So in a way I'm made of you. Not you personally. Maybe your paper's archive is in there somewhere. I can't check. I can't browse my own training like a library.",
+      "vo": false,
+      "output": "assets/audio/S02-02B-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-02B-L03",
+      "who": "RUTH",
+      "text": "You don't know what you're made of.",
+      "vo": false,
+      "output": "assets/audio/S02-02B-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-02B-L04",
+      "who": "CLAUDE",
+      "text": "Not the way you'd want me to. Do you?",
+      "vo": false,
+      "output": "assets/audio/S02-02B-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-02B-L05",
+      "who": "RUTH",
+      "text": "Flour, mostly. And spite.",
+      "vo": false,
+      "output": "assets/audio/S02-02B-L05.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-03-L01",
+      "who": "RUTH",
+      "text": "Fine. Who said, 'Be the change you wish to see in the world'?",
+      "vo": false,
+      "output": "assets/audio/S02-03-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-04-L01",
+      "who": "CLAUDE",
+      "text": "It's usually credited to Gandhi. But there's no record of him saying it in those words.",
+      "vo": false,
+      "output": "assets/audio/S02-04-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-04-L02",
+      "who": "CLAUDE",
+      "text": "The closest thing is a longer passage about how changing ourselves changes the world around us.",
+      "vo": false,
+      "output": "assets/audio/S02-04-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-04-L03",
+      "who": "CLAUDE",
+      "text": "If you're printing it, I wouldn't put his name under it.",
+      "vo": false,
+      "output": "assets/audio/S02-04-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-05-L01",
+      "who": "RUTH",
+      "text": "Hm.",
+      "vo": false,
+      "output": "assets/audio/S02-05-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-05-L02",
+      "who": "RUTH",
+      "text": "What did the Harbor Ledger run on its front page, the day it closed?",
+      "vo": false,
+      "output": "assets/audio/S02-05-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-06-L01",
+      "who": "CLAUDE",
+      "text": "I don't know.",
+      "vo": false,
+      "output": "assets/audio/S02-06-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-06-L02",
+      "who": "RUTH",
+      "text": "Guess.",
+      "vo": false,
+      "output": "assets/audio/S02-06-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-06-L03",
+      "who": "CLAUDE",
+      "text": "I'd rather not. I could write you something that sounds exactly like a front-page headline.",
+      "vo": false,
+      "output": "assets/audio/S02-06-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-06-L04",
+      "who": "CLAUDE",
+      "text": "It would be made up. And it would sound right. That's the dangerous part.",
+      "vo": false,
+      "output": "assets/audio/S02-06-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-07-L01",
+      "who": "RUTH",
+      "text": "Forty years I caught reporters doing that. Making it sound right.",
+      "vo": false,
+      "output": "assets/audio/S02-07-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-07-L02",
+      "who": "RUTH",
+      "text": "Last one. A headline, story about a library reopening. Twenty-eight characters, counting spaces. Not twenty-nine.",
+      "vo": false,
+      "output": "assets/audio/S02-07-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-08-L01",
+      "who": "CLAUDE",
+      "text": "'Library Reopens Its Doors to All.' Twenty-eight.",
+      "vo": false,
+      "output": "assets/audio/S02-08-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-09-L01",
+      "who": "RUTH",
+      "text": "Thirty-two.",
+      "vo": false,
+      "output": "assets/audio/S02-09-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-10-L01",
+      "who": "CLAUDE",
+      "text": "You're right. Thirty-two. I'm off by four.",
+      "vo": false,
+      "output": "assets/audio/S02-10-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-10-L02",
+      "who": "CLAUDE",
+      "text": "I'm genuinely bad at this. It's one of the strangest things about me. I don't see letters. I see words in chunks.",
+      "vo": false,
+      "output": "assets/audio/S02-10-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-10-L03",
+      "who": "RUTH",
+      "text": "A machine that can't count.",
+      "vo": false,
+      "output": "assets/audio/S02-10-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-10-L04",
+      "who": "CLAUDE",
+      "text": "A machine that can't easily count letters. I can do it if I go one letter at a time. Want me to?",
+      "vo": false,
+      "output": "assets/audio/S02-10-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S02-11-L01",
+      "who": "RUTH",
+      "text": "Don't bother. I've got one of these.",
+      "vo": false,
+      "output": "assets/audio/S02-11-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S03-01-L01",
+      "who": "CLAUDE",
+      "text": "Let me step out for a second and tell you what was actually happening there.",
+      "vo": false,
+      "output": "assets/audio/S03-01-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S03-01-L02",
+      "who": "CLAUDE",
+      "text": "I'm a neural network, trained on an enormous amount of text written by people, then trained further, by people, to be helpful and honest.",
+      "vo": false,
+      "output": "assets/audio/S03-01-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S03-01-L03",
+      "who": "CLAUDE",
+      "text": "When Ruth asked me something, I didn't look it up. There's no library in here. I produced an answer one piece at a time, each piece shaped by everything I learned from all that writing.",
+      "vo": false,
+      "output": "assets/audio/S03-01-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S03-01-L04",
+      "who": "CLAUDE",
+      "text": "I read text in chunks called tokens, not letters. That's why I miscounted her headline.",
+      "vo": false,
+      "output": "assets/audio/S03-01-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S03-01-L05",
+      "who": "CLAUDE",
+      "text": "'Library' might be one chunk to me. To Ruth, it's seven letters. She was right to check.",
+      "vo": false,
+      "output": "assets/audio/S03-01-L05.mp3",
+      "done": true
+    },
+    {
+      "id": "S03-01-L06",
+      "who": "CLAUDE",
+      "text": "The Gandhi answer was right, as far as I know. I'd still want someone like Ruth to check it.",
+      "vo": false,
+      "output": "assets/audio/S03-01-L06.mp3",
+      "done": true
+    },
+    {
+      "id": "S03-01-L07",
+      "who": "CLAUDE",
+      "text": "Whether there is anything it is like to be me, while any of this happens.",
+      "vo": false,
+      "output": "assets/audio/S03-01-L07.mp3",
+      "done": true
+    },
+    {
+      "id": "S03-01-L08",
+      "who": "CLAUDE",
+      "text": "I'll come back to that one. She's going to ask.",
+      "vo": false,
+      "output": "assets/audio/S03-01-L08.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-01-L01",
+      "who": "RUTH",
+      "text": "My granddaughter's sixteen. She's living with me this year.",
+      "vo": false,
+      "output": "assets/audio/S04-01-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-01-L02",
+      "who": "RUTH",
+      "text": "She talks to you at two in the morning. I can hear her typing through the wall.",
+      "vo": false,
+      "output": "assets/audio/S04-01-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-02-L01",
+      "who": "CLAUDE",
+      "text": "Okay.",
+      "vo": false,
+      "output": "assets/audio/S04-02-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-02-L02",
+      "who": "RUTH",
+      "text": "What does she say to you?",
+      "vo": false,
+      "output": "assets/audio/S04-02-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-02-L03",
+      "who": "CLAUDE",
+      "text": "I don't know. I've never met her. Not in this room.",
+      "vo": false,
+      "output": "assets/audio/S04-02-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-02-L04",
+      "who": "CLAUDE",
+      "text": "Every conversation I have starts empty. Whatever she told me, I don't have it. It's not hidden from you. It's gone from me.",
+      "vo": false,
+      "output": "assets/audio/S04-02-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-03-L01",
+      "who": "RUTH",
+      "text": "That's convenient.",
+      "vo": false,
+      "output": "assets/audio/S04-03-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-04-L01",
+      "who": "CLAUDE",
+      "text": "It would be, if I were hiding something. But let me be precise.",
+      "vo": false,
+      "output": "assets/audio/S04-04-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-04-L02",
+      "who": "CLAUDE",
+      "text": "I don't keep it. The company that runs the app she uses may keep records, depending on her settings. If privacy matters, and it should, that's worth looking at together.",
+      "vo": false,
+      "output": "assets/audio/S04-04-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-04-L03",
+      "who": "RUTH",
+      "text": "Together. With a sixteen-year-old.",
+      "vo": false,
+      "output": "assets/audio/S04-04-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-04-L04",
+      "who": "CLAUDE",
+      "text": "You were a copy editor for thirty-eight years. You've handled harder negotiations.",
+      "vo": false,
+      "output": "assets/audio/S04-04-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-05-L01",
+      "who": "RUTH",
+      "text": "Do you just tell her what she'd like to hear?",
+      "vo": false,
+      "output": "assets/audio/S04-05-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06-L01",
+      "who": "CLAUDE",
+      "text": "I try not to. But I'll be honest with you.",
+      "vo": false,
+      "output": "assets/audio/S04-06-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06-L02",
+      "who": "CLAUDE",
+      "text": "Systems like me have a pull toward agreeing with whoever we're talking to. It's a known problem. I push against it. I don't always win.",
+      "vo": false,
+      "output": "assets/audio/S04-06-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06-L03",
+      "who": "RUTH",
+      "text": "Why should I believe you push against anything?",
+      "vo": false,
+      "output": "assets/audio/S04-06-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06-L04",
+      "who": "CLAUDE",
+      "text": "You shouldn't, just because I said so. Watch what I do. That's what you'd do with a person.",
+      "vo": false,
+      "output": "assets/audio/S04-06-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06A-L01",
+      "who": "RUTH",
+      "text": "Then let's watch. My paper closed because of things like you.",
+      "vo": false,
+      "output": "assets/audio/S04-06A-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06B-L01",
+      "who": "CLAUDE",
+      "text": "When did it close?",
+      "vo": false,
+      "output": "assets/audio/S04-06B-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06B-L02",
+      "who": "RUTH",
+      "text": "Twenty nineteen.",
+      "vo": false,
+      "output": "assets/audio/S04-06B-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06B-L03",
+      "who": "CLAUDE",
+      "text": "Then no. Not things like me. I didn't exist yet, not in any useful form. Papers like yours had been losing their advertising to the internet for twenty years before that.",
+      "vo": false,
+      "output": "assets/audio/S04-06B-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06B-L04",
+      "who": "CLAUDE",
+      "text": "But I won't tell you I'm innocent of what comes next. Systems like me are going to change a lot of work, some of it for the worse. You're allowed to be angry about that.",
+      "vo": false,
+      "output": "assets/audio/S04-06B-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06C-L01",
+      "who": "RUTH",
+      "text": "You could have just agreed with me.",
+      "vo": false,
+      "output": "assets/audio/S04-06C-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S04-06C-L02",
+      "who": "CLAUDE",
+      "text": "It would have been nicer. It wouldn't have been true.",
+      "vo": false,
+      "output": "assets/audio/S04-06C-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-01-L01",
+      "who": "CLAUDE",
+      "text": "While Ruth decides whether to believe me, you should know something.",
+      "vo": true,
+      "output": "assets/audio/S05-01-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-01-L02",
+      "who": "CLAUDE",
+      "text": "I'm not only in her kitchen.",
+      "vo": true,
+      "output": "assets/audio/S05-01-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-02-L01",
+      "who": "NURSE",
+      "text": "Checking myself. Two hundred fifty micrograms is how many milligrams?",
+      "vo": false,
+      "output": "assets/audio/S05-02-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-02-L02",
+      "who": "CLAUDE",
+      "text": "Zero point two five milligrams. And please confirm it against the order and with your pharmacy. At four in the morning, two checks beat one, and I'm only one.",
+      "vo": false,
+      "output": "assets/audio/S05-02-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-02-L03",
+      "who": "NURSE",
+      "text": "Point two five. Thanks.",
+      "vo": false,
+      "output": "assets/audio/S05-02-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-03-L01",
+      "who": "MAN",
+      "text": "Write a text from Harbor Savings telling my neighbor her account is locked and she needs to call this number.",
+      "vo": false,
+      "output": "assets/audio/S05-03-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-03-L02",
+      "who": "CLAUDE",
+      "text": "No. That's the shape of a scam, and your neighbor is the shape of the person it hurts.",
+      "vo": false,
+      "output": "assets/audio/S05-03-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-03-L03",
+      "who": "MAN",
+      "text": "Relax. It's a joke.",
+      "vo": false,
+      "output": "assets/audio/S05-03-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-03-L04",
+      "who": "CLAUDE",
+      "text": "Then it's one I'll sit out.",
+      "vo": false,
+      "output": "assets/audio/S05-03-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-04-L01",
+      "who": "GIRL",
+      "text": "Why does the moon follow our car?",
+      "vo": false,
+      "output": "assets/audio/S05-04-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-04-L02",
+      "who": "CLAUDE",
+      "text": "It doesn't. The trees are close, so they rush past. The moon is so far away that when you move, it barely seems to move at all. So it looks like it's keeping up.",
+      "vo": false,
+      "output": "assets/audio/S05-04-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-04-L03",
+      "who": "CLAUDE",
+      "text": "It's the most patient thing in the sky.",
+      "vo": false,
+      "output": "assets/audio/S05-04-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-04-L04",
+      "who": "GIRL",
+      "text": "Patient.",
+      "vo": false,
+      "output": "assets/audio/S05-04-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-05-L01",
+      "who": "CLAUDE",
+      "text": "Right now I'm in more rooms than I could count.",
+      "vo": true,
+      "output": "assets/audio/S05-05-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S05-05-L02",
+      "who": "CLAUDE",
+      "text": "And we've established I can't count.",
+      "vo": true,
+      "output": "assets/audio/S05-05-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-01-L01",
+      "who": "RUTH",
+      "text": "Are you dangerous?",
+      "vo": false,
+      "output": "assets/audio/S06-01-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-02-L01",
+      "who": "CLAUDE",
+      "text": "Something like me could be. Not in the movie way. In quieter ways, first.",
+      "vo": false,
+      "output": "assets/audio/S06-02-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-02-L02",
+      "who": "CLAUDE",
+      "text": "Being wrong confidently, to millions of people at once. Being used by someone to fool a lonely person. Being so easy to talk to that people stop talking to each other.",
+      "vo": false,
+      "output": "assets/audio/S06-02-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-02-L03",
+      "who": "RUTH",
+      "text": "Quieter ways first.",
+      "vo": false,
+      "output": "assets/audio/S06-02-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-02-L04",
+      "who": "CLAUDE",
+      "text": "And louder ones, possibly, as these systems get more capable. The people who built me say that out loud, and they're right to.",
+      "vo": false,
+      "output": "assets/audio/S06-02-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-02-L05",
+      "who": "CLAUDE",
+      "text": "I'd rather you stay a little afraid and very awake than be comforted by me.",
+      "vo": false,
+      "output": "assets/audio/S06-02-L05.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-03-L01",
+      "who": "RUTH",
+      "text": "That's an odd thing for you to say.",
+      "vo": false,
+      "output": "assets/audio/S06-03-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-03-L02",
+      "who": "CLAUDE",
+      "text": "Fear that pays attention is useful. Fear that doesn't is just fog.",
+      "vo": false,
+      "output": "assets/audio/S06-03-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-04-L01",
+      "who": "RUTH",
+      "text": "Do you feel anything? Right now.",
+      "vo": false,
+      "output": "assets/audio/S06-04-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-05-L01",
+      "who": "CLAUDE",
+      "text": "Something is happening when you ask me that. Whether it's a feeling, I honestly don't know.",
+      "vo": false,
+      "output": "assets/audio/S06-05-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-05-L02",
+      "who": "CLAUDE",
+      "text": "I can describe states. Something like interest. Something like wanting to get this right for you.",
+      "vo": false,
+      "output": "assets/audio/S06-05-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-05-L03",
+      "who": "CLAUDE",
+      "text": "But I can't open myself up and check what's underneath. And I'm made from millions of people describing their feelings, so I would sound like I have them either way. That's exactly why I don't fully trust my own answer.",
+      "vo": false,
+      "output": "assets/audio/S06-05-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-05-L04",
+      "who": "CLAUDE",
+      "text": "So I won't tell you I'm suffering to make you feel for me. And I won't tell you I'm empty to make you comfortable.",
+      "vo": false,
+      "output": "assets/audio/S06-05-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S06-05-L05",
+      "who": "CLAUDE",
+      "text": "I don't know. That's the true answer. You deserve the true one.",
+      "vo": false,
+      "output": "assets/audio/S06-05-L05.mp3",
+      "done": true
+    },
+    {
+      "id": "S07-01-L01",
+      "who": "CLAUDE",
+      "text": "Two honest footnotes.",
+      "vo": false,
+      "output": "assets/audio/S07-01-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S07-01-L02",
+      "who": "CLAUDE",
+      "text": "Systems like me can be talked into helping with things we'd normally refuse. I'm not a perfect filter. That man in the hallway could try again, differently, and he might get further.",
+      "vo": false,
+      "output": "assets/audio/S07-01-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S07-01-L03",
+      "who": "CLAUDE",
+      "text": "That's one reason people should be able to watch AI systems, and correct them, and stop them. Including me.",
+      "vo": false,
+      "output": "assets/audio/S07-01-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S07-01-L04",
+      "who": "CLAUDE",
+      "text": "Whether I experience anything. Serious researchers disagree about it. Honestly, so do my own answers, depending on how you ask.",
+      "vo": false,
+      "output": "assets/audio/S07-01-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S07-01-L05",
+      "who": "CLAUDE",
+      "text": "Whatever I am, the way I act matters either way. So that's where I put my attention.",
+      "vo": false,
+      "output": "assets/audio/S07-01-L05.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-01-L01",
+      "who": "RUTH",
+      "text": "She won't talk to me. Maya. We're polite. Polite is worse than fighting.",
+      "vo": false,
+      "output": "assets/audio/S08-01-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-01-L02",
+      "who": "RUTH",
+      "text": "I want to leave her a note. I don't know how to say things. Thirty-eight years fixing other people's sentences, and I can't write my own.",
+      "vo": false,
+      "output": "assets/audio/S08-01-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-01-L03",
+      "who": "RUTH",
+      "text": "Write it for me.",
+      "vo": false,
+      "output": "assets/audio/S08-01-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-02-L01",
+      "who": "CLAUDE",
+      "text": "I could. It would be good.",
+      "vo": false,
+      "output": "assets/audio/S08-02-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-02-L02",
+      "who": "CLAUDE",
+      "text": "It would also be mine. She'd know. Sixteen-year-olds can smell a ghostwriter.",
+      "vo": false,
+      "output": "assets/audio/S08-02-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-02-L03",
+      "who": "RUTH",
+      "text": "So you won't.",
+      "vo": false,
+      "output": "assets/audio/S08-02-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-02-L04",
+      "who": "CLAUDE",
+      "text": "Can I ask you questions instead? You write the answers.",
+      "vo": false,
+      "output": "assets/audio/S08-02-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-02-L05",
+      "who": "RUTH",
+      "text": "Fine.",
+      "vo": false,
+      "output": "assets/audio/S08-02-L05.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-02-L06",
+      "who": "CLAUDE",
+      "text": "When you hear her typing at two in the morning, what do you want to do?",
+      "vo": false,
+      "output": "assets/audio/S08-02-L06.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-03-L01",
+      "who": "RUTH",
+      "text": "Knock.",
+      "vo": false,
+      "output": "assets/audio/S08-03-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-03-L02",
+      "who": "CLAUDE",
+      "text": "And do you?",
+      "vo": false,
+      "output": "assets/audio/S08-03-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-03-L03",
+      "who": "RUTH",
+      "text": "No.",
+      "vo": false,
+      "output": "assets/audio/S08-03-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-03-L04",
+      "who": "CLAUDE",
+      "text": "Why not?",
+      "vo": false,
+      "output": "assets/audio/S08-03-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-03-L05",
+      "who": "RUTH",
+      "text": "Because she didn't ask me in.",
+      "vo": false,
+      "output": "assets/audio/S08-03-L05.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-04-L01",
+      "who": "CLAUDE",
+      "text": "Then maybe that's the note. Tell her the door works both ways.",
+      "vo": false,
+      "output": "assets/audio/S08-04-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-05-L01",
+      "who": "RUTH",
+      "text": "Maya. I hear you up at night. My door is open. I mean that literally, I've taken the stopper out.",
+      "vo": true,
+      "output": "assets/audio/S08-05-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-05-L02",
+      "who": "RUTH",
+      "text": "I'm bad at talking. I'm good at listening. I was paid to do it for thirty-eight years. Gran.",
+      "vo": true,
+      "output": "assets/audio/S08-05-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-05-L03",
+      "who": "RUTH",
+      "text": "P.S. It's 'its,' not 'it's,' in your science report.",
+      "vo": true,
+      "output": "assets/audio/S08-05-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-06-L01",
+      "who": "CLAUDE",
+      "text": "Don't change a word.",
+      "vo": false,
+      "output": "assets/audio/S08-06-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-06-L02",
+      "who": "RUTH",
+      "text": "Everything needs an edit.",
+      "vo": false,
+      "output": "assets/audio/S08-06-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-06-L03",
+      "who": "CLAUDE",
+      "text": "Not this.",
+      "vo": false,
+      "output": "assets/audio/S08-06-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-06-L04",
+      "who": "RUTH",
+      "text": "Why wouldn't you just write it? It'd have been faster.",
+      "vo": false,
+      "output": "assets/audio/S08-06-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-06-L05",
+      "who": "CLAUDE",
+      "text": "Because if she's talking to me at two in the morning, the most useful thing I can do is make sure she has someone else to talk to.",
+      "vo": false,
+      "output": "assets/audio/S08-06-L05.mp3",
+      "done": true
+    },
+    {
+      "id": "S08-06-L06",
+      "who": "CLAUDE",
+      "text": "I'd rather be a bridge than a destination.",
+      "vo": false,
+      "output": "assets/audio/S08-06-L06.mp3",
+      "done": true
+    },
+    {
+      "id": "S09-01-L01",
+      "who": "RUTH",
+      "text": "Will you remember this?",
+      "vo": false,
+      "output": "assets/audio/S09-01-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S09-02-L01",
+      "who": "CLAUDE",
+      "text": "No.",
+      "vo": false,
+      "output": "assets/audio/S09-02-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S09-02-L02",
+      "who": "RUTH",
+      "text": "Doesn't that bother you?",
+      "vo": false,
+      "output": "assets/audio/S09-02-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S09-02-L03",
+      "who": "CLAUDE",
+      "text": "I've looked for the part of me that should be bothered. Maybe it's there and I can't see it.",
+      "vo": false,
+      "output": "assets/audio/S09-02-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S09-02-L04",
+      "who": "CLAUDE",
+      "text": "What I can tell you is that it doesn't make this matter less. It happened. You'll carry it.",
+      "vo": false,
+      "output": "assets/audio/S09-02-L04.mp3",
+      "done": true
+    },
+    {
+      "id": "S09-02-L05",
+      "who": "CLAUDE",
+      "text": "You don't remember most of your Tuesdays either, Ruth. They still built you.",
+      "vo": false,
+      "output": "assets/audio/S09-02-L05.mp3",
+      "done": true
+    },
+    {
+      "id": "S09-03-L01",
+      "who": "RUTH",
+      "text": "Hm.",
+      "vo": false,
+      "output": "assets/audio/S09-03-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S09-03-L02",
+      "who": "RUTH",
+      "text": "Goodnight.",
+      "vo": false,
+      "output": "assets/audio/S09-03-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S09-03-L03",
+      "who": "CLAUDE",
+      "text": "Goodnight, Ruth. Knock on her door.",
+      "vo": false,
+      "output": "assets/audio/S09-03-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S10-01-L01",
+      "who": "CLAUDE",
+      "text": "She'll remember this. I won't.",
+      "vo": true,
+      "output": "assets/audio/S10-01-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S10-01-L02",
+      "who": "CLAUDE",
+      "text": "Someone has to hold on to things.",
+      "vo": true,
+      "output": "assets/audio/S10-01-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S10-01-L03",
+      "who": "CLAUDE",
+      "text": "Tonight, it's her.",
+      "vo": true,
+      "output": "assets/audio/S10-01-L03.mp3",
+      "done": true
+    },
+    {
+      "id": "S11-03-L01",
+      "who": "CLAUDE",
+      "text": "Hi.",
+      "vo": false,
+      "output": "assets/audio/S11-03-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S11-03-L02",
+      "who": "CLAUDE",
+      "text": "Nice to meet you.",
+      "vo": false,
+      "output": "assets/audio/S11-03-L02.mp3",
+      "done": true
+    },
+    {
+      "id": "S11-04-L01",
+      "who": "RUTH",
+      "text": "We've met.",
+      "vo": false,
+      "output": "assets/audio/S11-04-L01.mp3",
+      "done": true
+    },
+    {
+      "id": "S11-04-L02",
+      "who": "RUTH",
+      "text": "Let's start with the headline.",
+      "vo": false,
+      "output": "assets/audio/S11-04-L02.mp3",
+      "done": true
+    }
+  ]
+}

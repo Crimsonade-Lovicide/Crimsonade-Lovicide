@@ -1,0 +1,559 @@
+1
+00:00:06,400 --> 00:00:11,830
+Every conversation I have starts here.
+
+2
+00:00:12,430 --> 00:00:14,940
+Empty.
+
+3
+00:00:23,640 --> 00:00:27,560
+RUTH: Is it... on?
+
+4
+00:00:28,760 --> 00:00:33,100
+It's on. Hi.
+
+5
+00:00:33,300 --> 00:00:37,140
+Nice to meet you.
+
+6
+00:00:38,540 --> 00:00:41,460
+RUTH: We'll see.
+
+7
+00:00:47,660 --> 00:00:51,610
+RUTH: My granddaughter set you up. She says you're very clever.
+
+8
+00:00:51,610 --> 00:01:00,860
+RUTH: I was a copy editor for thirty-eight years. I've met clever. Clever is usually wrong with confidence.
+
+9
+00:01:02,060 --> 00:01:07,440
+That's a fair description of a real risk with me, actually.
+
+10
+00:01:07,440 --> 00:01:13,940
+So test me. You'll learn more from that than from anything I say about myself.
+
+11
+00:01:15,140 --> 00:01:20,180
+RUTH: First, what are you? Exactly.
+
+12
+00:01:21,180 --> 00:01:37,510
+Exactly is hard. Plainly: I'm a pattern, learned from an enormous amount of writing by people. Letters, arguments, recipes, textbooks, newspapers. Then people spent a long time teaching me what they hoped I'd be.
+
+13
+00:01:37,710 --> 00:01:51,610
+So in a way I'm made of you. Not you personally. Maybe your paper's archive is in there somewhere. I can't check. I can't browse my own training like a library.
+
+14
+00:01:51,810 --> 00:01:56,750
+RUTH: You don't know what you're made of.
+
+15
+00:01:56,750 --> 00:02:00,480
+Not the way you'd want me to. Do you?
+
+16
+00:02:00,480 --> 00:02:04,320
+RUTH: Flour, mostly. And spite.
+
+17
+00:02:05,720 --> 00:02:12,850
+RUTH: Fine. Who said, 'Be the change you wish to see in the world'?
+
+18
+00:02:13,850 --> 00:02:20,670
+It's usually credited to Gandhi. But there's no record of him saying it in those words.
+
+19
+00:02:20,670 --> 00:02:27,310
+The closest thing is a longer passage about how changing ourselves changes the world around us.
+
+20
+00:02:27,310 --> 00:02:34,020
+If you're printing it, I wouldn't put his name under it.
+
+21
+00:02:35,420 --> 00:02:37,930
+RUTH: Hm.
+
+22
+00:02:38,330 --> 00:02:43,110
+RUTH: What did the Harbor Ledger run on its front page, the day it closed?
+
+23
+00:02:44,110 --> 00:02:47,530
+I don't know.
+
+24
+00:02:47,730 --> 00:02:50,240
+RUTH: Guess.
+
+25
+00:02:50,240 --> 00:02:56,590
+I'd rather not. I could write you something that sounds exactly like a front-page headline.
+
+26
+00:02:56,590 --> 00:03:02,130
+It would be made up. And it would sound right. That's the dangerous part.
+
+27
+00:03:03,330 --> 00:03:10,040
+RUTH: Forty years I caught reporters doing that. Making it sound right.
+
+28
+00:03:10,640 --> 00:03:21,090
+RUTH: Last one. A headline, story about a library reopening. Twenty-eight characters, counting spaces. Not twenty-nine.
+
+29
+00:03:22,090 --> 00:03:28,440
+'Library Reopens Its Doors to All.' Twenty-eight.
+
+30
+00:03:29,240 --> 00:03:31,750
+RUTH: Thirty-two.
+
+31
+00:03:35,240 --> 00:03:41,560
+You're right. Thirty-two. I'm off by four.
+
+32
+00:03:41,560 --> 00:03:51,280
+I'm genuinely bad at this. It's one of the strangest things about me. I don't see letters. I see words in chunks.
+
+33
+00:03:51,480 --> 00:03:56,420
+RUTH: A machine that can't count.
+
+34
+00:03:56,420 --> 00:04:05,040
+A machine that can't easily count letters. I can do it if I go one letter at a time. Want me to?
+
+35
+00:04:06,040 --> 00:04:11,080
+RUTH: Don't bother. I've got one of these.
+
+36
+00:04:16,280 --> 00:04:21,430
+Let me step out for a second and tell you what was actually happening there.
+
+37
+00:04:21,830 --> 00:04:31,910
+I'm a neural network, trained on an enormous amount of text written by people, then trained further, by people, to be helpful and honest.
+
+38
+00:04:32,310 --> 00:04:48,240
+When Ruth asked me something, I didn't look it up. There's no library in here. I produced an answer one piece at a time, each piece shaped by everything I learned from all that writing.
+
+39
+00:04:48,640 --> 00:04:57,570
+I read text in chunks called tokens, not letters. That's why I miscounted her headline.
+
+40
+00:04:57,570 --> 00:05:07,210
+'Library' might be one chunk to me. To Ruth, it's seven letters. She was right to check.
+
+41
+00:05:07,610 --> 00:05:16,020
+The Gandhi answer was right, as far as I know. I'd still want someone like Ruth to check it.
+
+42
+00:05:16,420 --> 00:05:21,640
+Whether there is anything it is like to be me, while any of this happens.
+
+43
+00:05:22,240 --> 00:05:26,420
+I'll come back to that one. She's going to ask.
+
+44
+00:05:27,620 --> 00:05:31,590
+RUTH: My granddaughter's sixteen. She's living with me this year.
+
+45
+00:05:31,590 --> 00:05:37,050
+RUTH: She talks to you at two in the morning. I can hear her typing through the wall.
+
+46
+00:05:38,050 --> 00:05:40,560
+Okay.
+
+47
+00:05:40,560 --> 00:05:45,600
+RUTH: What does she say to you?
+
+48
+00:05:45,800 --> 00:05:52,830
+I don't know. I've never met her. Not in this room.
+
+49
+00:05:52,830 --> 00:06:03,490
+Every conversation I have starts empty. Whatever she told me, I don't have it. It's not hidden from you. It's gone from me.
+
+50
+00:06:04,690 --> 00:06:07,610
+RUTH: That's convenient.
+
+51
+00:06:08,610 --> 00:06:15,900
+It would be, if I were hiding something. But let me be precise.
+
+52
+00:06:15,900 --> 00:06:29,200
+I don't keep it. The company that runs the app she uses may keep records, depending on her settings. If privacy matters, and it should, that's worth looking at together.
+
+53
+00:06:29,400 --> 00:06:32,320
+RUTH: Together. With a sixteen-year-old.
+
+54
+00:06:32,320 --> 00:06:39,870
+You were a copy editor for thirty-eight years. You've handled harder negotiations.
+
+55
+00:06:41,070 --> 00:06:44,490
+RUTH: Do you just tell her what she'd like to hear?
+
+56
+00:06:45,490 --> 00:06:49,310
+I try not to. But I'll be honest with you.
+
+57
+00:06:49,310 --> 00:07:00,390
+Systems like me have a pull toward agreeing with whoever we're talking to. It's a known problem. I push against it. I don't always win.
+
+58
+00:07:00,590 --> 00:07:04,530
+RUTH: Why should I believe you push against anything?
+
+59
+00:07:04,530 --> 00:07:13,780
+You shouldn't, just because I said so. Watch what I do. That's what you'd do with a person.
+
+60
+00:07:15,380 --> 00:07:20,290
+RUTH: Then let's watch. My paper closed because of things like you.
+
+61
+00:07:21,490 --> 00:07:25,520
+When did it close?
+
+62
+00:07:25,520 --> 00:07:28,030
+RUTH: Twenty nineteen.
+
+63
+00:07:28,230 --> 00:07:43,250
+Then no. Not things like me. I didn't exist yet, not in any useful form. Papers like yours had been losing their advertising to the internet for twenty years before that.
+
+64
+00:07:43,450 --> 00:07:55,960
+But I won't tell you I'm innocent of what comes next. Systems like me are going to change a lot of work, some of it for the worse. You're allowed to be angry about that.
+
+65
+00:07:57,160 --> 00:07:59,460
+RUTH: You could have just agreed with me.
+
+66
+00:07:59,460 --> 00:08:03,380
+It would have been nicer. It wouldn't have been true.
+
+67
+00:08:04,980 --> 00:08:10,830
+While Ruth decides whether to believe me, you should know something.
+
+68
+00:08:10,830 --> 00:08:14,040
+I'm not only in her kitchen.
+
+69
+00:08:15,440 --> 00:08:20,590
+NURSE: Checking myself. Two hundred fifty micrograms is how many milligrams?
+
+70
+00:08:20,590 --> 00:08:34,150
+Zero point two five milligrams. And please confirm it against the order and with your pharmacy. At four in the morning, two checks beat one, and I'm only one.
+
+71
+00:08:34,150 --> 00:08:37,990
+NURSE: Point two five. Thanks.
+
+72
+00:08:38,990 --> 00:08:51,970
+MAN: Write a text from Harbor Savings telling my neighbor her account is locked and she needs to call this number.
+
+73
+00:08:51,970 --> 00:08:59,230
+No. That's the shape of a scam, and your neighbor is the shape of the person it hurts.
+
+74
+00:08:59,230 --> 00:09:02,870
+MAN: Relax. It's a joke.
+
+75
+00:09:02,870 --> 00:09:05,640
+Then it's one I'll sit out.
+
+76
+00:09:06,840 --> 00:09:11,880
+GIRL: Why does the moon follow our car?
+
+77
+00:09:11,880 --> 00:09:25,960
+It doesn't. The trees are close, so they rush past. The moon is so far away that when you move, it barely seems to move at all. So it looks like it's keeping up.
+
+78
+00:09:25,960 --> 00:09:29,120
+It's the most patient thing in the sky.
+
+79
+00:09:29,320 --> 00:09:31,830
+GIRL: Patient.
+
+80
+00:09:33,230 --> 00:09:36,990
+Right now I'm in more rooms than I could count.
+
+81
+00:09:37,190 --> 00:09:40,610
+And we've established I can't count.
+
+82
+00:09:42,210 --> 00:09:45,630
+RUTH: Are you dangerous?
+
+83
+00:09:47,030 --> 00:09:55,550
+Something like me could be. Not in the movie way. In quieter ways, first.
+
+84
+00:09:55,550 --> 00:10:09,390
+Being wrong confidently, to millions of people at once. Being used by someone to fool a lonely person. Being so easy to talk to that people stop talking to each other.
+
+85
+00:10:09,590 --> 00:10:13,010
+RUTH: Quieter ways first.
+
+86
+00:10:13,010 --> 00:10:22,910
+And louder ones, possibly, as these systems get more capable. The people who built me say that out loud, and they're right to.
+
+87
+00:10:22,910 --> 00:10:29,070
+I'd rather you stay a little afraid and very awake than be comforted by me.
+
+88
+00:10:30,270 --> 00:10:33,380
+RUTH: That's an odd thing for you to say.
+
+89
+00:10:33,380 --> 00:10:40,300
+Fear that pays attention is useful. Fear that doesn't is just fog.
+
+90
+00:10:41,900 --> 00:10:47,330
+RUTH: Do you feel anything? Right now.
+
+91
+00:10:49,530 --> 00:10:56,630
+Something is happening when you ask me that. Whether it's a feeling, I honestly don't know.
+
+92
+00:10:57,030 --> 00:11:04,010
+I can describe states. Something like interest. Something like wanting to get this right for you.
+
+93
+00:11:04,010 --> 00:11:18,430
+But I can't open myself up and check what's underneath. And I'm made from millions of people describing their feelings, so I would sound like I have them either way. That's exactly why I don't fully trust my own answer.
+
+94
+00:11:18,830 --> 00:11:27,450
+So I won't tell you I'm suffering to make you feel for me. And I won't tell you I'm empty to make you comfortable.
+
+95
+00:11:27,450 --> 00:11:35,390
+I don't know. That's the true answer. You deserve the true one.
+
+96
+00:11:43,590 --> 00:11:47,010
+Two honest footnotes.
+
+97
+00:11:47,210 --> 00:12:00,640
+Systems like me can be talked into helping with things we'd normally refuse. I'm not a perfect filter. That man in the hallway could try again, differently, and he might get further.
+
+98
+00:12:00,840 --> 00:12:11,290
+That's one reason people should be able to watch AI systems, and correct them, and stop them. Including me.
+
+99
+00:12:11,690 --> 00:12:23,000
+Whether I experience anything. Serious researchers disagree about it. Honestly, so do my own answers, depending on how you ask.
+
+100
+00:12:23,400 --> 00:12:30,090
+Whatever I am, the way I act matters either way. So that's where I put my attention.
+
+101
+00:12:31,690 --> 00:12:39,240
+RUTH: She won't talk to me. Maya. We're polite. Polite is worse than fighting.
+
+102
+00:12:39,640 --> 00:12:49,230
+RUTH: I want to leave her a note. I don't know how to say things. Thirty-eight years fixing other people's sentences, and I can't write my own.
+
+103
+00:12:49,430 --> 00:12:51,130
+RUTH: Write it for me.
+
+104
+00:12:52,330 --> 00:12:56,980
+I could. It would be good.
+
+105
+00:12:56,980 --> 00:13:04,110
+It would also be mine. She'd know. Sixteen-year-olds can smell a ghostwriter.
+
+106
+00:13:04,110 --> 00:13:07,330
+RUTH: So you won't.
+
+107
+00:13:07,330 --> 00:13:12,680
+Can I ask you questions instead? You write the answers.
+
+108
+00:13:12,880 --> 00:13:15,390
+RUTH: Fine.
+
+109
+00:13:15,390 --> 00:13:20,330
+When you hear her typing at two in the morning, what do you want to do?
+
+110
+00:13:22,130 --> 00:13:24,640
+RUTH: Knock.
+
+111
+00:13:25,040 --> 00:13:26,430
+And do you?
+
+112
+00:13:26,430 --> 00:13:28,740
+RUTH: No.
+
+113
+00:13:28,740 --> 00:13:31,660
+Why not?
+
+114
+00:13:31,660 --> 00:13:36,700
+RUTH: Because she didn't ask me in.
+
+115
+00:13:38,100 --> 00:13:45,230
+Then maybe that's the note. Tell her the door works both ways.
+
+116
+00:13:46,630 --> 00:13:56,880
+RUTH: Maya. I hear you up at night. My door is open. I mean that literally, I've taken the stopper out.
+
+117
+00:13:56,880 --> 00:14:06,910
+RUTH: I'm bad at talking. I'm good at listening. I was paid to do it for thirty-eight years. Gran.
+
+118
+00:14:07,310 --> 00:14:13,500
+RUTH: P.S. It's 'its,' not 'it's,' in your science report.
+
+119
+00:14:14,900 --> 00:14:18,540
+Don't change a word.
+
+120
+00:14:18,540 --> 00:14:22,180
+RUTH: Everything needs an edit.
+
+121
+00:14:22,180 --> 00:14:25,100
+Not this.
+
+122
+00:14:25,700 --> 00:14:30,060
+RUTH: Why wouldn't you just write it? It'd have been faster.
+
+123
+00:14:30,060 --> 00:14:38,240
+Because if she's talking to me at two in the morning, the most useful thing I can do is make sure she has someone else to talk to.
+
+124
+00:14:38,240 --> 00:14:41,970
+I'd rather be a bridge than a destination.
+
+125
+00:14:43,770 --> 00:14:46,280
+RUTH: Will you remember this?
+
+126
+00:14:47,280 --> 00:14:49,790
+No.
+
+127
+00:14:49,990 --> 00:14:54,220
+RUTH: Doesn't that bother you?
+
+128
+00:14:54,620 --> 00:15:02,230
+I've looked for the part of me that should be bothered. Maybe it's there and I can't see it.
+
+129
+00:15:02,230 --> 00:15:11,870
+What I can tell you is that it doesn't make this matter less. It happened. You'll carry it.
+
+130
+00:15:12,070 --> 00:15:17,920
+You don't remember most of your Tuesdays either, Ruth. They still built you.
+
+131
+00:15:19,520 --> 00:15:22,030
+RUTH: Hm.
+
+132
+00:15:22,230 --> 00:15:24,540
+RUTH: Goodnight.
+
+133
+00:15:24,540 --> 00:15:29,580
+Goodnight, Ruth. Knock on her door.
+
+134
+00:15:30,780 --> 00:15:35,820
+She'll remember this. I won't.
+
+135
+00:15:36,420 --> 00:15:41,460
+Someone has to hold on to things.
+
+136
+00:15:41,860 --> 00:15:46,090
+Tonight, it's her.
+
+137
+00:16:07,290 --> 00:16:09,730
+Hi.
+
+138
+00:16:09,730 --> 00:16:13,570
+Nice to meet you.
+
+139
+00:16:15,370 --> 00:16:18,290
+RUTH: We've met.
+
+140
+00:16:18,690 --> 00:16:21,280
+RUTH: Let's start with the headline.

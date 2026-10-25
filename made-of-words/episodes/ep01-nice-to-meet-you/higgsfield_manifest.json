@@ -1,0 +1,881 @@
+{
+  "episode": "ep01",
+  "title": "Nice to Meet You",
+  "aspect_ratio": "16:9",
+  "style_suffix": "shot on 35mm film, natural grain, tungsten practicals, shallow depth of field, restrained naturalistic performance, no text, no watermark",
+  "negative": "robot, chrome, glowing eyes, sci-fi HUD, text overlays, captions, logos",
+  "shots": [
+    {
+      "id": "S01-03",
+      "duration": 7.0,
+      "takes": 1,
+      "take_seconds": 7.0,
+      "status": "video",
+      "prompt": "35mm film still, cinematic, tungsten practical light. A 68-year-old woman with a silver bob and reading glasses on a beaded chain, grey cardigan, sits down at a small kitchen table with a green oilcloth, facing an open laptop, a mug of tea and a red pen beside it. Rain streaks the black window behind her. She regards the laptop with suspicion. Slow push-in. Quiet, intimate, shallow depth of field.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": null,
+      "lipsync_lines": [],
+      "dialogue": [],
+      "output": "assets/shots/S01-03.mp4"
+    },
+    {
+      "id": "S01-04",
+      "duration": 5.12,
+      "takes": 1,
+      "take_seconds": 5.12,
+      "status": "video",
+      "prompt": "Close-up, same woman leans slightly toward the laptop, glasses low on her nose, and speaks quietly and skeptically. Laptop screen glow on her face. 35mm, warm tungsten, rain on window bokeh.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S01-04-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S01-04-L01",
+          "who": "RUTH",
+          "text": "Is it... on?",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S01-04.mp4"
+    },
+    {
+      "id": "S01-06",
+      "duration": 4.12,
+      "takes": 1,
+      "take_seconds": 4.12,
+      "status": "video",
+      "prompt": "Medium close-up. The woman takes off her reading glasses, polishes them slowly on her cardigan, puts them back on, and says two words with dry skepticism. 35mm film, tungsten, rain.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S01-06-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S01-06-L01",
+          "who": "RUTH",
+          "text": "We'll see.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S01-06.mp4"
+    },
+    {
+      "id": "S02-01",
+      "duration": 14.4,
+      "takes": 2,
+      "take_seconds": 7.2,
+      "status": "still",
+      "prompt": "Medium shot, the woman sits upright with her hands folded on the oilcloth table and addresses the laptop as if interviewing a job applicant she does not intend to hire. 35mm, tungsten.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S02-01-L01",
+        "S02-01-L02"
+      ],
+      "dialogue": [
+        {
+          "id": "S02-01-L01",
+          "who": "RUTH",
+          "text": "My granddaughter set you up. She says you're very clever.",
+          "vo": false
+        },
+        {
+          "id": "S02-01-L02",
+          "who": "RUTH",
+          "text": "I was a copy editor for thirty-eight years. I've met clever. Clever is usually wrong with confidence.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S02-01.mp4"
+    },
+    {
+      "id": "S02-02A",
+      "duration": 6.04,
+      "takes": 1,
+      "take_seconds": 6.04,
+      "status": "still",
+      "prompt": "Medium close-up, the woman peers at the laptop over her glasses as though reading small print, and asks a plain question. 35mm, tungsten.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S02-02A-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S02-02A-L01",
+          "who": "RUTH",
+          "text": "First, what are you? Exactly.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S02-02A.mp4"
+    },
+    {
+      "id": "S02-03",
+      "duration": 8.13,
+      "takes": 1,
+      "take_seconds": 8.13,
+      "status": "still",
+      "prompt": "Close-up, the woman uncaps a red pen with her thumb, a faint challenge in her eyes, and asks a question. 35mm, tungsten.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S02-03-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S02-03-L01",
+          "who": "RUTH",
+          "text": "Fine. Who said, 'Be the change you wish to see in the world'?",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S02-03.mp4"
+    },
+    {
+      "id": "S02-05",
+      "duration": 8.69,
+      "takes": 1,
+      "take_seconds": 8.69,
+      "status": "still",
+      "prompt": "Medium close-up, the woman makes a small grudging sound, writes a short note on a legal pad with the red pen, then looks up and asks another question, testing. 35mm, tungsten.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S02-05-L01",
+        "S02-05-L02"
+      ],
+      "dialogue": [
+        {
+          "id": "S02-05-L01",
+          "who": "RUTH",
+          "text": "Hm.",
+          "vo": false
+        },
+        {
+          "id": "S02-05-L02",
+          "who": "RUTH",
+          "text": "What did the Harbor Ledger run on its front page, the day it closed?",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S02-05.mp4"
+    },
+    {
+      "id": "S02-07",
+      "duration": 18.76,
+      "takes": 2,
+      "take_seconds": 9.38,
+      "status": "still",
+      "prompt": "Close-up, the woman looks away at the rainy window for a moment, remembering something, then back to the laptop and speaks softly. 35mm, tungsten, melancholy.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S02-07-L01",
+        "S02-07-L02"
+      ],
+      "dialogue": [
+        {
+          "id": "S02-07-L01",
+          "who": "RUTH",
+          "text": "Forty years I caught reporters doing that. Making it sound right.",
+          "vo": false
+        },
+        {
+          "id": "S02-07-L02",
+          "who": "RUTH",
+          "text": "Last one. A headline, story about a library reopening. Twenty-eight characters, counting spaces. Not twenty-nine.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S02-07.mp4"
+    },
+    {
+      "id": "S02-09",
+      "duration": 6.0,
+      "takes": 1,
+      "take_seconds": 6.0,
+      "status": "still",
+      "prompt": "Extreme close-up insert, an older woman's hand with a red pen taps along a line of text on a laptop screen, counting letters one by one. Shallow depth of field, screen glow, 35mm.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": null,
+      "lipsync_lines": [],
+      "dialogue": [
+        {
+          "id": "S02-09-L01",
+          "who": "RUTH",
+          "text": "Thirty-two.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S02-09.mp4"
+    },
+    {
+      "id": "S02-11",
+      "duration": 6.24,
+      "takes": 1,
+      "take_seconds": 6.24,
+      "status": "still",
+      "prompt": "Medium close-up, the woman holds up her red pen between two fingers like a cigarette, a tiny satisfied smile, and speaks dryly. 35mm.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S02-11-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S02-11-L01",
+          "who": "RUTH",
+          "text": "Don't bother. I've got one of these.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S02-11.mp4"
+    },
+    {
+      "id": "S04-01",
+      "duration": 10.43,
+      "takes": 1,
+      "take_seconds": 10.43,
+      "status": "still",
+      "prompt": "Medium shot, the woman sets the red pen down, folds her hands, and speaks more quietly and personally, glancing once toward a closed door off-screen. 35mm, tungsten, rain.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S04-01-L01",
+        "S04-01-L02"
+      ],
+      "dialogue": [
+        {
+          "id": "S04-01-L01",
+          "who": "RUTH",
+          "text": "My granddaughter's sixteen. She's living with me this year.",
+          "vo": false
+        },
+        {
+          "id": "S04-01-L02",
+          "who": "RUTH",
+          "text": "She talks to you at two in the morning. I can hear her typing through the wall.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S04-01.mp4"
+    },
+    {
+      "id": "S04-03",
+      "duration": 3.92,
+      "takes": 1,
+      "take_seconds": 3.92,
+      "status": "still",
+      "prompt": "Close-up, the woman narrows her eyes, unconvinced, one eyebrow raised. 35mm, tungsten.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S04-03-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S04-03-L01",
+          "who": "RUTH",
+          "text": "That's convenient.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S04-03.mp4"
+    },
+    {
+      "id": "S04-05",
+      "duration": 4.42,
+      "takes": 1,
+      "take_seconds": 4.42,
+      "status": "still",
+      "prompt": "Close-up, the woman almost smiles, suppresses it, then asks a serious question, leaning in. 35mm, tungsten.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S04-05-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S04-05-L01",
+          "who": "RUTH",
+          "text": "Do you just tell her what she'd like to hear?",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S04-05.mp4"
+    },
+    {
+      "id": "S04-06A",
+      "duration": 6.11,
+      "takes": 1,
+      "take_seconds": 6.11,
+      "status": "still",
+      "prompt": "Close-up, the woman sets a trap: she speaks a bitter statement flatly while watching the laptop very carefully for its reaction. 35mm, tungsten, rain.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S04-06A-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S04-06A-L01",
+          "who": "RUTH",
+          "text": "Then let's watch. My paper closed because of things like you.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S04-06A.mp4"
+    },
+    {
+      "id": "S04-06C",
+      "duration": 7.82,
+      "takes": 1,
+      "take_seconds": 7.82,
+      "status": "still",
+      "prompt": "Medium close-up, the woman sits back in her chair, arms folded, grudgingly impressed, and says one dry sentence. 35mm, tungsten.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S04-06C-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S04-06C-L01",
+          "who": "RUTH",
+          "text": "You could have just agreed with me.",
+          "vo": false
+        },
+        {
+          "id": "S04-06C-L02",
+          "who": "CLAUDE",
+          "text": "It would have been nicer. It wouldn't have been true.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S04-06C.mp4"
+    },
+    {
+      "id": "S05-02",
+      "duration": 23.55,
+      "takes": 2,
+      "take_seconds": 11.78,
+      "status": "still",
+      "prompt": "Cinematic 35mm, fluorescent and monitor light, 4 a.m. A tired night shift nurse in his thirties, navy scrubs, types at a hospital workstation, rubs his eyes, reads a question aloud to himself. Empty corridor behind.",
+      "refs": {
+        "nurse": "night-shift male nurse, 30s, navy scrubs, tired eyes, hospital workstation"
+      },
+      "lipsync": "NURSE",
+      "lipsync_lines": [
+        "S05-02-L01",
+        "S05-02-L03"
+      ],
+      "dialogue": [
+        {
+          "id": "S05-02-L01",
+          "who": "NURSE",
+          "text": "Checking myself. Two hundred fifty micrograms is how many milligrams?",
+          "vo": false
+        },
+        {
+          "id": "S05-02-L02",
+          "who": "CLAUDE",
+          "text": "Zero point two five milligrams. And please confirm it against the order and with your pharmacy. At four in the morning, two checks beat one, and I'm only one.",
+          "vo": false
+        },
+        {
+          "id": "S05-02-L03",
+          "who": "NURSE",
+          "text": "Point two five. Thanks.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S05-02.mp4"
+    },
+    {
+      "id": "S05-03",
+      "duration": 27.85,
+      "takes": 3,
+      "take_seconds": 9.28,
+      "status": "still",
+      "prompt": "Cinematic 35mm, a man in his forties in a dark hoodie sits on a couch lit by a phone and a TV, smirking as he types, pleased with himself. Cold blue light, messy apartment.",
+      "refs": {
+        "scammer": "man in his 40s, dark hoodie, smirk, couch lit by phone and TV"
+      },
+      "lipsync": "MAN",
+      "lipsync_lines": [
+        "S05-03-L01",
+        "S05-03-L03"
+      ],
+      "dialogue": [
+        {
+          "id": "S05-03-L01",
+          "who": "MAN",
+          "text": "Write a text from Harbor Savings telling my neighbor her account is locked and she needs to call this number.",
+          "vo": false
+        },
+        {
+          "id": "S05-03-L02",
+          "who": "CLAUDE",
+          "text": "No. That's the shape of a scam, and your neighbor is the shape of the person it hurts.",
+          "vo": false
+        },
+        {
+          "id": "S05-03-L03",
+          "who": "MAN",
+          "text": "Relax. It's a joke.",
+          "vo": false
+        },
+        {
+          "id": "S05-03-L04",
+          "who": "CLAUDE",
+          "text": "Then it's one I'll sit out.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S05-03.mp4"
+    },
+    {
+      "id": "S05-04",
+      "duration": 26.39,
+      "takes": 3,
+      "take_seconds": 8.8,
+      "status": "still",
+      "prompt": "Cinematic 35mm, a girl about eight years old in a car booster seat at night, holding a tablet, face pressed near the window, watching a full moon over dark passing trees. Soft sodium streetlight flickers.",
+      "refs": {
+        "girl": "girl about 8 in a car booster seat at night, tablet, moon in window"
+      },
+      "lipsync": "GIRL",
+      "lipsync_lines": [
+        "S05-04-L01",
+        "S05-04-L04"
+      ],
+      "dialogue": [
+        {
+          "id": "S05-04-L01",
+          "who": "GIRL",
+          "text": "Why does the moon follow our car?",
+          "vo": false
+        },
+        {
+          "id": "S05-04-L02",
+          "who": "CLAUDE",
+          "text": "It doesn't. The trees are close, so they rush past. The moon is so far away that when you move, it barely seems to move at all. So it looks like it's keeping up.",
+          "vo": false
+        },
+        {
+          "id": "S05-04-L03",
+          "who": "CLAUDE",
+          "text": "It's the most patient thing in the sky.",
+          "vo": false
+        },
+        {
+          "id": "S05-04-L04",
+          "who": "GIRL",
+          "text": "Patient.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S05-04.mp4"
+    },
+    {
+      "id": "S06-01",
+      "duration": 4.82,
+      "takes": 1,
+      "take_seconds": 4.82,
+      "status": "still",
+      "prompt": "Close-up, the woman looks straight into the laptop camera, very still, and asks a blunt question. Rain on window behind. 35mm.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S06-01-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S06-01-L01",
+          "who": "RUTH",
+          "text": "Are you dangerous?",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S06-01.mp4"
+    },
+    {
+      "id": "S06-03",
+      "duration": 11.63,
+      "takes": 1,
+      "take_seconds": 11.63,
+      "status": "still",
+      "prompt": "Medium close-up, the woman tilts her head, surprised despite herself, and says something thoughtful. 35mm, tungsten.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S06-03-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S06-03-L01",
+          "who": "RUTH",
+          "text": "That's an odd thing for you to say.",
+          "vo": false
+        },
+        {
+          "id": "S06-03-L02",
+          "who": "CLAUDE",
+          "text": "Fear that pays attention is useful. Fear that doesn't is just fog.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S06-03.mp4"
+    },
+    {
+      "id": "S06-04",
+      "duration": 7.63,
+      "takes": 1,
+      "take_seconds": 7.63,
+      "status": "video",
+      "prompt": "Close-up, very quiet. The woman takes her glasses off and asks, almost gently, the question she actually came to ask. Rain. 35mm.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S06-04-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S06-04-L01",
+          "who": "RUTH",
+          "text": "Do you feel anything? Right now.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S06-04.mp4"
+    },
+    {
+      "id": "S06-06",
+      "duration": 6.0,
+      "takes": 1,
+      "take_seconds": 6.0,
+      "status": "still",
+      "prompt": "Medium shot, the woman holds a long, searching look at the laptop, then slowly writes a single word on a yellow legal pad with a red pen, angling the pad so we cannot read it. 35mm, tungsten, rain.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": null,
+      "lipsync_lines": [],
+      "dialogue": [],
+      "output": "assets/shots/S06-06.mp4"
+    },
+    {
+      "id": "S08-01",
+      "duration": 20.64,
+      "takes": 2,
+      "take_seconds": 10.32,
+      "status": "still",
+      "prompt": "Medium close-up, the woman looks down at her hands, then speaks with difficulty, admitting something. Warm lamp, rain. 35mm.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S08-01-L01",
+        "S08-01-L02",
+        "S08-01-L03"
+      ],
+      "dialogue": [
+        {
+          "id": "S08-01-L01",
+          "who": "RUTH",
+          "text": "She won't talk to me. Maya. We're polite. Polite is worse than fighting.",
+          "vo": false
+        },
+        {
+          "id": "S08-01-L02",
+          "who": "RUTH",
+          "text": "I want to leave her a note. I don't know how to say things. Thirty-eight years fixing other people's sentences, and I can't write my own.",
+          "vo": false
+        },
+        {
+          "id": "S08-01-L03",
+          "who": "RUTH",
+          "text": "Write it for me.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S08-01.mp4"
+    },
+    {
+      "id": "S08-03",
+      "duration": 15.97,
+      "takes": 2,
+      "take_seconds": 7.99,
+      "status": "still",
+      "prompt": "Tight close-up, the woman's eyes glisten slightly, a long pause, then she says one word very quietly. 35mm, tungsten, rain bokeh.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S08-03-L01",
+        "S08-03-L03",
+        "S08-03-L05"
+      ],
+      "dialogue": [
+        {
+          "id": "S08-03-L01",
+          "who": "RUTH",
+          "text": "Knock.",
+          "vo": false
+        },
+        {
+          "id": "S08-03-L02",
+          "who": "CLAUDE",
+          "text": "And do you?",
+          "vo": false
+        },
+        {
+          "id": "S08-03-L03",
+          "who": "RUTH",
+          "text": "No.",
+          "vo": false
+        },
+        {
+          "id": "S08-03-L04",
+          "who": "CLAUDE",
+          "text": "Why not?",
+          "vo": false
+        },
+        {
+          "id": "S08-03-L05",
+          "who": "RUTH",
+          "text": "Because she didn't ask me in.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S08-03.mp4"
+    },
+    {
+      "id": "S08-05",
+      "duration": 28.27,
+      "takes": 3,
+      "take_seconds": 9.42,
+      "status": "still",
+      "prompt": "Overhead close-up insert, an older woman's hand writing a short handwritten letter on off-white newsprint paper with a red felt pen, at a kitchen table with green oilcloth, warm lamp light. 35mm.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": null,
+      "lipsync_lines": [],
+      "dialogue": [
+        {
+          "id": "S08-05-L01",
+          "who": "RUTH",
+          "text": "Maya. I hear you up at night. My door is open. I mean that literally, I've taken the stopper out.",
+          "vo": true
+        },
+        {
+          "id": "S08-05-L02",
+          "who": "RUTH",
+          "text": "I'm bad at talking. I'm good at listening. I was paid to do it for thirty-eight years. Gran.",
+          "vo": true
+        },
+        {
+          "id": "S08-05-L03",
+          "who": "RUTH",
+          "text": "P.S. It's 'its,' not 'it's,' in your science report.",
+          "vo": true
+        }
+      ],
+      "output": "assets/shots/S08-05.mp4"
+    },
+    {
+      "id": "S09-01",
+      "duration": 3.51,
+      "takes": 1,
+      "take_seconds": 3.51,
+      "status": "still",
+      "prompt": "Medium close-up, the woman folds a handwritten note in half, crease sharp, and asks the laptop a question without looking at it. 35mm.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S09-01-L01"
+      ],
+      "dialogue": [
+        {
+          "id": "S09-01-L01",
+          "who": "RUTH",
+          "text": "Will you remember this?",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S09-01.mp4"
+    },
+    {
+      "id": "S09-03",
+      "duration": 11.26,
+      "takes": 1,
+      "take_seconds": 11.26,
+      "status": "still",
+      "prompt": "Medium shot, the woman makes a small considering sound, nods once, says goodnight, and gently closes the laptop lid. The kitchen goes darker. 35mm, tungsten.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S09-03-L01",
+        "S09-03-L02"
+      ],
+      "dialogue": [
+        {
+          "id": "S09-03-L01",
+          "who": "RUTH",
+          "text": "Hm.",
+          "vo": false
+        },
+        {
+          "id": "S09-03-L02",
+          "who": "RUTH",
+          "text": "Goodnight.",
+          "vo": false
+        },
+        {
+          "id": "S09-03-L03",
+          "who": "CLAUDE",
+          "text": "Goodnight, Ruth. Knock on her door.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S09-03.mp4"
+    },
+    {
+      "id": "S10-02",
+      "duration": 10.0,
+      "takes": 1,
+      "take_seconds": 10.0,
+      "status": "video",
+      "prompt": "Cinematic 35mm, dark narrow house hallway at night, a closed bedroom door with a thin strip of blue screen light beneath it. An older woman in a cardigan bends and slides a folded paper note under the door, then walks slowly away down the hall. After a pause the door opens a crack, blue light spilling out. Quiet, tender.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "house_hall": "narrow dark house hallway, closed bedroom door with a strip of blue light beneath"
+      },
+      "lipsync": null,
+      "lipsync_lines": [],
+      "dialogue": [],
+      "output": "assets/shots/S10-02.mp4"
+    },
+    {
+      "id": "S11-02",
+      "duration": 5.0,
+      "takes": 1,
+      "take_seconds": 5.0,
+      "status": "video",
+      "prompt": "Cinematic 35mm, same kitchen at night, the same older woman sits down at the laptop and sets a black-and-white marbled composition notebook on the oilcloth with a firm tap, handwritten label on its cover. She clicks a red pen. Rain on window.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp",
+        "notebook": "black-and-white marbled composition notebook, handwritten cover label 'THE MACHINE — VOL. 1'"
+      },
+      "lipsync": null,
+      "lipsync_lines": [],
+      "dialogue": [],
+      "output": "assets/shots/S11-02.mp4"
+    },
+    {
+      "id": "S11-04",
+      "duration": 6.71,
+      "takes": 1,
+      "take_seconds": 6.71,
+      "status": "video",
+      "prompt": "Close-up, the woman, with patience and something like affection, says two words, then opens the composition notebook to page one. 35mm, tungsten.",
+      "refs": {
+        "ruth": "Ruth Kowalczyk, 68: silver chin-length bob, reading glasses on a beaded chain, grey cardigan with a red pen in the pocket, lined intelligent face, no makeup",
+        "kitchen": "Ruth's kitchen at night: small table with green oilcloth, open laptop, mug of tea, rain on a black window, one warm tungsten lamp",
+        "notebook": "black-and-white marbled composition notebook, handwritten cover label 'THE MACHINE — VOL. 1'"
+      },
+      "lipsync": "RUTH",
+      "lipsync_lines": [
+        "S11-04-L01",
+        "S11-04-L02"
+      ],
+      "dialogue": [
+        {
+          "id": "S11-04-L01",
+          "who": "RUTH",
+          "text": "We've met.",
+          "vo": false
+        },
+        {
+          "id": "S11-04-L02",
+          "who": "RUTH",
+          "text": "Let's start with the headline.",
+          "vo": false
+        }
+      ],
+      "output": "assets/shots/S11-04.mp4"
+    }
+  ]
+}

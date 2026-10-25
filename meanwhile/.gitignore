@@ -1,0 +1,6 @@
+build/
+assets/clips/*.mp4
+assets/keys/*.png
+__pycache__/
+ep02/keys/*.png
+ep02/clips/*.mp4

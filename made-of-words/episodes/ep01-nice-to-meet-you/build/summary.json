@@ -1,0 +1,16 @@
+{
+  "episode": "ep01 — Nice to Meet You",
+  "runtime": "16:40",
+  "runtime_seconds": 999.7,
+  "shots": 60,
+  "dialogue_words": 1613,
+  "lines_with_real_audio": "140/140",
+  "seconds_by_kind": {
+    "card": 26.0,
+    "hallway": 19.4,
+    "live": 326.4,
+    "margin": 119.4,
+    "room": 508.4
+  },
+  "live_shots_generated": "7/30"
+}
