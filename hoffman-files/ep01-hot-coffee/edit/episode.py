@@ -6,7 +6,6 @@ with a temporary synthetic voice so pacing can be judged before the shoot. Kinds
              anchors `at` = [(phrase in the VO, source frame), ...] so actions land on the words
   gfx        a motion-graphics card drawn in gfx.py (function named by `gfx`)
   aroll      Eric on camera (a slate in the story reel; the editor drops the take here)
-  interview  a guest beat (a short slate in the story reel; `plan` is the planned length in seconds)
 Every number on screen traces to the fact base in the episode doc.
 """
 
@@ -64,8 +63,6 @@ SEGMENTS = [
             "About twenty thousand dollars."),
     dict(id='s14', act='Act 4: The $800', kind='gfx', gfx='offer', tail=2.4,
          vo="McDonald's offered eight hundred."),
-    dict(id='s15', act='Act 4: The $800', kind='interview', guest='morgan', beat=1, plan=60,
-         topics=['How the case reached him', 'Why take a case whose client had asked for $20,000']),
     dict(id='s16', act='Act 4: The $800', kind='aroll',
          vo="That's when she hired a lawyer. He offered to settle for three hundred thousand. A mediator suggested "
             "two hundred twenty-five thousand. McDonald's said no. So it went to a jury."),
@@ -90,8 +87,6 @@ SEGMENTS = [
          vo="The jury said yes. But they didn't find her blameless. They put twenty percent of the fault on her. "
             "So her compensatory damages, two hundred thousand, were cut by twenty percent, to one hundred sixty "
             "thousand."),
-    dict(id='s22', act='Act 5: The trial', kind='interview', guest='morgan', beat=2, plan=75,
-         topics=['What the jury reacted to most', 'How he arrived at "two days of coffee sales"']),
     dict(id='s23', act='Act 5: The trial', kind='blender', src='E9', frames=(1, 192), overlay='sales', tail=1.6,
          at=[('two days', 12), ('1.35 million', 96), ('2.7 million', 180)],
          vo="Then punitive damages. Her lawyer suggested a number tied to the company's own sales: two days of "
@@ -110,8 +105,6 @@ SEGMENTS = [
     dict(id='s27', act='Act 6: After the verdict', kind='gfx', gfx='died', tail=1.6,
          vo="Stella Liebeck died in 2004. She was ninety-one. Her daughter said the settlement paid for a live-in "
             "nurse. By then, the story had a life of its own."),
-    dict(id='s28', act='Act 6: After the verdict', kind='interview', guest='counter', beat=3, plan=45,
-         topics=["The strongest argument McDonald's had", 'Was $2.7 million in punitive damages defensible?']),
 
     # ---------------------------------------------------------------- the holding + outro
     dict(id='s29', act='The holding', kind='gfx', gfx='holding_title', hit=True, tail=0.8,
@@ -130,10 +123,7 @@ SEGMENTS = [
     dict(id='s33', act='Outro', kind='gfx', gfx='endcard', min=8.0),
 ]
 
-GUESTS = {
-    'morgan': ('S. REED MORGAN', 'TRIAL COUNSEL FOR STELLA LIEBECK'),
-    'counter': ('GUEST NAME', 'DEFENSE-SIDE / TORT-REFORM ATTORNEY'),
-}
+GUESTS = {}  # Ep. 1 runs without interviews (cut Oct 25, as in ep. 2)
 HOST = ('ERIC HOFFMAN', 'ATTORNEY · HOST')
 
 # planned interview lengths stand in as short slates in the story reel so it stays watchable

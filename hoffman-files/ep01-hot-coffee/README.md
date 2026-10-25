@@ -1,6 +1,6 @@
 # The Hoffman Files, Ep. 1: Hot Coffee (Liebeck v. McDonald's)
 
-Everything for episode 1 except Eric's on-camera footage and the guest interviews. That covers the 3D reconstructions, the motion graphics, and a full-length story reel that the shoot footage drops into. The 3D is plain procedural Blender: matte clay figures, with amber for coffee and heat. There is no AI-generated footage and no real person's likeness.
+Everything for episode 1 except Eric's on-camera footage and voice-over, which are still to record (the guest interviews were cut Oct 25, as in ep. 2; `recording_script.md` lists the 8 on-camera pieces and 20 voice-over lines, and `booth_sheet.pdf` is the large-type sheet for the voice-over session). That covers the 3D reconstructions, the motion graphics, and a full-length story reel that the shoot footage drops into. The 3D is plain procedural Blender: matte clay figures, with amber for coffee and heat. There is no AI-generated footage and no real person's likeness.
 
 ## 3D reconstructions (`blender/`)
 
