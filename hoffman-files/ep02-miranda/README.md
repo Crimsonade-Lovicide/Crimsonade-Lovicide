@@ -69,4 +69,5 @@ Accuracy rules baked into the graphics:
 - No victim name, figure or reconstruction anywhere. No violence in the bar scene.
 
 - `captions.py` writes `../captions.srt`: the script text of every spoken line, timed word by word to Eric's delivery through the transcripts in `audio/<id>.words.json` (the on-camera lines are transcribed with `../../transcribe.py` the same way). Cues are two lines of 42 characters at most, broken at sentence ends, then commas and pauses, 1 to 7 s each. The file for YouTube is `captions.srt` (Oct 25, 141 cues).
+- `shorts.py` cuts three vertical Shorts (1080x1920) from the master, each one continuous stretch of the cut: the cold-open hook (0:00–0:36), the myth (5:17–5:56, the retrial and “the part the TV version leaves out”) and the ending (5:56–6:33, parole, the cards, the bar fight). On-camera pieces are centre-cropped to fill the frame; cards and 3D keep their width in a band. Captions are re-flowed to 24-character lines from the same word timings and burned in.
 - `thumb.py` builds `../thumbnail.jpg` (1280x720): the Room No. 2 render with Eric keyed off the blue backdrop and “MIRANDA / CONVICTED ANYWAY” in the house type.
