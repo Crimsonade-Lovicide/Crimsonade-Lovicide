@@ -1,0 +1,647 @@
+1
+00:00:00,400 --> 00:00:02,910
+You have the right to remain silent.
+
+2
+00:00:02,990 --> 00:00:06,650
+You've heard it on every
+cop show for fifty years.
+
+3
+00:00:06,730 --> 00:00:08,770
+Here's what you haven't heard.
+
+4
+00:00:08,850 --> 00:00:12,870
+The man those words are named
+after was convicted anyway.
+
+5
+00:00:12,950 --> 00:00:17,790
+Twice. And when he was killed
+in a bar fight in 1976,
+
+6
+00:00:17,870 --> 00:00:21,290
+the man accused of killing
+him was never tried.
+
+7
+00:00:21,370 --> 00:00:23,950
+The reason wasn't Miranda.
+
+8
+00:00:24,242 --> 00:00:26,812
+I'm Eric Hoffman, and I'm a lawyer.
+
+9
+00:00:26,892 --> 00:00:29,552
+I've got a case that almost
+every American can recite,
+
+10
+00:00:29,632 --> 00:00:32,312
+but almost nobody really knows.
+
+11
+00:00:32,392 --> 00:00:33,500
+Let's open the file.
+
+12
+00:00:39,150 --> 00:00:42,980
+March 1963. Phoenix.
+
+13
+00:00:43,060 --> 00:00:46,700
+An eighteen-year-old woman finishes
+her shift at a movie theater,
+
+14
+00:00:46,780 --> 00:00:50,680
+takes the bus home, and is
+abducted and raped on the way.
+
+15
+00:00:50,760 --> 00:00:54,117
+We won't show her,
+and we won't use her name.
+
+16
+00:00:55,275 --> 00:01:01,165
+About a week later, a relative spots a car
+that matches her description and gets part
+
+17
+00:01:01,245 --> 00:01:07,742
+of the plate. It leads police to a man in
+his early twenties named Ernesto Miranda.
+
+18
+00:01:08,900 --> 00:01:15,010
+March 13th. Detectives Carroll Cooley
+and Wilfred Young bring him in,
+
+19
+00:01:15,090 --> 00:01:20,050
+put him in a lineup, then take him
+into Interrogation Room Number 2.
+
+20
+00:01:20,130 --> 00:01:24,075
+About two hours later, they walk
+out with a signed confession.
+
+21
+00:01:24,817 --> 00:01:27,807
+Nobody hit him. Nobody threatened him.
+
+22
+00:01:27,887 --> 00:01:32,159
+And nobody told him he could
+stay silent, or ask for a lawyer.
+
+23
+00:01:33,692 --> 00:01:37,082
+Here's the detail I love as a lawyer.
+
+24
+00:01:37,162 --> 00:01:42,762
+He wrote it on a form,
+and at the top, already typed,
+
+25
+00:01:42,842 --> 00:01:49,334
+was a line certifying the statement was
+made 'with full knowledge of my legal
+
+26
+00:01:49,414 --> 00:01:53,659
+rights.' Nobody had told
+him what those rights were.
+
+27
+00:01:55,042 --> 00:01:58,092
+Was that legal in 1963?
+
+28
+00:01:58,172 --> 00:02:02,812
+In Arizona, yes. The test was
+whether a confession was voluntary,
+
+29
+00:02:02,892 --> 00:02:05,259
+not whether you knew you could refuse.
+
+30
+00:02:05,900 --> 00:02:09,870
+That test came out of
+a 1936 case, Brown v.
+
+31
+00:02:09,950 --> 00:02:14,730
+Mississippi. A deputy sheriff and others
+whipped three Black men until they
+
+32
+00:02:14,810 --> 00:02:19,850
+confessed to a murder, and the Supreme
+Court threw those confessions out.
+
+33
+00:02:19,930 --> 00:02:24,150
+After that, the question was
+whether a confession was voluntary,
+
+34
+00:02:24,230 --> 00:02:29,830
+judged case by case: how long,
+how old, how educated,
+
+35
+00:02:29,910 --> 00:02:32,150
+whether anyone made threats.
+
+36
+00:02:32,230 --> 00:02:36,110
+No beating, no threats, two hours.
+
+37
+00:02:36,190 --> 00:02:39,492
+By that test, Miranda's
+confession was fine.
+
+38
+00:02:41,025 --> 00:02:47,035
+His court-appointed lawyer,
+Alvin Moore, objected to the confession.
+
+39
+00:02:47,115 --> 00:02:48,595
+The judge overruled him.
+
+40
+00:02:48,675 --> 00:02:51,695
+Convicted. Twenty to thirty years.
+
+41
+00:02:51,775 --> 00:02:54,242
+The Arizona Supreme Court affirmed.
+
+42
+00:02:55,458 --> 00:02:58,488
+That should have been the end.
+
+43
+00:02:58,568 --> 00:03:03,968
+Instead, the ACLU found the case
+and brought in two Phoenix lawyers,
+
+44
+00:03:04,048 --> 00:03:08,341
+John Frank and John Flynn, who took it
+for free, all the way to Washington.
+
+45
+00:03:08,983 --> 00:03:10,913
+They had an opening.
+
+46
+00:03:10,993 --> 00:03:14,833
+Five days after Miranda signed that
+confession, the Supreme Court decided
+
+47
+00:03:14,913 --> 00:03:19,933
+Gideon v. Wainwright: if you're charged
+with a felony and can't afford a lawyer,
+
+48
+00:03:20,013 --> 00:03:21,993
+the state has to give you one.
+
+49
+00:03:22,073 --> 00:03:23,893
+A year later came Escobedo v.
+
+50
+00:03:23,973 --> 00:03:29,113
+Illinois. Police had refused to let a
+suspect see the lawyer he was asking for,
+
+51
+00:03:29,193 --> 00:03:31,293
+and the Court threw out his confession.
+
+52
+00:03:31,373 --> 00:03:34,273
+That left an obvious question.
+
+53
+00:03:34,353 --> 00:03:40,553
+If the right to a lawyer matters at trial,
+and matters when you ask for one at the
+
+54
+00:03:40,633 --> 00:03:45,200
+station, what about the person
+who doesn't even know to ask?
+
+55
+00:03:46,942 --> 00:03:51,912
+The Supreme Court bundled Miranda
+with three other confession cases.
+
+56
+00:03:51,992 --> 00:03:56,784
+On June 13, 1966, it ruled five to four.
+
+57
+00:04:01,492 --> 00:04:05,362
+Chief Justice Earl
+Warren's point was simple.
+
+58
+00:04:05,442 --> 00:04:08,142
+The interrogation room
+is built to work on you.
+
+59
+00:04:08,222 --> 00:04:11,537
+It's private, it's long, and you're alone.
+
+60
+00:04:12,192 --> 00:04:15,922
+To prove it, he did something unusual.
+
+61
+00:04:16,002 --> 00:04:18,682
+He quoted the police training manuals.
+
+62
+00:04:18,762 --> 00:04:22,262
+Question him alone,
+on your ground, not his.
+
+63
+00:04:22,342 --> 00:04:24,782
+Treat his guilt as already settled.
+
+64
+00:04:24,862 --> 00:04:28,342
+Offer him an excuse that
+makes confessing easier.
+
+65
+00:04:28,422 --> 00:04:31,522
+Play a friendly detective
+against a hostile one.
+
+66
+00:04:31,602 --> 00:04:36,142
+The opinion called it a setting created
+for no purpose other than to subjugate the
+
+67
+00:04:36,222 --> 00:04:39,117
+individual to the will of his examiner.
+
+68
+00:04:40,708 --> 00:04:45,018
+So before police question somebody in
+custody, they have to tell them four
+
+69
+00:04:45,098 --> 00:04:46,098
+things.
+
+70
+00:04:46,650 --> 00:04:48,520
+You can stay silent.
+
+71
+00:04:48,600 --> 00:04:51,040
+What you say can be used against you.
+
+72
+00:04:51,120 --> 00:04:52,760
+You can have a lawyer.
+
+73
+00:04:52,840 --> 00:04:55,320
+And if you can't afford one,
+you'll get one.
+
+74
+00:04:55,400 --> 00:04:59,908
+Skip the warnings, and what he says
+can't be used to prove the case.
+
+75
+00:05:01,650 --> 00:05:05,740
+The four dissenters said it would
+put guilty men back on the street.
+
+76
+00:05:05,820 --> 00:05:11,700
+Justice White wrote that 'in some unknown
+number of cases the Court's rule will
+
+77
+00:05:11,780 --> 00:05:16,200
+return a killer, a rapist or
+other criminal to the streets.'
+
+78
+00:05:17,792 --> 00:05:22,467
+So did it? Let's follow Ernesto Miranda.
+
+79
+00:05:23,108 --> 00:05:28,338
+Arizona retried him in 1967,
+this time without the confession.
+
+80
+00:05:28,418 --> 00:05:31,678
+The prosecution called his
+former common-law wife.
+
+81
+00:05:31,758 --> 00:05:35,898
+She testified that during a jail
+visit he told her what he'd done.
+
+82
+00:05:35,978 --> 00:05:39,450
+Convicted again. Twenty to thirty years.
+
+83
+00:05:40,667 --> 00:05:44,337
+That's the part the TV version leaves out.
+
+84
+00:05:44,417 --> 00:05:47,017
+Miranda doesn't make evidence disappear.
+
+85
+00:05:47,097 --> 00:05:51,817
+It takes one thing off the table: what
+police get out of you in that room without
+
+86
+00:05:51,897 --> 00:05:55,759
+the warning. Everything
+else is still in play.
+
+87
+00:05:56,400 --> 00:05:59,030
+He was paroled in 1972.
+
+88
+00:05:59,110 --> 00:06:02,930
+Back in Phoenix, he signed the cards
+police carry to read the warnings,
+
+89
+00:06:03,010 --> 00:06:06,450
+and sold them for a dollar or two.
+
+90
+00:06:07,817 --> 00:06:12,987
+January 31, 1976.
+A fight in a Phoenix bar.
+
+91
+00:06:13,067 --> 00:06:15,527
+Miranda is stabbed and dies.
+
+92
+00:06:15,607 --> 00:06:19,227
+Police arrest a man they say
+handed the killer the knife.
+
+93
+00:06:19,307 --> 00:06:21,127
+He's read his rights.
+
+94
+00:06:21,207 --> 00:06:23,267
+Prosecutors declined to charge him.
+
+95
+00:06:23,347 --> 00:06:26,827
+The man accused of the stabbing
+was questioned and let go.
+
+96
+00:06:26,907 --> 00:06:29,327
+By the time he was charged, he was gone.
+
+97
+00:06:29,407 --> 00:06:30,950
+He was never tried.
+
+98
+00:06:33,817 --> 00:06:37,447
+Miranda has been under attack
+since the day it came down.
+
+99
+00:06:37,527 --> 00:06:43,027
+In 1968, Congress passed a law to get
+around it: a confession was admissible as
+
+100
+00:06:43,107 --> 00:06:44,947
+long as it was voluntary.
+
+101
+00:06:45,027 --> 00:06:47,727
+Then the Court itself started trimming.
+
+102
+00:06:47,807 --> 00:06:53,307
+In 1971, it said a statement taken without
+the warnings can still be used against you
+
+103
+00:06:53,387 --> 00:06:56,607
+if you take the stand and
+tell a different story.
+
+104
+00:06:56,687 --> 00:07:03,187
+In 1984, it carved out a public safety
+exception: if an officer asks where the
+
+105
+00:07:03,267 --> 00:07:06,947
+gun is before reading the warnings,
+the answer comes in.
+
+106
+00:07:07,027 --> 00:07:09,742
+That opinion was written
+by William Rehnquist.
+
+107
+00:07:11,275 --> 00:07:17,265
+By 2000 he was Chief Justice, and the
+1968 law finally reached the Court in
+
+108
+00:07:17,345 --> 00:07:21,605
+Dickerson. Plenty of people
+expected him to finish Miranda off.
+
+109
+00:07:21,685 --> 00:07:25,945
+Instead he wrote the opinion
+saving it, seven to two.
+
+110
+00:07:26,025 --> 00:07:31,325
+Miranda, he wrote, 'has become embedded in
+routine police practice to the point where
+
+111
+00:07:31,405 --> 00:07:34,408
+the warnings have become part
+of our national culture.'
+
+112
+00:07:36,417 --> 00:07:38,847
+But it isn't what it was.
+
+113
+00:07:38,927 --> 00:07:44,227
+In 2010, the Court said
+staying silent is not enough.
+
+114
+00:07:44,307 --> 00:07:46,947
+You have to say you're invoking.
+
+115
+00:07:47,027 --> 00:07:53,300
+And in 2022, it said a Miranda violation
+alone doesn't let you sue the officer.
+
+116
+00:07:53,942 --> 00:07:56,032
+So what does it cost?
+
+117
+00:07:56,112 --> 00:07:59,172
+Researchers have fought
+over the number for decades.
+
+118
+00:07:59,252 --> 00:08:05,643
+In 1996, Paul Cassell estimated that
+Miranda costs prosecutors almost four
+
+119
+00:08:05,723 --> 00:08:08,652
+percent of all criminal cases.
+
+120
+00:08:08,732 --> 00:08:13,252
+Stephen Schulhofer went through the
+same studies and got about one percent.
+
+121
+00:08:13,332 --> 00:08:19,292
+What the studies agree on is that
+most suspects, about four in five,
+
+122
+00:08:19,372 --> 00:08:21,409
+waive their rights and talk anyway.
+
+123
+00:08:23,150 --> 00:08:26,860
+So what does Miranda actually stand for?
+
+124
+00:08:26,940 --> 00:08:28,075
+Three things.
+
+125
+00:08:29,025 --> 00:08:32,475
+One: the warning isn't required at arrest.
+
+126
+00:08:32,555 --> 00:08:35,955
+It's required before
+custodial interrogation.
+
+127
+00:08:36,035 --> 00:08:41,435
+Two: the remedy is losing the
+statement, not losing the case.
+
+128
+00:08:41,515 --> 00:08:45,415
+Three: the right is real,
+but you have to use it.
+
+129
+00:08:45,495 --> 00:08:46,950
+Out loud.
+
+130
+00:08:48,483 --> 00:08:53,853
+If you take one practical thing
+from this, the words matter.
+
+131
+00:08:53,933 --> 00:09:00,133
+In 1994, the Court held that 'Maybe I
+should talk to a lawyer' was not clear
+
+132
+00:09:00,213 --> 00:09:02,373
+enough to stop the questioning.
+
+133
+00:09:02,453 --> 00:09:07,013
+So be clear. 'I'm going to remain silent.
+
+134
+00:09:07,093 --> 00:09:11,393
+I want a lawyer.' Then stop talking.
+
+135
+00:09:11,473 --> 00:09:15,273
+That's general information,
+not advice about your case.
+
+136
+00:09:15,353 --> 00:09:20,408
+If you're ever in that room,
+that's exactly when you call one.
+
+137
+00:09:22,000 --> 00:09:28,350
+Ernesto Miranda was convicted
+twice and died in a bar fight.
+
+138
+00:09:28,430 --> 00:09:31,930
+His name is on the most famous
+sentence in American law.
+
+139
+00:09:32,010 --> 00:09:36,842
+And the right it stands for
+only works if you say it.
+
+140
+00:09:37,333 --> 00:09:40,883
+Next time: the next case.
+
+141
+00:09:40,963 --> 00:09:44,633
+I'm Eric Hoffman,
+and these are The Hoffman Files.
+
